@@ -1,0 +1,21 @@
+
+
+FT422 EVAL BOARD
+http://www.mouser.com/Search/ProductDetail.aspx?R=UMFT4222EV-Bvirtualkey62130000virtualkey895-UMFT4222EV-B
+
+MCP23008T-E/SO
+SOIC-18
+I2C, Serial
+1.7 MHz
+http://www.mouser.com/ProductDetail/Microchip-Technology/MCP23008T-E-SO/?qs=sGAEpiMZZMsUzhEcHltCucHHtdEVqP99
+
+1010000 = 80 = 0x50
+24LC64-I/SN 8k SOIC
+EAGLE Package:SO-08M Device:24LC64SM (24*)
+http://www.mouser.com/ProductDetail/Microchip-Technology/24LC64T-I-SM/?qs=sGAEpiMZZMuVhdAcoizlRSetfYkAy0SV19JFTrBI8SU%3d
+IC2 addr 0: 16
+
+
+CAPACITOR 10mF
+C-USC1206 (C-US)
+C1206

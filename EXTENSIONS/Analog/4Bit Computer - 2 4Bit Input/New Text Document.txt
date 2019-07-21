@@ -1,0 +1,2 @@
+DIP SWITCH
+https://www.diymodules.org/eagle-show-library?type=std&file=special.lbr

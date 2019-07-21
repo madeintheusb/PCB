@@ -1,0 +1,17 @@
+- Nusbio new board
+		- Nusbio1.0.Plus.SMD--ENCLOSURE
+			- Does not have the fuse
+		- Nusbio1.0.Plus.SMD--STICK
+			- has the fuse
+		- Nusbio1.0.Plus.SMD--MicroB
+			- Used green MicroB soldered on top.
+			- Working but not pretty
+		- Nusbio1.0.Plus.SMD--STICK.TYPE.A-HOST
+			- Regular board with type A host (non usb standard)
+			- has the fuse
+		- Nusbio1.0.Plus.SMD--STICK.TYPE.A-MALE
+			- Regular board with type A male (usb standard)
+			- has the fuse
+		- Nusbio1.0.Plus.SMD--STICK-TypeAMaleForComputer
+			- Regular board with type that can be inserted directly in computer host
+			- Board should be thicker

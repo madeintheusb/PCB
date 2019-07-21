@@ -1,0 +1,12 @@
+- 8Bit Cpu
+    - https://en.wikipedia.org/wiki/List_of_7400_series_integrated_circuits
+    *HD74LS00 4 NAND
+    *SN74LS02N 4 NOR
+    *SN74LS08N 4 AND
+    *SN74LS04 6 Inverter
+    >sn74ls32 4 OR
+    >SN74LS86AN 4 XOR
+    *74HC165N 8 bit shift register parralle to serial
+    *74HC595N 8 bit shift register serial to paralle
+    *74LS47 - 4 bit to 7-Segment
+    74LS139  2 x  2 bit input => 4 wires in parrallele or Bit to Paralle

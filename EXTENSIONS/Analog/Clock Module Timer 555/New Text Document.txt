@@ -1,0 +1,5 @@
+
+Debouncing 4017 with timer 555
+	https://www.allaboutcircuits.com/textbook/experiments/chpt-7/led-sequencer/
+
+	Use an 100k or more for the discharge
