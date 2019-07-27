@@ -2160,6 +2160,12 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="LED0" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="LED1" library="adafruit" deviceset="LED" device="SMT1206"/>
+<part name="LED2" library="adafruit" deviceset="LED" device="SMT1206"/>
+<part name="LED3" library="adafruit" deviceset="LED" device="SMT1206"/>
+<part name="LED4" library="adafruit" deviceset="LED" device="SMT1206"/>
+<part name="LED7" library="adafruit" deviceset="LED" device="SMT1206"/>
+<part name="LED6" library="adafruit" deviceset="LED" device="SMT1206"/>
+<part name="LED5" library="adafruit" deviceset="LED" device="SMT1206"/>
 </parts>
 <sheets>
 <sheet>
@@ -2175,7 +2181,13 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <instance part="RN1" gate="G$1" x="165.1" y="81.28"/>
 <instance part="GND3" gate="1" x="144.78" y="71.12"/>
 <instance part="LED0" gate="G$1" x="154.94" y="68.58" rot="R180"/>
-<instance part="LED1" gate="G$1" x="157.48" y="55.88" rot="R180"/>
+<instance part="LED1" gate="G$1" x="157.48" y="60.96" rot="R180"/>
+<instance part="LED2" gate="G$1" x="160.02" y="50.8" rot="R180"/>
+<instance part="LED3" gate="G$1" x="162.56" y="40.64" rot="R180"/>
+<instance part="LED4" gate="G$1" x="165.1" y="27.94" rot="R180"/>
+<instance part="LED7" gate="G$1" x="172.72" y="68.58" rot="R180"/>
+<instance part="LED6" gate="G$1" x="170.18" y="58.42" rot="R180"/>
+<instance part="LED5" gate="G$1" x="167.64" y="43.18" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -2221,6 +2233,11 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="134.62" y1="71.12" x2="114.3" y2="71.12" width="0.1524" layer="91"/>
 <label x="114.3" y="71.12" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="LED5" gate="G$1" pin="A"/>
+<wire x1="167.64" y1="40.64" x2="167.64" y2="38.1" width="0.1524" layer="91"/>
+<label x="167.64" y="38.1" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="RX_G6" class="0">
 <segment>
@@ -2232,6 +2249,11 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <pinref part="U$1" gate="G$1" pin="7"/>
 <wire x1="134.62" y1="68.58" x2="114.3" y2="68.58" width="0.1524" layer="91"/>
 <label x="114.3" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED6" gate="G$1" pin="A"/>
+<wire x1="170.18" y1="55.88" x2="170.18" y2="50.8" width="0.1524" layer="91"/>
+<label x="170.18" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RTS_G7" class="0">
@@ -2245,6 +2267,11 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="134.62" y1="66.04" x2="114.3" y2="66.04" width="0.1524" layer="91"/>
 <label x="114.3" y="66.04" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="LED7" gate="G$1" pin="A"/>
+<wire x1="172.72" y1="66.04" x2="175.26" y2="60.96" width="0.1524" layer="91"/>
+<label x="185.42" y="63.5" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="CTS_G4" class="0">
 <segment>
@@ -2256,6 +2283,11 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <pinref part="U$1" gate="G$1" pin="5"/>
 <wire x1="134.62" y1="73.66" x2="114.3" y2="73.66" width="0.1524" layer="91"/>
 <label x="114.3" y="73.66" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED4" gate="G$1" pin="A"/>
+<wire x1="165.1" y1="25.4" x2="165.1" y2="20.32" width="0.1524" layer="91"/>
+<label x="165.1" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -2276,6 +2308,11 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="134.62" y1="76.2" x2="114.3" y2="76.2" width="0.1524" layer="91"/>
 <label x="114.3" y="76.2" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<wire x1="162.56" y1="38.1" x2="162.56" y2="33.02" width="0.1524" layer="91"/>
+<label x="162.56" y="33.02" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DSR_G1" class="0">
 <segment>
@@ -2290,8 +2327,8 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 </segment>
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="157.48" y1="53.34" x2="157.48" y2="43.18" width="0.1524" layer="91"/>
-<label x="157.48" y="45.72" size="1.778" layer="95"/>
+<wire x1="157.48" y1="58.42" x2="157.48" y2="55.88" width="0.1524" layer="91"/>
+<label x="147.32" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RI_G0" class="0">
@@ -2322,6 +2359,11 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="134.62" y1="78.74" x2="114.3" y2="78.74" width="0.1524" layer="91"/>
 <label x="114.3" y="78.74" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="160.02" y1="48.26" x2="160.02" y2="45.72" width="0.1524" layer="91"/>
+<label x="149.86" y="45.72" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
@@ -2334,7 +2376,49 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="RN1" gate="G$1" pin="3"/>
-<wire x1="157.48" y1="60.96" x2="157.48" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="66.04" x2="157.48" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="RN1" gate="G$1" pin="4"/>
+<wire x1="160.02" y1="55.88" x2="160.02" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="RN1" gate="G$1" pin="5"/>
+<wire x1="162.56" y1="45.72" x2="162.56" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="RN1" gate="G$1" pin="6"/>
+<wire x1="165.1" y1="33.02" x2="165.1" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="LED7" gate="G$1" pin="C"/>
+<pinref part="RN1" gate="G$1" pin="9"/>
+<wire x1="172.72" y1="73.66" x2="172.72" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="LED6" gate="G$1" pin="C"/>
+<pinref part="RN1" gate="G$1" pin="8"/>
+<wire x1="170.18" y1="63.5" x2="170.18" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="LED5" gate="G$1" pin="C"/>
+<pinref part="RN1" gate="G$1" pin="7"/>
+<wire x1="167.64" y1="48.26" x2="167.64" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
