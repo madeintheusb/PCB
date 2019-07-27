@@ -179,7 +179,6 @@ v1.0 /Seeed 2019 FT-2019-07</text>
 <wire x1="2" y1="55" x2="36" y2="55" width="0.4064" layer="25"/>
 <hole x="34" y="51" drill="3.2"/>
 <hole x="7" y="52" drill="3.2"/>
-<text x="34.5" y="76.5" size="1.27" layer="25" rot="R90">+</text>
 </plain>
 <libraries>
 <library name="adafruit">
