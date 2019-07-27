@@ -245,4 +245,6 @@ OTHER FT232H INTERFACE
 	
 	
 	
-	
+PCB SEED STUDIO
+
+https://www.seeedstudio.io/fusion_pcb.html?gclid=CjwKCAjwmtDpBRAQEiwAC6lm4-jXcHjrWDgZhC8iEzrM_5TUmSa04AT3yFwPLPXUvMbjXvlSDIyIIRoC_TAQAvD_BwE
