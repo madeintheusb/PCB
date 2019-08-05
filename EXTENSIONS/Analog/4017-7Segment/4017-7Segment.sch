@@ -2847,7 +2847,6 @@ temperature compensated, 6,2 V</description>
 <part name="R_100O" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="D1" library="diode" deviceset="1N821" device=""/>
-<part name="D2" library="diode" deviceset="1N821" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2856,16 +2855,15 @@ temperature compensated, 6,2 V</description>
 <instances>
 <instance part="JP_CLOCK_IN" gate="A" x="17.78" y="127" rot="R180"/>
 <instance part="GND5" gate="1" x="45.72" y="121.92" rot="R90"/>
-<instance part="GND1" gate="1" x="-119.38" y="93.98" rot="R270"/>
+<instance part="GND1" gate="1" x="-153.67" y="119.38" rot="R270"/>
 <instance part="OUTPUTS" gate="A" x="17.78" y="104.14" rot="R180"/>
 <instance part="GND2" gate="1" x="43.18" y="99.06" rot="R90"/>
-<instance part="4017BE" gate="A" x="-71.12" y="109.22"/>
-<instance part="R_1K" gate="G$1" x="-101.6" y="93.98"/>
+<instance part="4017BE" gate="A" x="-105.41" y="134.62"/>
+<instance part="R_1K" gate="G$1" x="-135.89" y="119.38"/>
 <instance part="U$1" gate="G$1" x="-30.48" y="71.12"/>
 <instance part="R_100O" gate="G$1" x="-66.04" y="58.42"/>
 <instance part="GND3" gate="1" x="-78.74" y="58.42" rot="R270"/>
 <instance part="D1" gate="1" x="-30.48" y="121.92"/>
-<instance part="D2" gate="1" x="-27.94" y="106.68"/>
 </instances>
 <busses>
 </busses>
@@ -2884,12 +2882,12 @@ temperature compensated, 6,2 V</description>
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="R_1K" gate="G$1" pin="1"/>
-<wire x1="-116.84" y1="93.98" x2="-111.76" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="93.98" x2="-106.68" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="93.98" x2="-111.76" y2="99.06" width="0.1524" layer="91"/>
-<junction x="-111.76" y="93.98"/>
+<wire x1="-151.13" y1="119.38" x2="-146.05" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="-146.05" y1="119.38" x2="-140.97" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="-146.05" y1="119.38" x2="-146.05" y2="124.46" width="0.1524" layer="91"/>
+<junction x="-146.05" y="119.38"/>
 <pinref part="4017BE" gate="A" pin="ENA"/>
-<wire x1="-111.76" y1="99.06" x2="-81.28" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="-146.05" y1="124.46" x2="-115.57" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -2922,8 +2920,8 @@ temperature compensated, 6,2 V</description>
 </segment>
 <segment>
 <pinref part="4017BE" gate="A" pin="CLK"/>
-<wire x1="-81.28" y1="109.22" x2="-99.06" y2="109.22" width="0.1524" layer="91"/>
-<label x="-106.68" y="109.22" size="1.778" layer="95"/>
+<wire x1="-115.57" y1="134.62" x2="-133.35" y2="134.62" width="0.1524" layer="91"/>
+<label x="-140.97" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TMR555_OUTPUT_REVERSE" class="0">
@@ -2942,7 +2940,7 @@ temperature compensated, 6,2 V</description>
 <segment>
 <pinref part="R_1K" gate="G$1" pin="2"/>
 <pinref part="4017BE" gate="A" pin="RES"/>
-<wire x1="-96.52" y1="93.98" x2="-81.28" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-130.81" y1="119.38" x2="-115.57" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -2958,22 +2956,12 @@ temperature compensated, 6,2 V</description>
 <wire x1="-48.26" y1="81.28" x2="-68.58" y2="81.28" width="0.1524" layer="91"/>
 <label x="-66.04" y="81.28" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="4017BE" gate="A" pin="Q1"/>
-<wire x1="-60.96" y1="119.38" x2="-50.8" y2="119.38" width="0.1524" layer="91"/>
-<label x="-55.88" y="119.38" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="SEG_B" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="B"/>
 <wire x1="-48.26" y1="78.74" x2="-58.42" y2="78.74" width="0.1524" layer="91"/>
 <label x="-58.42" y="78.74" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="4017BE" gate="A" pin="Q2"/>
-<wire x1="-60.96" y1="116.84" x2="-43.18" y2="116.84" width="0.1524" layer="91"/>
-<label x="-45.72" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SEG_C" class="0">
@@ -2982,22 +2970,12 @@ temperature compensated, 6,2 V</description>
 <wire x1="-48.26" y1="76.2" x2="-68.58" y2="76.2" width="0.1524" layer="91"/>
 <label x="-68.58" y="76.2" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="4017BE" gate="A" pin="Q3"/>
-<wire x1="-60.96" y1="114.3" x2="-50.8" y2="114.3" width="0.1524" layer="91"/>
-<label x="-55.88" y="114.3" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="SEG_D" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="D"/>
 <wire x1="-48.26" y1="73.66" x2="-58.42" y2="73.66" width="0.1524" layer="91"/>
 <label x="-58.42" y="73.66" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="4017BE" gate="A" pin="Q4"/>
-<wire x1="-60.96" y1="111.76" x2="-43.18" y2="111.76" width="0.1524" layer="91"/>
-<label x="-45.72" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SEG_E" class="0">
@@ -3006,27 +2984,12 @@ temperature compensated, 6,2 V</description>
 <wire x1="-48.26" y1="71.12" x2="-68.58" y2="71.12" width="0.1524" layer="91"/>
 <label x="-68.58" y="71.12" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="4017BE" gate="A" pin="Q5"/>
-<wire x1="-60.96" y1="109.22" x2="-50.8" y2="109.22" width="0.1524" layer="91"/>
-<label x="-55.88" y="109.22" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="SEG_F" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="F"/>
 <wire x1="-48.26" y1="68.58" x2="-58.42" y2="68.58" width="0.1524" layer="91"/>
 <label x="-55.88" y="68.58" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="D1" gate="1" pin="C"/>
-<wire x1="-27.94" y1="121.92" x2="-17.78" y2="121.92" width="0.1524" layer="91"/>
-<label x="-20.32" y="121.92" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="D2" gate="1" pin="C"/>
-<wire x1="-25.4" y1="106.68" x2="-15.24" y2="106.68" width="0.1524" layer="91"/>
-<label x="-12.7" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SEG_G" class="0">
@@ -3041,25 +3004,6 @@ temperature compensated, 6,2 V</description>
 <pinref part="U$1" gate="G$1" pin="DP"/>
 <wire x1="-48.26" y1="63.5" x2="-55.88" y2="63.5" width="0.1524" layer="91"/>
 <label x="-55.88" y="63.5" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="4017BE" gate="A" pin="Q8"/>
-<wire x1="-60.96" y1="101.6" x2="-50.8" y2="101.6" width="0.1524" layer="91"/>
-<label x="-55.88" y="101.6" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="D1" gate="1" pin="A"/>
-<pinref part="4017BE" gate="A" pin="Q0"/>
-<wire x1="-33.02" y1="121.92" x2="-60.96" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="4017BE" gate="A" pin="Q6"/>
-<pinref part="D2" gate="1" pin="A"/>
-<wire x1="-60.96" y1="106.68" x2="-30.48" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

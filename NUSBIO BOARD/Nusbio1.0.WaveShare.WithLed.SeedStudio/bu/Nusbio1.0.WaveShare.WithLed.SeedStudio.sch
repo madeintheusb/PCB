@@ -4249,7 +4249,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <part name="LED6" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="LED5" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="LPOWER" library="adafruit" deviceset="LED" device="SMT1206"/>
-<part name="RPWR" library="adafruit" deviceset="R-US_" device="R1206"/>
+<part name="RPWR_470_O" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -4274,7 +4274,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <instance part="LED6" gate="G$1" x="170.18" y="58.42" rot="R180"/>
 <instance part="LED5" gate="G$1" x="167.64" y="43.18" rot="R180"/>
 <instance part="LPOWER" gate="G$1" x="139.7" y="15.24" rot="R180"/>
-<instance part="RPWR" gate="G$1" x="132.08" y="33.02" rot="R90"/>
+<instance part="RPWR_470_O" gate="G$1" x="132.08" y="33.02" rot="R90"/>
 <instance part="GND4" gate="1" x="132.08" y="45.72" rot="R180"/>
 </instances>
 <busses>
@@ -4298,7 +4298,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="144.78" y1="73.66" x2="152.4" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="RPWR" gate="G$1" pin="2"/>
+<pinref part="RPWR_470_O" gate="G$1" pin="2"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="132.08" y1="38.1" x2="132.08" y2="43.18" width="0.1524" layer="91"/>
 </segment>
@@ -4522,7 +4522,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <net name="N$9" class="0">
 <segment>
 <pinref part="LPOWER" gate="G$1" pin="C"/>
-<pinref part="RPWR" gate="G$1" pin="1"/>
+<pinref part="RPWR_470_O" gate="G$1" pin="1"/>
 <wire x1="139.7" y1="20.32" x2="132.08" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
