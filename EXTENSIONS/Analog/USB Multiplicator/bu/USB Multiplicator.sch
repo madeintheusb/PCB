@@ -5878,7 +5878,7 @@ USB-FEMALE-A-PTH: Through hole Female Type A Connector</description>
 <part name="LED_PWR" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="R_1K" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="USB_OUT_1" library="STUNTAZ" deviceset="USB" device=""/>
+<part name="USB_OUT_WITH_DATA_1" library="STUNTAZ" deviceset="USB" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="USB_OUT_2" library="STUNTAZ" deviceset="USB" device=""/>
 <part name="USB_OUT_3" library="STUNTAZ" deviceset="USB" device=""/>
@@ -5886,6 +5886,8 @@ USB-FEMALE-A-PTH: Through hole Female Type A Connector</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
+<part name="USB_OUT_5" library="STUNTAZ" deviceset="USB" device=""/>
+<part name="GND8" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5899,7 +5901,7 @@ USB-FEMALE-A-PTH: Through hole Female Type A Connector</description>
 <instance part="LED_PWR" gate="G$1" x="-12.7" y="99.06"/>
 <instance part="R_1K" gate="G$1" x="-12.7" y="81.28" rot="R90"/>
 <instance part="GND7" gate="1" x="-12.7" y="68.58"/>
-<instance part="USB_OUT_1" gate="G$1" x="55.88" y="104.14"/>
+<instance part="USB_OUT_WITH_DATA_1" gate="G$1" x="55.88" y="104.14"/>
 <instance part="GND2" gate="1" x="35.56" y="106.68" rot="R270"/>
 <instance part="USB_OUT_2" gate="G$1" x="66.04" y="78.74"/>
 <instance part="USB_OUT_3" gate="G$1" x="88.9" y="78.74"/>
@@ -5907,6 +5909,8 @@ USB-FEMALE-A-PTH: Through hole Female Type A Connector</description>
 <instance part="GND3" gate="1" x="55.88" y="81.28" rot="R270"/>
 <instance part="GND4" gate="1" x="78.74" y="81.28" rot="R270"/>
 <instance part="GND5" gate="1" x="104.14" y="71.12" rot="R270"/>
+<instance part="USB_OUT_5" gate="G$1" x="88.9" y="55.88"/>
+<instance part="GND8" gate="1" x="66.04" y="58.42" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -5931,7 +5935,7 @@ USB-FEMALE-A-PTH: Through hole Female Type A Connector</description>
 <wire x1="-12.7" y1="78.74" x2="-12.7" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="USB_OUT_1" gate="G$1" pin="GND"/>
+<pinref part="USB_OUT_WITH_DATA_1" gate="G$1" pin="GND"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="53.34" y1="106.68" x2="38.1" y2="106.68" width="0.1524" layer="91"/>
 </segment>
@@ -5949,6 +5953,11 @@ USB-FEMALE-A-PTH: Through hole Female Type A Connector</description>
 <pinref part="GND5" gate="1" pin="GND"/>
 <pinref part="USB_OUT_4" gate="G$1" pin="GND"/>
 <wire x1="106.68" y1="71.12" x2="111.76" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="USB_OUT_5" gate="G$1" pin="GND"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="86.36" y1="58.42" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -5968,7 +5977,7 @@ USB-FEMALE-A-PTH: Through hole Female Type A Connector</description>
 <label x="-12.7" y="109.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="USB_OUT_1" gate="G$1" pin="VBUS"/>
+<pinref part="USB_OUT_WITH_DATA_1" gate="G$1" pin="VBUS"/>
 <wire x1="53.34" y1="109.22" x2="30.48" y2="109.22" width="0.1524" layer="91"/>
 <label x="35.56" y="109.22" size="1.778" layer="95"/>
 </segment>
@@ -5987,6 +5996,11 @@ USB-FEMALE-A-PTH: Through hole Female Type A Connector</description>
 <wire x1="111.76" y1="73.66" x2="99.06" y2="73.66" width="0.1524" layer="91"/>
 <label x="101.6" y="73.66" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="USB_OUT_5" gate="G$1" pin="VBUS"/>
+<wire x1="86.36" y1="60.96" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
+<label x="73.66" y="60.96" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
@@ -6002,7 +6016,7 @@ USB-FEMALE-A-PTH: Through hole Female Type A Connector</description>
 <label x="104.14" y="96.52" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="USB_OUT_1" gate="G$1" pin="D-"/>
+<pinref part="USB_OUT_WITH_DATA_1" gate="G$1" pin="D-"/>
 <wire x1="53.34" y1="111.76" x2="17.78" y2="111.76" width="0.1524" layer="91"/>
 <label x="20.32" y="111.76" size="1.778" layer="95"/>
 </segment>
@@ -6014,7 +6028,7 @@ USB-FEMALE-A-PTH: Through hole Female Type A Connector</description>
 <label x="99.06" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="USB_OUT_1" gate="G$1" pin="D+"/>
+<pinref part="USB_OUT_WITH_DATA_1" gate="G$1" pin="D+"/>
 <wire x1="53.34" y1="114.3" x2="25.4" y2="114.3" width="0.1524" layer="91"/>
 <label x="27.94" y="116.84" size="1.778" layer="95"/>
 </segment>
