@@ -578,14 +578,14 @@ design rules under a new name.</description>
 <attribute name="NAME" x="9.579" y="35.541" size="1.27" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="9.865" y="45.493" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="R_1K" library="adafruit" package="R1206" value="" x="14.5" y="21.4" smashed="yes" rot="R270">
-<attribute name="NAME" x="15.7" y="22.797" size="1.016" layer="25" rot="R270"/>
-<attribute name="VALUE" x="12.087" y="22.797" size="1.27" layer="27" rot="R270"/>
+<element name="R_1K" library="adafruit" package="R1206" value="" x="3.5" y="34.4" smashed="yes" rot="R270">
+<attribute name="NAME" x="4.7" y="35.797" size="1.016" layer="25" rot="R270"/>
+<attribute name="VALUE" x="1.087" y="35.797" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="U$1" library="SparkFun-Displays" package="7-SEGMENT-DISPLAY" value="7-SEGMENT-DISPLAYPTH" x="10.5" y="61.5" smashed="yes"/>
-<element name="R_100O" library="adafruit" package="R1206" value="" x="5.5" y="21.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="7" y="24.8" size="1.016" layer="25" rot="R270"/>
-<attribute name="VALUE" x="3.087" y="22.897" size="1.27" layer="27" rot="R270"/>
+<element name="R_100O" library="adafruit" package="R1206" value="" x="3.5" y="43.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="5" y="46.8" size="1.016" layer="25" rot="R270"/>
+<attribute name="VALUE" x="1.087" y="44.897" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="D_0__SEG_DA" library="diode" package="DO35Z10" value="1N821" x="25.5" y="64.5" smashed="yes">
 <attribute name="NAME" x="23.214" y="65.77" size="1.016" layer="25" ratio="10"/>
@@ -651,10 +651,10 @@ design rules under a new name.</description>
 <contactref element="R_1K" pad="2"/>
 <wire x1="14.31" y1="39.27" x2="14.31" y2="44.35" width="0" layer="19" extent="1-1"/>
 <wire x1="6.69" y1="29.11" x2="14.31" y2="39.27" width="0" layer="19" extent="1-1"/>
-<wire x1="5.5" y1="22.922" x2="6.69" y2="29.11" width="0" layer="19" extent="1-1"/>
-<wire x1="7.19" y1="14" x2="5.5" y2="22.922" width="0" layer="19" extent="1-1"/>
-<wire x1="14.5" y1="19.978" x2="7.19" y2="14" width="0" layer="19" extent="1-1"/>
-<wire x1="32" y1="14.69" x2="14.5" y2="19.978" width="0" layer="19" extent="1-1"/>
+<wire x1="3.5" y1="44.922" x2="6.69" y2="29.11" width="0" layer="19" extent="1-1"/>
+<wire x1="7.19" y1="14" x2="3.5" y2="44.922" width="0" layer="19" extent="1-1"/>
+<wire x1="3.5" y1="32.978" x2="7.19" y2="14" width="0" layer="19" extent="1-1"/>
+<wire x1="32" y1="14.69" x2="3.5" y2="32.978" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="JP_CLOCK_IN" pad="2"/>
@@ -678,7 +678,7 @@ design rules under a new name.</description>
 <signal name="N$2">
 <contactref element="R_100O" pad="2"/>
 <contactref element="U$1" pad="8"/>
-<wire x1="5.5" y1="20.078" x2="10.5" y2="69.12" width="0" layer="19" extent="1-1"/>
+<wire x1="3.5" y1="42.078" x2="10.5" y2="69.12" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="P_3">
 <contactref element="4017BE" pad="7"/>
@@ -777,10 +777,10 @@ design rules under a new name.</description>
 <signal name="P_6">
 <contactref element="4017BE" pad="5"/>
 </signal>
-<signal name="N$1">
+<signal name="RESET_SEQ">
 <contactref element="4017BE" pad="6"/>
 <contactref element="R_1K" pad="1"/>
-<wire x1="14.5" y1="22.822" x2="6.69" y2="34.19" width="0" layer="19" extent="1-1"/>
+<wire x1="3.5" y1="35.822" x2="6.69" y2="34.19" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

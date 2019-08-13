@@ -777,7 +777,7 @@ design rules under a new name.</description>
 <signal name="P_6">
 <contactref element="4017BE" pad="5"/>
 </signal>
-<signal name="N$1">
+<signal name="RESET_SEQ">
 <contactref element="4017BE" pad="6"/>
 <contactref element="R_1K" pad="1"/>
 <wire x1="14.5" y1="22.822" x2="6.69" y2="34.19" width="0" layer="19" extent="1-1"/>
