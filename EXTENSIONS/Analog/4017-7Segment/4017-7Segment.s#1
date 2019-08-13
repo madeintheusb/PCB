@@ -3214,7 +3214,7 @@ temperature compensated, 6,2 V</description>
 <label x="-50.8" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="RESET_SEQ" class="0">
+<net name="N$1" class="0">
 <segment>
 <pinref part="4017BE" gate="A" pin="Q7"/>
 <pinref part="R_1K" gate="G$1" pin="1"/>
