@@ -2842,7 +2842,6 @@ temperature compensated, 6,2 V</description>
 <part name="OUTPUTS" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="4017BE" library="SparkFun-DigitalIC" deviceset="CD4017" device="" value="CD4017"/>
-<part name="R_1K" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="U$1" library="SparkFun-Displays" deviceset="7-SEGMENT-DISPLAY" device="PTH"/>
 <part name="R_100O" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -2871,7 +2870,6 @@ temperature compensated, 6,2 V</description>
 <instance part="OUTPUTS" gate="A" x="17.78" y="104.14" rot="R180"/>
 <instance part="GND2" gate="1" x="43.18" y="99.06" rot="R90"/>
 <instance part="4017BE" gate="A" x="-71.12" y="109.22"/>
-<instance part="R_1K" gate="G$1" x="-7.62" y="96.52"/>
 <instance part="U$1" gate="G$1" x="76.2" y="76.2"/>
 <instance part="R_100O" gate="G$1" x="47.752" y="59.182"/>
 <instance part="GND3" gate="1" x="32.512" y="59.182" rot="R270"/>
