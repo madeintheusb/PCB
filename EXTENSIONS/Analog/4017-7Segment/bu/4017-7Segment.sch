@@ -2867,11 +2867,11 @@ temperature compensated, 6,2 V</description>
 <instances>
 <instance part="JP_CLOCK_IN" gate="A" x="17.78" y="127" rot="R180"/>
 <instance part="GND5" gate="1" x="45.72" y="121.92" rot="R90"/>
-<instance part="GND1" gate="1" x="-119.38" y="93.98" rot="R270"/>
+<instance part="GND1" gate="1" x="-119.38" y="99.06" rot="R270"/>
 <instance part="OUTPUTS" gate="A" x="17.78" y="104.14" rot="R180"/>
 <instance part="GND2" gate="1" x="43.18" y="99.06" rot="R90"/>
 <instance part="4017BE" gate="A" x="-71.12" y="109.22"/>
-<instance part="R_1K" gate="G$1" x="-101.6" y="93.98"/>
+<instance part="R_1K" gate="G$1" x="-7.62" y="96.52"/>
 <instance part="U$1" gate="G$1" x="76.2" y="76.2"/>
 <instance part="R_100O" gate="G$1" x="47.752" y="59.182"/>
 <instance part="GND3" gate="1" x="32.512" y="59.182" rot="R270"/>
@@ -2904,19 +2904,14 @@ temperature compensated, 6,2 V</description>
 <wire x1="20.32" y1="99.06" x2="40.64" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="R_1K" gate="G$1" pin="1"/>
-<wire x1="-116.84" y1="93.98" x2="-111.76" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="93.98" x2="-106.68" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="-111.76" y1="93.98" x2="-111.76" y2="99.06" width="0.1524" layer="91"/>
-<junction x="-111.76" y="93.98"/>
-<pinref part="4017BE" gate="A" pin="ENA"/>
-<wire x1="-111.76" y1="99.06" x2="-81.28" y2="99.06" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND3" gate="1" pin="GND"/>
 <pinref part="R_100O" gate="G$1" pin="1"/>
 <wire x1="35.052" y1="59.182" x2="42.672" y2="59.182" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="4017BE" gate="A" pin="ENA"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="-81.28" y1="99.06" x2="-116.84" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -2958,13 +2953,6 @@ temperature compensated, 6,2 V</description>
 <pinref part="OUTPUTS" gate="A" pin="4"/>
 <wire x1="20.32" y1="106.68" x2="43.18" y2="106.68" width="0.1524" layer="91"/>
 <label x="35.56" y="106.68" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="R_1K" gate="G$1" pin="2"/>
-<pinref part="4017BE" gate="A" pin="RES"/>
-<wire x1="-96.52" y1="93.98" x2="-81.28" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -3033,13 +3021,6 @@ temperature compensated, 6,2 V</description>
 <pinref part="U$1" gate="G$1" pin="G"/>
 <wire x1="58.42" y1="71.12" x2="43.18" y2="71.12" width="0.1524" layer="91"/>
 <label x="38.608" y="70.104" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SEG_DP" class="0">
-<segment>
-<pinref part="4017BE" gate="A" pin="Q8"/>
-<wire x1="-60.96" y1="101.6" x2="-50.8" y2="101.6" width="0.1524" layer="91"/>
-<label x="-58.42" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SEG_DA" class="0">
@@ -3177,8 +3158,8 @@ temperature compensated, 6,2 V</description>
 <net name="P_5" class="0">
 <segment>
 <pinref part="4017BE" gate="A" pin="Q5"/>
-<wire x1="-60.96" y1="109.22" x2="-35.56" y2="111.76" width="0.1524" layer="91"/>
 <label x="-35.56" y="111.76" size="1.778" layer="95"/>
+<wire x1="-60.96" y1="109.22" x2="-35.56" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="D_5__SEG_DF" gate="1" pin="A"/>
@@ -3214,11 +3195,16 @@ temperature compensated, 6,2 V</description>
 <label x="-45.72" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="P_6" class="0">
+<net name="RESET" class="0">
+<segment>
+<pinref part="4017BE" gate="A" pin="RES"/>
+<wire x1="-81.28" y1="93.98" x2="-99.06" y2="93.98" width="0.1524" layer="91"/>
+<label x="-99.06" y="93.98" size="1.778" layer="95"/>
+</segment>
 <segment>
 <pinref part="4017BE" gate="A" pin="Q6"/>
 <wire x1="-60.96" y1="106.68" x2="-45.72" y2="106.68" width="0.1524" layer="91"/>
-<label x="-50.8" y="106.68" size="1.778" layer="95"/>
+<label x="-48.26" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
