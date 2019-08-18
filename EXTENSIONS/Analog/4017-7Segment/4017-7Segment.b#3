@@ -148,13 +148,13 @@
 <text x="42.915896875" y="17.085215625" size="1.016" layer="25" rot="R90" align="center">OUT</text>
 <text x="40.231240625" y="16.915896875" size="1.016" layer="25" rot="R90" align="center">VCC</text>
 <text x="46.12385" y="17.0852125" size="1.016" layer="25" rot="R180" align="center">OUT_R</text>
-<text x="75" y="23.4" size="1.016" layer="25" rot="R180">GND</text>
-<text x="75" y="20.7" size="1.016" layer="25" rot="R180">VCC</text>
-<text x="75" y="18.2" size="1.016" layer="25" rot="R180">OUT</text>
-<text x="75" y="15.7" size="1.016" layer="25" rot="R180">OUT_R</text>
+<text x="73.5" y="22.9" size="1.016" layer="25" rot="R180">GND</text>
+<text x="73.5" y="20.2" size="1.016" layer="25" rot="R180">VCC</text>
+<text x="73.5" y="17.7" size="1.016" layer="25" rot="R180">OUT</text>
+<text x="73.5" y="15.2" size="1.016" layer="25" rot="R180">OUT_R</text>
 <text x="25.486884375" y="44.87559375" size="3.81" layer="26" rot="SMR270" align="center">MadeInTheUSB.net</text>
 <text x="59.588240625" y="22.209059375" size="1.27" layer="26" rot="MR0" align="center">PCBv2 - 2019.08</text>
-<text x="16.940365625" y="64.818528125" size="2.1844" layer="25" align="center">Freddy's
+<text x="17.194340625" y="65.919084375" size="2.1844" layer="25" align="center">Freddy's
 7-Segment
 Display 
 Automation</text>
@@ -26395,14 +26395,14 @@ design rules under a new name.</description>
 <element name="JP_CLOCK_IN" library="pinhead" package="1X04" value="" x="41.5" y="14" smashed="yes">
 <attribute name="VALUE" x="36.42" y="10.825" size="1.27" layer="27"/>
 </element>
-<element name="OUTPUTS" library="pinhead" package="1X04" value="" x="77" y="19" smashed="yes" rot="R270">
-<attribute name="NAME" x="68.897559375" y="18.776709375" size="1.4224" layer="25" ratio="10" rot="R270" align="center"/>
-<attribute name="VALUE" x="73.825" y="24.08" size="1.27" layer="27" rot="R270"/>
+<element name="OUTPUTS" library="pinhead" package="1X04" value="" x="75.5" y="18.5" smashed="yes" rot="R270">
+<attribute name="NAME" x="67.397559375" y="18.276709375" size="1.4224" layer="25" ratio="10" rot="R270" align="center"/>
+<attribute name="VALUE" x="72.325" y="23.58" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="4017BE" library="SparkFun-DigitalIC" package="DIL16" value="CD4017" x="11.858496875" y="26.877975" smashed="yes" rot="R270">
-<attribute name="PROD_ID" value="IC-11929" x="11.858496875" y="26.877975" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="10.937496875" y="24.418975" size="1.27" layer="25" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="11.223496875" y="34.370975" size="1.27" layer="27" ratio="10" rot="R270"/>
+<element name="4017BE" library="SparkFun-DigitalIC" package="DIL16" value="CD4017" x="12.112471875" y="29.24840625" smashed="yes" rot="R270">
+<attribute name="PROD_ID" value="IC-11929" x="12.112471875" y="29.24840625" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="11.191471875" y="26.78940625" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="11.477471875" y="36.74140625" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="U$1" library="SparkFun-Displays" package="7-SEGMENT-DISPLAY" value="7-SEGMENT-DISPLAYPTH" x="40.110496875" y="67.34658125" smashed="yes"/>
 <element name="R_100O" library="adafruit" package="R1206" value="" x="12.74999375" y="50.114475" smashed="yes" rot="R90">
@@ -26469,29 +26469,29 @@ design rules under a new name.</description>
 <contactref element="4017BE" pad="8"/>
 <contactref element="R_100O" pad="1"/>
 <contactref element="4017BE" pad="13"/>
-<wire x1="37.69" y1="14" x2="77" y2="22.81" width="0" layer="19" extent="1-1"/>
-<wire x1="15.668496875" y1="28.147975" x2="37.69" y2="14" width="0" layer="19" extent="1-1"/>
-<wire x1="8.048496875" y1="17.987975" x2="15.668496875" y2="28.147975" width="0" layer="19" extent="1-1"/>
-<wire x1="12.74999375" y1="48.692475" x2="15.668496875" y2="28.147975" width="0" layer="19" extent="1-1"/>
+<wire x1="37.69" y1="14" x2="75.5" y2="22.31" width="0" layer="19" extent="1-1"/>
+<wire x1="15.922471875" y1="30.51840625" x2="37.69" y2="14" width="0" layer="19" extent="1-1"/>
+<wire x1="8.302471875" y1="20.35840625" x2="15.922471875" y2="30.51840625" width="0" layer="19" extent="1-1"/>
+<wire x1="12.74999375" y1="48.692475" x2="15.922471875" y2="30.51840625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="JP_CLOCK_IN" pad="2"/>
 <contactref element="OUTPUTS" pad="2"/>
 <contactref element="4017BE" pad="16"/>
-<wire x1="40.23" y1="14" x2="77" y2="20.27" width="0" layer="19" extent="1-1"/>
-<wire x1="15.668496875" y1="35.767975" x2="40.23" y2="14" width="0" layer="19" extent="1-1"/>
+<wire x1="40.23" y1="14" x2="75.5" y2="19.77" width="0" layer="19" extent="1-1"/>
+<wire x1="15.922471875" y1="38.13840625" x2="40.23" y2="14" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TMR555_OUTPUT">
 <contactref element="JP_CLOCK_IN" pad="3"/>
 <contactref element="OUTPUTS" pad="3"/>
 <contactref element="4017BE" pad="14"/>
-<wire x1="42.77" y1="14" x2="77" y2="17.73" width="0" layer="19" extent="1-1"/>
-<wire x1="15.668496875" y1="30.687975" x2="42.77" y2="14" width="0" layer="19" extent="1-1"/>
+<wire x1="42.77" y1="14" x2="75.5" y2="17.23" width="0" layer="19" extent="1-1"/>
+<wire x1="15.922471875" y1="33.05840625" x2="42.77" y2="14" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TMR555_OUTPUT_REVERSE">
 <contactref element="JP_CLOCK_IN" pad="4"/>
 <contactref element="OUTPUTS" pad="4"/>
-<wire x1="45.31" y1="14" x2="77" y2="15.19" width="0" layer="19" extent="1-1"/>
+<wire x1="45.31" y1="14" x2="75.5" y2="14.69" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R_100O" pad="2"/>
@@ -26503,21 +26503,21 @@ design rules under a new name.</description>
 <contactref element="D_3__SEG_DD" pad="A"/>
 <contactref element="D_3__SEG_DC" pad="A"/>
 <wire x1="72.08" y1="47" x2="72.08" y2="50.5" width="0" layer="19" extent="1-1"/>
-<wire x1="8.048496875" y1="20.527975" x2="72.08" y2="47" width="0" layer="19" extent="1-1"/>
+<wire x1="8.302471875" y1="22.89840625" x2="72.08" y2="47" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="P_4">
 <contactref element="4017BE" pad="10"/>
 <contactref element="D_4__SEG_DE" pad="A"/>
 <contactref element="D_4__SEG_DD" pad="A"/>
 <wire x1="72.08" y1="40" x2="72.08" y2="43.5" width="0" layer="19" extent="1-1"/>
-<wire x1="15.668496875" y1="20.527975" x2="72.08" y2="40" width="0" layer="19" extent="1-1"/>
+<wire x1="15.922471875" y1="22.89840625" x2="72.08" y2="40" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="P_0">
 <contactref element="D_0__SEG_DF" pad="A"/>
 <contactref element="D_0__SEG_DA" pad="A"/>
 <contactref element="4017BE" pad="3"/>
 <wire x1="72.08" y1="68" x2="72.08" y2="71.5" width="0" layer="19" extent="1-1"/>
-<wire x1="8.048496875" y1="30.687975" x2="72.08" y2="68" width="0" layer="19" extent="1-1"/>
+<wire x1="8.302471875" y1="33.05840625" x2="72.08" y2="68" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_DG">
 <contactref element="U$1" pad="10"/>
@@ -26574,7 +26574,7 @@ design rules under a new name.</description>
 <contactref element="D_2__SEG_DC" pad="A"/>
 <contactref element="D_2__SEG_DB" pad="A"/>
 <wire x1="72.08" y1="54" x2="72.08" y2="57.5" width="0" layer="19" extent="1-1"/>
-<wire x1="8.048496875" y1="28.147975" x2="72.08" y2="54" width="0" layer="19" extent="1-1"/>
+<wire x1="8.302471875" y1="30.51840625" x2="72.08" y2="54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="P_5">
 <contactref element="4017BE" pad="1"/>
@@ -26583,19 +26583,19 @@ design rules under a new name.</description>
 <contactref element="D_5__SEG_DDP" pad="A"/>
 <wire x1="72.08" y1="33" x2="72.08" y2="36.5" width="0" layer="19" extent="1-1"/>
 <wire x1="72.08" y1="29.5" x2="72.08" y2="33" width="0" layer="19" extent="1-1"/>
-<wire x1="8.048496875" y1="35.767975" x2="72.08" y2="33" width="0" layer="19" extent="1-1"/>
+<wire x1="8.302471875" y1="38.13840625" x2="72.08" y2="33" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="P_1">
 <contactref element="D_1__SEG_DB" pad="A"/>
 <contactref element="D_1__SEG_DA" pad="A"/>
 <contactref element="4017BE" pad="2"/>
 <wire x1="72.08" y1="61" x2="72.08" y2="64.5" width="0" layer="19" extent="1-1"/>
-<wire x1="8.048496875" y1="33.227975" x2="72.08" y2="61" width="0" layer="19" extent="1-1"/>
+<wire x1="8.302471875" y1="35.59840625" x2="72.08" y2="61" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RESET">
 <contactref element="4017BE" pad="15"/>
 <contactref element="4017BE" pad="5"/>
-<wire x1="8.048496875" y1="25.607975" x2="15.668496875" y2="33.227975" width="0" layer="19" extent="1-1"/>
+<wire x1="8.302471875" y1="27.97840625" x2="15.922471875" y2="35.59840625" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
