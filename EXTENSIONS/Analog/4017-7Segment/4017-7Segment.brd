@@ -155,7 +155,7 @@
 <text x="25.486884375" y="44.87559375" size="3.81" layer="26" rot="SMR270" align="center">MadeInTheUSB.net</text>
 <text x="59.588240625" y="22.209059375" size="1.27" layer="26" rot="MR0" align="center">PCBv2 - 2019.08</text>
 <text x="17.194340625" y="65.919084375" size="2.1844" layer="25" align="center">Freddy's
-7 Segment
+7-Segment
 Display 
 Automation</text>
 <rectangle x1="29.13918125" y1="18.95758125" x2="29.223" y2="19.04241875" layer="25"/>
@@ -25979,6 +25979,10 @@ Automation</text>
 <rectangle x1="40.06118125" y1="57.90441875" x2="40.145" y2="57.989" layer="25"/>
 <rectangle x1="40.22881875" y1="57.90441875" x2="40.31518125" y2="57.989" layer="25"/>
 <rectangle x1="40.48281875" y1="57.90441875" x2="40.56918125" y2="57.989" layer="25"/>
+<text x="17.3482" y="66.1162" size="2.1844" layer="25" align="center">Freddy's
+7-Segment
+Display 
+Automation</text>
 </plain>
 <libraries>
 <library name="adafruit">
