@@ -144,10 +144,10 @@
 <wire x1="39" y1="12" x2="39" y2="83" width="0" layer="20"/>
 <wire x1="39" y1="83" x2="2" y2="83" width="0" layer="20"/>
 <wire x1="2" y1="83" x2="2" y2="12" width="0" layer="20"/>
-<text x="16.5" y="16" size="0.8128" layer="25" rot="R90">GND</text>
-<text x="21.4" y="15.9" size="0.8128" layer="25" rot="R90">OUT</text>
-<text x="18.8" y="15.9" size="0.8128" layer="25" rot="R90">VCC</text>
-<text x="23" y="16" size="0.8128" layer="25">OUT_R</text>
+<text x="15" y="15.9" size="0.8128" layer="25">GND</text>
+<text x="20.4" y="15.9" size="0.8128" layer="25">OUT</text>
+<text x="17.8" y="15.9" size="0.8128" layer="25">VCC</text>
+<text x="23.1" y="15.9" size="0.8128" layer="25">OUT_R</text>
 <text x="34.5" y="22.9" size="0.8128" layer="25" rot="R180">GND</text>
 <text x="34.5" y="20.2" size="0.8128" layer="25" rot="R180">VCC</text>
 <text x="34.5" y="17.7" size="0.8128" layer="25" rot="R180">OUT</text>

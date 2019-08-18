@@ -18,8 +18,8 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -144,16 +144,16 @@
 <wire x1="39" y1="12" x2="39" y2="83" width="0" layer="20"/>
 <wire x1="39" y1="83" x2="2" y2="83" width="0" layer="20"/>
 <wire x1="2" y1="83" x2="2" y2="12" width="0" layer="20"/>
-<text x="16.5" y="16" size="0.8128" layer="25" rot="R90">GND</text>
-<text x="21.4" y="15.9" size="0.8128" layer="25" rot="R90">OUT</text>
-<text x="18.8" y="15.9" size="0.8128" layer="25" rot="R90">VCC</text>
-<text x="23" y="16" size="0.8128" layer="25">OUT_R</text>
+<text x="12" y="15.9" size="0.8128" layer="25">GND</text>
+<text x="17.4" y="15.9" size="0.8128" layer="25">OUT</text>
+<text x="14.8" y="15.9" size="0.8128" layer="25">VCC</text>
+<text x="20.1" y="15.9" size="0.8128" layer="25">OUT_R</text>
 <text x="34.5" y="22.9" size="0.8128" layer="25" rot="R180">GND</text>
 <text x="34.5" y="20.2" size="0.8128" layer="25" rot="R180">VCC</text>
 <text x="34.5" y="17.7" size="0.8128" layer="25" rot="R180">OUT</text>
 <text x="34.5" y="15.2" size="0.8128" layer="25" rot="R180">OUT_R</text>
 <text x="35" y="53.5" size="3.81" layer="26" rot="SMR270" align="center">MadeInTheUSB.net</text>
-<text x="19.5" y="17" size="1.27" layer="26" rot="MR0" align="center">PCBv1 - 2019.08</text>
+<text x="26.5" y="17" size="1.27" layer="26" rot="MR0" align="center">PCBv1 - 2019.08</text>
 <text x="35.5" y="43.4" size="2.25" layer="25" rot="R270" align="center">0 To 99 Counter</text>
 </plain>
 <libraries>
@@ -567,8 +567,8 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="JP_CLOCK_IN" library="pinhead" package="1X04" value="" x="20" y="14" smashed="yes">
-<attribute name="VALUE" x="14.92" y="10.825" size="1.27" layer="27"/>
+<element name="JP_CLOCK_IN" library="pinhead" package="1X04" value="" x="17" y="14" smashed="yes">
+<attribute name="VALUE" x="11.92" y="10.825" size="1.27" layer="27"/>
 </element>
 <element name="OUTPUTS" library="pinhead" package="1X04" value="" x="36.5" y="18.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="29.8288" y="18.7" size="1.27" layer="25" ratio="10" rot="R270" align="center"/>
@@ -630,8 +630,8 @@ design rules under a new name.</description>
 <wire x1="19.19" y1="30.04" x2="19.19" y2="22.42" width="0" layer="19" extent="1-1"/>
 <wire x1="19.19" y1="32.58" x2="19.19" y2="30.04" width="0" layer="19" extent="1-1"/>
 <wire x1="19.19" y1="40.61" x2="19.19" y2="32.58" width="0" layer="19" extent="1-1"/>
-<wire x1="16.19" y1="14" x2="19.19" y2="19.88" width="0" layer="19" extent="1-1"/>
-<wire x1="6.19" y1="40.61" x2="16.19" y2="14" width="0" layer="19" extent="1-1"/>
+<wire x1="13.19" y1="14" x2="19.19" y2="19.88" width="0" layer="19" extent="1-1"/>
+<wire x1="6.19" y1="40.61" x2="13.19" y2="14" width="0" layer="19" extent="1-1"/>
 <wire x1="13.81" y1="24.96" x2="6.19" y2="40.61" width="0" layer="19" extent="1-1"/>
 <wire x1="6.19" y1="22.42" x2="13.81" y2="24.96" width="0" layer="19" extent="1-1"/>
 <wire x1="6.19" y1="19.88" x2="6.19" y2="22.42" width="0" layer="19" extent="1-1"/>
@@ -660,8 +660,8 @@ design rules under a new name.</description>
 <wire x1="19.19" y1="48.23" x2="19.19" y2="50.77" width="0" layer="19" extent="1-1"/>
 <wire x1="19.19" y1="24.96" x2="19.19" y2="48.23" width="0" layer="19" extent="1-1"/>
 <wire x1="36.5" y1="19.77" x2="19.19" y2="24.96" width="0" layer="19" extent="1-1"/>
-<wire x1="18.73" y1="14" x2="19.19" y2="24.96" width="0" layer="19" extent="1-1"/>
-<wire x1="6.19" y1="48.23" x2="18.73" y2="14" width="0" layer="19" extent="1-1"/>
+<wire x1="15.73" y1="14" x2="19.19" y2="24.96" width="0" layer="19" extent="1-1"/>
+<wire x1="6.19" y1="48.23" x2="15.73" y2="14" width="0" layer="19" extent="1-1"/>
 <wire x1="6.19" y1="50.77" x2="6.19" y2="48.23" width="0" layer="19" extent="1-1"/>
 <wire x1="6.19" y1="53.31" x2="6.19" y2="50.77" width="0" layer="19" extent="1-1"/>
 <wire x1="13.81" y1="58.39" x2="6.19" y2="53.31" width="0" layer="19" extent="1-1"/>
@@ -673,12 +673,12 @@ design rules under a new name.</description>
 <contactref element="OUTPUTS" pad="3"/>
 <contactref element="SN74LS90N_0" pad="14"/>
 <wire x1="26.81" y1="35.12" x2="36.5" y2="17.23" width="0" layer="19" extent="1-1"/>
-<wire x1="21.27" y1="14" x2="26.81" y2="35.12" width="0" layer="19" extent="1-1"/>
+<wire x1="18.27" y1="14" x2="26.81" y2="35.12" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TMR555_OUTPUT_REVERSE">
 <contactref element="JP_CLOCK_IN" pad="4"/>
 <contactref element="OUTPUTS" pad="4"/>
-<wire x1="23.81" y1="14" x2="36.5" y2="14.69" width="0" layer="19" extent="1-1"/>
+<wire x1="20.81" y1="14" x2="36.5" y2="14.69" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_1_DA">
 <contactref element="74LS47N_0" pad="13"/>
