@@ -18,8 +18,8 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -136,23 +136,20 @@
 </layers>
 <board>
 <plain>
-<wire x1="2" y1="12" x2="50" y2="12" width="0" layer="20"/>
-<wire x1="50" y1="12" x2="50" y2="50" width="0" layer="20"/>
-<wire x1="50" y1="50" x2="2" y2="50" width="0" layer="20"/>
-<wire x1="2" y1="50" x2="2" y2="12" width="0" layer="20"/>
-<text x="26" y="22.7" size="2.1844" layer="26" rot="SMR0" align="center">MadeInTheUSB.net</text>
-<text x="26" y="44.5" size="1.016" layer="26" rot="MR0" align="center">PCBv2 - 2017.08</text>
-<text x="21.2" y="45.2" size="0.8128" layer="25">GND</text>
-<text x="26.7" y="45.2" size="0.8128" layer="25">OUT</text>
-<text x="19" y="17.5" size="0.8128" layer="25">GND</text>
-<text x="23.9" y="45.2" size="0.8128" layer="25">VCC</text>
-<text x="29.5" y="45.2" size="0.8128" layer="25">OUT_R</text>
-<text x="47.5" y="36" size="1.9304" layer="25" rot="R270" align="center">CLOCK MODULE</text>
-<text x="11" y="44.5" size="1.016" layer="25">+</text>
-<text x="22.5" y="35.7" size="1.016" layer="25">+</text>
-<text x="29.5" y="35.7" size="1.016" layer="25">+</text>
-<text x="10.5" y="19.5" size="1.016" layer="25">+</text>
-<text x="42.5" y="21" size="0.8128" layer="25">SN3906</text>
+<wire x1="2" y1="12" x2="30" y2="12" width="0" layer="20"/>
+<wire x1="30" y1="12" x2="30" y2="60" width="0" layer="20"/>
+<wire x1="30" y1="60" x2="2" y2="60" width="0" layer="20"/>
+<wire x1="2" y1="60" x2="2" y2="12" width="0" layer="20"/>
+<text x="26" y="34.7" size="2.1844" layer="26" rot="SMR270" align="center">MadeInTheUSB.net</text>
+<text x="16" y="49.5" size="1.016" layer="26" rot="MR0" align="center">PCBv3 - 2019.08</text>
+<text x="11.7" y="53.2" size="1.016" layer="25" rot="R90">GND</text>
+<text x="17.2" y="53.2" size="1.016" layer="25" rot="R90">OUT</text>
+<text x="7.5" y="17" size="1.016" layer="25">GND</text>
+<text x="14.4" y="53.2" size="1.016" layer="25" rot="R90">VCC</text>
+<text x="19.5" y="53.7" size="1.016" layer="25" rot="R270" align="center">OUT_R</text>
+<text x="16" y="49.5" size="1.6764" layer="25" align="center">CLOCK MODULE</text>
+<text x="6.5" y="44" size="1.27" layer="25">+</text>
+<text x="23.5" y="45.2" size="1.27" layer="25">+</text>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -336,32 +333,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pad name="3" x="2.54" y="-2.54" drill="1" diameter="1.8796" rot="R180"/>
 <text x="3.175" y="1.27" size="0.6096" layer="25">&gt;Name</text>
 <text x="3.175" y="0" size="0.6096" layer="27">&gt;Value</text>
-</package>
-</packages>
-</library>
-<library name="transistor-pnp">
-<description>&lt;b&gt;PNP Transistors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="TO92">
-<description>&lt;b&gt;TO-92&lt;/b&gt;</description>
-<wire x1="-2.0946" y1="-1.651" x2="-0.7863" y2="2.5485" width="0.1524" layer="21" curve="-111.099"/>
-<wire x1="0.7868" y1="2.5484" x2="2.095" y2="-1.651" width="0.1524" layer="21" curve="-111.1"/>
-<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.1524" layer="21"/>
-<wire x1="-2.254" y1="-0.254" x2="-0.286" y2="-0.254" width="0.1524" layer="51"/>
-<wire x1="-2.655" y1="-0.254" x2="-2.254" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="-0.286" y1="-0.254" x2="0.286" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="2.254" y1="-0.254" x2="2.655" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="0.286" y1="-0.254" x2="2.254" y2="-0.254" width="0.1524" layer="51"/>
-<wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.1524" layer="51" curve="-34.2936"/>
-<pad name="1" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="0" y="1.905" drill="0.8128" shape="octagon"/>
-<pad name="3" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="1.143" y="0" size="1.27" layer="51" ratio="10">1</text>
-<text x="-0.635" y="0.635" size="1.27" layer="51" ratio="10">2</text>
-<text x="-2.159" y="0" size="1.27" layer="51" ratio="10">3</text>
 </package>
 </packages>
 </library>
@@ -554,47 +525,33 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="C1_33UF" library="adafruit" package="C025-030X050" value="" x="7.5" y="43.5" smashed="yes">
-<attribute name="NAME" x="5.2" y="45.3" size="0.8128" layer="25" ratio="10"/>
-<attribute name="VALUE" x="5.214" y="40.452" size="1.27" layer="27" ratio="10"/>
+<element name="C1_33UF" library="adafruit" package="C025-030X050" value="" x="11" y="44" smashed="yes" rot="R180">
+<attribute name="NAME" x="13.3" y="42.2" size="1.016" layer="25" ratio="10" rot="R180" align="center"/>
+<attribute name="VALUE" x="13.286" y="47.048" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
-<element name="X1" library="adafruit" package="MOLEX_480371000" value="USB-A" x="27" y="14.7" smashed="yes">
-<attribute name="VALUE" x="25.46" y="11.35" size="1.016" layer="27" font="vector"/>
+<element name="X1" library="adafruit" package="MOLEX_480371000" value="USB-A" x="16" y="14.4" smashed="yes">
+<attribute name="VALUE" x="14.46" y="11.05" size="1.016" layer="27" font="vector"/>
 </element>
-<element name="T555_CLOCK" library="linear" package="DIL08" value="NE555N" x="10.5" y="31.5" smashed="yes" rot="R270">
-<attribute name="VALUE" x="9.865" y="35.056" size="1.27" layer="27" ratio="10" rot="R270"/>
+<element name="T555_CLOCK" library="linear" package="DIL08" value="NE555N" x="9.5" y="33.5" smashed="yes" rot="R270">
+<attribute name="VALUE" x="8.865" y="37.056" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="JP1" library="pinhead" package="1X04" value="" x="26.5" y="47.8" smashed="yes">
-<attribute name="VALUE" x="21.42" y="44.625" size="1.27" layer="27"/>
+<element name="JP1" library="pinhead" package="1X04" value="" x="15.5" y="58" smashed="yes">
+<attribute name="VALUE" x="10.42" y="54.825" size="1.27" layer="27"/>
 </element>
-<element name="R_1.2K_1" library="adafruit" package="R1206" value="" x="30" y="26.5" smashed="yes">
-<attribute name="NAME" x="27.5" y="27.643" size="0.8128" layer="25"/>
-<attribute name="VALUE" x="28.603" y="24.087" size="1.27" layer="27"/>
+<element name="R_1.2K_1" library="adafruit" package="R1206" value="" x="25.5" y="29" smashed="yes" rot="R90">
+<attribute name="NAME" x="24.357" y="26.5" size="1.016" layer="25" rot="R90"/>
+<attribute name="VALUE" x="27.913" y="27.603" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="C2_100MF" library="adafruit" package="C025-030X050" value="" x="7.5" y="19" smashed="yes">
-<attribute name="NAME" x="4.3" y="16.3" size="0.8128" layer="25" ratio="10"/>
-<attribute name="VALUE" x="5.214" y="15.952" size="1.27" layer="27" ratio="10"/>
+<element name="R2_POT_10K" library="SparkFun-Electromechanical" package="TRIM_POT_PTH" value="" x="16" y="23" smashed="yes" rot="R180">
+<attribute name="NAME" x="16.5" y="27.3" size="1.016" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="12.825" y="23" size="0.6096" layer="27" rot="R180"/>
 </element>
-<element name="R2_POT_10K" library="SparkFun-Electromechanical" package="TRIM_POT_PTH" value="" x="41" y="37" smashed="yes" rot="R270">
-<attribute name="NAME" x="36.7" y="39.5" size="0.6096" layer="25" rot="R270"/>
-<attribute name="VALUE" x="41" y="33.825" size="0.6096" layer="27" rot="R270"/>
+<element name="LED_OUTPUT" library="adafruit" package="1206" value="" x="21.2" y="43" smashed="yes" rot="R270">
+<attribute name="VALUE" x="18.66" y="44.27" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="Q1" library="transistor-pnp" package="TO92" value="2N3906" x="44.5" y="18.5" smashed="yes" rot="R180">
-<attribute name="VALUE" x="45.825" y="21.27" size="0.6096" layer="27" ratio="10" rot="R180"/>
-</element>
-<element name="LED_OUTPUT_REVERSE" library="adafruit" package="1206" value="" x="29.8" y="39" smashed="yes" rot="R90">
-<attribute name="VALUE" x="32.34" y="37.73" size="1.27" layer="27" rot="R90"/>
-</element>
-<element name="LED_OUTPUT" library="adafruit" package="1206" value="" x="23.2" y="39" smashed="yes" rot="R90">
-<attribute name="VALUE" x="25.74" y="37.73" size="1.27" layer="27" rot="R90"/>
-</element>
-<element name="R_1K_3" library="adafruit" package="R1206" value="" x="21" y="26.5" smashed="yes">
-<attribute name="NAME" x="18.603" y="27.643" size="0.6096" layer="25"/>
-<attribute name="VALUE" x="19.603" y="24.087" size="1.27" layer="27"/>
-</element>
-<element name="R_1K_2" library="adafruit" package="R1206" value="" x="40" y="26.5" smashed="yes" rot="R180">
-<attribute name="NAME" x="41" y="28.357" size="0.6096" layer="25" rot="R180"/>
-<attribute name="VALUE" x="41.397" y="28.913" size="1.27" layer="27" rot="R180"/>
+<element name="R_1K_3" library="adafruit" package="R1206" value="" x="25.5" y="37" smashed="yes" rot="R90">
+<attribute name="NAME" x="24.357" y="34.603" size="1.016" layer="25" rot="R90"/>
+<attribute name="VALUE" x="27.913" y="35.603" size="1.27" layer="27" rot="R90"/>
 </element>
 </elements>
 <signals>
@@ -603,70 +560,53 @@ design rules under a new name.</description>
 <contactref element="T555_CLOCK" pad="1"/>
 <contactref element="C1_33UF" pad="1"/>
 <contactref element="JP1" pad="1"/>
-<contactref element="C2_100MF" pad="1"/>
 <contactref element="R_1K_3" pad="1"/>
-<wire x1="6.69" y1="35.31" x2="22.69" y2="47.8" width="0" layer="19" extent="1-1"/>
-<wire x1="6.23" y1="43.5" x2="6.69" y2="35.31" width="0" layer="19" extent="1-1"/>
-<wire x1="6.23" y1="19" x2="6.23" y2="43.5" width="0" layer="19" extent="1-1"/>
-<wire x1="19.578" y1="26.5" x2="6.23" y2="43.5" width="0" layer="19" extent="1-1"/>
-<wire x1="23.5" y1="17.3" x2="19.578" y2="26.5" width="0" layer="19" extent="1-1"/>
+<wire x1="12.27" y1="44" x2="11.69" y2="58" width="0" layer="19" extent="1-1"/>
+<wire x1="5.69" y1="37.31" x2="12.27" y2="44" width="0" layer="19" extent="1-1"/>
+<wire x1="25.5" y1="35.578" x2="12.27" y2="44" width="0" layer="19" extent="1-1"/>
+<wire x1="12.5" y1="17" x2="25.5" y2="35.578" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="X1" pad="1"/>
 <contactref element="T555_CLOCK" pad="8"/>
 <contactref element="T555_CLOCK" pad="4"/>
 <contactref element="JP1" pad="2"/>
-<contactref element="C2_100MF" pad="2"/>
-<contactref element="LED_OUTPUT_REVERSE" pad="A"/>
 <contactref element="R_1.2K_1" pad="2"/>
-<wire x1="29.8" y1="37.578" x2="25.23" y2="47.8" width="0" layer="19" extent="1-1"/>
-<wire x1="14.31" y1="35.31" x2="25.23" y2="47.8" width="0" layer="19" extent="1-1"/>
-<wire x1="31.422" y1="26.5" x2="29.8" y2="37.578" width="0" layer="19" extent="1-1"/>
-<wire x1="30.5" y1="17.3" x2="31.422" y2="26.5" width="0" layer="19" extent="1-1"/>
-<wire x1="6.69" y1="27.69" x2="14.31" y2="35.31" width="0" layer="19" extent="1-1"/>
-<wire x1="8.77" y1="19" x2="6.69" y2="27.69" width="0" layer="19" extent="1-1"/>
+<wire x1="13.31" y1="37.31" x2="14.23" y2="58" width="0" layer="19" extent="1-1"/>
+<wire x1="5.69" y1="29.69" x2="13.31" y2="37.31" width="0" layer="19" extent="1-1"/>
+<wire x1="25.5" y1="30.422" x2="13.31" y2="37.31" width="0" layer="19" extent="1-1"/>
+<wire x1="19.5" y1="17" x2="25.5" y2="30.422" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="T555_CLOCK" pad="7"/>
 <contactref element="R_1.2K_1" pad="1"/>
 <contactref element="R2_POT_10K" pad="3"/>
-<wire x1="28.578" y1="26.5" x2="38.46" y2="34.46" width="0" layer="19" extent="1-1"/>
-<wire x1="14.31" y1="32.77" x2="28.578" y2="26.5" width="0" layer="19" extent="1-1"/>
+<wire x1="13.46" y1="25.54" x2="25.5" y2="27.578" width="0" layer="19" extent="1-1"/>
+<wire x1="13.31" y1="34.77" x2="13.46" y2="25.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="THRESHOLD">
 <contactref element="T555_CLOCK" pad="6"/>
 <contactref element="T555_CLOCK" pad="2"/>
 <contactref element="C1_33UF" pad="2"/>
 <contactref element="R2_POT_10K" pad="2"/>
-<wire x1="14.31" y1="30.23" x2="43.54" y2="37" width="0" layer="19" extent="1-1"/>
-<wire x1="6.69" y1="32.77" x2="14.31" y2="30.23" width="0" layer="19" extent="1-1"/>
-<wire x1="8.77" y1="43.5" x2="14.31" y2="30.23" width="0" layer="19" extent="1-1"/>
+<wire x1="5.69" y1="34.77" x2="9.73" y2="44" width="0" layer="19" extent="1-1"/>
+<wire x1="13.31" y1="32.23" x2="5.69" y2="34.77" width="0" layer="19" extent="1-1"/>
+<wire x1="16" y1="20.46" x2="13.31" y2="32.23" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TMR555_OUTPUT">
 <contactref element="T555_CLOCK" pad="3"/>
 <contactref element="JP1" pad="3"/>
 <contactref element="LED_OUTPUT" pad="A"/>
-<contactref element="Q1" pad="2"/>
-<wire x1="23.2" y1="37.578" x2="27.77" y2="47.8" width="0" layer="19" extent="1-1"/>
-<wire x1="6.69" y1="30.23" x2="23.2" y2="37.578" width="0" layer="19" extent="1-1"/>
-<wire x1="44.5" y1="16.595" x2="23.2" y2="37.578" width="0" layer="19" extent="1-1"/>
+<wire x1="21.2" y1="44.422" x2="16.77" y2="58" width="0" layer="19" extent="1-1"/>
+<wire x1="5.69" y1="32.23" x2="21.2" y2="44.422" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="LED_OUTPUT" pad="C"/>
 <contactref element="R_1K_3" pad="2"/>
-<wire x1="22.422" y1="26.5" x2="23.2" y2="40.422" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$6">
-<contactref element="R_1K_2" pad="2"/>
-<contactref element="LED_OUTPUT_REVERSE" pad="C"/>
-<wire x1="29.8" y1="40.422" x2="38.578" y2="26.5" width="0" layer="19" extent="1-1"/>
+<wire x1="25.5" y1="38.422" x2="21.2" y2="41.578" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TMR555_OUTPUT_REVERSE">
-<contactref element="Q1" pad="3"/>
-<contactref element="R_1K_2" pad="1"/>
 <contactref element="JP1" pad="4"/>
-<wire x1="41.422" y1="26.5" x2="30.31" y2="47.8" width="0" layer="19" extent="1-1"/>
-<wire x1="45.77" y1="18.5" x2="41.422" y2="26.5" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

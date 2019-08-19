@@ -2,7 +2,10 @@
 # 0 to 10 counter
 - SN74LS90N
 - http://www.ti.com/lit/ds/symlink/sn74ls90.pdf
-- Tutorial: https://www.electronics-tutorials.ws/counter/bcd-counter-circuit.html
+- Tutorial: 
+	https://www.electronics-tutorials.ws/counter/bcd-counter-circuit.html
+	https://www.instructables.com/id/2-Digit-Binary-Counter/
+
 - For 1 clock A cycle increment the ouput, clock B must also be clocked
   every other time, therefore we connect BIT_0(pin 12) to Clock B.
 - Chaining 2 SN74LS90N, bit3(pin 11, QD) is connected to Clock A 
