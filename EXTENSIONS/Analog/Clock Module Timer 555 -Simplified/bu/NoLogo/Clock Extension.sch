@@ -6372,73 +6372,6 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="transistor-pnp">
-<description>&lt;b&gt;PNP Transistors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="TO92">
-<description>&lt;b&gt;TO-92&lt;/b&gt;</description>
-<wire x1="-2.0946" y1="-1.651" x2="-0.7863" y2="2.5485" width="0.1524" layer="21" curve="-111.099"/>
-<wire x1="0.7868" y1="2.5484" x2="2.095" y2="-1.651" width="0.1524" layer="21" curve="-111.1"/>
-<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.1524" layer="21"/>
-<wire x1="-2.254" y1="-0.254" x2="-0.286" y2="-0.254" width="0.1524" layer="51"/>
-<wire x1="-2.655" y1="-0.254" x2="-2.254" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="-0.286" y1="-0.254" x2="0.286" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="2.254" y1="-0.254" x2="2.655" y2="-0.254" width="0.1524" layer="21"/>
-<wire x1="0.286" y1="-0.254" x2="2.254" y2="-0.254" width="0.1524" layer="51"/>
-<wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.1524" layer="51" curve="-34.2936"/>
-<pad name="1" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="0" y="1.905" drill="0.8128" shape="octagon"/>
-<pad name="3" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="1.143" y="0" size="1.27" layer="51" ratio="10">1</text>
-<text x="-0.635" y="0.635" size="1.27" layer="51" ratio="10">2</text>
-<text x="-2.159" y="0" size="1.27" layer="51" ratio="10">3</text>
-</package>
-</packages>
-<symbols>
-<symbol name="PNP">
-<wire x1="2.086" y1="1.678" x2="1.578" y2="2.594" width="0.1524" layer="94"/>
-<wire x1="1.578" y1="2.594" x2="0.516" y2="1.478" width="0.1524" layer="94"/>
-<wire x1="0.516" y1="1.478" x2="2.086" y2="1.678" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="1.808" y2="2.124" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="0.508" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="1.905" y1="1.778" x2="1.524" y2="2.413" width="0.254" layer="94"/>
-<wire x1="1.524" y1="2.413" x2="0.762" y2="1.651" width="0.254" layer="94"/>
-<wire x1="0.762" y1="1.651" x2="1.778" y2="1.778" width="0.254" layer="94"/>
-<wire x1="1.778" y1="1.778" x2="1.524" y2="2.159" width="0.254" layer="94"/>
-<wire x1="1.524" y1="2.159" x2="1.143" y2="1.905" width="0.254" layer="94"/>
-<wire x1="1.143" y1="1.905" x2="1.524" y2="1.905" width="0.254" layer="94"/>
-<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
-<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
-<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="E" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="C" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="2N3906" prefix="Q">
-<description>&lt;b&gt;PNP Transistor&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="PNP" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TO92">
-<connects>
-<connect gate="G$1" pin="B" pad="2"/>
-<connect gate="G$1" pin="C" pad="1"/>
-<connect gate="G$1" pin="E" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6458,15 +6391,10 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="R_1.2K_1" library="adafruit" deviceset="R-US_" device="R1206"/>
-<part name="C2_100MF" library="adafruit" deviceset="C-US" device="025-030X050"/>
-<part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="R2_POT_10K" library="SparkFun-Electromechanical" deviceset="TRIMPOT" device="PTH"/>
-<part name="Q1" library="transistor-pnp" deviceset="2N3906" device=""/>
-<part name="LED_OUTPUT_REVERSE" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="LED_OUTPUT" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="R_1K_3" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="R_1K_2" library="adafruit" deviceset="R-US_" device="R1206"/>
 </parts>
 <sheets>
 <sheet>
@@ -6482,21 +6410,13 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <instance part="JP1" gate="A" x="17.78" y="127" rot="R180"/>
 <instance part="GND5" gate="1" x="45.72" y="121.92" rot="R90"/>
 <instance part="R_1.2K_1" gate="G$1" x="99.06" y="104.14" rot="R90"/>
-<instance part="C2_100MF" gate="G$1" x="21.082" y="72.898" rot="R180"/>
-<instance part="GND6" gate="1" x="21.082" y="62.738"/>
 <instance part="R2_POT_10K" gate="R?" x="111.76" y="83.82" smashed="yes" rot="R90">
 <attribute name="NAME" x="105.1814" y="80.01" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="115.062" y="80.01" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="Q1" gate="G$1" x="58.42" y="33.02"/>
-<instance part="LED_OUTPUT_REVERSE" gate="G$1" x="60.96" y="60.96" smashed="yes">
-<attribute name="NAME" x="67.056" y="48.768" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="66.675" y="56.388" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="LED_OUTPUT" gate="G$1" x="-12.7" y="99.06"/>
 <instance part="R_1K_3" gate="G$1" x="-12.7" y="81.28" rot="R90"/>
 <instance part="GND7" gate="1" x="-12.7" y="68.58"/>
-<instance part="R_1K_2" gate="G$1" x="60.96" y="45.72" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -6522,11 +6442,6 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <pinref part="JP1" gate="A" pin="1"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="20.32" y1="121.92" x2="43.18" y2="121.92" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND6" gate="1" pin="GND"/>
-<pinref part="C2_100MF" gate="G$1" pin="1"/>
-<wire x1="21.082" y1="65.278" x2="21.082" y2="70.358" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R_1K_3" gate="G$1" pin="1"/>
@@ -6556,16 +6471,6 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <pinref part="JP1" gate="A" pin="2"/>
 <wire x1="20.32" y1="124.46" x2="43.18" y2="124.46" width="0.1524" layer="91"/>
 <label x="38.1" y="124.46" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="C2_100MF" gate="G$1" pin="2"/>
-<wire x1="21.082" y1="77.978" x2="21.082" y2="83.058" width="0.1524" layer="91"/>
-<label x="21.082" y="80.518" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="LED_OUTPUT_REVERSE" gate="G$1" pin="A"/>
-<wire x1="60.96" y1="63.5" x2="60.96" y2="78.74" width="0.1524" layer="91"/>
-<label x="60.96" y="68.58" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <wire x1="99.06" y1="119.38" x2="119.38" y2="119.38" width="0.1524" layer="91"/>
@@ -6619,11 +6524,6 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <wire x1="-12.7" y1="101.6" x2="-12.7" y2="114.3" width="0.1524" layer="91"/>
 <label x="-12.7" y="109.22" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="Q1" gate="G$1" pin="B"/>
-<wire x1="55.88" y1="33.02" x2="25.4" y2="33.02" width="0.1524" layer="91"/>
-<label x="30.48" y="33.02" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
@@ -6634,24 +6534,9 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 </net>
 <net name="TMR555_OUTPUT_REVERSE" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="E"/>
-<pinref part="R_1K_2" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="38.1" x2="60.96" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="38.1" x2="81.28" y2="38.1" width="0.1524" layer="91"/>
-<junction x="60.96" y="38.1"/>
-<label x="76.2" y="38.1" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="JP1" gate="A" pin="4"/>
 <wire x1="20.32" y1="129.54" x2="48.26" y2="129.54" width="0.1524" layer="91"/>
 <label x="27.94" y="129.54" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="R_1K_2" gate="G$1" pin="2"/>
-<pinref part="LED_OUTPUT_REVERSE" gate="G$1" pin="C"/>
-<wire x1="60.96" y1="50.8" x2="60.96" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
