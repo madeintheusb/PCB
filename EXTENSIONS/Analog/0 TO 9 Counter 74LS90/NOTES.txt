@@ -6,8 +6,10 @@
 - For 1 clock A cycle increment the ouput, clock B must also be clocked
   every other time, therefore we connect BIT_0(pin 12) to Clock B.
 - Chaining 2 SN74LS90N, bit3(pin 11, QD) is connected to Clock A 
-  of the second SN74LS90N, the Clock A will be clocked for 8 and 9,
-  which will increment the second counter by one. 
+  of the second SN74LS90N, the Clock A will be clocked HIGH for 8 
+  and remain HIGH for 9, then clock low when reseting to 0.
+  Therefore clocking once the clock A on the second SN74LS90N
+
 
 
 # 7 segment manager

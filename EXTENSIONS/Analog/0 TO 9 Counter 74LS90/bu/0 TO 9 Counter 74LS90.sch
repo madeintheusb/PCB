@@ -2880,10 +2880,6 @@ single anode, 13 mm</description>
 <wire x1="-152.4" y1="60.96" x2="-160.02" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-160.02" y1="60.96" x2="-160.02" y2="58.42" width="0.1524" layer="91"/>
 <junction x="-160.02" y="58.42"/>
-<pinref part="SN74LS90N_1" gate="A" pin="CKB"/>
-<wire x1="-152.4" y1="68.58" x2="-160.02" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="-160.02" y1="68.58" x2="-160.02" y2="60.96" width="0.1524" layer="91"/>
-<junction x="-160.02" y="60.96"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -3247,8 +3243,15 @@ single anode, 13 mm</description>
 </segment>
 <segment>
 <pinref part="SN74LS90N_1" gate="A" pin="QA"/>
-<wire x1="-127" y1="71.12" x2="-116.84" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-127" y1="71.12" x2="-121.92" y2="71.12" width="0.1524" layer="91"/>
 <label x="-119.38" y="71.12" size="1.778" layer="95"/>
+<pinref part="SN74LS90N_1" gate="A" pin="CKB"/>
+<wire x1="-121.92" y1="71.12" x2="-116.84" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="68.58" x2="-182.88" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="-182.88" y1="68.58" x2="-182.88" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-182.88" y1="81.28" x2="-121.92" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-121.92" y1="81.28" x2="-121.92" y2="71.12" width="0.1524" layer="91"/>
+<junction x="-121.92" y="71.12"/>
 </segment>
 </net>
 </nets>
