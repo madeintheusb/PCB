@@ -19,7 +19,7 @@
 - 74LS47N (74*47)
 - Active low
 - http://www.ti.com/lit/ds/symlink/sn74ls47.pdf
-- Require 7 segment display common annode (Unique 5v power supply)
+- Require 7 segment display common anode (Unique 5v power supply)
 - Eagle common annode  7SEG-CA package:7SEG-13 VCC + 1K ohm on A
 
 

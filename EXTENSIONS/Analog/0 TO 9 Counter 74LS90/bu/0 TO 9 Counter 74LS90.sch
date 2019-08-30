@@ -2805,8 +2805,8 @@ single anode, 13 mm</description>
 <part name="R_100O_0" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="SN74LS90N_0" library="74xx-us" deviceset="74*90" device="N" technology="LS"/>
 <part name="74LS47N_0" library="74xx-us" deviceset="74*47" device="N" technology="LS"/>
-<part name="DIGIT_0" library="special" deviceset="7SEG-CA" device=""/>
-<part name="DIGIT_1" library="special" deviceset="7SEG-CA" device=""/>
+<part name="DIGIT_0_ANODE" library="special" deviceset="7SEG-CA" device=""/>
+<part name="DIGIT_1_ANODE" library="special" deviceset="7SEG-CA" device=""/>
 <part name="R_100O_1" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="74LS47N_1" library="74xx-us" deviceset="74*47" device="N" technology="LS"/>
 <part name="SN74LS90N_1" library="74xx-us" deviceset="74*90" device="N" technology="LS"/>
@@ -2825,8 +2825,8 @@ single anode, 13 mm</description>
 <instance part="R_100O_0" gate="G$1" x="50.8" y="71.12"/>
 <instance part="SN74LS90N_0" gate="A" x="-50.8" y="101.6"/>
 <instance part="74LS47N_0" gate="G$1" x="-50.8" y="50.8"/>
-<instance part="DIGIT_0" gate="G$1" x="25.4" y="76.2"/>
-<instance part="DIGIT_1" gate="G$1" x="25.4" y="25.4"/>
+<instance part="DIGIT_0_ANODE" gate="G$1" x="25.4" y="76.2"/>
+<instance part="DIGIT_1_ANODE" gate="G$1" x="25.4" y="25.4"/>
 <instance part="R_100O_1" gate="G$1" x="45.72" y="20.32"/>
 <instance part="74LS47N_1" gate="G$1" x="-50.8" y="12.7"/>
 <instance part="SN74LS90N_1" gate="A" x="-139.7" y="63.5"/>
@@ -2966,7 +2966,7 @@ single anode, 13 mm</description>
 <label x="-15.24" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DIGIT_0" gate="G$1" pin="A"/>
+<pinref part="DIGIT_0_ANODE" gate="G$1" pin="A"/>
 <wire x1="17.78" y1="81.28" x2="-5.08" y2="81.28" width="0.1524" layer="91"/>
 <label x="-5.08" y="81.28" size="1.778" layer="95"/>
 </segment>
@@ -2978,7 +2978,7 @@ single anode, 13 mm</description>
 <label x="-30.48" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DIGIT_0" gate="G$1" pin="B"/>
+<pinref part="DIGIT_0_ANODE" gate="G$1" pin="B"/>
 <wire x1="17.78" y1="78.74" x2="7.62" y2="78.74" width="0.1524" layer="91"/>
 <label x="-7.62" y="78.74" size="1.778" layer="95"/>
 </segment>
@@ -2990,7 +2990,7 @@ single anode, 13 mm</description>
 <label x="-10.16" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DIGIT_0" gate="G$1" pin="C"/>
+<pinref part="DIGIT_0_ANODE" gate="G$1" pin="C"/>
 <wire x1="17.78" y1="76.2" x2="-5.08" y2="76.2" width="0.1524" layer="91"/>
 <label x="-2.54" y="76.2" size="1.778" layer="95"/>
 </segment>
@@ -3002,7 +3002,7 @@ single anode, 13 mm</description>
 <label x="-27.94" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DIGIT_0" gate="G$1" pin="D"/>
+<pinref part="DIGIT_0_ANODE" gate="G$1" pin="D"/>
 <wire x1="17.78" y1="73.66" x2="5.08" y2="73.66" width="0.1524" layer="91"/>
 <label x="5.08" y="73.66" size="1.778" layer="95"/>
 </segment>
@@ -3014,7 +3014,7 @@ single anode, 13 mm</description>
 <label x="-12.7" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DIGIT_0" gate="G$1" pin="E"/>
+<pinref part="DIGIT_0_ANODE" gate="G$1" pin="E"/>
 <wire x1="17.78" y1="71.12" x2="-2.54" y2="71.12" width="0.1524" layer="91"/>
 <label x="-2.54" y="71.12" size="1.778" layer="95"/>
 </segment>
@@ -3026,7 +3026,7 @@ single anode, 13 mm</description>
 <label x="-30.48" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DIGIT_0" gate="G$1" pin="F"/>
+<pinref part="DIGIT_0_ANODE" gate="G$1" pin="F"/>
 <wire x1="33.02" y1="81.28" x2="50.8" y2="81.28" width="0.1524" layer="91"/>
 <label x="50.8" y="81.28" size="1.778" layer="95"/>
 </segment>
@@ -3092,14 +3092,14 @@ single anode, 13 mm</description>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="DIGIT_0" gate="G$1" pin="CA2"/>
+<pinref part="DIGIT_0_ANODE" gate="G$1" pin="CA2"/>
 <pinref part="R_100O_0" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="71.12" x2="45.72" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SEG_1_DG" class="0">
 <segment>
-<pinref part="DIGIT_0" gate="G$1" pin="G"/>
+<pinref part="DIGIT_0_ANODE" gate="G$1" pin="G"/>
 <wire x1="33.02" y1="78.74" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
 <label x="38.1" y="78.74" size="1.778" layer="95"/>
 </segment>
@@ -3110,14 +3110,14 @@ single anode, 13 mm</description>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="DIGIT_1" gate="G$1" pin="CA2"/>
+<pinref part="DIGIT_1_ANODE" gate="G$1" pin="CA2"/>
 <pinref part="R_100O_1" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="20.32" x2="40.64" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SEG_2_DB" class="0">
 <segment>
-<pinref part="DIGIT_1" gate="G$1" pin="B"/>
+<pinref part="DIGIT_1_ANODE" gate="G$1" pin="B"/>
 <wire x1="17.78" y1="27.94" x2="7.62" y2="27.94" width="0.1524" layer="91"/>
 <label x="7.62" y="27.94" size="1.778" layer="95"/>
 </segment>
@@ -3129,7 +3129,7 @@ single anode, 13 mm</description>
 </net>
 <net name="SEG_2_DC" class="0">
 <segment>
-<pinref part="DIGIT_1" gate="G$1" pin="C"/>
+<pinref part="DIGIT_1_ANODE" gate="G$1" pin="C"/>
 <wire x1="17.78" y1="25.4" x2="0" y2="25.4" width="0.1524" layer="91"/>
 <label x="2.54" y="25.4" size="1.778" layer="95"/>
 </segment>
@@ -3141,7 +3141,7 @@ single anode, 13 mm</description>
 </net>
 <net name="SEG_2_DD" class="0">
 <segment>
-<pinref part="DIGIT_1" gate="G$1" pin="D"/>
+<pinref part="DIGIT_1_ANODE" gate="G$1" pin="D"/>
 <wire x1="17.78" y1="22.86" x2="7.62" y2="22.86" width="0.1524" layer="91"/>
 <label x="7.62" y="22.86" size="1.778" layer="95"/>
 </segment>
@@ -3153,7 +3153,7 @@ single anode, 13 mm</description>
 </net>
 <net name="SEG_2_DE" class="0">
 <segment>
-<pinref part="DIGIT_1" gate="G$1" pin="E"/>
+<pinref part="DIGIT_1_ANODE" gate="G$1" pin="E"/>
 <wire x1="17.78" y1="20.32" x2="0" y2="20.32" width="0.1524" layer="91"/>
 <label x="2.54" y="20.32" size="1.778" layer="95"/>
 </segment>
@@ -3165,7 +3165,7 @@ single anode, 13 mm</description>
 </net>
 <net name="SEG_2_DF" class="0">
 <segment>
-<pinref part="DIGIT_1" gate="G$1" pin="F"/>
+<pinref part="DIGIT_1_ANODE" gate="G$1" pin="F"/>
 <wire x1="33.02" y1="30.48" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
 <label x="48.26" y="30.48" size="1.778" layer="95"/>
 </segment>
@@ -3177,7 +3177,7 @@ single anode, 13 mm</description>
 </net>
 <net name="SEG_2_DG" class="0">
 <segment>
-<pinref part="DIGIT_1" gate="G$1" pin="G"/>
+<pinref part="DIGIT_1_ANODE" gate="G$1" pin="G"/>
 <wire x1="33.02" y1="27.94" x2="43.18" y2="27.94" width="0.1524" layer="91"/>
 <label x="40.64" y="27.94" size="1.778" layer="95"/>
 </segment>
@@ -3189,7 +3189,7 @@ single anode, 13 mm</description>
 </net>
 <net name="SEG_2_DA" class="0">
 <segment>
-<pinref part="DIGIT_1" gate="G$1" pin="A"/>
+<pinref part="DIGIT_1_ANODE" gate="G$1" pin="A"/>
 <wire x1="17.78" y1="30.48" x2="-2.54" y2="30.48" width="0.1524" layer="91"/>
 <label x="0" y="30.48" size="1.778" layer="95"/>
 </segment>
