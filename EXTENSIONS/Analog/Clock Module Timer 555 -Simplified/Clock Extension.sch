@@ -6532,13 +6532,6 @@ For COM-09806 in the SparkFun catalog&lt;br&gt;</description>
 <wire x1="-12.7" y1="93.98" x2="-12.7" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="TMR555_OUTPUT_REVERSE" class="0">
-<segment>
-<pinref part="JP1" gate="A" pin="4"/>
-<wire x1="20.32" y1="129.54" x2="48.26" y2="129.54" width="0.1524" layer="91"/>
-<label x="27.94" y="129.54" size="1.778" layer="95"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
