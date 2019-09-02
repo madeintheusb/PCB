@@ -25982,6 +25982,7 @@ Automation</text>
 <text x="31.081878125" y="14.29149375" size="1.4224" layer="25" align="center">INPUTS</text>
 <text x="14" y="17" size="1.4224" layer="25" align="center">Automation 
 like it's 1979</text>
+<text x="76" y="51" size="1.6764" layer="25" rot="R90" align="center">https://bit.ly/2ZKeZky</text>
 </plain>
 <libraries>
 <library name="adafruit">
