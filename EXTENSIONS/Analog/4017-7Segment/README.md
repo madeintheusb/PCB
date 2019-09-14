@@ -5,3 +5,5 @@ How to create an animation using a [CD4017BE](http://www.ti.com/lit/ds/symlink/c
 * [Video](https://www.youtube.com/watch?v=Pmq1hEMuzKk)
 
 ![board](./4017-7Segment.board.png)
+
+![schema(./4017-7Segment.schema.png)
