@@ -3086,8 +3086,9 @@ single anode, 13 mm</description>
 <label x="-101.6" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-149.86" y1="71.12" x2="-175.26" y2="71.12" width="0.1524" layer="91"/>
-<label x="-175.26" y="71.12" size="1.778" layer="95"/>
+<pinref part="SN74LS90N_1" gate="A" pin="CKA"/>
+<wire x1="-152.4" y1="71.12" x2="-175.26" y2="71.12" width="0.1524" layer="91"/>
+<label x="-172.72" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -3104,8 +3105,9 @@ single anode, 13 mm</description>
 <label x="38.1" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="-40.64" y1="43.18" x2="-12.7" y2="43.18" width="0.1524" layer="91"/>
-<label x="-12.7" y="43.18" size="1.778" layer="95"/>
+<pinref part="74LS47N_0" gate="G$1" pin="G"/>
+<wire x1="-38.1" y1="43.18" x2="-12.7" y2="43.18" width="0.1524" layer="91"/>
+<label x="-15.24" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">

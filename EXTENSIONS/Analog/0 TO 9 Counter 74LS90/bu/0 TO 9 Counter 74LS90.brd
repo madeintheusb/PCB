@@ -152,7 +152,7 @@
 <text x="34.5" y="20.2" size="0.8128" layer="25" rot="R180">VCC</text>
 <text x="34.5" y="17.7" size="0.8128" layer="25" rot="R180">OUT</text>
 <text x="34.5" y="15.2" size="0.8128" layer="25" rot="R180">OUT_R</text>
-<text x="19.5" y="17" size="1.27" layer="26" rot="MR0" align="center">PCBv1 - 2019.08</text>
+<text x="19.5" y="17" size="1.27" layer="26" rot="MR0" align="center">PCBv2 - 2019.09</text>
 <text x="35.5" y="43.4" size="2.25" layer="25" rot="R270" align="center">0 To 99 Counter</text>
 <text x="11.5" y="14.5" size="1.27" layer="25" rot="R180" align="center">INPUTS</text>
 <text x="10" y="38" size="1.6764" layer="26" rot="MR90" align="center">https://bit.ly/2ZEPbGB</text>
@@ -730,7 +730,9 @@ design rules under a new name.</description>
 <signal name="BIT_3">
 <contactref element="SN74LS90N_0" pad="11"/>
 <contactref element="74LS47N_0" pad="6"/>
-<wire x1="26.81" y1="27.5" x2="19.19" y2="45.69" width="0" layer="19" extent="1-1"/>
+<contactref element="SN74LS90N_1" pad="14"/>
+<wire x1="13.81" y1="35.12" x2="19.19" y2="45.69" width="0" layer="19" extent="1-1"/>
+<wire x1="26.81" y1="27.5" x2="13.81" y2="35.12" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="DIGIT_0_ANODE" pad="8"/>
@@ -739,6 +741,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="SEG_1_DG">
 <contactref element="DIGIT_0_ANODE" pad="10"/>
+<contactref element="74LS47N_0" pad="14"/>
+<wire x1="26.81" y1="53.31" x2="18.92" y2="79.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="DIGIT_1_ANODE" pad="8"/>
