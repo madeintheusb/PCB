@@ -17,11 +17,32 @@ Using a SN74LS90 counter, we can count from 0 to 9, to play the role of the Prog
 We use a SN74LS42N (Demultiplexers 4 to 10 BCD), to easily trigger up to 10 actions/instructions. Combined with a 2 inverter sn74ls14 (6 inverter/IC), for each instructions we get a pin1 and a pin0, when in execution mode.
 
 ### Code execution
-    0 : NOP
-    1 : pin1 --> SN74LS273 Register 1 to CLK, will trigger load the input1 into register 1
-    2 : pin1 --> SN74LS273 Register 2 to CLK, will trigger load the input2 into register 2
-    3 : pin0 --> SN74LS273 Register 1 to CLR, will reset to 0 register 1
-    4 : pin0 --> SN74LS273 Register 2 to CLR, will reset to 0 register 2
+    1 : pin0 --> SN74LS273 Register 1 to CLR, will reset to 0 register 1
+        - CTRL_ON_1 [NC], - CTRL_ON_INV_1 [REGISTER 1 CLR]
+        The CLR pin from the register is active low and will reset to 0 when the wire
+        change from state 1 to 0 and then back 1
+    2 : pin0 --> SN74LS273 Register 2 to CLR, will reset to 0 register 2
+    3 : pin1 --> SN74LS273 Register 1 to CLK, will trigger load the input1 into register 1
+    4 : pin1 --> SN74LS273 Register 2 to CLK, will trigger load the input2 into register 2
+    
+### Wiring
+- CTRL_ON_1 [NC], 
+- CTRL_ON_INV_1 --> [REGISTER 1 CLR]
+
+- CTRL_ON_2
+- CTRL_ON_INV_2
+
+- CTRL_ON_3
+- CTRL_ON_INV_3
+
+- CTRL_ON_4
+- CTRL_ON_INV_4
+
+- CTRL_ON_5
+- CTRL_ON_INV_5
+
+- CTRL_ON_6
+- CTRL_ON_INV_6
 
 ### Input device to registers
 We will have 2 registers, implemented by the 2 SN74LS273 which is a 8 bit register.
@@ -93,6 +114,17 @@ Gated enable inputs are provided on these devices for controlling the entry of d
 
 ### 7 Segment Driver
 - 74LS47 common annode
+
+### Schottky Diode 
+Registers and adder data bus output is linked to the main DTA_BUS, each for bit is protected
+with a Shotcky Diode (2 registers + 1 adder) * 4 = 12 diodes
+- Diode 1N5817
+- EAGLE CAD Parts:
+    * Package Thru-Hole Package:DO35Z10, Device:1N821
+    * Diode 1N5817 package:(SS12, small package)
+        - Package:MELF-MLL41, Device:DIODE-MELF-MLL41 (DIODE-)
+        
+
 
 
 ## Reference
