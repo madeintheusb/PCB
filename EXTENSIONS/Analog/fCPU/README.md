@@ -18,9 +18,10 @@ We use a SN74LS42N (Demultiplexers 4 to 10 BCD), to easily trigger up to 10 acti
 
 ### Code execution
     1 : pin0 --> SN74LS273 Register 1 to CLR, will reset to 0 register 1
-        - CTRL_ON_1 [NC], - CTRL_ON_INV_1 [REGISTER 1 CLR]
+        - CTRL_ON_1 [NC], - CTRL_OFF_1 [REGISTER 1 CLR]
         The CLR pin from the register is active low and will reset to 0 when the wire
-        change from state 1 to 0 and then back 1
+        change from state 1 to 0 and then back 1. 
+        CTRL_OFF_1 is always 1 except when instruction 1 is activated when it become 0
     2 : pin0 --> SN74LS273 Register 2 to CLR, will reset to 0 register 2
     3 : pin1 --> SN74LS273 Register 1 to CLK, will trigger load the input1 into register 1
     4 : pin1 --> SN74LS273 Register 2 to CLK, will trigger load the input2 into register 2
@@ -123,9 +124,13 @@ with a Shotcky Diode (2 registers + 1 adder) * 4 = 12 diodes
     * Package Thru-Hole Package:DO35Z10, Device:1N821
     * Diode 1N5817 package:(SS12, small package)
         - Package:MELF-MLL41, Device:DIODE-MELF-MLL41 (DIODE-)
-        
 
 
+### Connector of write with different name
+To connect a wire like CTRL_OFF_1 to REGISTER_1_CLR and keep different name
+I use a extra connected which I will to manually solder each part.
+- EAGLE CAD Parts:
+    * Package SOLDERJUMPER_REFLOW, Device:SOLDERJUMPERREFLOW (SOLDERJUMPER)
 
 ## Reference
 

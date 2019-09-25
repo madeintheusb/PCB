@@ -845,6 +845,9 @@ design rules under a new name.</description>
 <signal name="CTRL_ON_2">
 <contactref element="CONTROLLER_INV_" pad="10"/>
 </signal>
+<signal name="CTRL_ON_INV_1">
+<contactref element="REGISTER_1_CLEAR_CX" pad="1"/>
+</signal>
 <signal name="CTRL_ON_6">
 <contactref element="CONTROLLER_INV_" pad="6"/>
 </signal>
@@ -885,8 +888,6 @@ design rules under a new name.</description>
 <signal name="CTRL_OFF_1">
 <contactref element="CONTROLLER" pad="1"/>
 <contactref element="CONTROLLER_INV_" pad="13"/>
-<contactref element="REGISTER_1_CLEAR_CX" pad="1"/>
-<wire x1="39.81" y1="40.08" x2="46.238" y2="51" width="0" layer="19" extent="1-1"/>
 <wire x1="19.19" y1="43.89" x2="39.81" y2="40.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTRL_OFF_2">

@@ -5968,6 +5968,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="-7.62" y="193.04" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="CTRL_ON_INV_1" class="0">
+<segment>
+<pinref part="REGISTER_1_CLEAR_CX" gate="1" pin="1"/>
+<wire x1="114.3" y1="99.06" x2="99.06" y2="99.06" width="0.1524" layer="91"/>
+<label x="101.6" y="99.06" size="1.778" layer="95"/>
+</segment>
+</net>
 <net name="CTRL_ON_6" class="0">
 <segment>
 <pinref part="CONTROLLER_INV_" gate="F" pin="O"/>
@@ -6047,11 +6054,6 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <pinref part="CONTROLLER_INV_" gate="A" pin="I"/>
 <wire x1="-38.1" y1="177.8" x2="-58.42" y2="177.8" width="0.1524" layer="91"/>
 <label x="-50.8" y="180.34" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="REGISTER_1_CLEAR_CX" gate="1" pin="1"/>
-<wire x1="114.3" y1="99.06" x2="101.6" y2="99.06" width="0.1524" layer="91"/>
-<label x="93.218" y="100.584" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CTRL_OFF_2" class="0">

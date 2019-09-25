@@ -5646,9 +5646,9 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <instance part="CONTROLLER_INV_" gate="A" x="-27.94" y="177.8"/>
 <instance part="CONTROLLER_INV_" gate="B" x="-27.94" y="193.04"/>
 <instance part="CONTROLLER_INV_" gate="C" x="-27.94" y="208.28"/>
-<instance part="CONTROLLER_INV_" gate="D" x="43.18" y="177.8"/>
-<instance part="CONTROLLER_INV_" gate="E" x="43.18" y="190.5"/>
-<instance part="CONTROLLER_INV_" gate="F" x="40.64" y="205.74"/>
+<instance part="CONTROLLER_INV_" gate="D" x="35.56" y="177.8"/>
+<instance part="CONTROLLER_INV_" gate="E" x="35.56" y="190.5"/>
+<instance part="CONTROLLER_INV_" gate="F" x="33.02" y="205.74"/>
 <instance part="REGISTER_1" gate="A" x="111.76" y="142.24"/>
 <instance part="REG_1_BIT_3_DIODE" gate="G$1" x="132.08" y="147.32" smashed="yes">
 <attribute name="NAME" x="127" y="142.7226" size="1.778" layer="95"/>
@@ -5954,38 +5954,118 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <label x="157.48" y="144.78" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="CTRL_ON_1" class="0">
+<segment>
+<pinref part="CONTROLLER" gate="A" pin="O0"/>
+<wire x1="-15.24" y1="162.56" x2="7.62" y2="162.56" width="0.1524" layer="91"/>
+<label x="-5.08" y="162.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CONTROLLER_INV_" gate="A" pin="I"/>
+<wire x1="-38.1" y1="177.8" x2="-58.42" y2="177.8" width="0.1524" layer="91"/>
+<label x="-50.8" y="180.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CTRL_ON_2" class="0">
+<segment>
+<pinref part="CONTROLLER" gate="A" pin="O1"/>
+<wire x1="-15.24" y1="160.02" x2="7.62" y2="160.02" width="0.1524" layer="91"/>
+<label x="5.08" y="160.02" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CONTROLLER_INV_" gate="B" pin="I"/>
+<wire x1="-38.1" y1="193.04" x2="-58.42" y2="193.04" width="0.1524" layer="91"/>
+<label x="-50.8" y="193.04" size="1.778" layer="95"/>
+</segment>
+</net>
 <net name="CTRL_ON_3" class="0">
+<segment>
+<pinref part="CONTROLLER" gate="A" pin="O2"/>
+<wire x1="-15.24" y1="157.48" x2="7.62" y2="157.48" width="0.1524" layer="91"/>
+<label x="-7.62" y="157.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CONTROLLER_INV_" gate="C" pin="I"/>
+<wire x1="-38.1" y1="208.28" x2="-60.96" y2="208.28" width="0.1524" layer="91"/>
+<label x="-50.8" y="205.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CTRL_ON_4" class="0">
+<segment>
+<pinref part="CONTROLLER" gate="A" pin="O3"/>
+<wire x1="-15.24" y1="154.94" x2="7.62" y2="154.94" width="0.1524" layer="91"/>
+<label x="5.08" y="154.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CONTROLLER_INV_" gate="D" pin="I"/>
+<wire x1="25.4" y1="177.8" x2="10.16" y2="177.8" width="0.1524" layer="91"/>
+<label x="17.78" y="177.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CTRL_ON_5" class="0">
+<segment>
+<pinref part="CONTROLLER" gate="A" pin="O4"/>
+<wire x1="-15.24" y1="152.4" x2="7.62" y2="152.4" width="0.1524" layer="91"/>
+<label x="-7.62" y="152.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CONTROLLER_INV_" gate="E" pin="I"/>
+<wire x1="25.4" y1="190.5" x2="7.62" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="190.5" x2="7.62" y2="187.96" width="0.1524" layer="91"/>
+<label x="17.78" y="187.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CTRL_ON_6" class="0">
+<segment>
+<pinref part="CONTROLLER" gate="A" pin="O5"/>
+<wire x1="-15.24" y1="149.86" x2="7.62" y2="149.86" width="0.1524" layer="91"/>
+<label x="5.08" y="149.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CONTROLLER_INV_" gate="F" pin="I"/>
+<wire x1="22.86" y1="205.74" x2="5.08" y2="205.74" width="0.1524" layer="91"/>
+<label x="17.78" y="205.74" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CTRL_ON_INV_3" class="0">
 <segment>
 <pinref part="CONTROLLER_INV_" gate="C" pin="O"/>
 <wire x1="-17.78" y1="208.28" x2="0" y2="208.28" width="0.1524" layer="91"/>
 <label x="-7.62" y="208.28" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CTRL_ON_2" class="0">
+<net name="CTRL_ON_INV_2" class="0">
 <segment>
 <pinref part="CONTROLLER_INV_" gate="B" pin="O"/>
 <wire x1="-17.78" y1="193.04" x2="0" y2="193.04" width="0.1524" layer="91"/>
 <label x="-7.62" y="193.04" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CTRL_ON_6" class="0">
+<net name="CTRL_ON_INV_1" class="0">
+<segment>
+<pinref part="CONTROLLER_INV_" gate="A" pin="O"/>
+<wire x1="-17.78" y1="177.8" x2="2.54" y2="177.8" width="0.1524" layer="91"/>
+<label x="-10.668" y="174.244" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CTRL_ON_INV_6" class="0">
 <segment>
 <pinref part="CONTROLLER_INV_" gate="F" pin="O"/>
-<wire x1="50.8" y1="205.74" x2="63.5" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="205.74" x2="63.5" y2="205.74" width="0.1524" layer="91"/>
 <label x="58.42" y="205.74" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CTRL_ON_5" class="0">
+<net name="CTRL_ON_INV_5" class="0">
 <segment>
 <pinref part="CONTROLLER_INV_" gate="E" pin="O"/>
-<wire x1="53.34" y1="190.5" x2="66.04" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="190.5" x2="66.04" y2="190.5" width="0.1524" layer="91"/>
 <label x="66.04" y="190.5" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="CTRL_ON_4" class="0">
+<net name="CTRL_ON_INV_4" class="0">
 <segment>
 <pinref part="CONTROLLER_INV_" gate="D" pin="O"/>
-<wire x1="53.34" y1="177.8" x2="66.04" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="177.8" x2="66.04" y2="177.8" width="0.1524" layer="91"/>
 <label x="66.04" y="180.34" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -6030,96 +6110,20 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="99.06" y1="129.54" x2="73.66" y2="129.54" width="0.1524" layer="91"/>
 <label x="76.2" y="127" size="1.778" layer="95"/>
 </segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="REGISTER_1_CLEAR_CX" gate="1" pin="1"/>
+<wire x1="114.3" y1="99.06" x2="99.06" y2="99.06" width="0.1524" layer="91"/>
+<label x="101.6" y="99.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$7" class="0">
 <segment>
 <pinref part="REGISTER_1_CLEAR_CX" gate="1" pin="2"/>
 <wire x1="124.46" y1="99.06" x2="149.86" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="99.06" x2="149.86" y2="96.52" width="0.1524" layer="91"/>
 <label x="147.32" y="99.06" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CTRL_OFF_1" class="0">
-<segment>
-<pinref part="CONTROLLER" gate="A" pin="O0"/>
-<wire x1="-15.24" y1="162.56" x2="7.62" y2="162.56" width="0.1524" layer="91"/>
-<label x="-5.08" y="162.56" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CONTROLLER_INV_" gate="A" pin="I"/>
-<wire x1="-38.1" y1="177.8" x2="-58.42" y2="177.8" width="0.1524" layer="91"/>
-<label x="-50.8" y="180.34" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="REGISTER_1_CLEAR_CX" gate="1" pin="1"/>
-<wire x1="114.3" y1="99.06" x2="101.6" y2="99.06" width="0.1524" layer="91"/>
-<label x="93.218" y="100.584" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CTRL_OFF_2" class="0">
-<segment>
-<pinref part="CONTROLLER" gate="A" pin="O1"/>
-<wire x1="-15.24" y1="160.02" x2="7.62" y2="160.02" width="0.1524" layer="91"/>
-<label x="5.08" y="160.02" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CONTROLLER_INV_" gate="B" pin="I"/>
-<wire x1="-38.1" y1="193.04" x2="-58.42" y2="193.04" width="0.1524" layer="91"/>
-<label x="-50.8" y="193.04" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CTRL_OFF_3" class="0">
-<segment>
-<pinref part="CONTROLLER" gate="A" pin="O2"/>
-<wire x1="-15.24" y1="157.48" x2="7.62" y2="157.48" width="0.1524" layer="91"/>
-<label x="-7.62" y="157.48" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CONTROLLER_INV_" gate="C" pin="I"/>
-<wire x1="-38.1" y1="208.28" x2="-60.96" y2="208.28" width="0.1524" layer="91"/>
-<label x="-50.8" y="205.74" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CTRL_OFF_4" class="0">
-<segment>
-<pinref part="CONTROLLER" gate="A" pin="O3"/>
-<wire x1="-15.24" y1="154.94" x2="7.62" y2="154.94" width="0.1524" layer="91"/>
-<label x="5.08" y="154.94" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CONTROLLER_INV_" gate="D" pin="I"/>
-<wire x1="33.02" y1="177.8" x2="10.16" y2="177.8" width="0.1524" layer="91"/>
-<label x="17.78" y="177.8" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CTRL_OFF_5" class="0">
-<segment>
-<pinref part="CONTROLLER" gate="A" pin="O4"/>
-<wire x1="-15.24" y1="152.4" x2="7.62" y2="152.4" width="0.1524" layer="91"/>
-<label x="-7.62" y="152.4" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CONTROLLER_INV_" gate="E" pin="I"/>
-<wire x1="33.02" y1="190.5" x2="7.62" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="7.62" y1="190.5" x2="7.62" y2="187.96" width="0.1524" layer="91"/>
-<label x="17.78" y="187.96" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CTRL_OFF_6" class="0">
-<segment>
-<pinref part="CONTROLLER" gate="A" pin="O5"/>
-<wire x1="-15.24" y1="149.86" x2="7.62" y2="149.86" width="0.1524" layer="91"/>
-<label x="5.08" y="149.86" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="CONTROLLER_INV_" gate="F" pin="I"/>
-<wire x1="30.48" y1="205.74" x2="5.08" y2="205.74" width="0.1524" layer="91"/>
-<label x="17.78" y="205.74" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="CTRL_ON_1" class="0">
-<segment>
-<pinref part="CONTROLLER_INV_" gate="A" pin="O"/>
-<wire x1="-17.78" y1="177.8" x2="2.54" y2="177.8" width="0.1524" layer="91"/>
-<label x="-10.668" y="174.244" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
