@@ -9,18 +9,20 @@ Create 4 bit CPU that can
 - Display the result of the addition
 
 There is no machine code stored in some EEPROM. The program is hardcoded,
-from the 10 outputs of the controller we wire each pin to execute one instruction.
+from the 10 outputs of the controller we wire each pin to execute one specific instruction.
 Idealy, the program would look like this:
-- 1 Clear Register 1 and 2
-- 2 Clear Adder output
-- 3 Display Adder result on 7-Segment Display
-- 4 Read Register 1 from input
-- 5 Read Register 2 from input
-- 6 Add Register 1 and 2
-- 7 Display Adder result on 7-Segment Display
-- 8 Nop
+- 1 Clear Register 1
+- 2 Clear Register 2
+- 3 Clear Adder output
+- 4 Display Adder result on 7-Segment Display
+- 5 Read Register 1 from input 1
+- 6 Read Register 2 from input 2
+- 7 Add Register 1 and 2
+- 8 Display Adder result on 7-Segment Display
 - 9 Nop
 -10 Nop
+
+Display Limitation: In v1, we can only display number from 0 to 9, we cannot display number from 10 to 15.
 
 ## Architecture
 
@@ -29,14 +31,15 @@ Using a SN74LS90 counter, we can count from 0 to 9, to play the role of the Prog
 We use a SN74LS42N (Demultiplexers 4 to 10 BCD), to easily trigger up to 10 actions/instructions. Combined with a 2 inverter sn74ls14 (6 inverter/IC), for each instructions we get a pin1 and a pin0, when in execution mode.
 
 ### Code execution
-    1 : pin0 --> SN74LS273 Register 1 to CLR, will reset to 0 register 1
-        - CTRL_ON_1 [NC], - CTRL_OFF_1 [REGISTER 1 CLR]
-        The CLR pin from the register is active low and will reset to 0 when the wire
-        change from state 1 to 0 and then back 1. 
+    (1) : pin0 --> SN74LS273 Register 1 to CLR, will reset to 0 register 1
+        - CTRL_ON_1 [NC], - CTRL_OFF_1 --> REGISTER_1_CLR
+        The CLR pin from the register is active low and will be reset to 0 when the wire
+        change from state 1 to 0 and then back 1. The state of the write CTRL_OFF_1 is always 1
+        except when instruction (1) is executed where the pin become 0, clearing the register.
         CTRL_OFF_1 is always 1 except when instruction 1 is activated when it become 0
-    2 : pin0 --> SN74LS273 Register 2 to CLR, will reset to 0 register 2
-    3 : pin1 --> SN74LS273 Register 1 to CLK, will trigger load the input1 into register 1
-    4 : pin1 --> SN74LS273 Register 2 to CLK, will trigger load the input2 into register 2
+    (2) : pin0 --> SN74LS273 Register 2 to CLR, will reset to 0 register 2
+    (3) : pin1 --> SN74LS273 Register 1 to CLK, will trigger load the input1 into register 1
+    (4) : pin1 --> SN74LS273 Register 2 to CLK, will trigger load the input2 into register 2
     
 ### Wiring
 - CTRL_ON_1 [NC], 
