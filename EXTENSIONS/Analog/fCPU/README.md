@@ -2,13 +2,25 @@
 
 ## Goal
 
-Create a kind of CPU that can
+Create 4 bit CPU that can
 - Receive as input 2 4 bit values
 - Display each value on a 7-Segment Display
 - Add the 2 values
 - Display the result of the addition
 
-There is no machine code stored in some EEPROM. The program is hardcoded.
+There is no machine code stored in some EEPROM. The program is hardcoded,
+from the 10 outputs of the controller we wire each pin to execute one instruction.
+Idealy, the program would look like this:
+- 1 Clear Register 1 and 2
+- 2 Clear Adder output
+- 3 Display Adder result on 7-Segment Display
+- 4 Read Register 1 from input
+- 5 Read Register 2 from input
+- 6 Add Register 1 and 2
+- 7 Display Adder result on 7-Segment Display
+- 8 Nop
+- 9 Nop
+-10 Nop
 
 ## Architecture
 
