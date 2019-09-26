@@ -152,3 +152,7 @@ I use a extra connected which I will to manually solder each part.
 ### IC Series
 
 - [7400 Series](https://en.wikipedia.org/wiki/List_of_7400-series_integrated_circuits) 
+
+## Path
+
+C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Analog\fCPU
