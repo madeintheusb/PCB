@@ -11,16 +11,19 @@ Create 4 bit CPU that can
 There is no machine code stored in some EEPROM. The program is hardcoded,
 from the 10 outputs of the controller we wire each pin to execute one specific instruction.
 Idealy, the program would look like this:
-- 1 Clear Register 1
-- 2 Clear Register 2
-- 3 Clear Adder output
-- 4 Display Adder result on 7-Segment Display
-- 5 Read Register 1 from input 1
-- 6 Read Register 2 from input 2
-- 7 Add Register 1 and 2
-- 8 Display Adder result on 7-Segment Display
-- 9 Nop
--10 Nop
+
+| Controller Pin 	| Instruction                               	|
+|----------------	|-------------------------------------------	|
+| 1              	| Clear Register 1                          	|
+| 2              	| Clear Register 2                          	|
+| 3              	| Clear Adder output                        	|
+| 4              	| Display Adder result on 7-Segment Display 	|
+| 5              	| Read Register 1 from input 1              	|
+| 6              	| Read Register 2 from input 2              	|
+| 7              	| Add Register 1 and 2                      	|
+| 8              	| Display Adder result on 7-Segment Display 	|
+| 9              	| Nop                                       	|
+| 10             	| Nop                                       	|
 
 Display Limitation: In v1, we can only display number from 0 to 9, we cannot display number from 10 to 15.
 
