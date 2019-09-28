@@ -25,6 +25,9 @@ Idealy, the program would look like this:
 | 9              	| Nop                                       	|
 | 10             	| Nop                                       	|
 
+A program counter, execute instructions 1 to 10 or the pin controller 1 to 10,
+in an infinite loop.
+
 Display Limitation: In v1, we can only display number from 0 to 9, we cannot display number from 10 to 15.
 
 ## Architecture
@@ -41,6 +44,7 @@ We use a SN74LS42N (Demultiplexers 4 to 10 BCD), to easily trigger up to 10 acti
         except when instruction (1) is executed where the pin become 0, clearing the register.
         CTRL_OFF_1 is always 1 except when instruction 1 is activated when it become 0
     (2) : pin0 --> SN74LS273 Register 2 to CLR, will reset to 0 register 2
+        - CTRL_ON_2 [NC], - CTRL_OFF_2 --> REGISTER_1_CLR
     (3) : pin1 --> SN74LS273 Register 1 to CLK, will trigger load the input1 into register 1
     (4) : pin1 --> SN74LS273 Register 2 to CLK, will trigger load the input2 into register 2
     
@@ -143,12 +147,25 @@ with a Shotcky Diode (2 registers + 1 adder) * 4 = 12 diodes
     * Diode 1N5817 package:(SS12, small package)
         - Package:MELF-MLL41, Device:DIODE-MELF-MLL41 (DIODE-)
 
-
 ### Connector of write with different name
 To connect a wire like CTRL_OFF_1 to REGISTER_1_CLR and keep different name
 I use a extra connected which I will to manually solder each part.
 - EAGLE CAD Parts:
     * Package SOLDERJUMPER_REFLOW, Device:SOLDERJUMPERREFLOW (SOLDERJUMPER)
+
+### Input Device
+    - pin 1..4 are bit 0 to bit 3
+    - pin 1..4 are connected to register x
+    - When pin 1..4 are off, they cannot be floating therefore we need to tied them to gnd
+        but pin 1..4 are on, the register can handle 5v, but not gnd so we need a to go to gnd with a 
+        resistor. we can use a resitor array
+    - pin 5,6,7,8 are tied tied VCC for a 1
+- EAGLE CAD Parts:
+    * Package EDG-04, Device:SW_DIP-4
+
+### 8 Resitor array
+- EAGLE CAD Parts:
+    * Package SIP10, Device:4610X
 
 ## Reference
 
