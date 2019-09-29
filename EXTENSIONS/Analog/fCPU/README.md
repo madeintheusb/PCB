@@ -12,6 +12,10 @@ There is no machine code stored in some EEPROM. The program is hardcoded,
 from the 10 outputs of the controller we wire each pin to execute one specific instruction.
 Idealy, the program would look like this:
 
+### Versions
+- In v1 we use a controller of type 4017BE directly connected to the clock.
+- In a v2 we use a SN74LS90 asprogram counter, and a SN74LS42N as the controller. The clock is connected to the program counter
+
 | Controller Pin 	| Instruction                               	|
 |----------------	|-------------------------------------------	|
 | 1              	| Clear Register 1                          	|
@@ -25,47 +29,56 @@ Idealy, the program would look like this:
 | 9              	| Nop                                       	|
 | 10             	| Nop                                       	|
 
-A program counter, execute instructions 1 to 10 or the pin controller 1 to 10,
-in an infinite loop.
+| Controller Pin 	| Instruction                               	|
+|----------------	|-------------------------------------------	|
+| 1              	| Clear Register 1                          	|
+| 2              	| Clear Register 2                          	|
+| 3              	| Nop Expected 0 + 0 = 0, is displayed          |
+| 4              	| Nop                                           |
+| 5              	| Nop                                           |
+| 6              	| Read Register 1 from input 1, Expected Register 1 is displayed |
+| 7              	| Read Register 2 from input 2  Expected Result is displayed |
+| 8              	| Nop                                           |
+| 9              	| Nop                                           |
+|10              	| Nop                                           |
 
-Display Limitation: In v1, we can only display number from 0 to 9, we cannot display number from 10 to 15.
+A program counter, execute instructions 1 to 10 (or the pin controller 1 to 10), in an infinite loop.
+
+Display Limitation: 
+- In v1, we can only display number from 0 to 9, we cannot display number from 10 to 15.
+- No support of integer overflow when reaching number greater than 15.
+    - Adder pin C4 (Carry out) could be linked to an LED.
 
 ## Architecture
 
 Using a SN74LS90 counter, we can count from 0 to 9, to play the role of the Program Counter.
 
-We use a SN74LS42N (Demultiplexers 4 to 10 BCD), to easily trigger up to 10 actions/instructions. Combined with a 2 inverter sn74ls14 (6 inverter/IC), for each instructions we get a pin1 and a pin0, when in execution mode.
+We use a SN74LS42N (Demultiplexers 4 to 10 BCD), to easily trigger up to 10 actions/instructions. Combined with a 2 inverter SN74LS14 (6 inverter/IC), for each instructions we get a pin high (CTRL_ON_X) and a pin low (CTRL_OFF_X) when in execution mode.
 
 ### Code execution
-    (1) : pin0 --> SN74LS273 Register 1 to CLR, will reset to 0 register 1
+    (1) : Clear Register 1
         - CTRL_ON_1 [NC], - CTRL_OFF_1 --> REGISTER_1_CLR
-        The CLR pin from the register is active low and will be reset to 0 when the wire
-        change from state 1 to 0 and then back 1. The state of the write CTRL_OFF_1 is always 1
-        except when instruction (1) is executed where the pin become 0, clearing the register.
-        CTRL_OFF_1 is always 1 except when instruction 1 is activated when it become 0
-    (2) : pin0 --> SN74LS273 Register 2 to CLR, will reset to 0 register 2
-        - CTRL_ON_2 [NC], - CTRL_OFF_2 --> REGISTER_1_CLR
-    (3) : pin1 --> SN74LS273 Register 1 to CLK, will trigger load the input1 into register 1
-    (4) : pin1 --> SN74LS273 Register 2 to CLK, will trigger load the input2 into register 2
-    
+        The CLR pin from the register is active low and will be reset to 0 when the wire change from state 1 to 0 and then back 1. 
+        The state of the pin CTRL_OFF_1 is always high except when instruction is executed where the pin become low, clearing the register.
+
+    (2) : Clear Register 2
+        - CTRL_ON_2 [NC], - CTRL_OFF_2 --> REGISTER_2_CLR
+        The CLR pin from the register is active low and will be reset to 0 when the wire change from state 1 to 0 and then back 1. 
+        The state of the pin CTRL_OFF_2 is always high except when instruction is executed where the pin become low, clearing the register.
+
+    (2) : Clear Adder
+        - CTRL_ON_3, - CTRL_OFF_3
+
 ### Wiring
-- CTRL_ON_1 [NC], 
-- CTRL_ON_INV_1 --> [REGISTER 1 CLR]
+- CTRL_LOW_1 [NC],
+- CTRL_LOW_INV_1 --> [REGISTER 1 CLR]
 
-- CTRL_ON_2
-- CTRL_ON_INV_2
+- CTRL_LOW_2 [NC], 
+- CTRL_LOW_INV_2 --> [REGISTER 2 CLR]
 
-- CTRL_ON_3
-- CTRL_ON_INV_3
+- CTRL_LOW_3 [NC], 
+- CTRL_LOW_INV_3 --> [REGISTER 2 CLR]
 
-- CTRL_ON_4
-- CTRL_ON_INV_4
-
-- CTRL_ON_5
-- CTRL_ON_INV_5
-
-- CTRL_ON_6
-- CTRL_ON_INV_6
 
 ### Input device to registers
 We will have 2 registers, implemented by the 2 SN74LS273 which is a 8 bit register.
@@ -94,7 +107,14 @@ Bit 1..4D are used. Bit 5..8D are tied to 0.
 SN74LS90
 - EAGLE CAD Part: Package: KNOWN, Device:KNOWN.
 
-### Controller/Software simulator
+### Controller v1
+
+[4017BE](http://www.ti.com/lit/ds/symlink/cd4017b.pdf)
+
+- EAGLE CAD Part: Package:DIL16, Device:CD4017
+    * Check pin 8 seems to not be used in EAGLE CAD part, see Data Sheet.
+
+### Controller/Software simulator v2
 
 [SN74LS42N](https://www.mouser.com/ProductDetail/Texas-Instruments/SN74LS42N?qs=sGAEpiMZZMutXGli8Ay4kHCkCpxTtxgl92ZLS6s4WlY%3D)
 
@@ -114,7 +134,18 @@ SN74LS90
 - EAGLE CAD Part: Package:DIL16, Device:74LS14N, US
 
 ### Adder
-SN74LS83A
+[SN74LS283N](http://www.ti.com/lit/ds/symlink/sn74ls283.pdf)
+    - A Input
+    - B Input
+    - C0 Carry Input
+    - S Ouput
+    - C4 Carry Output
+There is no clock or clear feature. The result is outputed all the time.
+
+[SN7483 SN74LS83](http://www.ece.sunysb.edu/~dima/74ls83a.pdf)
+    - Older version
+
+
 
 ### Register
 * 8b [SN74LS273](http://www.ti.com/lit/ds/symlink/sn74ls273.pdf)
@@ -176,3 +207,4 @@ I use a extra connected which I will to manually solder each part.
 ## Path
 
 C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Analog\fCPU
+
