@@ -5478,7 +5478,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="49.784" y="177.292" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="LED_POWER_TO_GND" class="0">
 <segment>
 <pinref part="LED_POWER" gate="G$1" pin="C"/>
 <wire x1="78.74" y1="187.96" x2="78.74" y2="175.26" width="0.1524" layer="91"/>

@@ -792,7 +792,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="50.897" y="82.913" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="DISPLAY_DRIVER_74LS47" library="74xx-us" package="DIL16" value="74LS47N" x="29" y="69.5" smashed="yes" rot="R270">
-<attribute name="NAME" x="22.579" y="60.541" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="22.079" y="70.041" size="1.27" layer="25" ratio="10" rot="R90" align="center"/>
 <attribute name="VALUE" x="28.365" y="76.993" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
 <element name="DIGIT_0_ANODE" library="special" package="7SEG-13" value="" x="50" y="67" smashed="yes">
@@ -800,33 +800,39 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="43.904" y="56.078" size="1.778" layer="27" ratio="10"/>
 </element>
 <element name="REGISTER_1_SN74LS273" library="74xx-us" package="DIL20" value="74273N" x="70" y="31" smashed="yes" rot="R270">
-<attribute name="NAME" x="63.452" y="22.081" size="1.27" layer="25" rot="R90"/>
+<attribute name="NAME" x="62.952" y="30.581" size="1.27" layer="25" rot="R90" align="center"/>
 <attribute name="VALUE" x="69.619" y="40.779" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="REGISTER_2_SN74LS273" library="74xx-us" package="DIL20" value="74273N" x="70" y="67" smashed="yes" rot="R270">
-<attribute name="NAME" x="63.952" y="58.081" size="1.27" layer="25" rot="R90"/>
+<attribute name="NAME" x="62.952" y="66.581" size="1.27" layer="25" rot="R90" align="center"/>
 <attribute name="VALUE" x="69.619" y="76.779" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="INPUT_DEVICE_1" library="special" package="EDG-04" value="" x="86" y="32" smashed="yes" rot="R90">
 <attribute name="VALUE" x="92.604" y="26.158" size="1.27" layer="27" ratio="10" rot="R90"/>
-<attribute name="NAME" x="79.666" y="25.658" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="79.166" y="32.158" size="1.27" layer="25" ratio="10" rot="R90" align="center"/>
 </element>
 <element name="INPUT_DEVICE_2" library="special" package="EDG-04" value="" x="86" y="68" smashed="yes" rot="R90">
 <attribute name="VALUE" x="92.604" y="62.158" size="1.27" layer="27" ratio="10" rot="R90"/>
-<attribute name="NAME" x="79.666" y="61.658" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="79.666" y="67.658" size="1.27" layer="25" ratio="10" rot="R90" align="center"/>
 </element>
-<element name="RESISTOR_INPUT_DEVICES" library="resistor-sip" package="SIP10" value="" x="96" y="51" rot="R90"/>
+<element name="RESISTOR_INPUT_DEVICES" library="resistor-sip" package="SIP10" value="" x="96" y="51" smashed="yes" rot="R90">
+<attribute name="NAME" x="94.23" y="39.3" size="1.27" layer="25" ratio="10" rot="R90" align="center"/>
+<attribute name="VALUE" x="94.23" y="55.92" size="1.27" layer="27" ratio="10" rot="R90"/>
+</element>
 <element name="ADDER_74LS283N" library="74xx-us" package="DIL16" value="74LS283N" x="10" y="70" smashed="yes" rot="R270">
-<attribute name="NAME" x="4.079" y="62.541" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="3.579" y="70.541" size="1.27" layer="25" ratio="10" rot="R90" align="center"/>
 <attribute name="VALUE" x="9.365" y="77.493" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="RESISTOR_SWITCHES" library="resistor-sip" package="SIP10" value="" x="19" y="39"/>
+<element name="RESISTOR_SWITCHES" library="resistor-sip" package="SIP10" value="" x="19" y="39" smashed="yes">
+<attribute name="NAME" x="18.3" y="41.27" size="1.27" layer="25" ratio="10" align="center"/>
+<attribute name="VALUE" x="23.92" y="40.77" size="1.27" layer="27" ratio="10"/>
+</element>
 <element name="CLOCK_REGISTER_1" library="switch-omron" package="B3F-10XX" value="" x="11" y="17" smashed="yes" rot="R180">
 <attribute name="OC_FARNELL" value="176432" x="11" y="17" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="36M3542" x="11" y="17" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="11" y="17" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="B3F-1000" x="11" y="17" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="19.048" y="22.817" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="11.548" y="21.817" size="1.27" layer="25" ratio="10" rot="R180" align="center"/>
 <attribute name="VALUE" x="14.048" y="22.08" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="CLOCK_REGISTER_2" library="switch-omron" package="B3F-10XX" value="" x="28" y="17" smashed="yes" rot="R180">
@@ -834,7 +840,7 @@ design rules under a new name.</description>
 <attribute name="OC_NEWARK" value="36M3542" x="28" y="17" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="28" y="17" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="B3F-1000" x="28" y="17" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="37.048" y="22.817" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="29.048" y="21.817" size="1.27" layer="25" ratio="10" rot="R180" align="center"/>
 <attribute name="VALUE" x="31.048" y="22.08" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="CLEAR_REGISTER_1" library="switch-omron" package="B3F-10XX" value="" x="11" y="28" smashed="yes">
@@ -842,7 +848,7 @@ design rules under a new name.</description>
 <attribute name="OC_NEWARK" value="36M3542" x="11" y="28" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="11" y="28" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="B3F-1000" x="11" y="28" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="3.952" y="32.183" size="1.27" layer="25" ratio="10"/>
+<attribute name="NAME" x="11.952" y="32.183" size="1.27" layer="25" ratio="10" align="center"/>
 <attribute name="VALUE" x="7.952" y="22.92" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="CLEAR_REGISTER_2" library="switch-omron" package="B3F-10XX" value="" x="28.5" y="28" smashed="yes">
@@ -850,7 +856,7 @@ design rules under a new name.</description>
 <attribute name="OC_NEWARK" value="36M3542" x="28.5" y="28" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="28.5" y="28" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="B3F-1000" x="28.5" y="28" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="21.452" y="32.183" size="1.27" layer="25" ratio="10"/>
+<attribute name="NAME" x="29.452" y="32.683" size="1.27" layer="25" ratio="10" align="center"/>
 <attribute name="VALUE" x="25.452" y="22.92" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="LED_POWER" library="adafruit" package="1206" value="" x="51" y="51" smashed="yes" rot="R180">

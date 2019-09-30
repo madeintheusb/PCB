@@ -4993,11 +4993,6 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="-27.94" y1="200.66" x2="-27.94" y2="213.36" width="0.1524" layer="91"/>
 <label x="-27.94" y="213.36" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="LED_POWER" gate="G$1" pin="A"/>
-<wire x1="78.74" y1="195.58" x2="78.74" y2="205.74" width="0.1524" layer="91"/>
-<label x="78.74" y="203.2" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="TMR555_OUTPUT" class="0">
 <segment>
@@ -5009,6 +5004,11 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <pinref part="OUTPUTS" gate="A" pin="3"/>
 <wire x1="20.32" y1="104.14" x2="43.18" y2="104.14" width="0.1524" layer="91"/>
 <label x="33.02" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED_POWER" gate="G$1" pin="A"/>
+<wire x1="78.74" y1="195.58" x2="78.74" y2="205.74" width="0.1524" layer="91"/>
+<label x="78.74" y="203.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TMR555_OUTPUT_REVERSE" class="0">

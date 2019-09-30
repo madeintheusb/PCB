@@ -4824,7 +4824,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <part name="CLOCK_REGISTER_2" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="CLEAR_REGISTER_1" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="CLEAR_REGISTER_2" library="switch-omron" deviceset="10-XX" device=""/>
-<part name="LED1" library="adafruit" deviceset="LED" device="SMT1206"/>
+<part name="LED_POWER" library="adafruit" deviceset="LED" device="SMT1206"/>
 </parts>
 <sheets>
 <sheet>
@@ -4854,7 +4854,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <instance part="CLOCK_REGISTER_2" gate="1" x="-27.94" y="195.58"/>
 <instance part="CLEAR_REGISTER_1" gate="1" x="-20.32" y="132.08"/>
 <instance part="CLEAR_REGISTER_2" gate="1" x="-45.72" y="132.08"/>
-<instance part="LED1" gate="G$1" x="78.74" y="193.04"/>
+<instance part="LED_POWER" gate="G$1" x="78.74" y="193.04"/>
 </instances>
 <busses>
 </busses>
@@ -4994,7 +4994,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="-27.94" y="213.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="LED_POWER" gate="G$1" pin="A"/>
 <wire x1="78.74" y1="195.58" x2="78.74" y2="205.74" width="0.1524" layer="91"/>
 <label x="78.74" y="203.2" size="1.778" layer="95"/>
 </segment>
@@ -5480,7 +5480,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="LED_POWER" gate="G$1" pin="C"/>
 <wire x1="78.74" y1="187.96" x2="78.74" y2="175.26" width="0.1524" layer="91"/>
 <label x="78.74" y="182.88" size="1.778" layer="95"/>
 </segment>

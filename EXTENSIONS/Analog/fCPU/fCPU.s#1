@@ -5487,7 +5487,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <segment>
 <pinref part="RESISTOR_SWITCHES" gate="G$1" pin="9"/>
 <wire x1="58.42" y1="187.96" x2="58.42" y2="175.26" width="0.1524" layer="91"/>
-<label x="58.42" y="175.26" size="1.778" layer="95" rot="R270"/>
+<label x="59.69" y="175.006" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 </nets>
