@@ -198,6 +198,16 @@ I use a extra connected which I will to manually solder each part.
 - EAGLE CAD Parts:
     * Package SIP10, Device:4610X
 
+### Switch Manual Button
+- Wiring
+    1 -> VCC
+    4 -> PIN + RESISTOR and GND
+- EAGLE CAD Parts:
+    * Package B3F-10XX, Device:10-XX
+### LED 1206
+- EAGLE CAD Parts:
+    Device: LEDSMT1206 (LED) Package:1206, Library:adafruit
+
 ## Reference
 
 ### IC Series
