@@ -4825,6 +4825,8 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <part name="CLEAR_REGISTER_1" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="CLEAR_REGISTER_2" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="LED_POWER" library="adafruit" deviceset="LED" device="SMT1206"/>
+<part name="INPUT_DEVICE_1_EX" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="INPUT_DEVICE_2_EX" library="pinhead" deviceset="PINHD-1X4" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4855,6 +4857,14 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <instance part="CLEAR_REGISTER_1" gate="1" x="-20.32" y="132.08"/>
 <instance part="CLEAR_REGISTER_2" gate="1" x="-45.72" y="132.08"/>
 <instance part="LED_POWER" gate="G$1" x="78.74" y="193.04"/>
+<instance part="INPUT_DEVICE_1_EX" gate="A" x="289.56" y="152.4" smashed="yes" rot="R180">
+<attribute name="NAME" x="306.07" y="144.145" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="295.91" y="160.02" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="INPUT_DEVICE_2_EX" gate="A" x="289.56" y="132.08" smashed="yes" rot="R180">
+<attribute name="NAME" x="306.07" y="123.825" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="295.91" y="139.7" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5171,7 +5181,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <segment>
 <pinref part="CLOCK_REGISTER_1" gate="1" pin="P1"/>
 <wire x1="-5.08" y1="190.5" x2="-5.08" y2="172.72" width="0.1524" layer="91"/>
-<label x="-7.62" y="170.18" size="1.778" layer="95"/>
+<label x="-10.16" y="175.26" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="RESISTOR_SWITCHES" gate="G$1" pin="2"/>
@@ -5202,7 +5212,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <segment>
 <pinref part="CLOCK_REGISTER_2" gate="1" pin="P1"/>
 <wire x1="-25.4" y1="190.5" x2="-25.4" y2="175.26" width="0.1524" layer="91"/>
-<label x="-35.56" y="170.18" size="1.778" layer="95"/>
+<label x="-33.782" y="175.514" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="RESISTOR_SWITCHES" gate="G$1" pin="3"/>
@@ -5238,6 +5248,11 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="210.82" y1="99.06" x2="210.82" y2="91.44" width="0.1524" layer="91"/>
 <label x="209.296" y="89.916" size="1.778" layer="95" rot="R270"/>
 </segment>
+<segment>
+<pinref part="INPUT_DEVICE_1_EX" gate="A" pin="1"/>
+<wire x1="292.1" y1="147.32" x2="309.88" y2="147.32" width="0.1524" layer="91"/>
+<label x="321.564" y="148.844" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="REGISTER_1_IN_BIT_1" class="0">
 <segment>
@@ -5254,6 +5269,11 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <pinref part="RESISTOR_INPUT_DEVICES" gate="G$1" pin="3"/>
 <wire x1="213.36" y1="99.06" x2="213.36" y2="91.44" width="0.1524" layer="91"/>
 <label x="213.868" y="65.532" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="INPUT_DEVICE_1_EX" gate="A" pin="2"/>
+<wire x1="292.1" y1="149.86" x2="309.88" y2="149.86" width="0.1524" layer="91"/>
+<label x="322.326" y="151.638" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="REGISTER_1_IN_BIT_2" class="0">
@@ -5272,6 +5292,11 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="215.9" y1="99.06" x2="215.9" y2="91.44" width="0.1524" layer="91"/>
 <label x="216.408" y="65.786" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="INPUT_DEVICE_1_EX" gate="A" pin="3"/>
+<wire x1="292.1" y1="152.4" x2="307.34" y2="152.4" width="0.1524" layer="91"/>
+<label x="321.564" y="154.178" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="REGISTER_1_IN_BIT_3" class="0">
 <segment>
@@ -5288,6 +5313,11 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <pinref part="RESISTOR_INPUT_DEVICES" gate="G$1" pin="5"/>
 <wire x1="218.44" y1="99.06" x2="218.44" y2="91.44" width="0.1524" layer="91"/>
 <label x="219.202" y="65.786" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="INPUT_DEVICE_1_EX" gate="A" pin="4"/>
+<wire x1="292.1" y1="154.94" x2="317.5" y2="154.94" width="0.1524" layer="91"/>
+<label x="321.818" y="157.988" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="REGISTER_2_IN_BIT_0" class="0">
@@ -5306,6 +5336,11 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="220.98" y1="99.06" x2="220.98" y2="88.9" width="0.1524" layer="91"/>
 <label x="221.996" y="62.23" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="INPUT_DEVICE_2_EX" gate="A" pin="1"/>
+<wire x1="292.1" y1="127" x2="314.96" y2="127" width="0.1524" layer="91"/>
+<label x="312.42" y="127" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="REGISTER_2_IN_BIT_1" class="0">
 <segment>
@@ -5322,6 +5357,11 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <pinref part="RESISTOR_INPUT_DEVICES" gate="G$1" pin="7"/>
 <wire x1="223.52" y1="99.06" x2="223.52" y2="88.9" width="0.1524" layer="91"/>
 <label x="224.536" y="61.976" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="INPUT_DEVICE_2_EX" gate="A" pin="2"/>
+<wire x1="292.1" y1="129.54" x2="314.96" y2="129.54" width="0.1524" layer="91"/>
+<label x="312.42" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="REGISTER_2_IN_BIT_2" class="0">
@@ -5340,6 +5380,11 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="226.06" y1="99.06" x2="226.06" y2="88.9" width="0.1524" layer="91"/>
 <label x="227.33" y="61.976" size="1.778" layer="95" rot="R90"/>
 </segment>
+<segment>
+<pinref part="INPUT_DEVICE_2_EX" gate="A" pin="3"/>
+<wire x1="292.1" y1="132.08" x2="314.96" y2="132.08" width="0.1524" layer="91"/>
+<label x="312.42" y="132.08" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="REGISTER_2_IN_BIT_3" class="0">
 <segment>
@@ -5356,6 +5401,11 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <pinref part="RESISTOR_INPUT_DEVICES" gate="G$1" pin="9"/>
 <wire x1="228.6" y1="99.06" x2="228.6" y2="88.9" width="0.1524" layer="91"/>
 <label x="231.14" y="61.976" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="INPUT_DEVICE_2_EX" gate="A" pin="4"/>
+<wire x1="292.1" y1="134.62" x2="314.96" y2="134.62" width="0.1524" layer="91"/>
+<label x="312.42" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="REGISTER_1_OUT_BIT_0" class="0">
