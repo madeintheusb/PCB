@@ -23,8 +23,9 @@ Thru Hole
     - Sliding Switch on/off 3 pin (NOT THRU HOLE)
         Mini slide switch switch 255SB 255SB http://sumo.ly/tStF
 
-- Sliding Switch on/off 3 pin (THRU HOLE)
+- Sliding Switch on/off 3 pin (THRU HOLE)  vertical SPDT slide switch 
         Package: EG1218, Device:EG1218S (EG1218), Library: adafruit
+		http://www.ladyada.net/library/pcb/eaglelibrary.html
         
     - Tactile Switch on/off 2 pin		
         SMD Tactile switch 2 pins Package: TACTILE_SWITCH-SMD-RIGHT-ANGLE
@@ -256,3 +257,10 @@ OTHER FT232H INTERFACE
 PCB SEED STUDIO
 
 https://www.seeedstudio.io/fusion_pcb.html?gclid=CjwKCAjwmtDpBRAQEiwAC6lm4-jXcHjrWDgZhC8iEzrM_5TUmSa04AT3yFwPLPXUvMbjXvlSDIyIIRoC_TAQAvD_BwE
+
+
+## NEXT ORDER
+C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Analog\Clock Multiplexer
+C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Analog\fCPU v1
+C:\DVT\MadeInTheUSB.PCB\USB.BusinessCard
+
