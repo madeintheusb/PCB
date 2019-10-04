@@ -153,7 +153,7 @@
 <text x="43" y="27" size="1.27" layer="25" rot="R180" align="center">OUT</text>
 <text x="42" y="24.7" size="1.27" layer="25" rot="R180" align="center">OUT_R</text>
 <text x="27.5" y="21" size="1.27" layer="26" rot="MR0" align="center">PCBv1 - 2019.10</text>
-<text x="19" y="46.9" size="3.5" layer="25" rot="R270" align="center">Clock Multiplexer</text>
+<text x="19" y="46" size="3.5" layer="25" rot="R270" align="center">Clock Multiplexer</text>
 <text x="14" y="15.5" size="1.27" layer="25" rot="R180" align="center">INPUTS</text>
 <text x="27" y="48" size="3.5" layer="26" rot="MR90" align="center">MadeInTheUSB.net</text>
 <text x="8" y="55.9" size="1.27" layer="25" rot="R180">+</text>
@@ -241,6 +241,41 @@ grid 2.5 mm, outline 3 x 5 mm</description>
 <pad name="2" x="1.27" y="0" drill="0.8128" diameter="1.4224" shape="octagon"/>
 <text x="-2.286" y="1.905" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-2.286" y="-3.048" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="EG1218">
+<wire x1="-5.842" y1="2.032" x2="-0.254" y2="2.032" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="2.032" x2="0" y2="1.778" width="0.127" layer="21"/>
+<wire x1="0" y1="1.778" x2="0.254" y2="2.032" width="0.127" layer="21"/>
+<wire x1="0.254" y1="2.032" x2="5.842" y2="2.032" width="0.127" layer="21"/>
+<wire x1="5.842" y1="2.032" x2="5.842" y2="1.524" width="0.127" layer="21"/>
+<wire x1="5.842" y1="1.524" x2="5.334" y2="1.524" width="0.127" layer="21"/>
+<wire x1="5.334" y1="1.524" x2="5.334" y2="-1.524" width="0.127" layer="21"/>
+<wire x1="5.334" y1="-1.524" x2="5.842" y2="-1.524" width="0.127" layer="21"/>
+<wire x1="5.842" y1="-1.524" x2="5.842" y2="-2.032" width="0.127" layer="21"/>
+<wire x1="5.842" y1="-2.032" x2="0.254" y2="-2.032" width="0.127" layer="21"/>
+<wire x1="0.254" y1="-2.032" x2="0" y2="-1.778" width="0.127" layer="21"/>
+<wire x1="0" y1="-1.778" x2="-0.254" y2="-2.032" width="0.127" layer="21"/>
+<wire x1="-0.254" y1="-2.032" x2="-5.842" y2="-2.032" width="0.127" layer="21"/>
+<wire x1="-5.842" y1="-2.032" x2="-5.842" y2="-1.524" width="0.127" layer="21"/>
+<wire x1="-5.842" y1="-1.524" x2="-5.334" y2="-1.524" width="0.127" layer="21"/>
+<wire x1="-5.334" y1="-1.524" x2="-5.334" y2="1.524" width="0.127" layer="21"/>
+<wire x1="-5.334" y1="1.524" x2="-5.842" y2="1.524" width="0.127" layer="21"/>
+<wire x1="-5.842" y1="1.524" x2="-5.842" y2="2.032" width="0.127" layer="21"/>
+<wire x1="-2.286" y1="1.016" x2="2.286" y2="1.016" width="0.127" layer="25"/>
+<wire x1="2.286" y1="1.016" x2="2.286" y2="-1.016" width="0.127" layer="25"/>
+<wire x1="2.286" y1="-1.016" x2="-2.286" y2="-1.016" width="0.127" layer="25"/>
+<wire x1="-2.286" y1="-1.016" x2="-2.286" y2="1.016" width="0.127" layer="25"/>
+<wire x1="-2.032" y1="1.016" x2="-2.032" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="-1.778" y1="-1.016" x2="-1.778" y2="1.016" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="1.016" x2="-1.524" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-1.016" x2="-1.27" y2="1.016" width="0.127" layer="21"/>
+<wire x1="-1.016" y1="1.016" x2="-1.016" y2="-1.016" width="0.127" layer="21"/>
+<wire x1="-0.762" y1="-1.016" x2="-0.762" y2="1.016" width="0.127" layer="21"/>
+<wire x1="-0.508" y1="1.016" x2="-0.508" y2="-1.016" width="0.127" layer="21"/>
+<pad name="P" x="0" y="0" drill="0.9" diameter="1.6764"/>
+<pad name="O" x="-2.54" y="0" drill="0.9" diameter="1.6764"/>
+<pad name="S" x="2.54" y="0" drill="0.9" diameter="1.6764"/>
+<text x="-2.794" y="2.54" size="1.27" layer="25" font="vector">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -358,41 +393,6 @@ grid 2.5 mm, outline 3 x 5 mm</description>
 <text x="3.556" y="1.524" size="1.27" layer="51" ratio="10">2</text>
 <text x="-4.572" y="-2.794" size="1.27" layer="51" ratio="10">3</text>
 <text x="3.556" y="-2.794" size="1.27" layer="51" ratio="10">4</text>
-</package>
-</packages>
-</library>
-<library name="microbuilder">
-<description>&lt;h2&gt;&lt;b&gt;microBuilder.eu&lt;/b&gt; Eagle Footprint Library&lt;/h2&gt;
-
-&lt;p&gt;Footprints for common components used in our projects and products.  This is the same library that we use internally, and it is regularly updated.  The newest version can always be found at &lt;b&gt;www.microBuilder.eu&lt;/b&gt;.  If you find this library useful, please feel free to purchase something from our online store. Please also note that all holes are optimised for metric drill bits!&lt;/p&gt;
-
-&lt;h3&gt;Obligatory Warning&lt;/h3&gt;
-&lt;p&gt;While it probably goes without saying, there are no guarantees that the footprints or schematic symbols in this library are flawless, and we make no promises of fitness for production, prototyping or any other purpose. These libraries are provided for information puposes only, and are used at your own discretion.  While we make every effort to produce accurate footprints, and many of the items found in this library have be proven in production, we can't make any promises of suitability for a specific purpose. If you do find any errors, though, please feel free to contact us at www.microbuilder.eu to let us know about it so that we can update the library accordingly!&lt;/p&gt;
-
-&lt;h3&gt;License&lt;/h3&gt;
-&lt;p&gt;This work is placed in the public domain, and may be freely used for commercial and non-commercial work with the following conditions:&lt;/p&gt;
-&lt;p&gt;THIS SOFTWARE IS PROVIDED ''AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE INSTITUTE OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,  BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-&lt;/p&gt;</description>
-<packages>
-<package name="SOLDERJUMPER_REFLOW">
-<description>&lt;b&gt;Solder Jumper&lt;/b&gt; - Reflow</description>
-<wire x1="1.397" y1="-1.016" x2="-1.397" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="1.397" y1="1.016" x2="1.651" y2="0.762" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.651" y1="0.762" x2="-1.397" y2="1.016" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.651" y1="-0.762" x2="-1.397" y2="-1.016" width="0.2032" layer="21" curve="90"/>
-<wire x1="1.397" y1="-1.016" x2="1.651" y2="-0.762" width="0.2032" layer="21" curve="90"/>
-<wire x1="1.651" y1="-0.762" x2="1.651" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="-1.651" y1="-0.762" x2="-1.651" y2="0.762" width="0.2032" layer="21"/>
-<wire x1="-1.397" y1="1.016" x2="1.397" y2="1.016" width="0.2032" layer="21"/>
-<wire x1="1.016" y1="0" x2="1.524" y2="0" width="0.2032" layer="51"/>
-<wire x1="-1.016" y1="0" x2="-1.524" y2="0" width="0.2032" layer="51"/>
-<wire x1="-0.254" y1="-0.127" x2="-0.254" y2="0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<wire x1="0.254" y1="0.127" x2="0.254" y2="-0.127" width="1.27" layer="51" curve="-180" cap="flat"/>
-<smd name="1" x="-0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
-<smd name="2" x="0.762" y="0" dx="1.1684" dy="1.6002" layer="1"/>
-<text x="-1.651" y="1.27" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="0.4001" y="0" size="0.02" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.0762" y1="-0.9144" x2="0.0762" y2="0.9144" layer="29"/>
 </package>
 </packages>
 </library>
@@ -667,14 +667,16 @@ design rules under a new name.</description>
 <attribute name="NAME" x="38.317" y="46.952" size="1.27" layer="25" ratio="10" rot="R90" align="center"/>
 <attribute name="VALUE" x="48.08" y="43.952" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R_MANUAL_CLOCK_PULL_DOWN" library="adafruit" package="R1206" value="" x="31" y="57.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="28.357" y="56.603" size="1.016" layer="25" rot="R90" align="center"/>
-<attribute name="VALUE" x="33.413" y="56.103" size="1.27" layer="27" rot="R90"/>
+<element name="R_MANUAL_CLOCK_PULL_DOWN_1K" library="adafruit" package="R1206" value="" x="26.5" y="65.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="23.857" y="57.103" size="1.016" layer="25" rot="R90" align="center"/>
+<attribute name="VALUE" x="28.913" y="64.103" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="SJ1" library="microbuilder" package="SOLDERJUMPER_REFLOW" value="" x="31" y="41" rot="R270"/>
-<element name="DIODE_1N5817" library="diode" package="DO35Z10" value="1N821" x="31" y="30" smashed="yes" rot="R270">
-<attribute name="NAME" x="33.27" y="29.786" size="1.016" layer="25" ratio="10" rot="R270" align="center"/>
-<attribute name="VALUE" x="28.46" y="32.286" size="1.27" layer="27" ratio="10" rot="R270"/>
+<element name="DIODE_1N5817" library="diode" package="DO35Z10" value="1N821" x="31.5" y="30" smashed="yes" rot="R270">
+<attribute name="NAME" x="33.77" y="29.786" size="1.016" layer="25" ratio="10" rot="R270" align="center"/>
+<attribute name="VALUE" x="28.96" y="32.286" size="1.27" layer="27" ratio="10" rot="R270"/>
+</element>
+<element name="AUTOMATED_CLOCK_ON_OFF" library="adafruit" package="EG1218" value="" x="31" y="46.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="27.46" y="45.506" size="1.27" layer="25" font="vector" rot="R90" align="center"/>
 </element>
 </elements>
 <signals>
@@ -687,15 +689,15 @@ design rules under a new name.</description>
 <contactref element="OUTPUTS_4" pad="1"/>
 <contactref element="OUTPUTS_5" pad="1"/>
 <contactref element="C_100MF" pad="1"/>
-<contactref element="R_MANUAL_CLOCK_PULL_DOWN" pad="1"/>
+<contactref element="R_MANUAL_CLOCK_PULL_DOWN_1K" pad="1"/>
 <wire x1="47" y1="68.31" x2="39.23" y2="77" width="0" layer="19" extent="1-1"/>
-<wire x1="21.69" y1="80.5" x2="39.23" y2="77" width="0" layer="19" extent="1-1"/>
-<wire x1="4.5" y1="60.69" x2="21.69" y2="80.5" width="0" layer="19" extent="1-1"/>
+<wire x1="26.5" y1="64.078" x2="39.23" y2="77" width="0" layer="19" extent="1-1"/>
+<wire x1="21.69" y1="80.5" x2="26.5" y2="64.078" width="0" layer="19" extent="1-1"/>
+<wire x1="4.5" y1="60.69" x2="26.5" y2="64.078" width="0" layer="19" extent="1-1"/>
 <wire x1="7.5" y1="39.578" x2="4.5" y2="60.69" width="0" layer="19" extent="1-1"/>
 <wire x1="4.5" y1="24.19" x2="7.5" y2="39.578" width="0" layer="19" extent="1-1"/>
 <wire x1="21.69" y1="14.5" x2="4.5" y2="24.19" width="0" layer="19" extent="1-1"/>
-<wire x1="31" y1="56.078" x2="7.5" y2="39.578" width="0" layer="19" extent="1-1"/>
-<wire x1="46.5" y1="32.31" x2="31" y2="56.078" width="0" layer="19" extent="1-1"/>
+<wire x1="46.5" y1="32.31" x2="21.69" y2="14.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="JP_CLOCK_IN" pad="2"/>
@@ -719,7 +721,7 @@ design rules under a new name.</description>
 <signal name="TMR555_OUTPUT">
 <contactref element="JP_CLOCK_IN" pad="3"/>
 <contactref element="DIODE_1N5817" pad="A"/>
-<wire x1="26.77" y1="14.5" x2="31" y2="24.92" width="0" layer="19" extent="1-1"/>
+<wire x1="26.77" y1="14.5" x2="31.5" y2="24.92" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TMR555_OUTPUT_REVERSE">
 <contactref element="JP_CLOCK_IN" pad="4"/>
@@ -746,20 +748,20 @@ design rules under a new name.</description>
 <contactref element="OUTPUTS_3" pad="3"/>
 <contactref element="OUTPUTS_4" pad="3"/>
 <contactref element="MANUAL_CLOCK" pad="4"/>
-<contactref element="R_MANUAL_CLOCK_PULL_DOWN" pad="2"/>
-<contactref element="SJ1" pad="1"/>
+<contactref element="R_MANUAL_CLOCK_PULL_DOWN_1K" pad="2"/>
+<contactref element="AUTOMATED_CLOCK_ON_OFF" pad="O"/>
 <wire x1="45.2606" y1="50.2512" x2="47" y2="63.23" width="0" layer="19" extent="1-1"/>
-<wire x1="31" y1="58.922" x2="45.2606" y2="50.2512" width="0" layer="19" extent="1-1"/>
-<wire x1="31" y1="41.762" x2="31" y2="58.922" width="0" layer="19" extent="1-1"/>
-<wire x1="4.5" y1="29.27" x2="31" y2="41.762" width="0" layer="19" extent="1-1"/>
-<wire x1="46.5" y1="27.23" x2="45.2606" y2="50.2512" width="0" layer="19" extent="1-1"/>
-<wire x1="26.77" y1="80.5" x2="47" y2="63.23" width="0" layer="19" extent="1-1"/>
-<wire x1="4.5" y1="65.77" x2="26.77" y2="80.5" width="0" layer="19" extent="1-1"/>
+<wire x1="31" y1="44.26" x2="45.2606" y2="50.2512" width="0" layer="19" extent="1-1"/>
+<wire x1="26.5" y1="66.922" x2="47" y2="63.23" width="0" layer="19" extent="1-1"/>
+<wire x1="26.77" y1="80.5" x2="26.5" y2="66.922" width="0" layer="19" extent="1-1"/>
+<wire x1="4.5" y1="65.77" x2="26.5" y2="66.922" width="0" layer="19" extent="1-1"/>
+<wire x1="46.5" y1="27.23" x2="31" y2="44.26" width="0" layer="19" extent="1-1"/>
+<wire x1="4.5" y1="29.27" x2="31" y2="44.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="DIODE_1N5817" pad="C"/>
-<contactref element="SJ1" pad="2"/>
-<wire x1="31" y1="40.238" x2="31" y2="35.08" width="0" layer="19" extent="1-1"/>
+<contactref element="AUTOMATED_CLOCK_ON_OFF" pad="P"/>
+<wire x1="31.5" y1="35.08" x2="31" y2="46.8" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

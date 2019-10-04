@@ -20,8 +20,11 @@ Thru Hole
 		1 -> 3 or 1 -> 4
 		2 -> 3 or 2 -> 4
 		
-    - Switch on/off 3 pin		
+    - Sliding Switch on/off 3 pin (NOT THRU HOLE)
         Mini slide switch switch 255SB 255SB http://sumo.ly/tStF
+
+- Sliding Switch on/off 3 pin (THRU HOLE)
+        Package: EG1218, Device:EG1218S (EG1218), Library: adafruit
         
     - Tactile Switch on/off 2 pin		
         SMD Tactile switch 2 pins Package: TACTILE_SWITCH-SMD-RIGHT-ANGLE
@@ -173,6 +176,7 @@ SMD
 
 		- Thru Hole
 		Package:DO35Z10, Device:1N821, Library:diode
+			1N5817
 				
 		Eagle Adafruit\DIODE\DIODESOD-123
 			SMADIODE - SMA Surface Mount Package 
