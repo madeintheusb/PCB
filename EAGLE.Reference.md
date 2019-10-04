@@ -61,7 +61,8 @@ USB
 			Package:USB-A003, Library:con-yamaichi
 
 	Male Type A -- USB MALE LIKE YUBIKEY
-		Device:, Package:, Adafruit
+		Library:SparkFun-Connectors Device:, Package:USB-A-PCB, Value:USBPCB
+		<part name="JP1" library="SparkFun-Connectors" deviceset="USB" device="PCB"/>
 
 	Female Micro USB Type B SMD Weak Attachment		
 		Device:USB-ABCONN-11794 (USB-AB), Package:USB-AB-MICRO-SMD_V03, Library:SparkFun-Connectors
@@ -168,7 +169,10 @@ SMD
 	- diode
 		- Package SOD 123
 		MBRX120TPMSCT-ND
-		http://www.mouser.com/Search/ProductDetail.aspx?R=MBRX120-TPvirtualkey54720000virtualkey833-MBRX120-TP		
+		http://www.mouser.com/Search/ProductDetail.aspx?R=MBRX120-TPvirtualkey54720000virtualkey833-MBRX120-TP
+
+		- Thru Hole
+		Package:DO35Z10, Device:1N821, Library:diode
 				
 		Eagle Adafruit\DIODE\DIODESOD-123
 			SMADIODE - SMA Surface Mount Package 
