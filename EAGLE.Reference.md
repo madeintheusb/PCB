@@ -60,8 +60,8 @@ USB
 		EAGLE PART USB Type A Female with no soldering connector only holder
 			Package:USB-A003, Library:con-yamaichi
 
-	Male Type A -- USB MALE LIKE UBI KEY
-		Device:USB-A, Package:MOLEX_480371000, Adafruit
+	Male Type A -- USB MALE LIKE YUBIKEY
+		Device:, Package:, Adafruit
 
 	Female Micro USB Type B SMD Weak Attachment		
 		Device:USB-ABCONN-11794 (USB-AB), Package:USB-AB-MICRO-SMD_V03, Library:SparkFun-Connectors
