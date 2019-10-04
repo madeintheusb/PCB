@@ -156,7 +156,7 @@
 <text x="19" y="46" size="3.5" layer="25" rot="R270" align="center">Clock Multiplexer</text>
 <text x="14" y="15.5" size="1.27" layer="25" rot="R180" align="center">INPUTS</text>
 <text x="27" y="48" size="3.5" layer="26" rot="MR90" align="center">MadeInTheUSB.net</text>
-<text x="8" y="55.9" size="1.27" layer="25" rot="R180">+</text>
+<text x="7" y="37.9" size="1.27" layer="25" rot="R270">+</text>
 <text x="8.5" y="23.9" size="1.27" layer="25" rot="R180" align="center">GND</text>
 <text x="8.5" y="26.5" size="1.27" layer="25" rot="R180" align="center">VCC</text>
 <text x="8.5" y="29.2" size="1.27" layer="25" rot="R180" align="center">OUT</text>
@@ -638,9 +638,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="5.357" y="51.103" size="1.016" layer="25" rot="R90" align="center"/>
 <attribute name="VALUE" x="9.913" y="49.103" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="LED_PWR" library="adafruit" package="1206" value="" x="7.5" y="41" smashed="yes" rot="R270">
-<attribute name="NAME" x="5.27" y="41.77" size="1.016" layer="25" rot="R270" align="center"/>
-<attribute name="VALUE" x="4.96" y="42.27" size="1.27" layer="27" rot="R270"/>
+<element name="LED_PWR" library="adafruit" package="1206" value="" x="7.5" y="41" smashed="yes" rot="R90">
+<attribute name="NAME" x="5.23" y="40.73" size="1.016" layer="25" rot="R90" align="center"/>
+<attribute name="VALUE" x="10.04" y="39.73" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="OUTPUTS_2" library="pinhead" package="1X04" value="" x="4.5" y="28" smashed="yes" rot="R90">
 <attribute name="NAME" x="13.6712" y="27.3438" size="1.27" layer="25" ratio="10" rot="R270" align="center"/>
@@ -667,9 +667,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="38.317" y="46.952" size="1.27" layer="25" ratio="10" rot="R90" align="center"/>
 <attribute name="VALUE" x="48.08" y="43.952" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="R_MANUAL_CLOCK_PULL_DOWN" library="adafruit" package="R1206" value="" x="27" y="65.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="24.357" y="58.603" size="1.016" layer="25" rot="R90" align="center"/>
-<attribute name="VALUE" x="29.413" y="64.103" size="1.27" layer="27" rot="R90"/>
+<element name="R_MANUAL_CLOCK_PULL_DOWN_1K" library="adafruit" package="R1206" value="" x="26.5" y="65.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="23.857" y="57.103" size="1.016" layer="25" rot="R90" align="center"/>
+<attribute name="VALUE" x="28.913" y="64.103" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="DIODE_1N5817" library="diode" package="DO35Z10" value="1N821" x="31.5" y="30" smashed="yes" rot="R270">
 <attribute name="NAME" x="33.77" y="29.786" size="1.016" layer="25" ratio="10" rot="R270" align="center"/>
@@ -689,13 +689,13 @@ design rules under a new name.</description>
 <contactref element="OUTPUTS_4" pad="1"/>
 <contactref element="OUTPUTS_5" pad="1"/>
 <contactref element="C_100MF" pad="1"/>
-<contactref element="R_MANUAL_CLOCK_PULL_DOWN" pad="1"/>
+<contactref element="R_MANUAL_CLOCK_PULL_DOWN_1K" pad="1"/>
 <wire x1="47" y1="68.31" x2="39.23" y2="77" width="0" layer="19" extent="1-1"/>
-<wire x1="27" y1="64.078" x2="39.23" y2="77" width="0" layer="19" extent="1-1"/>
-<wire x1="21.69" y1="80.5" x2="27" y2="64.078" width="0" layer="19" extent="1-1"/>
-<wire x1="4.5" y1="60.69" x2="27" y2="64.078" width="0" layer="19" extent="1-1"/>
-<wire x1="7.5" y1="39.578" x2="4.5" y2="60.69" width="0" layer="19" extent="1-1"/>
-<wire x1="4.5" y1="24.19" x2="7.5" y2="39.578" width="0" layer="19" extent="1-1"/>
+<wire x1="26.5" y1="64.078" x2="39.23" y2="77" width="0" layer="19" extent="1-1"/>
+<wire x1="21.69" y1="80.5" x2="26.5" y2="64.078" width="0" layer="19" extent="1-1"/>
+<wire x1="4.5" y1="60.69" x2="26.5" y2="64.078" width="0" layer="19" extent="1-1"/>
+<wire x1="7.5" y1="42.422" x2="4.5" y2="60.69" width="0" layer="19" extent="1-1"/>
+<wire x1="4.5" y1="24.19" x2="7.5" y2="42.422" width="0" layer="19" extent="1-1"/>
 <wire x1="21.69" y1="14.5" x2="4.5" y2="24.19" width="0" layer="19" extent="1-1"/>
 <wire x1="46.5" y1="32.31" x2="21.69" y2="14.5" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -739,7 +739,7 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="R_PWR_1K" pad="1"/>
 <contactref element="LED_PWR" pad="A"/>
-<wire x1="7.5" y1="42.422" x2="7.5" y2="49.078" width="0" layer="19" extent="1-1"/>
+<wire x1="7.5" y1="39.578" x2="7.5" y2="49.078" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TMR555_OUTPUT_2">
 <contactref element="OUTPUTS_1" pad="3"/>
@@ -748,13 +748,13 @@ design rules under a new name.</description>
 <contactref element="OUTPUTS_3" pad="3"/>
 <contactref element="OUTPUTS_4" pad="3"/>
 <contactref element="MANUAL_CLOCK" pad="4"/>
-<contactref element="R_MANUAL_CLOCK_PULL_DOWN" pad="2"/>
+<contactref element="R_MANUAL_CLOCK_PULL_DOWN_1K" pad="2"/>
 <contactref element="AUTOMATED_CLOCK_ON_OFF" pad="O"/>
 <wire x1="45.2606" y1="50.2512" x2="47" y2="63.23" width="0" layer="19" extent="1-1"/>
 <wire x1="31" y1="44.26" x2="45.2606" y2="50.2512" width="0" layer="19" extent="1-1"/>
-<wire x1="27" y1="66.922" x2="47" y2="63.23" width="0" layer="19" extent="1-1"/>
-<wire x1="26.77" y1="80.5" x2="27" y2="66.922" width="0" layer="19" extent="1-1"/>
-<wire x1="4.5" y1="65.77" x2="27" y2="66.922" width="0" layer="19" extent="1-1"/>
+<wire x1="26.5" y1="66.922" x2="47" y2="63.23" width="0" layer="19" extent="1-1"/>
+<wire x1="26.77" y1="80.5" x2="26.5" y2="66.922" width="0" layer="19" extent="1-1"/>
+<wire x1="4.5" y1="65.77" x2="26.5" y2="66.922" width="0" layer="19" extent="1-1"/>
 <wire x1="46.5" y1="27.23" x2="31" y2="44.26" width="0" layer="19" extent="1-1"/>
 <wire x1="4.5" y1="29.27" x2="31" y2="44.26" width="0" layer="19" extent="1-1"/>
 </signal>

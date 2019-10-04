@@ -6151,7 +6151,7 @@ temperature compensated, 6,2 V</description>
 <part name="C_100MF" library="adafruit" deviceset="C-US" device="025-030X050"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="MANUAL_CLOCK" library="switch-omron" deviceset="10-XX" device=""/>
-<part name="R_MANUAL_CLOCK_PULL_DOWN" library="adafruit" deviceset="R-US_" device="R1206"/>
+<part name="R_MANUAL_CLOCK_PULL_DOWN_1K" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="DIODE_1N5817" library="diode" deviceset="1N821" device=""/>
 <part name="AUTOMATED_CLOCK_ON_OFF" library="adafruit" deviceset="EG1218" device="S"/>
@@ -6179,7 +6179,7 @@ temperature compensated, 6,2 V</description>
 <instance part="C_100MF" gate="G$1" x="-66.04" y="96.52" rot="R180"/>
 <instance part="GND8" gate="1" x="-66.04" y="81.28"/>
 <instance part="MANUAL_CLOCK" gate="1" x="-73.66" y="53.34"/>
-<instance part="R_MANUAL_CLOCK_PULL_DOWN" gate="G$1" x="-86.36" y="40.64"/>
+<instance part="R_MANUAL_CLOCK_PULL_DOWN_1K" gate="G$1" x="-86.36" y="40.64"/>
 <instance part="GND9" gate="1" x="-106.68" y="40.64" rot="R270"/>
 <instance part="DIODE_1N5817" gate="1" x="-25.4" y="129.54" rot="R180"/>
 <instance part="AUTOMATED_CLOCK_ON_OFF" gate="1" x="-48.26" y="127" smashed="yes" rot="R90">
@@ -6233,7 +6233,7 @@ temperature compensated, 6,2 V</description>
 </segment>
 <segment>
 <pinref part="GND9" gate="1" pin="GND"/>
-<pinref part="R_MANUAL_CLOCK_PULL_DOWN" gate="G$1" pin="1"/>
+<pinref part="R_MANUAL_CLOCK_PULL_DOWN_1K" gate="G$1" pin="1"/>
 <wire x1="-104.14" y1="40.64" x2="-91.44" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6365,7 +6365,7 @@ temperature compensated, 6,2 V</description>
 <pinref part="MANUAL_CLOCK" gate="1" pin="P1"/>
 <wire x1="-71.12" y1="48.26" x2="-71.12" y2="40.64" width="0.1524" layer="91"/>
 <label x="-71.12" y="38.1" size="1.778" layer="95"/>
-<pinref part="R_MANUAL_CLOCK_PULL_DOWN" gate="G$1" pin="2"/>
+<pinref part="R_MANUAL_CLOCK_PULL_DOWN_1K" gate="G$1" pin="2"/>
 <wire x1="-71.12" y1="40.64" x2="-71.12" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-81.28" y1="40.64" x2="-71.12" y2="40.64" width="0.1524" layer="91"/>
 <junction x="-71.12" y="40.64"/>
