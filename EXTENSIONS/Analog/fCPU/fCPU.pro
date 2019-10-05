@@ -2,24 +2,26 @@ EAGLE AutoRouter Statistics:
 
 Job           : C:/DVT/MadeInTheUSB.PCB/EXTENSIONS/Analog/fCPU/fCPU.brd
 
-Start at      : 21:44:55 (10/1/2019)
-End at        : 21:46:02 (10/1/2019)
-Elapsed time  : 00:01:05
+Start at      : 22:17:37 (10/4/2019)
+End at        : 22:19:03 (10/4/2019)
+Elapsed time  : 00:00:18
 
-Signals       :    39   RoutingGrid: 9 mil  Layers: 2
+Signals       :    39   RoutingGrid: 4.92126 mil  Layers: 2
 Connections   :    91   predefined:  0 ( 0 Vias )
 
-Router memory :   547312
+Router memory :   1786660
 
-Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4 Optimize5 Optimize6 Optimize7 Optimize8 Optimize9Optimize10Optimize11Optimize12
+Job has been interrupted!
 
-Time per pass     :  00:00:43  00:00:01  00:00:02  00:00:02  00:00:02  00:00:02  00:00:01  00:00:02  00:00:02  00:00:02  00:00:01  00:00:02  00:00:02  00:00:01
-Number of Ripups  :         0         0         0         0         0         0         0         0         0         0         0         0         0         0
-max. Level        :         0         0         0         0         0         0         0         0         0         0         0         0         0         0
-max. Total        :         0         0         0         0         0         0         0         0         0         0         0         0         0         0
+Passname          :     Route Optimize1 Optimize2
 
-Routed            :        66        91        91        91        91        91        91        91        91        91        91        91        91        91
-Vias              :         0        18        27        13        10         9         9         9         9         8         8         8         8         8
-Resolution        :    72.5 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Time per pass     :  00:00:07  00:00:06  00:00:05
+Number of Ripups  :         0         0         0
+max. Level        :         0         0         0
+max. Total        :         0         0         0
+
+Routed            :        91        91        91
+Vias              :        41        21        20
+Resolution        :   100.0 %   100.0 %   100.0 %
 
 Final             : 100.0% finished

@@ -160,10 +160,10 @@
 <text x="79.5" y="69.4" size="2.1844" layer="25" align="center">v 1</text>
 <text x="32" y="17.5" size="1.016" layer="25" rot="R90" align="center">GND</text>
 <text x="72" y="64.5" size="1.27" layer="25" rot="R90">+</text>
-<text x="93.5" y="25" size="1.27" layer="25" rot="R90" align="center">B0</text>
-<text x="93.5" y="27.5" size="1.27" layer="25" rot="R90" align="center">B1</text>
-<text x="93.5" y="30" size="1.27" layer="25" rot="R90" align="center">B2</text>
-<text x="93.5" y="33" size="1.27" layer="25" rot="R90" align="center">B3</text>
+<text x="93.5" y="26" size="1.27" layer="25" rot="R90" align="center">B0</text>
+<text x="93.5" y="28.5" size="1.27" layer="25" rot="R90" align="center">B1</text>
+<text x="93.5" y="31" size="1.27" layer="25" rot="R90" align="center">B2</text>
+<text x="93.5" y="34" size="1.27" layer="25" rot="R90" align="center">B3</text>
 <text x="93.5" y="43.5" size="1.27" layer="25" rot="R90" align="center">B0</text>
 <text x="93.5" y="46" size="1.27" layer="25" rot="R90" align="center">B1</text>
 <text x="93.5" y="49" size="1.27" layer="25" rot="R90" align="center">B2</text>
@@ -872,11 +872,11 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="68.27" y="67.54" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="INPUT_DEVICE_1_EX" library="pinhead" package="1X04" value="" x="96" y="30" smashed="yes" rot="R90">
-<attribute name="NAME" x="91.1712" y="29.8438" size="1.27" layer="25" ratio="10" rot="R90" align="center"/>
+<attribute name="NAME" x="91.1712" y="29.8438" size="1.1" layer="25" ratio="10" rot="R90" align="center"/>
 <attribute name="VALUE" x="99.175" y="24.92" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="INPUT_DEVICE_2_EX" library="pinhead" package="1X04" value="" x="96.5" y="47.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="91.6712" y="46.8438" size="1.27" layer="25" ratio="10" rot="R90" align="center"/>
+<attribute name="NAME" x="91.1712" y="47.3438" size="1.1" layer="25" ratio="10" rot="R90" align="center"/>
 <attribute name="VALUE" x="99.675" y="42.42" size="1.27" layer="27" rot="R90"/>
 </element>
 </elements>
