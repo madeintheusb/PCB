@@ -263,3 +263,10 @@ https://www.seeedstudio.io/fusion_pcb.html?gclid=CjwKCAjwmtDpBRAQEiwAC6lm4-jXcHj
 C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Analog\Clock Multiplexer
 C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Analog\fCPU v1
 C:\DVT\MadeInTheUSB.PCB\USB.BusinessCard
+
+
+## Overboard motoro
+- https://www.google.com/search?q=how+to+control+hoverboard+wheel+motor&rlz=1C1CHBD_enUS700US700&source=lnms&sa=X&ved=0ahUKEwjL5tL4m4blAhUjWN8KHSI3DbYQ_AUIDSgA&biw=1164&bih=553&dpr=1.1
+- https://www.youtube.com/watch?v=LJzoy2TJXFk
+- https://www.google.com/search?q=odrive+board&rlz=1C1CHBD_enUS700US700&oq=odri&aqs=chrome.0.69i59j0l2j69i57j69i60l2.1718j0j9&sourceid=chrome&ie=UTF-8
+- https://www.google.com/search?q=emax+esc+30a&rlz=1C1CHBD_enUS700US700&source=lnms&sa=X&ved=0ahUKEwiwici4nYblAhVChuAKHSIKD58Q_AUIDSgA&biw=1164&bih=553&dpr=1.1

@@ -5013,7 +5013,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="OUTPUTS" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
-<part name="R_100O_0" library="adafruit" deviceset="R-US_" device="R1206"/>
+<part name="R_100_O" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="DISPLAY_DRIVER_74LS47" library="74xx-us" deviceset="74*47" device="N" technology="LS"/>
 <part name="DIGIT_0_ANODE" library="special" deviceset="7SEG-CA" device=""/>
 <part name="REGISTER_1_SN74LS273" library="74xx-us" deviceset="74*273" device="N"/>
@@ -5033,7 +5033,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <part name="CLEAR_REGISTER_1" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="CLEAR_REGISTER_2" library="switch-omron" deviceset="10-XX" device=""/>
 <part name="LED_POWER" library="adafruit" deviceset="LED" device="SMT1206"/>
-<part name="EXTERNAL_CONTROL" library="adafruit" deviceset="PINHD-1X12" device=""/>
+<part name="EXTERNAL_CONTROL_INPUT" library="adafruit" deviceset="PINHD-1X12" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5044,7 +5044,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <instance part="GND5" gate="1" x="45.72" y="121.92" rot="R90"/>
 <instance part="OUTPUTS" gate="A" x="17.78" y="104.14" rot="R180"/>
 <instance part="GND2" gate="1" x="43.18" y="99.06" rot="R90"/>
-<instance part="R_100O_0" gate="G$1" x="50.8" y="71.12"/>
+<instance part="R_100_O" gate="G$1" x="50.8" y="71.12"/>
 <instance part="DISPLAY_DRIVER_74LS47" gate="G$1" x="-50.8" y="50.8"/>
 <instance part="DIGIT_0_ANODE" gate="G$1" x="25.4" y="76.2"/>
 <instance part="REGISTER_1_SN74LS273" gate="A" x="111.76" y="142.24"/>
@@ -5064,7 +5064,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <instance part="CLEAR_REGISTER_1" gate="1" x="-20.32" y="132.08"/>
 <instance part="CLEAR_REGISTER_2" gate="1" x="-45.72" y="132.08"/>
 <instance part="LED_POWER" gate="G$1" x="78.74" y="193.04"/>
-<instance part="EXTERNAL_CONTROL" gate="G$1" x="284.48" y="96.52" rot="R180"/>
+<instance part="EXTERNAL_CONTROL_INPUT" gate="G$1" x="284.48" y="96.52" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -5155,7 +5155,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="-71.12" y1="48.26" x2="-71.12" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R_100O_0" gate="G$1" pin="2"/>
+<pinref part="R_100_O" gate="G$1" pin="2"/>
 <wire x1="55.88" y1="71.12" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
 <label x="60.96" y="71.12" size="1.778" layer="95"/>
 </segment>
@@ -5308,7 +5308,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <net name="N$1" class="0">
 <segment>
 <pinref part="DIGIT_0_ANODE" gate="G$1" pin="CA2"/>
-<pinref part="R_100O_0" gate="G$1" pin="1"/>
+<pinref part="R_100_O" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="71.12" x2="45.72" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5389,7 +5389,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="40.64" y="175.26" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
-<pinref part="EXTERNAL_CONTROL" gate="G$1" pin="9"/>
+<pinref part="EXTERNAL_CONTROL_INPUT" gate="G$1" pin="9"/>
 <wire x1="287.02" y1="104.14" x2="320.04" y2="104.14" width="0.1524" layer="91"/>
 <label x="320.04" y="104.14" size="1.778" layer="95"/>
 </segment>
@@ -5408,7 +5408,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="-17.78" y1="132.08" x2="-17.78" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="EXTERNAL_CONTROL" gate="G$1" pin="10"/>
+<pinref part="EXTERNAL_CONTROL_INPUT" gate="G$1" pin="10"/>
 <wire x1="287.02" y1="106.68" x2="322.58" y2="106.68" width="0.1524" layer="91"/>
 <label x="320.04" y="106.68" size="1.778" layer="95"/>
 </segment>
@@ -5430,7 +5430,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="43.18" y="177.8" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
-<pinref part="EXTERNAL_CONTROL" gate="G$1" pin="11"/>
+<pinref part="EXTERNAL_CONTROL_INPUT" gate="G$1" pin="11"/>
 <wire x1="287.02" y1="109.22" x2="320.04" y2="109.22" width="0.1524" layer="91"/>
 <label x="320.04" y="109.22" size="1.778" layer="95"/>
 </segment>
@@ -5447,7 +5447,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="-39.878" y="100.33" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="EXTERNAL_CONTROL" gate="G$1" pin="12"/>
+<pinref part="EXTERNAL_CONTROL_INPUT" gate="G$1" pin="12"/>
 <wire x1="287.02" y1="111.76" x2="317.5" y2="111.76" width="0.1524" layer="91"/>
 <label x="317.5" y="111.76" size="1.778" layer="95"/>
 </segment>
@@ -5469,7 +5469,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="209.296" y="89.916" size="1.778" layer="95" rot="R270"/>
 </segment>
 <segment>
-<pinref part="EXTERNAL_CONTROL" gate="G$1" pin="1"/>
+<pinref part="EXTERNAL_CONTROL_INPUT" gate="G$1" pin="1"/>
 <wire x1="287.02" y1="83.82" x2="322.58" y2="83.82" width="0.1524" layer="91"/>
 <label x="320.04" y="83.82" size="1.778" layer="95"/>
 </segment>
@@ -5491,7 +5491,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="213.868" y="65.532" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="EXTERNAL_CONTROL" gate="G$1" pin="2"/>
+<pinref part="EXTERNAL_CONTROL_INPUT" gate="G$1" pin="2"/>
 <wire x1="287.02" y1="86.36" x2="322.58" y2="86.36" width="0.1524" layer="91"/>
 <label x="320.04" y="86.36" size="1.778" layer="95"/>
 </segment>
@@ -5513,7 +5513,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="216.408" y="65.786" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="EXTERNAL_CONTROL" gate="G$1" pin="3"/>
+<pinref part="EXTERNAL_CONTROL_INPUT" gate="G$1" pin="3"/>
 <wire x1="287.02" y1="88.9" x2="320.04" y2="88.9" width="0.1524" layer="91"/>
 <label x="320.04" y="88.9" size="1.778" layer="95"/>
 </segment>
@@ -5535,7 +5535,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="219.202" y="65.786" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="EXTERNAL_CONTROL" gate="G$1" pin="4"/>
+<pinref part="EXTERNAL_CONTROL_INPUT" gate="G$1" pin="4"/>
 <wire x1="287.02" y1="91.44" x2="322.58" y2="91.44" width="0.1524" layer="91"/>
 <label x="320.04" y="91.44" size="1.778" layer="95"/>
 </segment>
@@ -5557,7 +5557,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="221.996" y="62.23" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="EXTERNAL_CONTROL" gate="G$1" pin="5"/>
+<pinref part="EXTERNAL_CONTROL_INPUT" gate="G$1" pin="5"/>
 <wire x1="287.02" y1="93.98" x2="322.58" y2="93.98" width="0.1524" layer="91"/>
 <label x="320.04" y="93.98" size="1.778" layer="95"/>
 </segment>
@@ -5579,7 +5579,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="224.536" y="61.976" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="EXTERNAL_CONTROL" gate="G$1" pin="6"/>
+<pinref part="EXTERNAL_CONTROL_INPUT" gate="G$1" pin="6"/>
 <wire x1="287.02" y1="96.52" x2="322.58" y2="96.52" width="0.1524" layer="91"/>
 <label x="320.04" y="96.52" size="1.778" layer="95"/>
 </segment>
@@ -5601,7 +5601,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="227.33" y="61.976" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="EXTERNAL_CONTROL" gate="G$1" pin="7"/>
+<pinref part="EXTERNAL_CONTROL_INPUT" gate="G$1" pin="7"/>
 <wire x1="287.02" y1="99.06" x2="320.04" y2="99.06" width="0.1524" layer="91"/>
 <label x="320.04" y="99.06" size="1.778" layer="95"/>
 </segment>
@@ -5623,7 +5623,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="231.14" y="61.976" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="EXTERNAL_CONTROL" gate="G$1" pin="8"/>
+<pinref part="EXTERNAL_CONTROL_INPUT" gate="G$1" pin="8"/>
 <wire x1="287.02" y1="101.6" x2="322.58" y2="101.6" width="0.1524" layer="91"/>
 <label x="320.04" y="101.6" size="1.778" layer="95"/>
 </segment>
