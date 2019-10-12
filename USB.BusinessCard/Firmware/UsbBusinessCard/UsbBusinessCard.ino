@@ -55,9 +55,20 @@ void setup() {
 	delay(1000);
 
 	Board.Trace("Starting");
-	oledManager.DrawRect(0, 0, display.width(), display.height());
-	display.display();
-	
+	oledManager.DrawRect(0, 0, oledManager.Width(), oledManager.Height());
+	oledManager.Refresh();
+	delay(2000);
+
+	const char * title = F("Frederic Torres");
+
+	oledManager.DrawWindow(title, NULL, 20);
+	oledManager.Refresh();
+	delay(1000);
+
+	oledManager.DrawWindow(title, "978 760 6031", 20);
+	oledManager.Refresh();
+	delay(1000);
+		
 	// Show the display buffer on the screen. You MUST call display() after
 	// drawing commands to make them visible on screen!
 	//display.display();
