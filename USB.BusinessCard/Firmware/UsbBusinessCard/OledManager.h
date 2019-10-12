@@ -28,7 +28,7 @@ public:
 	int16_t Width();
 	int16_t Height();
 	void WriteText(int16_t x, int16_t y, const String &text, int16_t textSize = 1);
-	void DrawWindow(const String &text, char * subText, int16_t xTitle = 3);
+	void DrawWindow(char * text, char * subText, int16_t xTitle = 3);
 };
 
 #endif

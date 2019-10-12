@@ -60,8 +60,9 @@ void OledManager::WriteText(int16_t x, int16_t y, const String &text, int16_t te
 }
 
 
-void OledManager::DrawWindow(const String &text, char * subText, int16_t xTitle /*= 3*/) {
+void OledManager::DrawWindow(char * text, char * subText, int16_t xTitle /*= 3*/) {
 
+	this->Clear();
 	this->DrawRect(0, 0, this->Width(), this->Height());
 	this->WriteText(xTitle, 3, text);
 	this->_display->drawFastHLine(0, 12, this->Width(), WHITE);

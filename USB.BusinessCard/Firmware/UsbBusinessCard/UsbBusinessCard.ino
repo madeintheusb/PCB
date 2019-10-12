@@ -41,31 +41,54 @@ B01111100, B11110000,
 B01110000, B01110000,
 B00000000, B00110000 };
 
-void setup() {
-	Board.InitializeComputerCommunication(9600, "Init...");
+const char WIN_TITLE[] PROGMEM = "Frederic Torres";
+const char WIN_PHONE_NUMBER[] PROGMEM = "978 760 6031";
+const char WIN_WEB_SITE[] PROGMEM = "www.FredericTorres.com";
 
-	// SSD1306_SWITCHCAPVCC = generate display voltage from 3.3V internally
-	//if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { // Address 0x3C for 128x32
-	//	Serial.println(F("SSD1306 allocation failed"));
-	//	for (;;); // Don't proceed, loop forever
-	//}
+
+char * SkipChar(char * s, int count) {
+	char * tmpS = s;
+	for (int i = 0; i < count; i++) {
+		tmpS = tmpS + 1;
+	}
+	return tmpS;
+}
+
+void setup() {
+	//Board.InitializeComputerCommunication(9600, "Init...");
+	
 	oledManager.Initialize();
 	oledManager.Clear();
 	oledManager.Refresh();
 	delay(1000);
 
-	Board.Trace("Starting");
+	//Board.Trace("Starting");
 	oledManager.DrawRect(0, 0, oledManager.Width(), oledManager.Height());
 	oledManager.Refresh();
 	delay(2000);
 
-	const char * title = F("Frederic Torres");
-
-	oledManager.DrawWindow(title, NULL, 20);
+	char * title = StringFormat.GetProgMemString(WIN_TITLE);
+	int titleX = 20;
+	
+	oledManager.DrawWindow(title, NULL, titleX);
 	oledManager.Refresh();
 	delay(1000);
 
-	oledManager.DrawWindow(title, "978 760 6031", 20);
+	oledManager.DrawWindow(title, StringFormat.GetProgMemString(WIN_PHONE_NUMBER), titleX);
+	oledManager.Refresh();
+	delay(1000);
+	
+	char * webSite = StringFormat.GetProgMemString(WIN_WEB_SITE);
+
+	oledManager.DrawWindow(title, SkipChar(webSite, 0), titleX);
+	oledManager.Refresh();
+	delay(1000);
+
+	oledManager.DrawWindow(title, SkipChar(webSite, 1), titleX);
+	oledManager.Refresh();
+	delay(1000);
+
+	oledManager.DrawWindow(title, SkipChar(webSite, 2), 20);
 	oledManager.Refresh();
 	delay(1000);
 		
