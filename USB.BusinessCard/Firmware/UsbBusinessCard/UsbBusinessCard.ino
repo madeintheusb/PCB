@@ -87,8 +87,12 @@ void Run() {
 	
 	AnimationClear(1);
 	Animation(title, NULL, 2);
-	Animation(title, StringFormat.GetProgMemString(WIN_PHONE_NUMBER), 2);
+	Animation(title, StringFormat.GetProgMemString(WIN_PHONE_NUMBER), 4);
 	AnimationSkip(title, StringFormat.GetProgMemString(WIN_WEB_SITE), 4, 1);
+	Animation(title, "Thank You", 2);
+	Animation(title, "...", 2);
+	Animation(title, "Bye", 2);
+	Animation(title, NULL, 2);
 	
 		
 	// Show the display buffer on the screen. You MUST call display() after

@@ -68,5 +68,5 @@ void OledManager::DrawWindow(char * text, char * subText, int16_t xTitle /*= 3*/
 	this->_display->drawFastHLine(0, 12, this->Width(), WHITE);
 
 	if(subText != NULL)
-		this->WriteText(3, 19, subText);
+		this->WriteText(4, 19, subText);
 }
