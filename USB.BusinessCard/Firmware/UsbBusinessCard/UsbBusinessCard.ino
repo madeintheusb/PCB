@@ -43,7 +43,7 @@ B00000000, B00110000 };
 
 const char WIN_TITLE[] PROGMEM = "Frederic Torres";
 const char WIN_PHONE_NUMBER[] PROGMEM = "978 760 6031";
-const char WIN_WEB_SITE[] PROGMEM = "www.FredericTorres.com";
+const char WIN_WEB_SITE[] PROGMEM = "www.FredericTorres.com ";
 
 
 char * SkipChar(char * s, int count) {
@@ -55,42 +55,41 @@ char * SkipChar(char * s, int count) {
 }
 
 void setup() {
-	//Board.InitializeComputerCommunication(9600, "Init...");
-	
 	oledManager.Initialize();
 	oledManager.Clear();
 	oledManager.Refresh();
-	delay(1000);
+}
 
-	//Board.Trace("Starting");
-	oledManager.DrawRect(0, 0, oledManager.Width(), oledManager.Height());
+void Animation(char * title, char * text, int secondToWait) {
+	int titleX = 20;
+	oledManager.DrawWindow(title, text, titleX);
 	oledManager.Refresh();
-	delay(2000);
+	delay(1000* secondToWait);
+}
 
-	char * title = StringFormat.GetProgMemString(WIN_TITLE);
+void AnimationSkip(char * title, char * text, int skipTime, int secondToWait) {
+	for (int i = 0; i < skipTime; i++) {
+		Animation(title, SkipChar(text, i), secondToWait);
+	}
+}
+
+void AnimationClear( int secondToWait) {
+	oledManager.Clear();
+	oledManager.Refresh();
+	delay(1000 * secondToWait);
+}
+
+void Run() {
+	char titleBuffer[20];
+	char * title = titleBuffer;
+	strcpy(titleBuffer, StringFormat.GetProgMemString(WIN_TITLE));
 	int titleX = 20;
 	
-	oledManager.DrawWindow(title, NULL, titleX);
-	oledManager.Refresh();
-	delay(1000);
-
-	oledManager.DrawWindow(title, StringFormat.GetProgMemString(WIN_PHONE_NUMBER), titleX);
-	oledManager.Refresh();
-	delay(1000);
+	AnimationClear(1);
+	Animation(title, NULL, 2);
+	Animation(title, StringFormat.GetProgMemString(WIN_PHONE_NUMBER), 2);
+	AnimationSkip(title, StringFormat.GetProgMemString(WIN_WEB_SITE), 4, 1);
 	
-	char * webSite = StringFormat.GetProgMemString(WIN_WEB_SITE);
-
-	oledManager.DrawWindow(title, SkipChar(webSite, 0), titleX);
-	oledManager.Refresh();
-	delay(1000);
-
-	oledManager.DrawWindow(title, SkipChar(webSite, 1), titleX);
-	oledManager.Refresh();
-	delay(1000);
-
-	oledManager.DrawWindow(title, SkipChar(webSite, 2), 20);
-	oledManager.Refresh();
-	delay(1000);
 		
 	// Show the display buffer on the screen. You MUST call display() after
 	// drawing commands to make them visible on screen!
@@ -141,6 +140,7 @@ void setup() {
 }
 
 void loop() {
+	Run();
 }
 
 void testdrawline() {
