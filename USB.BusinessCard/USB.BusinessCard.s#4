@@ -1341,11 +1341,6 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <wire x1="60.96" y1="76.2" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
 <label x="48.26" y="76.2" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="JP_I2C_OLED_SSD1306" gate="A" pin="2"/>
-<wire x1="38.1" y1="45.72" x2="17.78" y2="45.72" width="0.1524" layer="91"/>
-<label x="17.78" y="45.72" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="RAW" class="0">
 <segment>
@@ -1503,22 +1498,12 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <wire x1="7.62" y1="60.96" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
 <label x="20.32" y="60.96" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="JP_I2C_OLED_SSD1306" gate="A" pin="4"/>
-<wire x1="38.1" y1="40.64" x2="17.78" y2="40.64" width="0.1524" layer="91"/>
-<label x="17.78" y="40.64" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="A5_I2C_SCL" class="0">
 <segment>
 <pinref part="JP_TOP" gate="A" pin="2"/>
 <wire x1="83.82" y1="45.72" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
 <label x="83.82" y="53.34" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="JP_I2C_OLED_SSD1306" gate="A" pin="3"/>
-<wire x1="38.1" y1="43.18" x2="17.78" y2="43.18" width="0.1524" layer="91"/>
-<label x="15.24" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A6" class="0">
@@ -1533,6 +1518,24 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <pinref part="JP_TOP" gate="A" pin="4"/>
 <wire x1="78.74" y1="45.72" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
 <label x="78.74" y="53.34" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="JP_I2C_OLED_SSD1306" gate="A" pin="2"/>
+<wire x1="38.1" y1="45.72" x2="17.78" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="JP_I2C_OLED_SSD1306" gate="A" pin="3"/>
+<wire x1="38.1" y1="43.18" x2="17.78" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="JP_I2C_OLED_SSD1306" gate="A" pin="4"/>
+<wire x1="38.1" y1="40.64" x2="17.78" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

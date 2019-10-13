@@ -595,9 +595,9 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="20.58" y="47.175" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="JP2" library="adafruit" package="1X01" value="" x="48" y="45"/>
-<element name="JP_I2C_OLED_SSD1306" library="pinhead" package="1X04" value="" x="8" y="51" smashed="yes">
-<attribute name="NAME" x="1.3438" y="50.3288" size="1.27" layer="25" ratio="10" rot="R90" align="center"/>
-<attribute name="VALUE" x="2.92" y="47.825" size="1.27" layer="27"/>
+<element name="JP_I2C_OLED_SSD1306" library="pinhead" package="1X04" value="" x="7" y="49" smashed="yes">
+<attribute name="NAME" x="1.8438" y="50.8288" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="1.92" y="45.825" size="1.27" layer="27"/>
 </element>
 </elements>
 <signals>
@@ -606,7 +606,7 @@ design rules under a new name.</description>
 <contactref element="ARDUINO_PRO_MINI_LEFT" pad="11"/>
 <contactref element="ARDUINO_PRO_MINI_RIGHT" pad="9"/>
 <contactref element="JP_I2C_OLED_SSD1306" pad="1"/>
-<wire x1="22.7" y1="23.65" x2="4.19" y2="51" width="0" layer="19" extent="1-1"/>
+<wire x1="22.7" y1="23.65" x2="3.19" y2="49" width="0" layer="19" extent="1-1"/>
 <wire x1="8" y1="18.57" x2="22.7" y2="23.65" width="0" layer="19" extent="1-1"/>
 <wire x1="11.5" y1="4.8" x2="8" y2="18.57" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -614,7 +614,7 @@ design rules under a new name.</description>
 <contactref element="JP1" pad="5V"/>
 <contactref element="ARDUINO_PRO_MINI_LEFT" pad="9"/>
 <contactref element="JP_I2C_OLED_SSD1306" pad="2"/>
-<wire x1="8" y1="23.65" x2="6.73" y2="51" width="0" layer="19" extent="1-1"/>
+<wire x1="8" y1="23.65" x2="5.73" y2="49" width="0" layer="19" extent="1-1"/>
 <wire x1="18.5" y1="4.8" x2="8" y2="23.65" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RAW">
@@ -684,12 +684,12 @@ design rules under a new name.</description>
 <contactref element="JP2" pad="1"/>
 <contactref element="JP_I2C_OLED_SSD1306" pad="4"/>
 <wire x1="19.31" y1="44" x2="48" y2="45" width="0" layer="19" extent="1-1"/>
-<wire x1="11.81" y1="51" x2="19.31" y2="44" width="0" layer="19" extent="1-1"/>
+<wire x1="10.81" y1="49" x2="19.31" y2="44" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="A5_I2C_SCL">
 <contactref element="JP_TOP" pad="2"/>
 <contactref element="JP_I2C_OLED_SSD1306" pad="3"/>
-<wire x1="16.77" y1="44" x2="9.27" y2="51" width="0" layer="19" extent="1-1"/>
+<wire x1="16.77" y1="44" x2="8.27" y2="49" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="A6">
 <contactref element="JP_TOP" pad="3"/>

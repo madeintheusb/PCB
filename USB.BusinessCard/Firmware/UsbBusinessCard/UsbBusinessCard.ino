@@ -41,10 +41,19 @@ B01111100, B11110000,
 B01110000, B01110000,
 B00000000, B00110000 };
 
+// Max Displayable on the OLE 21 char
+#define MAX_CHAR_DISPLAYABLE 21
 const char WIN_TITLE[] PROGMEM = "Frederic Torres";
 const char WIN_PHONE_NUMBER[] PROGMEM = "978 760 6031";
-const char WIN_WEB_SITE[] PROGMEM = "www.FredericTorres.com ";
+const char WIN_WEB_SITE[] PROGMEM = "Web site: www.FredericTorres.com     ";
 
+char takeCharBuffer[MAX_CHAR_DISPLAYABLE + 1];
+
+char * TakeChar(char * s) {
+	
+	strncpy(takeCharBuffer, s, MAX_CHAR_DISPLAYABLE);
+	return takeCharBuffer;
+}
 
 char * SkipChar(char * s, int count) {
 	char * tmpS = s;
@@ -60,20 +69,20 @@ void setup() {
 	oledManager.Refresh();
 }
 
-void Animation(char * title, char * text, int secondToWait) {
+void Animation(char * title, char * text, double secondToWait) {
 	int titleX = 20;
 	oledManager.DrawWindow(title, text, titleX);
 	oledManager.Refresh();
-	delay(1000* secondToWait);
+	delay((unsigned long)(1000 * secondToWait));
 }
 
-void AnimationSkip(char * title, char * text, int skipTime, int secondToWait) {
+void AnimationSkip(char * title, char * text, int skipTime, double secondToWait) {
 	for (int i = 0; i < skipTime; i++) {
-		Animation(title, SkipChar(text, i), secondToWait);
+		Animation(title, TakeChar(SkipChar(text, i)), secondToWait);
 	}
 }
 
-void AnimationClear( int secondToWait) {
+void AnimationClear(double secondToWait) {
 	oledManager.Clear();
 	oledManager.Refresh();
 	delay(1000 * secondToWait);
@@ -88,9 +97,8 @@ void Run() {
 	AnimationClear(1);
 	Animation(title, NULL, 2);
 	Animation(title, StringFormat.GetProgMemString(WIN_PHONE_NUMBER), 4);
-	AnimationSkip(title, StringFormat.GetProgMemString(WIN_WEB_SITE), 4, 1);
+	AnimationSkip(title, StringFormat.GetProgMemString(WIN_WEB_SITE), 18, .75);
 	Animation(title, "Thank You", 2);
-	Animation(title, "...", 2);
 	Animation(title, "Bye", 2);
 	Animation(title, NULL, 2);
 	

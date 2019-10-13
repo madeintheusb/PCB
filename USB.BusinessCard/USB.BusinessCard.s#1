@@ -1518,7 +1518,7 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <segment>
 <pinref part="JP_I2C_OLED_SSD1306" gate="A" pin="3"/>
 <wire x1="38.1" y1="43.18" x2="17.78" y2="43.18" width="0.1524" layer="91"/>
-<label x="15.24" y="43.18" size="1.778" layer="95"/>
+<label x="27.94" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A6" class="0">
