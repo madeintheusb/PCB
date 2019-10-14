@@ -11,6 +11,7 @@
 #include <fArduino.h>
 #include "OledManager.h"
 
+
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
 #define SCREEN_HEIGHT 32 // OLED display height, in pixels
 
@@ -23,29 +24,31 @@ OledManager oledManager(&display);
 
 #define LOGO_HEIGHT   16
 #define LOGO_WIDTH    16
-static const unsigned char PROGMEM logo_bmp[] =
-{ B00000000, B11000000,
-B00000001, B11000000,
-B00000001, B11000000,
-B00000011, B11100000,
-B11110011, B11100000,
-B11111110, B11111000,
-B01111110, B11111111,
-B00110011, B10011111,
-B00011111, B11111100,
-B00001101, B01110000,
-B00011011, B10100000,
-B00111111, B11100000,
-B00111111, B11110000,
-B01111100, B11110000,
-B01110000, B01110000,
-B00000000, B00110000 };
+//static const unsigned char PROGMEM logo_bmp[] =
+//{ B00000000, B11000000,
+//B00000001, B11000000,
+//B00000001, B11000000,
+//B00000011, B11100000,
+//B11110011, B11100000,
+//B11111110, B11111000,
+//B01111110, B11111111,
+//B00110011, B10011111,
+//B00011111, B11111100,
+//B00001101, B01110000,
+//B00011011, B10100000,
+//B00111111, B11100000,
+//B00111111, B11110000,
+//B01111100, B11110000,
+//B01110000, B01110000,
+//B00000000, B00110000 };
 
+#define SCROLL_STEP_DURATION (.75)
 // Max Displayable on the OLE 21 char
 #define MAX_CHAR_DISPLAYABLE 21
 const char WIN_TITLE[] PROGMEM = "Frederic Torres";
 const char WIN_PHONE_NUMBER[] PROGMEM = "978 760 6031";
-const char WIN_WEB_SITE[] PROGMEM = "Web site: www.FredericTorres.com     ";
+const char WIN_WEB_SITE[] PROGMEM = "www.FredericTorres.com    ";
+const char WIN_THANK_YOU[] PROGMEM = "Thank You";
 
 char takeCharBuffer[MAX_CHAR_DISPLAYABLE + 1];
 
@@ -65,7 +68,7 @@ char * SkipChar(char * s, int count) {
 void AnimationClear(double secondToWait);
 void setup() {
 	oledManager.Initialize();
-	AnimationClear(0);
+	AnimationClear(1);
 }
 void AnimationWait(double secondToWait) {
 	delay((unsigned long)(1000 * secondToWait));
@@ -92,11 +95,13 @@ void Run() {
 	strcpy(titleBuffer, StringFormat.GetProgMemString(WIN_TITLE));
 	int titleX = 20;
 	
-	AnimationClear(1);
 	Animation(title, NULL, 2);
-	Animation(title, StringFormat.GetProgMemString(WIN_PHONE_NUMBER), 4);
-	AnimationSkip(title, StringFormat.GetProgMemString(WIN_WEB_SITE), 18, .75);
-	Animation(title, "Thank You", 2);
+	Animation(title, "USB Business Card", 2);
+	Animation(" Mobile Phone", StringFormat.GetProgMemString(WIN_PHONE_NUMBER), 4);
+	AnimationSkip("  Web Site", StringFormat.GetProgMemString(WIN_WEB_SITE), 7, SCROLL_STEP_DURATION);
+	AnimationSkip("  Github", "github.com/fredericaltorres     ", 9, SCROLL_STEP_DURATION);
+	Animation(title, NULL, 2);
+	Animation(title, StringFormat.GetProgMemString(WIN_THANK_YOU), 2);
 	Animation(title, NULL, 2);
 	Animation(title, "Bye", 2);
 	Animation(title, NULL, 2);
@@ -390,10 +395,10 @@ void testscrolltext(void) {
 void testdrawbitmap(void) {
 	display.clearDisplay();
 
-	display.drawBitmap(
+	/*display.drawBitmap(
 		(display.width() - LOGO_WIDTH) / 2,
 		(display.height() - LOGO_HEIGHT) / 2,
-		logo_bmp, LOGO_WIDTH, LOGO_HEIGHT, 1);
+		logo_bmp, LOGO_WIDTH, LOGO_HEIGHT, 1);*/
 	display.display();
 	delay(1000);
 }
