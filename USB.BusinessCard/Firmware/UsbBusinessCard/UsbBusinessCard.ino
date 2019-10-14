@@ -62,32 +62,30 @@ char * SkipChar(char * s, int count) {
 	}
 	return tmpS;
 }
-
+void AnimationClear(double secondToWait);
 void setup() {
 	oledManager.Initialize();
-	oledManager.Clear();
-	oledManager.Refresh();
+	AnimationClear(0);
 }
-
+void AnimationWait(double secondToWait) {
+	delay((unsigned long)(1000 * secondToWait));
+}
 void Animation(char * title, char * text, double secondToWait) {
 	int titleX = 20;
 	oledManager.DrawWindow(title, text, titleX);
 	oledManager.Refresh();
-	delay((unsigned long)(1000 * secondToWait));
+	AnimationWait(secondToWait);
 }
-
 void AnimationSkip(char * title, char * text, int skipTime, double secondToWait) {
 	for (int i = 0; i < skipTime; i++) {
 		Animation(title, TakeChar(SkipChar(text, i)), secondToWait);
 	}
 }
-
 void AnimationClear(double secondToWait) {
 	oledManager.Clear();
 	oledManager.Refresh();
-	delay(1000 * secondToWait);
+	AnimationWait(secondToWait);
 }
-
 void Run() {
 	char titleBuffer[20];
 	char * title = titleBuffer;
@@ -99,9 +97,9 @@ void Run() {
 	Animation(title, StringFormat.GetProgMemString(WIN_PHONE_NUMBER), 4);
 	AnimationSkip(title, StringFormat.GetProgMemString(WIN_WEB_SITE), 18, .75);
 	Animation(title, "Thank You", 2);
+	Animation(title, NULL, 2);
 	Animation(title, "Bye", 2);
 	Animation(title, NULL, 2);
-	
 		
 	// Show the display buffer on the screen. You MUST call display() after
 	// drawing commands to make them visible on screen!
