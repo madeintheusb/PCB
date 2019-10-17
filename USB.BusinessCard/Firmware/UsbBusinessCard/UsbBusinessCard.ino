@@ -47,8 +47,12 @@ OledManager oledManager(&display);
 #define MAX_CHAR_DISPLAYABLE 21
 const char WIN_TITLE[] PROGMEM = "Frederic Torres";
 const char WIN_PHONE_NUMBER[] PROGMEM = "978 760 6031";
+const char WIN_EMAIL[] PROGMEM    = "FredericALTorres@gmail.com    ";
 const char WIN_WEB_SITE[] PROGMEM = "www.FredericTorres.com    ";
 const char WIN_THANK_YOU[] PROGMEM = "Thank You";
+const char WIN_BLOG[] PROGMEM = "http://frederictorres.blogspot.com    ";
+const char WIN_GITHUB[] PROGMEM = "github.com/fredericaltorres     ";
+
 
 char takeCharBuffer[MAX_CHAR_DISPLAYABLE + 1];
 
@@ -82,6 +86,8 @@ void Animation(char * title, char * text, double secondToWait) {
 void AnimationSkip(char * title, char * text, int skipTime, double secondToWait) {
 	for (int i = 0; i < skipTime; i++) {
 		Animation(title, TakeChar(SkipChar(text, i)), secondToWait);
+		if(i == 0)
+			AnimationWait(secondToWait*2); // Wait more on the first display
 	}
 }
 void AnimationClear(double secondToWait) {
@@ -98,8 +104,10 @@ void Run() {
 	Animation(title, NULL, 2);
 	Animation(title, "USB Business Card", 2);
 	Animation(" Mobile Phone", StringFormat.GetProgMemString(WIN_PHONE_NUMBER), 4);
-	AnimationSkip("  Web Site", StringFormat.GetProgMemString(WIN_WEB_SITE), 7, SCROLL_STEP_DURATION);
-	AnimationSkip("  Github", "github.com/fredericaltorres     ", 9, SCROLL_STEP_DURATION);
+	AnimationSkip("     EMail", StringFormat.GetProgMemString(WIN_EMAIL), 12, SCROLL_STEP_DURATION);
+	AnimationSkip("   Web Site", StringFormat.GetProgMemString(WIN_WEB_SITE), 7, SCROLL_STEP_DURATION);
+	AnimationSkip("   Blog", StringFormat.GetProgMemString(WIN_BLOG), 12, SCROLL_STEP_DURATION);
+	AnimationSkip("    Github", StringFormat.GetProgMemString(WIN_GITHUB), 9, SCROLL_STEP_DURATION);
 	Animation(title, NULL, 2);
 	Animation(title, StringFormat.GetProgMemString(WIN_THANK_YOU), 2);
 	Animation(title, NULL, 2);
