@@ -11,6 +11,9 @@
 #include <fArduino.h>
 #include "OledManager.h"
 
+#define ON_BOARD_LED_PIN 13
+TimeOut onBoardLedTimeOut(500);
+Led onBoardLed(ON_BOARD_LED_PIN);
 
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
 #define SCREEN_HEIGHT 32 // OLED display height, in pixels
@@ -75,7 +78,14 @@ void setup() {
 	AnimationClear(1);
 }
 void AnimationWait(double secondToWait) {
-	delay((unsigned long)(1000 * secondToWait));
+
+	unsigned long duration = (unsigned long)(1000 * secondToWait);
+	int durationCount = duration / 100;
+	for (int i = 0; i < durationCount; i++) {
+		delay(100);
+		if (onBoardLedTimeOut.IsTimeOut())
+			onBoardLed.Blink();
+	}
 }
 void Animation(char * title, char * text, double secondToWait) {
 	int titleX = 20;
