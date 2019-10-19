@@ -1463,7 +1463,6 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <part name="ARDUINO_PRO_MINI_LEFT" library="adafruit" deviceset="PINHD-1X12" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="ARDUINO_PRO_MINI_RIGHT" library="adafruit" deviceset="PINHD-1X12" device=""/>
-<part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="JP_TOP" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="JP_I2C_OLED_SSD1306" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
@@ -1480,7 +1479,6 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <instance part="ARDUINO_PRO_MINI_LEFT" gate="G$1" x="63.5" y="83.82"/>
 <instance part="GND3" gate="1" x="33.02" y="71.12" rot="R270"/>
 <instance part="ARDUINO_PRO_MINI_RIGHT" gate="G$1" x="114.3" y="83.82"/>
-<instance part="GND4" gate="1" x="83.82" y="76.2" rot="R270"/>
 <instance part="JP_TOP" gate="A" x="81.28" y="43.18" rot="R270"/>
 <instance part="JP_I2C_OLED_SSD1306" gate="A" x="40.64" y="43.18"/>
 <instance part="GND5" gate="1" x="12.7" y="48.26" rot="R270"/>
@@ -1500,11 +1498,6 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <pinref part="ARDUINO_PRO_MINI_LEFT" gate="G$1" pin="11"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="60.96" y1="71.12" x2="35.56" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="ARDUINO_PRO_MINI_RIGHT" gate="G$1" pin="9"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="111.76" y1="76.2" x2="86.36" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP_I2C_OLED_SSD1306" gate="A" pin="1"/>
@@ -1551,11 +1544,6 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <pinref part="ARDUINO_PRO_MINI_LEFT" gate="G$1" pin="10"/>
 <wire x1="60.96" y1="73.66" x2="35.56" y2="73.66" width="0.1524" layer="91"/>
 <label x="35.56" y="73.66" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="ARDUINO_PRO_MINI_RIGHT" gate="G$1" pin="10"/>
-<wire x1="111.76" y1="73.66" x2="91.44" y2="73.66" width="0.1524" layer="91"/>
-<label x="93.98" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP_PROGRAMMING" gate="A" pin="3"/>
@@ -1740,6 +1728,20 @@ For boards designed to be plugged directly into a USB slot. If possible, ensure 
 <pinref part="JP_TOP" gate="A" pin="4"/>
 <wire x1="78.74" y1="45.72" x2="78.74" y2="53.34" width="0.1524" layer="91"/>
 <label x="78.74" y="53.34" size="1.778" layer="95" rot="R90"/>
+</segment>
+</net>
+<net name="RST_2" class="0">
+<segment>
+<pinref part="ARDUINO_PRO_MINI_RIGHT" gate="G$1" pin="10"/>
+<wire x1="111.76" y1="73.66" x2="91.44" y2="73.66" width="0.1524" layer="91"/>
+<label x="93.98" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="GND2" class="0">
+<segment>
+<pinref part="ARDUINO_PRO_MINI_RIGHT" gate="G$1" pin="9"/>
+<wire x1="111.76" y1="76.2" x2="86.36" y2="76.2" width="0.1524" layer="91"/>
+<label x="86.36" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

@@ -217,4 +217,8 @@ I use a extra connected which I will to manually solder each part.
 ## Path
 
 C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Analog\fCPU
+## Github
+
+https://github.com/madeintheusb/PCB/tree/master/EXTENSIONS/Analog/fCPU
+https://bit.ly/2LOkVFg
 

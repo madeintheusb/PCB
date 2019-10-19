@@ -258,9 +258,8 @@ PCB SEED STUDIO
 
 https://www.seeedstudio.io/fusion_pcb.html?gclid=CjwKCAjwmtDpBRAQEiwAC6lm4-jXcHjrWDgZhC8iEzrM_5TUmSa04AT3yFwPLPXUvMbjXvlSDIyIIRoC_TAQAvD_BwE
 
-
 ## NEXT ORDER
-C:\DVT\MadeInTheUSB.PCB\USB.BusinessCard
+C:\DVT\MadeInTheUSB.PCB\USB.BusinessCard\Gerbers
 Clock Multiplexer -- C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Analog\Clock Multiplexer\Gerbers
 fCPU v1 -- C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Analog\fCPU\Gerbers
 French USB -- C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Useless USB Gift Board\Gerbers
