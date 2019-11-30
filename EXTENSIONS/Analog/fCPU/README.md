@@ -34,21 +34,8 @@ Idealy, the program would look like this:
 | 9              	| Nop                                       	|
 | 10              	| Nop                                       	|
 
-
-| Controller Pin 	| Instruction                               	|
-|----------------	|-------------------------------------------	|
-| 1              	| Clear Register 1                          	|
-| 2              	| Clear Register 2                          	|
-| 3              	| Nop Expected 0 + 0 = 0, is displayed          |
-| 4              	| Nop                                           |
-| 5              	| Nop                                           |
-| 6              	| Read Register 1 from input 1, Expected Register 1 is displayed |
-| 7              	| Read Register 2 from input 2  Expected Result is displayed |
-| 8              	| Nop                                           |
-| 9              	| Nop                                           |
-|10              	| Nop                                           |
-
-A program counter, execute instructions 1 to 10 (or the pin controller 1 to 10), in an infinite loop.
+The program instructions  are executed from 1 to 10, in an infinite loop.
+Special Reset button should inserted to reset 4017BE chip in v1.1 and SN74LS90 chip in 1.2
 
 Display Limitation: 
 - In v1, we can only display number from 0 to 9, we cannot display number from 10 to 15.
@@ -61,6 +48,9 @@ Using a SN74LS90 counter, we can count from 0 to 9, to play the role of the Prog
 
 We use a SN74LS42N (Demultiplexers 4 to 10 BCD), to easily trigger up to 10 actions/instructions. Combined with a 2 inverter SN74LS14 (6 inverter/IC), for each instructions we get a pin high (CTRL_ON_X) and a pin low (CTRL_OFF_X) when in execution mode.
 
+The Register is clock on HIGH, but is cleared on LOW, so we need the inverter.
+The Adder does not need to be clocked
+
 ### Code execution
     (1) : Clear Register 1
         - CTRL_ON_1 [NC], - CTRL_OFF_1 --> REGISTER_1_CLR
@@ -71,10 +61,7 @@ We use a SN74LS42N (Demultiplexers 4 to 10 BCD), to easily trigger up to 10 acti
         - CTRL_ON_2 [NC], - CTRL_OFF_2 --> REGISTER_2_CLR
         The CLR pin from the register is active low and will be reset to 0 when the wire change from state 1 to 0 and then back 1. 
         The state of the pin CTRL_OFF_2 is always high except when instruction is executed where the pin become low, clearing the register.
-
-    (2) : Clear Adder
-        - CTRL_ON_3, - CTRL_OFF_3
-
+    
 ### Wiring
 - CTRL_LOW_1 [NC],
 - CTRL_LOW_INV_1 --> [REGISTER 1 CLR]
@@ -82,13 +69,11 @@ We use a SN74LS42N (Demultiplexers 4 to 10 BCD), to easily trigger up to 10 acti
 - CTRL_LOW_2 [NC], 
 - CTRL_LOW_INV_2 --> [REGISTER 2 CLR]
 
-- CTRL_LOW_3 [NC], 
-- CTRL_LOW_INV_3 --> [REGISTER 2 CLR]
-
 
 ### Input device to registers
 We will have 2 registers, implemented by the 2 SN74LS273 which is a 8 bit register.
-Bit 1..4D are used. Bit 5..8D are tied to 0.
+Bit 1..4D are used. Bit 5..8D are tied to GND.
+The input device
 1 -[switch]-> resistor-to-gnd * Register 1 1D
 2 -[switch]-> resistor-to-gnd * Register 1 2D
 3 -[switch]-> resistor-to-gnd * Register 1 3D
@@ -102,11 +87,7 @@ Bit 1..4D are used. Bit 5..8D are tied to 0.
     * Pin 5,6,7,8 are tied to VCC (1).
 
 ### Output device
-- A bit bus data_bus:1,2,3,4 connected to a 7-Segment Driver, connected to one 7-Segment display
-- The data bus can receive the value from register1, register2 or adder1, therefore we need 12 (3*4) diodes
-    - Only register1 or register2 or adder1 can send data to the bus at one time
-    - How to we activate which device set the data on the bus `TBD`
-
+- The Adder 4 bit value is connected to the input of the 74LS47 and the 74LS47 is connected to the 7-segment display.
 ## Componenents
 
 ### Program Counter
