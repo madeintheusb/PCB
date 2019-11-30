@@ -8,24 +8,29 @@ Create 4 bit CPU that can
 - Add the 2 values
 - Display the result of the addition
 
-There is no machine code stored in some EEPROM. The program is hardcoded,
-from the 10 outputs of the controller we wire each pin to execute one specific instruction.
+In a first version, there will be no machine code stored in some EEPROM. Rather the program is hardcoded,
+from the 10 outputs of the controller. Each controller's pin execute one specific instruction.
 Idealy, the program would look like this:
 
 ### Versions
-- In v1 we use a controller of type 4017BE directly connected to the clock.
-- In a v2 we use a SN74LS90 asprogram counter, and a SN74LS42N as the controller. The clock is connected to the program counter
+- In v1.1 I will use 4017BE chip as controller, directly connected to the clock.
+- In a v1.2 I use a SN74LS90 chip a sprogram counter, and a SN74LS42N as the controller. The clock is connected to the program counter.
 
 | Controller Pin 	| Instruction                               	|
 |----------------	|-------------------------------------------	|
-| 1              	| Clear Register 1                          	|
-| 2              	| Clear Register 2                          	|
-| 3              	| Clear Adder output                        	|
-| 4              	| Display Adder result on 7-Segment Display 	|
-| 5              	| Read Register 1 from input 1              	|
-| 6              	| Read Register 2 from input 2              	|
-| 7              	| Add Register 1 and 2                      	|
-| 8              	| Display Adder result on 7-Segment Display 	|
+| 1              	| Clear Register 1 ~ value is 0                 |
+| 2              	| Clear Register 2 ~ value is 0                 |
+| Automatic         | Display Adder result on 7-Segment Display (0)	|
+| 3              	| Clock register 1, Set register 1 with value from input 1 (3)|
+| Automatic         | Display Adder result on 7-Segment Display (3)	|
+| 4              	| Clear Register 1 ~ value is 0                 |
+| 5              	| Clock register 2, Set register 2 with value from input 2 (2)|
+| Automatic         | Display Adder result on 7-Segment Display (2)	|
+| 6              	| Clear Register 2 ~ value is 0                 |
+| Automatic         | Display Adder result on 7-Segment Display (0)	|
+| 7              	| Clock register 1 & 2, Set register 1 & 2 with value from input 1 & 2(5)|
+| Automatic         | Display Adder result on 7-Segment Display (5)	|
+| 8              	| Nop                                       	|
 | 9              	| Nop                                       	|
 | 10             	| Nop                                       	|
 
