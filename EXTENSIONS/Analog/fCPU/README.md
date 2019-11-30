@@ -18,21 +18,30 @@ Idealy, the program would look like this:
 
 | Controller Pin 	| Instruction                               	|
 |----------------	|-------------------------------------------	|
-| 1              	| Clear Register 1 ~ value is 0                 |
-| 2              	| Clear Register 2 ~ value is 0                 |
-| Automatic         | Display Adder result on 7-Segment Display (0)	|
+| 1              	| Clear Register 1 ~ Value is set to 0          |
+| 2              	| Clear Register 2 ~ Value is set to 0          |
+| Automatic         | Result displayed on 7-Segment (0)	|
+
 | 3              	| Clock register 1, Set register 1 with value from input 1 (3)|
-| Automatic         | Display Adder result on 7-Segment Display (3)	|
+| Automatic         | Result displayed on 7-Segment (3)	|
 | 4              	| Clear Register 1 ~ value is 0                 |
+| Automatic         | Result displayed on 7-Segment (0)	|
+
+
 | 5              	| Clock register 2, Set register 2 with value from input 2 (2)|
-| Automatic         | Display Adder result on 7-Segment Display (2)	|
+| Automatic         | Result displayed on 7-Segment (2)	|
 | 6              	| Clear Register 2 ~ value is 0                 |
-| Automatic         | Display Adder result on 7-Segment Display (0)	|
-| 7              	| Clock register 1 & 2, Set register 1 & 2 with value from input 1 & 2(5)|
-| Automatic         | Display Adder result on 7-Segment Display (5)	|
-| 8              	| Nop                                       	|
+| Automatic         | Result displayed on 7-Segment (0)	|
+
+
+| 7              	| Clock register 1, Set register 1 with value from input 1 (3)|
+| Automatic         | Result displayed on 7-Segment (3)	|
+| 8              	| Clock register 2, Set register 2 with value from input 2 (2)|
+| Automatic         | Result displayed on 7-Segment (5) Addition	|
+
 | 9              	| Nop                                       	|
-| 10             	| Nop                                       	|
+| 10              	| Nop                                       	|
+
 
 | Controller Pin 	| Instruction                               	|
 |----------------	|-------------------------------------------	|
