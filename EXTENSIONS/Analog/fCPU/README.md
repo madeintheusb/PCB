@@ -29,9 +29,7 @@ Idealy, the program would look like this:
 | Automatic         | Result displayed on 7-Segment (2)	|
 | 6              	| Clear Register 2 ~ value is 0                 |
 | Automatic         | Result displayed on 7-Segment (0)	|
-| 7              	| Clock register 1, Set register 1 with value from input 1 (3)|
-| Automatic         | Result displayed on 7-Segment (3)	|
-| 8              	| Clock register 2, Set register 2 with value from input 2 (2)|
+| 7              	| Clock register 1 & 2, Set register 1 & 2 with value from input 1 & 2 (3+2==5)|
 | Automatic         | Result displayed on 7-Segment (5) Addition	|
 | 9              	| Nop                                       	|
 | 10              	| Nop                                       	|
