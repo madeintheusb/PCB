@@ -18,8 +18,8 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -152,7 +152,7 @@
 <text x="34.5" y="20.2" size="0.8128" layer="25" rot="R180">VCC</text>
 <text x="34.5" y="17.7" size="0.8128" layer="25" rot="R180">OUT</text>
 <text x="34.5" y="15.2" size="0.8128" layer="25" rot="R180">OUT_R</text>
-<text x="19.5" y="17" size="1.27" layer="26" rot="MR0" align="center">PCBv2 - 2019.09 - v2</text>
+<text x="19.5" y="17" size="1.27" layer="26" rot="MR0" align="center">PCBv2 - 2019.09</text>
 <text x="35.5" y="43.4" size="2.25" layer="25" rot="R270" align="center">0 To 99 Counter</text>
 <text x="11.5" y="14.5" size="1.27" layer="25" rot="R180" align="center">INPUTS</text>
 <text x="10" y="38" size="1.6764" layer="26" rot="MR90" align="center">https://bit.ly/2ZEPbGB</text>
