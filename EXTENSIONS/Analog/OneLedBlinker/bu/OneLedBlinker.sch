@@ -3965,29 +3965,6 @@ Metric Code Size 5664</description>
 <rectangle x1="-2.8" y1="-3.15" x2="-2.2" y2="3.15" layer="51"/>
 <rectangle x1="2.2" y1="-3.15" x2="2.8" y2="3.15" layer="51"/>
 </package>
-<package name="1X01">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.9304" shape="octagon"/>
-<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-</package>
-<package name="1X01-CLEANBIG">
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.778"/>
-<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="1X1-BIGPOGO">
-<pad name="P$1" x="0" y="0" drill="1.4" diameter="2.54" shape="long"/>
-</package>
 </packages>
 <symbols>
 <symbol name="USB-4">
@@ -4073,15 +4050,6 @@ Metric Code Size 5664</description>
 <text x="1.016" y="-4.191" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
-</symbol>
-<symbol name="PINHD1">
-<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.27" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="2.54" x2="-6.35" y2="2.54" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="2.54" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
-<text x="-6.35" y="3.175" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5782,40 +5750,6 @@ Source: http://www.osram.convergy.de/</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="PINHD-1X1" prefix="JP" uservalue="yes">
-<description>&lt;b&gt;Pin header 1x1 for 0.1" spacing&lt;/b&gt;
-&lt;p&gt;
-With round pins</description>
-<gates>
-<gate name="G$1" symbol="PINHD1" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="1X01">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="CB" package="1X01-CLEANBIG">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="-BIGPOGO" package="1X1-BIGPOGO">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 <library name="transistor">
@@ -5970,7 +5904,6 @@ With round pins</description>
 <part name="R22" library="adafruit" deviceset="R-US_" device="0207/10"/>
 <part name="C1_100UF" library="adafruit" deviceset="C-US" device="025-030X050"/>
 <part name="R1M" library="adafruit" deviceset="R-US_" device="0207/10"/>
-<part name="GND" library="adafruit" deviceset="PINHD-1X1" device="" value="GND"/>
 </parts>
 <sheets>
 <sheet>
@@ -5985,7 +5918,6 @@ With round pins</description>
 <instance part="R22" gate="G$1" x="68.58" y="93.98" rot="R90"/>
 <instance part="C1_100UF" gate="G$1" x="50.8" y="83.82" rot="R90"/>
 <instance part="R1M" gate="G$1" x="33.02" y="63.5" rot="R90"/>
-<instance part="GND" gate="G$1" x="101.6" y="99.06" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -6033,9 +5965,6 @@ With round pins</description>
 <wire x1="33.02" y1="58.42" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="58.42" x2="68.58" y2="60.96" width="0.1524" layer="91"/>
 <junction x="68.58" y="60.96"/>
-<pinref part="GND" gate="G$1" pin="1"/>
-<wire x1="101.6" y1="96.52" x2="101.6" y2="88.9" width="0.1524" layer="91"/>
-<junction x="101.6" y="88.9"/>
 </segment>
 </net>
 <net name="N$5" class="0">

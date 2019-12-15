@@ -109,7 +109,7 @@ SN74LS90
 
 ### Controller v1
 
-[CD4017B](http://www.ti.com/lit/ds/symlink/cd4017b.pdf)
+[4017BE](http://www.ti.com/lit/ds/symlink/cd4017b.pdf)
 - CMOS
 - EAGLE CAD Part: Package:DIL16, Device:CD4017
     * Check pin 8 seems to not be used in EAGLE CAD part, see Data Sheet.
@@ -146,8 +146,7 @@ There is no clock or clear feature. The result is outputed all the time.
 [SN7483 SN74LS83](http://www.ece.sunysb.edu/~dima/74ls83a.pdf)
     - Older version
 
-### Counter
-[SN74LS90 counter from 0..9](http://www.ti.com/lit/ds/symlink/sn74ls90.pdf)
+
 
 ### Register
 * 8b [SN74LS273](http://www.ti.com/lit/ds/symlink/sn74ls273.pdf)
@@ -215,7 +214,6 @@ I use a extra connected which I will to manually solder each part.
 ### IC Series
 
 - [7400 Series](https://en.wikipedia.org/wiki/List_of_7400-series_integrated_circuits) 
-
 
 ## Path
 
