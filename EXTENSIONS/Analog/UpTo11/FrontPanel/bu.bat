@@ -2,6 +2,7 @@
 cls
 echo Backing up Schematic and Board file in .\bu folder
 del "*.b#?"
+del "*.s#?"
 
 copy "UpTo11.FrontPanel.brd" .\bu"
 copy "UpTo11.FrontPanel.sch" .\bu"

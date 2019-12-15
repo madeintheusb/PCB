@@ -1615,11 +1615,13 @@ Source: http://www.osram.convergy.de/</description>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
+<clearance class="0" value="0.205"/>
 </class>
 </classes>
 <parts>
 <part name="FRONT_PANEL_INTERFACE" library="adafruit" deviceset="PINHD-1X6" device=""/>
 <part name="POWER" library="adafruit" deviceset="LED" device="SMT1206"/>
+<part name="FLASH_LED" library="adafruit" deviceset="LED" device="5MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -1628,6 +1630,7 @@ Source: http://www.osram.convergy.de/</description>
 <instances>
 <instance part="FRONT_PANEL_INTERFACE" gate="A" x="-2.54" y="81.28" rot="R180"/>
 <instance part="POWER" gate="G$1" x="45.72" y="73.66"/>
+<instance part="FLASH_LED" gate="G$1" x="66.04" y="76.2"/>
 </instances>
 <busses>
 </busses>
@@ -1637,6 +1640,11 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="FRONT_PANEL_INTERFACE" gate="A" pin="4"/>
 <wire x1="0" y1="81.28" x2="15.24" y2="81.28" width="0.1524" layer="91"/>
 <label x="10.16" y="81.28" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="FLASH_LED" gate="G$1" pin="A"/>
+<wire x1="66.04" y1="78.74" x2="66.04" y2="88.9" width="0.1524" layer="91"/>
+<label x="66.04" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND_EX" class="0">
@@ -1649,6 +1657,11 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="POWER" gate="G$1" pin="C"/>
 <wire x1="45.72" y1="68.58" x2="45.72" y2="58.42" width="0.1524" layer="91"/>
 <label x="45.72" y="60.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="FLASH_LED" gate="G$1" pin="C"/>
+<wire x1="66.04" y1="71.12" x2="66.04" y2="60.96" width="0.1524" layer="91"/>
+<label x="66.04" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VCC" class="0">
