@@ -4947,6 +4947,9 @@ Used for things that can directly connect to a USB port, say USB key</descriptio
 <sheets>
 <sheet>
 <plain>
+<text x="-25.4" y="45.72" size="1.27" layer="95">POT_IN : must be connected to Middle pin of the pot
+POT_OUT: must be connected to Left pin of the pot , when facing the pot/button (AKA VCC)
+POT_GND: Pot Right must go to Ground</text>
 </plain>
 <instances>
 <instance part="X1" gate="G$1" x="91.44" y="76.2" rot="R90"/>
@@ -5095,4 +5098,10 @@ Used for things that can directly connect to a USB port, say USB key</descriptio
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>

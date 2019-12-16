@@ -150,9 +150,9 @@
 <text x="31" y="64.5" size="1.27" layer="25" rot="R90" align="center">GND</text>
 <text x="33.5" y="64.5" size="1.27" layer="25" rot="R90" align="center">VCC</text>
 <text x="36" y="62" size="1.27" layer="25" rot="R90" align="center">LED_PWR</text>
-<text x="38.5" y="61.5" size="1.27" layer="25" rot="R90" align="center">LED_FLASH</text>
+<text x="38.5" y="61" size="1.27" layer="25" rot="R90" align="center">LED_FLASH</text>
 <text x="41" y="63" size="1.27" layer="25" rot="R90" align="center">POT_IN</text>
-<text x="43.5" y="62" size="1.27" layer="25" rot="R90" align="center">POT_OUT</text>
+<text x="43.5" y="62.5" size="1.27" layer="25" rot="R90" align="center">POT_OUT</text>
 <hole x="10" y="60" drill="4"/>
 <hole x="10" y="20" drill="4"/>
 <hole x="60" y="60" drill="4"/>
