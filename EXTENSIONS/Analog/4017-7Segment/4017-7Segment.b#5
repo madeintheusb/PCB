@@ -144,6 +144,7 @@
 <wire x1="50" y1="12" x2="50" y2="50" width="0" layer="20"/>
 <wire x1="50" y1="50" x2="2" y2="50" width="0" layer="20"/>
 <wire x1="2" y1="50" x2="2" y2="12" width="0" layer="20"/>
+<text x="25.5" y="23" size="1.4224" layer="26" rot="MR270" align="center">MadeInTheUSB.net</text>
 <text x="20" y="15.9" size="0.8128" layer="25">GND</text>
 <text x="25.4" y="15.9" size="0.8128" layer="25">OUT</text>
 <text x="22.8" y="15.9" size="0.8128" layer="25">VCC</text>
@@ -152,10 +153,8 @@
 <text x="44.5" y="32.2" size="1.016" layer="25" rot="R180" align="center">VCC</text>
 <text x="44" y="29.7" size="1.016" layer="25" rot="R180" align="center">OUT</text>
 <text x="43" y="27.2" size="1.27" layer="25" rot="R180" align="center">OUT_R</text>
-<text x="25" y="24.5" size="2.1844" layer="26" rot="SMR0" align="center">MadeInTheUSB.net</text>
-<text x="11" y="14.5" size="1.27" layer="26" rot="MR0" align="center">PCBv2 - 2019.12</text>
-<text x="25" y="18.5" size="2.1844" layer="26" rot="SMR0" align="center">MadeInTheUSB.net</text>
-<text x="26" y="43.5" size="2.1844" layer="26" rot="SMR0" align="center">www.FredericTorres.com</text>
+<text x="28" y="45.5" size="2.1844" layer="26" rot="SMR0" align="center">MadeInTheUSB.net</text>
+<text x="11" y="24.5" size="1.27" layer="26" rot="MR0" align="center">PCBv2 - 2019.12</text>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -334,6 +333,48 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pad name="9" x="-2.54" y="7.62" drill="0.65" diameter="1.8796"/>
 <pad name="10" x="-5.08" y="7.62" drill="0.65" diameter="1.8796"/>
 <text x="-8.89" y="-11.43" size="1.27" layer="51" ratio="15">160-1576-5-ND</text>
+</package>
+</packages>
+</library>
+<library name="diode">
+<description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Motorola : www.onsemi.com
+&lt;li&gt;Fairchild : www.fairchildsemi.com
+&lt;li&gt;Philips : www.semiconductors.com
+&lt;li&gt;Vishay : www.vishay.de
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DO35Z10">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+diameter 2 mm, horizontal, grid 10.16mm</description>
+<wire x1="5.08" y1="0" x2="4.191" y2="0" width="0.508" layer="51"/>
+<wire x1="-5.08" y1="0" x2="-4.191" y2="0" width="0.508" layer="51"/>
+<wire x1="-0.635" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0.635" x2="1.016" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.016" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0.254" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="1.016" x2="2.286" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.286" y1="0.762" x2="-2.032" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.286" y1="-0.762" x2="-2.032" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.032" y1="-1.016" x2="2.286" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.286" y1="0.762" x2="2.286" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-2.286" y1="0.762" x2="-2.286" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.016" x2="2.032" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="-1.016" x2="2.032" y2="-1.016" width="0.1524" layer="21"/>
+<pad name="C" x="-5.08" y="0" drill="0.8128" shape="long"/>
+<pad name="A" x="5.08" y="0" drill="0.8128" shape="long"/>
+<text x="-2.286" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.286" y="-2.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.905" y1="-1.016" x2="-1.397" y2="1.016" layer="21"/>
+<rectangle x1="2.286" y1="-0.254" x2="4.191" y2="0.254" layer="21"/>
+<rectangle x1="-4.191" y1="-0.254" x2="-2.286" y2="0.254" layer="21"/>
 </package>
 </packages>
 </library>
@@ -542,6 +583,10 @@ design rules under a new name.</description>
 <element name="R_100O" library="adafruit" package="R1206" value="" x="23" y="44.5" smashed="yes" rot="R270">
 <attribute name="NAME" x="24.5" y="47.8" size="1.016" layer="25" rot="R270"/>
 <attribute name="VALUE" x="20.587" y="45.897" size="1.27" layer="27" rot="R270"/>
+</element>
+<element name="D1" library="diode" package="DO35Z10" value="1N821" x="38" y="42.5" smashed="yes">
+<attribute name="NAME" x="29.714" y="41.77" size="1.016" layer="25" ratio="10"/>
+<attribute name="VALUE" x="35.714" y="39.96" size="1.27" layer="27" ratio="10"/>
 </element>
 </elements>
 <signals>

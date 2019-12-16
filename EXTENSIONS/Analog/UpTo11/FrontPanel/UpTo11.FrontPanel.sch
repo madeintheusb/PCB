@@ -1835,9 +1835,9 @@ Source: http://www.osram.convergy.de/</description>
 <part name="FRONT_PANEL_INTERFACE" library="adafruit" deviceset="PINHD-1X6" device=""/>
 <part name="POWER" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="FLASH_LED" library="adafruit" deviceset="LED" device="5MM"/>
-<part name="POT_GND_(RIGHT)" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
+<part name="POT_GND_(LEFT)" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
 <part name="POT_IN_(MIDDLE)" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
-<part name="POT_OUT_(LEFT)" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
+<part name="POT_OUT_(RIGHT)" library="microbuilder" deviceset="SOLDERJUMPER" device="REFLOW"/>
 </parts>
 <sheets>
 <sheet>
@@ -1847,9 +1847,9 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="FRONT_PANEL_INTERFACE" gate="A" x="-2.54" y="81.28" rot="R180"/>
 <instance part="POWER" gate="G$1" x="45.72" y="73.66"/>
 <instance part="FLASH_LED" gate="G$1" x="66.04" y="76.2"/>
-<instance part="POT_GND_(RIGHT)" gate="1" x="17.78" y="58.42"/>
+<instance part="POT_GND_(LEFT)" gate="1" x="17.78" y="58.42"/>
 <instance part="POT_IN_(MIDDLE)" gate="1" x="17.78" y="50.8"/>
-<instance part="POT_OUT_(LEFT)" gate="1" x="17.78" y="43.18"/>
+<instance part="POT_OUT_(RIGHT)" gate="1" x="17.78" y="43.18"/>
 </instances>
 <busses>
 </busses>
@@ -1883,7 +1883,7 @@ Source: http://www.osram.convergy.de/</description>
 <label x="66.04" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="POT_GND_(RIGHT)" gate="1" pin="2"/>
+<pinref part="POT_GND_(LEFT)" gate="1" pin="2"/>
 <wire x1="22.86" y1="58.42" x2="35.56" y2="58.42" width="0.1524" layer="91"/>
 <label x="27.94" y="58.42" size="1.778" layer="95"/>
 </segment>
@@ -1926,7 +1926,7 @@ Source: http://www.osram.convergy.de/</description>
 <label x="5.08" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="POT_OUT_(LEFT)" gate="1" pin="2"/>
+<pinref part="POT_OUT_(RIGHT)" gate="1" pin="2"/>
 <wire x1="22.86" y1="43.18" x2="38.1" y2="43.18" width="0.1524" layer="91"/>
 <label x="30.48" y="43.18" size="1.778" layer="95"/>
 </segment>

@@ -155,7 +155,7 @@
 <text x="25" y="24.5" size="2.1844" layer="26" rot="SMR0" align="center">MadeInTheUSB.net</text>
 <text x="11" y="14.5" size="1.27" layer="26" rot="MR0" align="center">PCBv2 - 2019.12</text>
 <text x="25" y="18.5" size="2.1844" layer="26" rot="SMR0" align="center">MadeInTheUSB.net</text>
-<text x="26" y="43.5" size="2.1844" layer="26" rot="SMR0" align="center">www.FredericTorres.com</text>
+<text x="26" y="43.5" size="2.1844" layer="26" rot="SMR0" align="center">MadeInTheUSB.net</text>
 </plain>
 <libraries>
 <library name="adafruit">

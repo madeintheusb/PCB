@@ -4947,9 +4947,9 @@ Used for things that can directly connect to a USB port, say USB key</descriptio
 <sheets>
 <sheet>
 <plain>
-<text x="-25.4" y="45.72" size="1.27" layer="95">POT_IN : must be connected to Middle pin of the pot
-POT_OUT: must be connected to Left pin of the pot , when facing the pot/button (AKA VCC)
-POT_GND: Pot Right must go to Ground</text>
+<text x="-25.4" y="45.72" size="1.27" layer="95">POT_IN : Middle pin of the pot
+POT_OUT: Left pin of the pot , when facing the pot/button (AKA VCC)
+Pot Right must go to Ground</text>
 </plain>
 <instances>
 <instance part="X1" gate="G$1" x="91.44" y="76.2" rot="R90"/>
