@@ -146,11 +146,11 @@
 <wire x1="2" y1="60" x2="2" y2="12" width="0" layer="20"/>
 <text x="26" y="34.7" size="2.1844" layer="26" rot="SMR270" align="center">MadeInTheUSB.net</text>
 <text x="16" y="49.5" size="1.016" layer="26" rot="MR0" align="center">PCBv3 - 2019.08</text>
-<text x="8.2" y="53.7" size="1.27" layer="25" rot="R90" align="center">GND</text>
-<text x="13.2" y="53.7" size="1.27" layer="25" rot="R90" align="center">OUT</text>
+<text x="7.2" y="53.7" size="1.27" layer="25" rot="R90" align="center">GND</text>
+<text x="12.7" y="53.7" size="1.27" layer="25" rot="R90" align="center">OUT</text>
 <text x="3.5" y="17.5" size="1.016" layer="25">GND</text>
-<text x="10.9" y="53.7" size="1.27" layer="25" rot="R90" align="center">VCC</text>
-<text x="16" y="53.7" size="1.27" layer="25" rot="R270" align="center">NC</text>
+<text x="9.9" y="53.7" size="1.27" layer="25" rot="R90" align="center">VCC</text>
+<text x="15.5" y="53.7" size="1.27" layer="25" rot="R270" align="center">NC</text>
 <text x="12" y="50" size="1.6764" layer="25" align="center">CLOCK MODULE</text>
 <text x="10.5" y="45" size="1.27" layer="25">+</text>
 <text x="18.5" y="47.2" size="1.27" layer="25">+</text>
