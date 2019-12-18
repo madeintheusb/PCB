@@ -3549,125 +3549,6 @@ Source: http://www.osram.convergy.de/</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="linear">
-<description>&lt;b&gt;Linear Devices&lt;/b&gt;&lt;p&gt;
-Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="DIL08">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
-<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
-<pad name="1" x="-3.81" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="2" x="-1.27" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="7" x="-1.27" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="8" x="-3.81" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="3" x="1.27" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="4" x="3.81" y="-3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="6" x="1.27" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<pad name="5" x="3.81" y="3.81" drill="0.8128" diameter="1.27" rot="R90"/>
-<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
-<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="SO08">
-<description>&lt;b&gt;Small Outline Package 8&lt;/b&gt;&lt;br&gt;
-NS Package M08A</description>
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
-<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
-<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
-<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
-<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
-<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
-<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="555">
-<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.4064" layer="94"/>
-<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.4064" layer="94"/>
-<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.4064" layer="94"/>
-<text x="-7.62" y="10.922" size="1.778" layer="95">&gt;NAME</text>
-<text x="-7.62" y="-12.827" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="TR" x="-10.16" y="7.62" length="short" direction="in"/>
-<pin name="Q" x="10.16" y="7.62" length="short" direction="out" rot="R180"/>
-<pin name="R" x="-10.16" y="2.54" length="short" direction="in" function="dot"/>
-<pin name="CV" x="-10.16" y="-2.54" length="short" direction="in"/>
-<pin name="THR" x="10.16" y="-2.54" length="short" direction="in" rot="R180"/>
-<pin name="DIS" x="10.16" y="2.54" length="short" direction="in" rot="R180"/>
-<pin name="V+" x="10.16" y="-7.62" length="short" direction="pwr" rot="R180"/>
-<pin name="GND" x="-10.16" y="-7.62" length="short" direction="pwr"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="*555" prefix="IC">
-<description>&lt;b&gt;TIMER&lt;/b&gt;</description>
-<gates>
-<gate name="A" symbol="555" x="0" y="2.54"/>
-</gates>
-<devices>
-<device name="N" package="DIL08">
-<connects>
-<connect gate="A" pin="CV" pad="5"/>
-<connect gate="A" pin="DIS" pad="7"/>
-<connect gate="A" pin="GND" pad="1"/>
-<connect gate="A" pin="Q" pad="3"/>
-<connect gate="A" pin="R" pad="4"/>
-<connect gate="A" pin="THR" pad="6"/>
-<connect gate="A" pin="TR" pad="2"/>
-<connect gate="A" pin="V+" pad="8"/>
-</connects>
-<technologies>
-<technology name="LM"/>
-<technology name="NE"/>
-<technology name="SE"/>
-<technology name="UA"/>
-</technologies>
-</device>
-<device name="D" package="SO08">
-<connects>
-<connect gate="A" pin="CV" pad="5"/>
-<connect gate="A" pin="DIS" pad="7"/>
-<connect gate="A" pin="GND" pad="1"/>
-<connect gate="A" pin="Q" pad="3"/>
-<connect gate="A" pin="R" pad="4"/>
-<connect gate="A" pin="THR" pad="6"/>
-<connect gate="A" pin="TR" pad="2"/>
-<connect gate="A" pin="V+" pad="8"/>
-</connects>
-<technologies>
-<technology name="LM"/>
-<technology name="NE"/>
-<technology name="SE"/>
-<technology name="UA"/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="pinhead">
 <description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -4377,19 +4258,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <parts>
 <part name="X1" library="adafruit" deviceset="USB-A" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
-<part name="T555_CLOCK" library="linear" deviceset="*555" device="N" technology="NE"/>
-<part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="JP1" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="OUT_1" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="R_1K_1" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="R2_POT_100K" library="SparkFun-Electromechanical" deviceset="TRIMPOT" device="PTH"/>
 <part name="LED_OUTPUT" library="adafruit" deviceset="LED" device="SMT1206"/>
 <part name="R_1K_3" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="C1" library="SparkFun-Capacitors" deviceset="10UF-16V-10%(TANT)" device="" value="10uF"/>
+<part name="C1_10UF" library="SparkFun-Capacitors" deviceset="10UF-16V-10%(TANT)" device="" value="10uF"/>
 <part name="NE555N" library="SparkFun-AnalogIC" deviceset="NE555" device="D"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="OUT_2" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="GND2" library="supply1" deviceset="GND" device=""/>
+<part name="OUT_3" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4398,10 +4281,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instances>
 <instance part="X1" gate="G$1" x="127" y="99.06" rot="R180"/>
 <instance part="GND1" gate="1" x="111.76" y="109.22" rot="R180"/>
-<instance part="T555_CLOCK" gate="A" x="45.466" y="96.52"/>
-<instance part="GND2" gate="1" x="27.686" y="88.9" rot="R270"/>
 <instance part="GND4" gate="1" x="91.44" y="68.58"/>
-<instance part="JP1" gate="A" x="17.78" y="127" rot="R180"/>
+<instance part="OUT_1" gate="A" x="17.78" y="127" rot="R180"/>
 <instance part="GND5" gate="1" x="45.72" y="121.92" rot="R90"/>
 <instance part="R_1K_1" gate="G$1" x="99.06" y="104.14" rot="R90"/>
 <instance part="R2_POT_100K" gate="R?" x="111.76" y="83.82" smashed="yes" rot="R90">
@@ -4411,9 +4292,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="LED_OUTPUT" gate="G$1" x="-12.7" y="99.06"/>
 <instance part="R_1K_3" gate="G$1" x="-12.7" y="81.28" rot="R90"/>
 <instance part="GND7" gate="1" x="-12.7" y="68.58"/>
-<instance part="C1" gate="G$1" x="91.44" y="78.74" rot="R180"/>
+<instance part="C1_10UF" gate="G$1" x="91.44" y="78.74" rot="R180"/>
 <instance part="NE555N" gate="G$1" x="58.42" y="60.96"/>
 <instance part="GND3" gate="1" x="86.36" y="53.34" rot="R90"/>
+<instance part="OUT_2" gate="A" x="17.78" y="106.68" rot="R180"/>
+<instance part="GND2" gate="1" x="45.72" y="101.6" rot="R90"/>
+<instance part="OUT_3" gate="A" x="17.78" y="88.9" rot="R180"/>
+<instance part="GND6" gate="1" x="45.72" y="83.82" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -4426,17 +4311,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="111.76" y1="101.6" x2="111.76" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND2" gate="1" pin="GND"/>
-<pinref part="T555_CLOCK" gate="A" pin="GND"/>
-<wire x1="30.226" y1="88.9" x2="35.306" y2="88.9" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="91.44" y1="76.2" x2="91.44" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="+"/>
+<pinref part="C1_10UF" gate="G$1" pin="+"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="1"/>
+<pinref part="OUT_1" gate="A" pin="1"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="20.32" y1="121.92" x2="43.18" y2="121.92" width="0.1524" layer="91"/>
 </segment>
@@ -4452,6 +4332,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="68.58" y1="53.34" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="OUT_2" gate="A" pin="1"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="20.32" y1="101.6" x2="43.18" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="OUT_3" gate="A" pin="1"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="20.32" y1="83.82" x2="43.18" y2="83.82" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -4460,17 +4350,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="109.22" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="T555_CLOCK" gate="A" pin="V+"/>
-<wire x1="55.626" y1="88.9" x2="81.28" y2="88.9" width="0.1524" layer="91"/>
-<label x="78.74" y="88.9" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="T555_CLOCK" gate="A" pin="R"/>
-<wire x1="35.306" y1="99.06" x2="25.146" y2="99.06" width="0.1524" layer="91"/>
-<label x="25.146" y="99.06" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="A" pin="2"/>
+<pinref part="OUT_1" gate="A" pin="2"/>
 <wire x1="20.32" y1="124.46" x2="43.18" y2="124.46" width="0.1524" layer="91"/>
 <label x="38.1" y="124.46" size="1.778" layer="95"/>
 </segment>
@@ -4490,37 +4370,41 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="68.58" y1="68.58" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
 <label x="71.12" y="68.58" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="OUT_2" gate="A" pin="2"/>
+<wire x1="20.32" y1="104.14" x2="45.72" y2="104.14" width="0.1524" layer="91"/>
+<label x="27.94" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="OUT_3" gate="A" pin="2"/>
+<wire x1="20.32" y1="86.36" x2="43.18" y2="86.36" width="0.1524" layer="91"/>
+<label x="33.02" y="86.36" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="THRESHOLD" class="0">
 <segment>
-<pinref part="T555_CLOCK" gate="A" pin="THR"/>
 <wire x1="55.626" y1="93.98" x2="91.44" y2="93.98" width="0.1524" layer="91"/>
 <label x="78.74" y="93.98" size="1.778" layer="95"/>
 <wire x1="91.44" y1="93.98" x2="91.44" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="R2_POT_100K" gate="R?" pin="WIPER"/>
 <wire x1="106.68" y1="83.82" x2="91.44" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="-"/>
+<pinref part="C1_10UF" gate="G$1" pin="-"/>
 <junction x="91.44" y="83.82"/>
-</segment>
-<segment>
-<pinref part="T555_CLOCK" gate="A" pin="TR"/>
-<wire x1="35.306" y1="104.14" x2="22.606" y2="104.14" width="0.1524" layer="91"/>
-<label x="20.066" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="NE555N" gate="G$1" pin="TRI"/>
 <wire x1="48.26" y1="53.34" x2="35.56" y2="53.34" width="0.1524" layer="91"/>
 <label x="35.56" y="53.34" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="NE555N" gate="G$1" pin="TRE"/>
+<wire x1="48.26" y1="68.58" x2="25.4" y2="68.58" width="0.1524" layer="91"/>
+<label x="27.94" y="68.58" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="TMR555_OUTPUT" class="0">
 <segment>
-<pinref part="T555_CLOCK" gate="A" pin="Q"/>
-<wire x1="55.626" y1="104.14" x2="81.28" y2="104.14" width="0.1524" layer="91"/>
-<label x="73.66" y="106.68" size="1.4224" layer="95"/>
-</segment>
-<segment>
-<pinref part="JP1" gate="A" pin="3"/>
+<pinref part="OUT_1" gate="A" pin="3"/>
 <wire x1="20.32" y1="127" x2="43.18" y2="127" width="0.1524" layer="91"/>
 <label x="33.02" y="127" size="1.778" layer="95"/>
 </segment>
@@ -4534,6 +4418,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="68.58" y1="60.96" x2="83.82" y2="60.96" width="0.1524" layer="91"/>
 <label x="73.66" y="60.96" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="OUT_2" gate="A" pin="3"/>
+<wire x1="20.32" y1="106.68" x2="45.72" y2="106.68" width="0.1524" layer="91"/>
+<label x="27.94" y="106.68" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="OUT_3" gate="A" pin="3"/>
+<wire x1="20.32" y1="88.9" x2="45.72" y2="88.9" width="0.1524" layer="91"/>
+<label x="33.02" y="91.44" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
@@ -4542,18 +4436,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-12.7" y1="93.98" x2="-12.7" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="TMR555_OUTPUT_REVERSE" class="0">
-<segment>
-<pinref part="JP1" gate="A" pin="4"/>
-<wire x1="20.32" y1="129.54" x2="48.26" y2="129.54" width="0.1524" layer="91"/>
-<label x="27.94" y="129.54" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="DIS" class="0">
-<segment>
-<wire x1="55.88" y1="99.06" x2="68.58" y2="99.06" width="0.1524" layer="91"/>
-<label x="60.96" y="99.06" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="R_1K_1" gate="G$1" pin="1"/>
 <pinref part="R2_POT_100K" gate="R?" pin="CW"/>

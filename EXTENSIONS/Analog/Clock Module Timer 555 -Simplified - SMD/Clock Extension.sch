@@ -4259,7 +4259,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="X1" library="adafruit" deviceset="USB-A" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="JP1" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="OUT_1" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="R_1K_1" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="R2_POT_100K" library="SparkFun-Electromechanical" deviceset="TRIMPOT" device="PTH"/>
@@ -4269,6 +4269,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C1_10UF" library="SparkFun-Capacitors" deviceset="10UF-16V-10%(TANT)" device="" value="10uF"/>
 <part name="NE555N" library="SparkFun-AnalogIC" deviceset="NE555" device="D"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
+<part name="OUT_2" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="GND2" library="supply1" deviceset="GND" device=""/>
+<part name="OUT_3" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="GND6" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4278,7 +4282,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="X1" gate="G$1" x="127" y="99.06" rot="R180"/>
 <instance part="GND1" gate="1" x="111.76" y="109.22" rot="R180"/>
 <instance part="GND4" gate="1" x="91.44" y="68.58"/>
-<instance part="JP1" gate="A" x="17.78" y="127" rot="R180"/>
+<instance part="OUT_1" gate="A" x="17.78" y="127" rot="R180"/>
 <instance part="GND5" gate="1" x="45.72" y="121.92" rot="R90"/>
 <instance part="R_1K_1" gate="G$1" x="99.06" y="104.14" rot="R90"/>
 <instance part="R2_POT_100K" gate="R?" x="111.76" y="83.82" smashed="yes" rot="R90">
@@ -4291,6 +4295,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="C1_10UF" gate="G$1" x="91.44" y="78.74" rot="R180"/>
 <instance part="NE555N" gate="G$1" x="58.42" y="60.96"/>
 <instance part="GND3" gate="1" x="86.36" y="53.34" rot="R90"/>
+<instance part="OUT_2" gate="A" x="17.78" y="106.68" rot="R180"/>
+<instance part="GND2" gate="1" x="45.72" y="101.6" rot="R90"/>
+<instance part="OUT_3" gate="A" x="17.78" y="88.9" rot="R180"/>
+<instance part="GND6" gate="1" x="45.72" y="83.82" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -4308,7 +4316,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="C1_10UF" gate="G$1" pin="+"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="1"/>
+<pinref part="OUT_1" gate="A" pin="1"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="20.32" y1="121.92" x2="43.18" y2="121.92" width="0.1524" layer="91"/>
 </segment>
@@ -4324,6 +4332,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="68.58" y1="53.34" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="OUT_2" gate="A" pin="1"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="20.32" y1="101.6" x2="43.18" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="OUT_3" gate="A" pin="1"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="20.32" y1="83.82" x2="43.18" y2="83.82" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -4332,7 +4350,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="109.22" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="2"/>
+<pinref part="OUT_1" gate="A" pin="2"/>
 <wire x1="20.32" y1="124.46" x2="43.18" y2="124.46" width="0.1524" layer="91"/>
 <label x="38.1" y="124.46" size="1.778" layer="95"/>
 </segment>
@@ -4351,6 +4369,16 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="NE555N" gate="G$1" pin="VCC+"/>
 <wire x1="68.58" y1="68.58" x2="81.28" y2="68.58" width="0.1524" layer="91"/>
 <label x="71.12" y="68.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="OUT_2" gate="A" pin="2"/>
+<wire x1="20.32" y1="104.14" x2="45.72" y2="104.14" width="0.1524" layer="91"/>
+<label x="27.94" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="OUT_3" gate="A" pin="2"/>
+<wire x1="20.32" y1="86.36" x2="43.18" y2="86.36" width="0.1524" layer="91"/>
+<label x="33.02" y="86.36" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="THRESHOLD" class="0">
@@ -4376,7 +4404,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="TMR555_OUTPUT" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="3"/>
+<pinref part="OUT_1" gate="A" pin="3"/>
 <wire x1="20.32" y1="127" x2="43.18" y2="127" width="0.1524" layer="91"/>
 <label x="33.02" y="127" size="1.778" layer="95"/>
 </segment>
@@ -4390,19 +4418,22 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="68.58" y1="60.96" x2="83.82" y2="60.96" width="0.1524" layer="91"/>
 <label x="73.66" y="60.96" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="OUT_2" gate="A" pin="3"/>
+<wire x1="20.32" y1="106.68" x2="45.72" y2="106.68" width="0.1524" layer="91"/>
+<label x="27.94" y="106.68" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="OUT_3" gate="A" pin="3"/>
+<wire x1="20.32" y1="88.9" x2="45.72" y2="88.9" width="0.1524" layer="91"/>
+<label x="33.02" y="91.44" size="1.778" layer="95" rot="R180"/>
+</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="LED_OUTPUT" gate="G$1" pin="C"/>
 <pinref part="R_1K_3" gate="G$1" pin="2"/>
 <wire x1="-12.7" y1="93.98" x2="-12.7" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="TMR555_OUTPUT_REVERSE" class="0">
-<segment>
-<pinref part="JP1" gate="A" pin="4"/>
-<wire x1="20.32" y1="129.54" x2="48.26" y2="129.54" width="0.1524" layer="91"/>
-<label x="27.94" y="129.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DIS" class="0">
