@@ -1,0 +1,9 @@
+http://www.ohmslawcalculator.com/555-astable-calculator
+
+Timer NE555 SOP
+Capacitor 10 uF SMD 1206
+R1 1k 1206
+R2 100k Blue Pot From China
+
+at 100k Pot Frequency is 0.7/S
+at 20 Ohm Pot Frequency is 120/S
