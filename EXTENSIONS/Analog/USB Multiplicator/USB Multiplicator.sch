@@ -5888,6 +5888,8 @@ USB-FEMALE-A-PTH: Through hole Female Type A Connector</description>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="USB_OUT_5" library="STUNTAZ" deviceset="USB" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
+<part name="USB_OUT_6" library="STUNTAZ" deviceset="USB" device=""/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5911,6 +5913,8 @@ USB-FEMALE-A-PTH: Through hole Female Type A Connector</description>
 <instance part="GND5" gate="1" x="104.14" y="71.12" rot="R270"/>
 <instance part="USB_OUT_5" gate="G$1" x="88.9" y="55.88"/>
 <instance part="GND8" gate="1" x="66.04" y="58.42" rot="R270"/>
+<instance part="USB_OUT_6" gate="G$1" x="114.3" y="45.72"/>
+<instance part="GND9" gate="1" x="101.6" y="48.26" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -5959,6 +5963,11 @@ USB-FEMALE-A-PTH: Through hole Female Type A Connector</description>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="86.36" y1="58.42" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND9" gate="1" pin="GND"/>
+<pinref part="USB_OUT_6" gate="G$1" pin="GND"/>
+<wire x1="104.14" y1="48.26" x2="111.76" y2="48.26" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -6000,6 +6009,11 @@ USB-FEMALE-A-PTH: Through hole Female Type A Connector</description>
 <pinref part="USB_OUT_5" gate="G$1" pin="VBUS"/>
 <wire x1="86.36" y1="60.96" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
 <label x="73.66" y="60.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="USB_OUT_6" gate="G$1" pin="VBUS"/>
+<wire x1="111.76" y1="50.8" x2="101.6" y2="50.8" width="0.1524" layer="91"/>
+<label x="101.6" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">
