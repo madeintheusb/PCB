@@ -6,8 +6,9 @@ C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Analog\4017-7Segment\Gerbers\4017-7Segment.v2
 
 New Batch for End Of December
 - 0 to 99 counter with a lot of resistor (experiment with voltage loss)
-        C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Analog\0 TO 9 Counter 74LS90\Gerbers\0 TO 9 Counter 74LS90.v3.2019.12.zip
+    C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Analog\0 TO 9 Counter 74LS90\Gerbers\0 TO 9 Counter 74LS90.v3.2019.12.zip
 - Clock with SOT 555
+    C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Analog\Clock Module Timer 555 -Simplified - SMD\Gerbers\Clock Extension.v1.smp.2019.12.zip
 - Fix Freddy 7-Sement Display Automation (Simple) v2 bug fixed
 - USB Multiplicator make it 'big'
 - Clock Multiplicator, big and debounce button

@@ -4264,7 +4264,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="R_1K_1" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="R2_POT_100K" library="SparkFun-Electromechanical" deviceset="TRIMPOT" device="PTH"/>
 <part name="LED_OUTPUT" library="adafruit" deviceset="LED" device="SMT1206"/>
-<part name="R_1K_2" library="adafruit" deviceset="R-US_" device="R1206"/>
+<part name="R_1K_LED" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="C1_10UF" library="SparkFun-Capacitors" deviceset="10UF-16V-10%(TANT)" device="" value="10uF"/>
 <part name="NE555N" library="SparkFun-AnalogIC" deviceset="NE555" device="D"/>
@@ -4290,7 +4290,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="VALUE" x="115.062" y="80.01" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="LED_OUTPUT" gate="G$1" x="-12.7" y="99.06"/>
-<instance part="R_1K_2" gate="G$1" x="-12.7" y="81.28" rot="R90"/>
+<instance part="R_1K_LED" gate="G$1" x="-12.7" y="81.28" rot="R90"/>
 <instance part="GND7" gate="1" x="-12.7" y="68.58"/>
 <instance part="C1_10UF" gate="G$1" x="91.44" y="78.74" rot="R180"/>
 <instance part="NE555N" gate="G$1" x="58.42" y="60.96"/>
@@ -4321,7 +4321,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="20.32" y1="121.92" x2="43.18" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R_1K_2" gate="G$1" pin="1"/>
+<pinref part="R_1K_LED" gate="G$1" pin="1"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="-12.7" y1="76.2" x2="-12.7" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="73.66" x2="-12.7" y2="71.12" width="0.1524" layer="91"/>
@@ -4432,7 +4432,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <net name="N$5" class="0">
 <segment>
 <pinref part="LED_OUTPUT" gate="G$1" pin="C"/>
-<pinref part="R_1K_2" gate="G$1" pin="2"/>
+<pinref part="R_1K_LED" gate="G$1" pin="2"/>
 <wire x1="-12.7" y1="93.98" x2="-12.7" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
