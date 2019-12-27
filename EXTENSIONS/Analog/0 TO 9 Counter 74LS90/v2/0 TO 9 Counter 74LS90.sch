@@ -2802,27 +2802,15 @@ single anode, 13 mm</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="OUTPUTS" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
+<part name="R_100O_0" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="SN74LS90N_0" library="74xx-us" deviceset="74*90" device="N" technology="LS"/>
 <part name="74LS47N_0" library="74xx-us" deviceset="74*47" device="N" technology="LS"/>
 <part name="DIGIT_0_ANODE" library="special" deviceset="7SEG-CA" device=""/>
 <part name="DIGIT_1_ANODE" library="special" deviceset="7SEG-CA" device=""/>
+<part name="R_100O_1" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="74LS47N_1" library="74xx-us" deviceset="74*47" device="N" technology="LS"/>
 <part name="SN74LS90N_1" library="74xx-us" deviceset="74*90" device="N" technology="LS"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
-<part name="R_100O_2" library="adafruit" deviceset="R-US_" device="R1206"/>
-<part name="R_100O_3" library="adafruit" deviceset="R-US_" device="R1206"/>
-<part name="R_100O_4" library="adafruit" deviceset="R-US_" device="R1206"/>
-<part name="R_100O_5" library="adafruit" deviceset="R-US_" device="R1206"/>
-<part name="R_100O_6" library="adafruit" deviceset="R-US_" device="R1206"/>
-<part name="R_100O_7" library="adafruit" deviceset="R-US_" device="R1206"/>
-<part name="R_100O_8" library="adafruit" deviceset="R-US_" device="R1206"/>
-<part name="R_100O_9" library="adafruit" deviceset="R-US_" device="R1206"/>
-<part name="R_100O_10" library="adafruit" deviceset="R-US_" device="R1206"/>
-<part name="R_100O_11" library="adafruit" deviceset="R-US_" device="R1206"/>
-<part name="R_100O_12" library="adafruit" deviceset="R-US_" device="R1206"/>
-<part name="R_100O_13" library="adafruit" deviceset="R-US_" device="R1206"/>
-<part name="R_100O_14" library="adafruit" deviceset="R-US_" device="R1206"/>
-<part name="R_100O_15" library="adafruit" deviceset="R-US_" device="R1206"/>
 </parts>
 <sheets>
 <sheet>
@@ -2834,48 +2822,15 @@ single anode, 13 mm</description>
 <instance part="GND1" gate="1" x="-119.38" y="99.06" rot="R270"/>
 <instance part="OUTPUTS" gate="A" x="17.78" y="104.14" rot="R180"/>
 <instance part="GND2" gate="1" x="43.18" y="99.06" rot="R90"/>
+<instance part="R_100O_0" gate="G$1" x="50.8" y="71.12"/>
 <instance part="SN74LS90N_0" gate="A" x="-50.8" y="101.6"/>
 <instance part="74LS47N_0" gate="G$1" x="-50.8" y="50.8"/>
 <instance part="DIGIT_0_ANODE" gate="G$1" x="25.4" y="76.2"/>
-<instance part="DIGIT_1_ANODE" gate="G$1" x="78.486" y="7.112"/>
+<instance part="DIGIT_1_ANODE" gate="G$1" x="25.4" y="25.4"/>
+<instance part="R_100O_1" gate="G$1" x="45.72" y="20.32"/>
 <instance part="74LS47N_1" gate="G$1" x="-50.8" y="12.7"/>
 <instance part="SN74LS90N_1" gate="A" x="-139.7" y="63.5"/>
 <instance part="GND3" gate="1" x="-185.42" y="55.88" rot="R270"/>
-<instance part="R_100O_2" gate="G$1" x="17.78" y="58.42"/>
-<instance part="R_100O_3" gate="G$1" x="25.4" y="55.88"/>
-<instance part="R_100O_4" gate="G$1" x="12.7" y="53.34"/>
-<instance part="R_100O_5" gate="G$1" x="22.86" y="50.8"/>
-<instance part="R_100O_6" gate="G$1" x="12.7" y="48.26"/>
-<instance part="R_100O_7" gate="G$1" x="22.86" y="45.72"/>
-<instance part="R_100O_8" gate="G$1" x="12.7" y="43.18"/>
-<instance part="R_100O_9" gate="G$1" x="-2.54" y="27.94" smashed="yes">
-<attribute name="NAME" x="-8.89" y="29.4386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-6.35" y="24.638" size="1.778" layer="96"/>
-</instance>
-<instance part="R_100O_10" gate="G$1" x="-2.54" y="22.86" smashed="yes">
-<attribute name="NAME" x="2.794" y="24.3586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-6.35" y="19.558" size="1.778" layer="96"/>
-</instance>
-<instance part="R_100O_11" gate="G$1" x="-2.54" y="17.78" smashed="yes">
-<attribute name="NAME" x="2.794" y="19.0246" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-6.35" y="14.478" size="1.778" layer="96"/>
-</instance>
-<instance part="R_100O_12" gate="G$1" x="-2.54" y="15.24" smashed="yes">
-<attribute name="NAME" x="2.54" y="12.6746" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-6.35" y="11.938" size="1.778" layer="96"/>
-</instance>
-<instance part="R_100O_13" gate="G$1" x="-2.54" y="10.16" smashed="yes">
-<attribute name="NAME" x="2.54" y="7.8486" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-6.35" y="6.858" size="1.778" layer="96"/>
-</instance>
-<instance part="R_100O_14" gate="G$1" x="-2.54" y="5.08" smashed="yes">
-<attribute name="NAME" x="2.794" y="2.5146" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-6.35" y="1.778" size="1.778" layer="96"/>
-</instance>
-<instance part="R_100O_15" gate="G$1" x="-2.54" y="0" smashed="yes">
-<attribute name="NAME" x="-8.89" y="-3.5814" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-6.35" y="-3.302" size="1.778" layer="96"/>
-</instance>
 </instances>
 <busses>
 </busses>
@@ -2952,6 +2907,16 @@ single anode, 13 mm</description>
 <wire x1="-71.12" y1="48.26" x2="-71.12" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<pinref part="R_100O_0" gate="G$1" pin="2"/>
+<wire x1="55.88" y1="71.12" x2="71.12" y2="71.12" width="0.1524" layer="91"/>
+<label x="60.96" y="71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R_100O_1" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="20.32" x2="63.5" y2="20.32" width="0.1524" layer="91"/>
+<label x="55.88" y="20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="74LS47N_1" gate="G$1" pin="RBI"/>
 <wire x1="-63.5" y1="7.62" x2="-76.2" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="74LS47N_1" gate="G$1" pin="BI/RBO"/>
@@ -2963,16 +2928,6 @@ single anode, 13 mm</description>
 <wire x1="-63.5" y1="5.08" x2="-76.2" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-76.2" y1="5.08" x2="-76.2" y2="7.62" width="0.1524" layer="91"/>
 <label x="-91.44" y="7.62" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="DIGIT_0_ANODE" gate="G$1" pin="CA2"/>
-<wire x1="33.02" y1="71.12" x2="55.88" y2="71.12" width="0.1524" layer="91"/>
-<label x="45.72" y="71.12" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="DIGIT_1_ANODE" gate="G$1" pin="CA2"/>
-<wire x1="86.106" y1="2.032" x2="93.726" y2="2.032" width="0.1524" layer="91"/>
-<label x="91.44" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TMR555_OUTPUT" class="0">
@@ -3007,49 +2962,73 @@ single anode, 13 mm</description>
 <net name="SEG_1_DA" class="0">
 <segment>
 <pinref part="74LS47N_0" gate="G$1" pin="A"/>
-<wire x1="-38.1" y1="58.42" x2="12.7" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="58.42" x2="-7.62" y2="58.42" width="0.1524" layer="91"/>
 <label x="-15.24" y="58.42" size="1.778" layer="95"/>
-<pinref part="R_100O_2" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="DIGIT_0_ANODE" gate="G$1" pin="A"/>
+<wire x1="17.78" y1="81.28" x2="-5.08" y2="81.28" width="0.1524" layer="91"/>
+<label x="-5.08" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SEG_1_DB" class="0">
 <segment>
 <pinref part="74LS47N_0" gate="G$1" pin="B"/>
-<wire x1="-38.1" y1="55.88" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="55.88" x2="-25.4" y2="55.88" width="0.1524" layer="91"/>
 <label x="-30.48" y="55.88" size="1.778" layer="95"/>
-<pinref part="R_100O_3" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="DIGIT_0_ANODE" gate="G$1" pin="B"/>
+<wire x1="17.78" y1="78.74" x2="7.62" y2="78.74" width="0.1524" layer="91"/>
+<label x="-7.62" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SEG_1_DC" class="0">
 <segment>
 <pinref part="74LS47N_0" gate="G$1" pin="C"/>
-<wire x1="-38.1" y1="53.34" x2="7.62" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="53.34" x2="-7.62" y2="53.34" width="0.1524" layer="91"/>
 <label x="-10.16" y="53.34" size="1.778" layer="95"/>
-<pinref part="R_100O_4" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="DIGIT_0_ANODE" gate="G$1" pin="C"/>
+<wire x1="17.78" y1="76.2" x2="-5.08" y2="76.2" width="0.1524" layer="91"/>
+<label x="-2.54" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SEG_1_DD" class="0">
 <segment>
 <pinref part="74LS47N_0" gate="G$1" pin="D"/>
-<wire x1="-38.1" y1="50.8" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="50.8" x2="-25.4" y2="50.8" width="0.1524" layer="91"/>
 <label x="-27.94" y="50.8" size="1.778" layer="95"/>
-<pinref part="R_100O_5" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="DIGIT_0_ANODE" gate="G$1" pin="D"/>
+<wire x1="17.78" y1="73.66" x2="5.08" y2="73.66" width="0.1524" layer="91"/>
+<label x="5.08" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SEG_1_DE" class="0">
 <segment>
 <pinref part="74LS47N_0" gate="G$1" pin="E"/>
-<wire x1="-38.1" y1="48.26" x2="7.62" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="48.26" x2="-10.16" y2="48.26" width="0.1524" layer="91"/>
 <label x="-12.7" y="48.26" size="1.778" layer="95"/>
-<pinref part="R_100O_6" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="DIGIT_0_ANODE" gate="G$1" pin="E"/>
+<wire x1="17.78" y1="71.12" x2="-2.54" y2="71.12" width="0.1524" layer="91"/>
+<label x="-2.54" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SEG_1_DF" class="0">
 <segment>
 <pinref part="74LS47N_0" gate="G$1" pin="F"/>
-<wire x1="-38.1" y1="45.72" x2="17.78" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="45.72" x2="-25.4" y2="45.72" width="0.1524" layer="91"/>
 <label x="-30.48" y="45.72" size="1.778" layer="95"/>
-<pinref part="R_100O_7" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="DIGIT_0_ANODE" gate="G$1" pin="F"/>
+<wire x1="33.02" y1="81.28" x2="50.8" y2="81.28" width="0.1524" layer="91"/>
+<label x="50.8" y="81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BIT_0" class="0">
@@ -3112,68 +3091,114 @@ single anode, 13 mm</description>
 <label x="-172.72" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="DIGIT_0_ANODE" gate="G$1" pin="CA2"/>
+<pinref part="R_100O_0" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="71.12" x2="45.72" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
 <net name="SEG_1_DG" class="0">
 <segment>
+<pinref part="DIGIT_0_ANODE" gate="G$1" pin="G"/>
+<wire x1="33.02" y1="78.74" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
+<label x="38.1" y="78.74" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="74LS47N_0" gate="G$1" pin="G"/>
-<wire x1="-38.1" y1="43.18" x2="7.62" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="43.18" x2="-12.7" y2="43.18" width="0.1524" layer="91"/>
 <label x="-15.24" y="43.18" size="1.778" layer="95"/>
-<pinref part="R_100O_8" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="DIGIT_1_ANODE" gate="G$1" pin="CA2"/>
+<pinref part="R_100O_1" gate="G$1" pin="1"/>
+<wire x1="33.02" y1="20.32" x2="40.64" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SEG_2_DB" class="0">
 <segment>
+<pinref part="DIGIT_1_ANODE" gate="G$1" pin="B"/>
+<wire x1="17.78" y1="27.94" x2="7.62" y2="27.94" width="0.1524" layer="91"/>
+<label x="7.62" y="27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="74LS47N_1" gate="G$1" pin="B"/>
-<wire x1="-38.1" y1="17.78" x2="-7.62" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="17.78" x2="-30.48" y2="17.78" width="0.1524" layer="91"/>
 <label x="-33.02" y="17.78" size="1.778" layer="95"/>
-<pinref part="R_100O_10" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SEG_2_DC" class="0">
 <segment>
+<pinref part="DIGIT_1_ANODE" gate="G$1" pin="C"/>
+<wire x1="17.78" y1="25.4" x2="0" y2="25.4" width="0.1524" layer="91"/>
+<label x="2.54" y="25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="74LS47N_1" gate="G$1" pin="C"/>
-<wire x1="-38.1" y1="15.24" x2="-7.62" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="15.24" x2="-22.86" y2="15.24" width="0.1524" layer="91"/>
 <label x="-22.86" y="15.24" size="1.778" layer="95"/>
-<pinref part="R_100O_11" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SEG_2_DD" class="0">
 <segment>
+<pinref part="DIGIT_1_ANODE" gate="G$1" pin="D"/>
+<wire x1="17.78" y1="22.86" x2="7.62" y2="22.86" width="0.1524" layer="91"/>
+<label x="7.62" y="22.86" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="74LS47N_1" gate="G$1" pin="D"/>
-<wire x1="-38.1" y1="12.7" x2="-7.62" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="12.7" x2="-30.48" y2="12.7" width="0.1524" layer="91"/>
 <label x="-33.02" y="12.7" size="1.778" layer="95"/>
-<pinref part="R_100O_12" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SEG_2_DE" class="0">
 <segment>
+<pinref part="DIGIT_1_ANODE" gate="G$1" pin="E"/>
+<wire x1="17.78" y1="20.32" x2="0" y2="20.32" width="0.1524" layer="91"/>
+<label x="2.54" y="20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="74LS47N_1" gate="G$1" pin="E"/>
-<wire x1="-38.1" y1="10.16" x2="-7.62" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="10.16" x2="-17.78" y2="10.16" width="0.1524" layer="91"/>
 <label x="-20.32" y="10.16" size="1.778" layer="95"/>
-<pinref part="R_100O_13" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SEG_2_DF" class="0">
 <segment>
+<pinref part="DIGIT_1_ANODE" gate="G$1" pin="F"/>
+<wire x1="33.02" y1="30.48" x2="50.8" y2="30.48" width="0.1524" layer="91"/>
+<label x="48.26" y="30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="74LS47N_1" gate="G$1" pin="F"/>
-<wire x1="-38.1" y1="7.62" x2="-7.62" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="7.62" x2="-27.94" y2="7.62" width="0.1524" layer="91"/>
 <label x="-30.48" y="7.62" size="1.778" layer="95"/>
-<pinref part="R_100O_14" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="SEG_2_DG" class="0">
 <segment>
+<pinref part="DIGIT_1_ANODE" gate="G$1" pin="G"/>
+<wire x1="33.02" y1="27.94" x2="43.18" y2="27.94" width="0.1524" layer="91"/>
+<label x="40.64" y="27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="74LS47N_1" gate="G$1" pin="G"/>
-<wire x1="-38.1" y1="5.08" x2="-7.62" y2="0" width="0.1524" layer="91"/>
-<label x="-30.48" y="2.54" size="1.778" layer="95"/>
-<pinref part="R_100O_15" gate="G$1" pin="1"/>
+<wire x1="-38.1" y1="5.08" x2="-17.78" y2="5.08" width="0.1524" layer="91"/>
+<label x="-20.32" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SEG_2_DA" class="0">
 <segment>
+<pinref part="DIGIT_1_ANODE" gate="G$1" pin="A"/>
+<wire x1="17.78" y1="30.48" x2="-2.54" y2="30.48" width="0.1524" layer="91"/>
+<label x="0" y="30.48" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="74LS47N_1" gate="G$1" pin="A"/>
-<wire x1="-38.1" y1="20.32" x2="-7.62" y2="27.94" width="0.1524" layer="91"/>
-<label x="-33.02" y="22.86" size="1.778" layer="95"/>
-<pinref part="R_100O_9" gate="G$1" pin="1"/>
+<wire x1="-38.1" y1="20.32" x2="-22.86" y2="20.32" width="0.1524" layer="91"/>
+<label x="-25.4" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BIT_2_3" class="0">
@@ -3229,174 +3254,6 @@ single anode, 13 mm</description>
 <wire x1="-182.88" y1="81.28" x2="-121.92" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="-121.92" y1="81.28" x2="-121.92" y2="71.12" width="0.1524" layer="91"/>
 <junction x="-121.92" y="71.12"/>
-</segment>
-</net>
-<net name="SEG_1_DAA" class="0">
-<segment>
-<pinref part="DIGIT_0_ANODE" gate="G$1" pin="A"/>
-<wire x1="17.78" y1="81.28" x2="-5.08" y2="81.28" width="0.1524" layer="91"/>
-<label x="-5.08" y="81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R_100O_2" gate="G$1" pin="2"/>
-<wire x1="22.86" y1="58.42" x2="55.88" y2="58.42" width="0.1524" layer="91"/>
-<label x="45.72" y="58.42" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SEG_1_DBB" class="0">
-<segment>
-<pinref part="DIGIT_0_ANODE" gate="G$1" pin="B"/>
-<wire x1="17.78" y1="78.74" x2="7.62" y2="78.74" width="0.1524" layer="91"/>
-<label x="-7.62" y="78.74" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R_100O_3" gate="G$1" pin="2"/>
-<wire x1="30.48" y1="55.88" x2="55.88" y2="55.88" width="0.1524" layer="91"/>
-<label x="45.72" y="55.88" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SEG_1_DCC" class="0">
-<segment>
-<pinref part="DIGIT_0_ANODE" gate="G$1" pin="C"/>
-<wire x1="17.78" y1="76.2" x2="-5.08" y2="76.2" width="0.1524" layer="91"/>
-<label x="-2.54" y="76.2" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R_100O_4" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="53.34" x2="55.88" y2="53.34" width="0.1524" layer="91"/>
-<label x="45.72" y="53.34" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SEG_1_DDD" class="0">
-<segment>
-<pinref part="DIGIT_0_ANODE" gate="G$1" pin="D"/>
-<wire x1="17.78" y1="73.66" x2="5.08" y2="73.66" width="0.1524" layer="91"/>
-<label x="5.08" y="73.66" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R_100O_5" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="50.8" x2="55.88" y2="50.8" width="0.1524" layer="91"/>
-<label x="45.72" y="50.8" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SEG_1_DEE" class="0">
-<segment>
-<pinref part="DIGIT_0_ANODE" gate="G$1" pin="E"/>
-<wire x1="17.78" y1="71.12" x2="-2.54" y2="71.12" width="0.1524" layer="91"/>
-<label x="-2.54" y="71.12" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R_100O_6" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="48.26" x2="55.88" y2="48.26" width="0.1524" layer="91"/>
-<label x="45.72" y="48.26" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SEG_1_DFF" class="0">
-<segment>
-<pinref part="DIGIT_0_ANODE" gate="G$1" pin="F"/>
-<wire x1="33.02" y1="81.28" x2="50.8" y2="81.28" width="0.1524" layer="91"/>
-<label x="50.8" y="81.28" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R_100O_7" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="45.72" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
-<label x="45.72" y="45.72" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SEG_1_DGG" class="0">
-<segment>
-<pinref part="DIGIT_0_ANODE" gate="G$1" pin="G"/>
-<wire x1="33.02" y1="78.74" x2="40.64" y2="78.74" width="0.1524" layer="91"/>
-<label x="38.1" y="78.74" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R_100O_8" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="43.18" x2="55.88" y2="43.18" width="0.1524" layer="91"/>
-<label x="45.72" y="43.18" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SEG_2_DAA" class="0">
-<segment>
-<pinref part="DIGIT_1_ANODE" gate="G$1" pin="A"/>
-<wire x1="70.866" y1="12.192" x2="50.546" y2="12.192" width="0.1524" layer="91"/>
-<label x="53.086" y="12.192" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R_100O_9" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="27.94" x2="27.94" y2="27.94" width="0.1524" layer="91"/>
-<label x="22.86" y="27.94" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SEG_2_DBB" class="0">
-<segment>
-<pinref part="DIGIT_1_ANODE" gate="G$1" pin="B"/>
-<wire x1="70.866" y1="9.652" x2="60.706" y2="9.652" width="0.1524" layer="91"/>
-<label x="60.706" y="9.652" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R_100O_10" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="22.86" x2="35.56" y2="22.86" width="0.1524" layer="91"/>
-<label x="27.94" y="22.86" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SEG_2_DCC" class="0">
-<segment>
-<pinref part="DIGIT_1_ANODE" gate="G$1" pin="C"/>
-<wire x1="70.866" y1="7.112" x2="53.086" y2="7.112" width="0.1524" layer="91"/>
-<label x="55.626" y="7.112" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R_100O_11" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="17.78" x2="35.56" y2="17.78" width="0.1524" layer="91"/>
-<label x="27.94" y="17.78" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SEG_2_DDD" class="0">
-<segment>
-<pinref part="DIGIT_1_ANODE" gate="G$1" pin="D"/>
-<wire x1="70.866" y1="4.572" x2="60.706" y2="4.572" width="0.1524" layer="91"/>
-<label x="60.706" y="4.572" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R_100O_12" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="15.24" x2="33.02" y2="15.24" width="0.1524" layer="91"/>
-<label x="27.94" y="15.24" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SEG_2_DEE" class="0">
-<segment>
-<pinref part="DIGIT_1_ANODE" gate="G$1" pin="E"/>
-<wire x1="70.866" y1="2.032" x2="53.086" y2="2.032" width="0.1524" layer="91"/>
-<label x="55.626" y="2.032" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R_100O_13" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="10.16" x2="33.02" y2="10.16" width="0.1524" layer="91"/>
-<label x="27.94" y="10.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SEG_2_DFF" class="0">
-<segment>
-<pinref part="DIGIT_1_ANODE" gate="G$1" pin="F"/>
-<wire x1="86.106" y1="12.192" x2="103.886" y2="12.192" width="0.1524" layer="91"/>
-<label x="101.346" y="12.192" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R_100O_14" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="5.08" x2="33.02" y2="5.08" width="0.1524" layer="91"/>
-<label x="27.94" y="5.08" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="SEG_2_DGG" class="0">
-<segment>
-<pinref part="DIGIT_1_ANODE" gate="G$1" pin="G"/>
-<wire x1="86.106" y1="9.652" x2="96.266" y2="9.652" width="0.1524" layer="91"/>
-<label x="93.726" y="9.652" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R_100O_15" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="0" x2="33.02" y2="0" width="0.1524" layer="91"/>
-<label x="30.48" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
