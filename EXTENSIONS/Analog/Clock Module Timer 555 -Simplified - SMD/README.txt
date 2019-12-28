@@ -10,3 +10,13 @@ at 20 Ohm Pot Frequency is 120/S
 
 Timer 555 pin
 https://www.google.com/imgres?imgurl=http%3A%2F%2Fwww.hobbytronics.co.uk%2Fimage%2Fcache%2Fdata%2F555-timer-pinout-500x500.jpg&imgrefurl=http%3A%2F%2Fwww.hobbytronics.co.uk%2F555-timer-ic-soic8&docid=phPU6GICSihb0M&tbnid=dgrUePlWMjdoEM%3A&vet=10ahUKEwjU_o-7kr7mAhVqdt8KHc7vCX8QMwjZAighMCE..i&w=500&h=500&bih=657&biw=1280&q=timer%20555%20sop%208&ved=0ahUKEwjU_o-7kr7mAhVqdt8KHc7vCX8QMwjZAighMCE&iact=mrc&uact=8
+
+
+
+DIMENSION TO SOLDER ON TOP OF ANOTHER BOARD
+
+
+20 cm width
+- Bottom 2 pins attach at 10cm,10cm  in the middle
+- Top 4 pins attach at    10cm,30cm in the middle
+			  xxxx,20cm up	
