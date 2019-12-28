@@ -11,6 +11,7 @@ New Batch for End Of December
     C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Analog\Clock Module Timer 555 -Simplified - SMD\Gerbers\Clock Extension.v1.smp.2019.12.zip
 - Fix Freddy 7-Sement Display Automation (Simple) v2 bug fixed
 - USB Multiplicator make it 'big'
+    C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Analog\USB Multiplicator\Gerbers\USB Multiplicator.v3.2019.12.zip
 - Clock Multiplicator, big and debounce button
 
 UpTo11
