@@ -6123,6 +6123,178 @@ temperature compensated, 6,2 V</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-AnalogIC">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find all manner of analog ICs- DACs, ADCs, video chips, op-amps, and others.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt;Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="DIL-08">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="1.016" x2="-5.08" y2="-1.016" width="0.1524" layer="21" curve="-180"/>
+<pad name="1" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-5.334" y="-2.921" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="-3.556" y="-0.635" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="SO08">
+<description>&lt;b&gt;Small Outline Package&lt;/b&gt; Fits JEDEC packages (narrow SOIC-8)</description>
+<circle x="-2.7813" y="-1.5748" radius="0.1436" width="0.2032" layer="21"/>
+<wire x1="-2.362" y1="-1.803" x2="2.362" y2="-1.803" width="0.1524" layer="51"/>
+<wire x1="2.362" y1="-1.803" x2="2.362" y2="1.803" width="0.1524" layer="21"/>
+<wire x1="2.362" y1="1.803" x2="-2.362" y2="1.803" width="0.1524" layer="51"/>
+<wire x1="-2.362" y1="1.803" x2="-2.362" y2="-1.803" width="0.1524" layer="21"/>
+<rectangle x1="-2.0828" y1="-2.8702" x2="-1.7272" y2="-1.8542" layer="51"/>
+<rectangle x1="-0.8128" y1="-2.8702" x2="-0.4572" y2="-1.8542" layer="51"/>
+<rectangle x1="0.4572" y1="-2.8702" x2="0.8128" y2="-1.8542" layer="51"/>
+<rectangle x1="1.7272" y1="-2.8702" x2="2.0828" y2="-1.8542" layer="51"/>
+<rectangle x1="-2.0828" y1="1.8542" x2="-1.7272" y2="2.8702" layer="51"/>
+<rectangle x1="-0.8128" y1="1.8542" x2="-0.4572" y2="2.8702" layer="51"/>
+<rectangle x1="0.4572" y1="1.8542" x2="0.8128" y2="2.8702" layer="51"/>
+<rectangle x1="1.7272" y1="1.8542" x2="2.0828" y2="2.8702" layer="51"/>
+<smd name="1" x="-1.905" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="2" x="-0.635" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="3" x="0.635" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="4" x="1.905" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="5" x="1.905" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="6" x="0.635" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="7" x="-0.635" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<smd name="8" x="-1.905" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
+<text x="-1.27" y="-0.635" size="0.4064" layer="27">&gt;VALUE</text>
+<text x="-1.27" y="0" size="0.4064" layer="25">&gt;NAME</text>
+</package>
+<package name="DIP08-KIT">
+<wire x1="-5.08" y1="2.921" x2="5.08" y2="2.921" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="2.921" x2="5.08" y2="-2.921" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="5.08" y2="-2.921" width="0.2032" layer="21"/>
+<circle x="-3.81" y="-1.905" radius="0.508" width="0.254" layer="21"/>
+<pad name="1" x="-3.81" y="-4.191" drill="0.8128" diameter="1.7272" stop="no"/>
+<pad name="2" x="-1.27" y="-4.191" drill="0.8128" diameter="1.7272" stop="no"/>
+<pad name="3" x="1.27" y="-4.191" drill="0.8128" diameter="1.7272" stop="no"/>
+<pad name="4" x="3.81" y="-4.191" drill="0.8128" diameter="1.7272" stop="no"/>
+<pad name="5" x="3.81" y="4.191" drill="0.8128" diameter="1.7272" stop="no"/>
+<pad name="6" x="1.27" y="4.191" drill="0.8128" diameter="1.7272" stop="no"/>
+<pad name="7" x="-1.27" y="4.191" drill="0.8128" diameter="1.7272" stop="no"/>
+<pad name="8" x="-3.81" y="4.191" drill="0.8128" diameter="1.7272" stop="no"/>
+<text x="-3.175" y="-0.635" size="1.27" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<text x="-5.715" y="-3.81" size="1.27" layer="25" font="vector" ratio="10" rot="R90">&gt;NAME</text>
+<circle x="-3.81" y="4.191" radius="0.4064" width="0" layer="29"/>
+<circle x="-1.27" y="4.191" radius="0.4064" width="0" layer="29"/>
+<circle x="1.27" y="4.191" radius="0.4064" width="0" layer="29"/>
+<circle x="3.81" y="4.191" radius="0.4064" width="0" layer="29"/>
+<circle x="3.81" y="-4.191" radius="0.4064" width="0" layer="29"/>
+<circle x="1.27" y="-4.191" radius="0.4064" width="0" layer="29"/>
+<circle x="-1.27" y="-4.191" radius="0.4064" width="0" layer="29"/>
+<circle x="-3.81" y="-4.191" radius="0.4064" width="0" layer="29"/>
+<circle x="-3.81" y="4.191" radius="0.9906" width="0" layer="30"/>
+<circle x="-1.27" y="4.191" radius="0.9906" width="0" layer="30"/>
+<circle x="1.27" y="4.191" radius="0.9906" width="0" layer="30"/>
+<circle x="3.81" y="4.191" radius="0.9906" width="0" layer="30"/>
+<circle x="3.81" y="-4.191" radius="0.9906" width="0" layer="30"/>
+<circle x="1.27" y="-4.191" radius="0.9906" width="0" layer="30"/>
+<circle x="-1.27" y="-4.191" radius="0.9906" width="0" layer="30"/>
+<circle x="-3.81" y="-4.191" radius="0.9906" width="0" layer="30"/>
+<text x="-3.175" y="-0.635" size="1.27" layer="21" font="vector" ratio="10" rot="SR0">&gt;VALUE</text>
+<wire x1="-5.08" y1="2.921" x2="-5.08" y2="1.016" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-2.921" x2="-5.08" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-1.016" x2="-5.08" y2="1.016" width="0.2032" layer="21" curve="180"/>
+</package>
+</packages>
+<symbols>
+<symbol name="NE555">
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<text x="-7.62" y="11.43" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="TRE" x="-10.16" y="7.62" length="short" direction="in"/>
+<pin name="OUT" x="10.16" y="0" length="short" direction="out" rot="R180"/>
+<pin name="DIS" x="-10.16" y="0" length="short" direction="in"/>
+<pin name="TRI" x="-10.16" y="-7.62" length="short" direction="in"/>
+<pin name="VCC+" x="10.16" y="7.62" length="short" direction="pwr" rot="R180"/>
+<pin name="GND" x="10.16" y="-7.62" length="short" direction="pwr" rot="R180"/>
+<pin name="CON" x="10.16" y="-5.08" length="short" direction="in" rot="R180"/>
+<pin name="/RES" x="10.16" y="5.08" length="short" direction="in" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NE555" prefix="IC" uservalue="yes">
+<description>&lt;b&gt;General purpose bipolar Timer&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="NE555" x="60.96" y="-27.94"/>
+</gates>
+<devices>
+<device name="P" package="DIL-08">
+<connects>
+<connect gate="G$1" pin="/RES" pad="4"/>
+<connect gate="G$1" pin="CON" pad="5"/>
+<connect gate="G$1" pin="DIS" pad="7"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="TRE" pad="6"/>
+<connect gate="G$1" pin="TRI" pad="2"/>
+<connect gate="G$1" pin="VCC+" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="Arrow Electronics" constant="no"/>
+<attribute name="MPN" value="NE555N" constant="no"/>
+<attribute name="OC_FARNELL" value="1467742" constant="no"/>
+<attribute name="OC_NEWARK" value="89K1486" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="D" package="SO08">
+<connects>
+<connect gate="G$1" pin="/RES" pad="4"/>
+<connect gate="G$1" pin="CON" pad="5"/>
+<connect gate="G$1" pin="DIS" pad="7"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="TRE" pad="6"/>
+<connect gate="G$1" pin="TRI" pad="2"/>
+<connect gate="G$1" pin="VCC+" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="KIT" package="DIP08-KIT">
+<connects>
+<connect gate="G$1" pin="/RES" pad="4"/>
+<connect gate="G$1" pin="CON" pad="5"/>
+<connect gate="G$1" pin="DIS" pad="7"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="TRE" pad="6"/>
+<connect gate="G$1" pin="TRI" pad="2"/>
+<connect gate="G$1" pin="VCC+" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11930" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6151,10 +6323,17 @@ temperature compensated, 6,2 V</description>
 <part name="C_100MF" library="adafruit" deviceset="C-US" device="025-030X050"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="MANUAL_CLOCK" library="switch-omron" deviceset="10-XX" device=""/>
-<part name="R_MANUAL_CLOCK_PULL_DOWN_1K" library="adafruit" deviceset="R-US_" device="R1206"/>
-<part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="DIODE_1N5817" library="diode" deviceset="1N821" device=""/>
 <part name="AUTOMATED_CLOCK_ON_OFF" library="adafruit" deviceset="EG1218" device="S"/>
+<part name="IC1" library="SparkFun-AnalogIC" deviceset="NE555" device="D"/>
+<part name="R_100K_1" library="adafruit" deviceset="R-US_" device="R1206"/>
+<part name="C_0.1UF_1" library="adafruit" deviceset="C-US" device="C1206"/>
+<part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="GND11" library="supply1" deviceset="GND" device=""/>
+<part name="C_0.1UF_2" library="adafruit" deviceset="C-US" device="C1206"/>
+<part name="GND12" library="supply1" deviceset="GND" device=""/>
+<part name="R_100K_2" library="adafruit" deviceset="R-US_" device="R1206"/>
+<part name="GND9" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6178,14 +6357,21 @@ temperature compensated, 6,2 V</description>
 <instance part="GND7" gate="1" x="-10.16" y="58.42" rot="R90"/>
 <instance part="C_100MF" gate="G$1" x="-66.04" y="96.52" rot="R180"/>
 <instance part="GND8" gate="1" x="-66.04" y="81.28"/>
-<instance part="MANUAL_CLOCK" gate="1" x="-73.66" y="53.34"/>
-<instance part="R_MANUAL_CLOCK_PULL_DOWN_1K" gate="G$1" x="-86.36" y="40.64"/>
-<instance part="GND9" gate="1" x="-106.68" y="40.64" rot="R270"/>
+<instance part="MANUAL_CLOCK" gate="1" x="-144.78" y="53.34"/>
 <instance part="DIODE_1N5817" gate="1" x="-25.4" y="129.54" rot="R180"/>
 <instance part="AUTOMATED_CLOCK_ON_OFF" gate="1" x="-48.26" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="-43.053" y="136.652" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-51.435" y="123.19" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="IC1" gate="G$1" x="-129.54" y="101.6"/>
+<instance part="R_100K_1" gate="G$1" x="-152.4" y="109.22"/>
+<instance part="C_0.1UF_1" gate="G$1" x="-175.26" y="96.52" rot="R180"/>
+<instance part="GND10" gate="1" x="-175.26" y="78.74"/>
+<instance part="GND11" gate="1" x="-114.3" y="93.98" rot="R90"/>
+<instance part="C_0.1UF_2" gate="G$1" x="-101.6" y="96.52" rot="R270"/>
+<instance part="GND12" gate="1" x="-91.44" y="96.52" rot="R90"/>
+<instance part="R_100K_2" gate="G$1" x="-154.94" y="93.98"/>
+<instance part="GND9" gate="1" x="-142.24" y="40.64"/>
 </instances>
 <busses>
 </busses>
@@ -6232,9 +6418,24 @@ temperature compensated, 6,2 V</description>
 <wire x1="-66.04" y1="93.98" x2="-66.04" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<pinref part="C_0.1UF_1" gate="G$1" pin="1"/>
+<pinref part="GND10" gate="1" pin="GND"/>
+<wire x1="-175.26" y1="93.98" x2="-175.26" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="GND"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="-119.38" y1="93.98" x2="-116.84" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND12" gate="1" pin="GND"/>
+<pinref part="C_0.1UF_2" gate="G$1" pin="1"/>
+<wire x1="-93.98" y1="96.52" x2="-99.06" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="MANUAL_CLOCK" gate="1" pin="P1"/>
 <pinref part="GND9" gate="1" pin="GND"/>
-<pinref part="R_MANUAL_CLOCK_PULL_DOWN_1K" gate="G$1" pin="1"/>
-<wire x1="-104.14" y1="40.64" x2="-91.44" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-142.24" y1="48.26" x2="-142.24" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -6279,9 +6480,24 @@ temperature compensated, 6,2 V</description>
 <label x="-66.04" y="114.3" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="MANUAL_CLOCK" gate="1" pin="S"/>
-<wire x1="-73.66" y1="58.42" x2="-73.66" y2="71.12" width="0.1524" layer="91"/>
-<label x="-76.2" y="68.58" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="VCC+"/>
+<wire x1="-119.38" y1="109.22" x2="-111.76" y2="109.22" width="0.1524" layer="91"/>
+<label x="-109.22" y="109.22" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="/RES"/>
+<wire x1="-111.76" y1="109.22" x2="-99.06" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-119.38" y1="106.68" x2="-111.76" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="-111.76" y1="106.68" x2="-111.76" y2="109.22" width="0.1524" layer="91"/>
+<junction x="-111.76" y="109.22"/>
+</segment>
+<segment>
+<pinref part="R_100K_1" gate="G$1" pin="1"/>
+<wire x1="-157.48" y1="109.22" x2="-167.64" y2="109.22" width="0.1524" layer="91"/>
+<label x="-165.1" y="109.22" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R_100K_2" gate="G$1" pin="1"/>
+<wire x1="-160.02" y1="93.98" x2="-167.64" y2="93.98" width="0.1524" layer="91"/>
+<label x="-167.64" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TMR555_OUTPUT" class="0">
@@ -6362,18 +6578,14 @@ temperature compensated, 6,2 V</description>
 <label x="8.636" y="65.532" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="MANUAL_CLOCK" gate="1" pin="P1"/>
-<wire x1="-71.12" y1="48.26" x2="-71.12" y2="40.64" width="0.1524" layer="91"/>
-<label x="-71.12" y="38.1" size="1.778" layer="95"/>
-<pinref part="R_MANUAL_CLOCK_PULL_DOWN_1K" gate="G$1" pin="2"/>
-<wire x1="-71.12" y1="40.64" x2="-71.12" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="-81.28" y1="40.64" x2="-71.12" y2="40.64" width="0.1524" layer="91"/>
-<junction x="-71.12" y="40.64"/>
-</segment>
-<segment>
 <pinref part="AUTOMATED_CLOCK_ON_OFF" gate="1" pin="O"/>
 <wire x1="-53.34" y1="127" x2="-71.12" y2="127" width="0.1524" layer="91"/>
 <label x="-75.184" y="127.762" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="OUT"/>
+<wire x1="-119.38" y1="101.6" x2="-99.06" y2="101.6" width="0.1524" layer="91"/>
+<label x="-109.22" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -6381,6 +6593,39 @@ temperature compensated, 6,2 V</description>
 <pinref part="DIODE_1N5817" gate="1" pin="C"/>
 <pinref part="AUTOMATED_CLOCK_ON_OFF" gate="1" pin="P"/>
 <wire x1="-27.94" y1="129.54" x2="-43.18" y2="129.54" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="R_100K_1" gate="G$1" pin="2"/>
+<pinref part="IC1" gate="G$1" pin="TRE"/>
+<wire x1="-147.32" y1="109.22" x2="-144.78" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="DIS"/>
+<wire x1="-144.78" y1="109.22" x2="-139.7" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-139.7" y1="101.6" x2="-144.78" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="-144.78" y1="101.6" x2="-144.78" y2="109.22" width="0.1524" layer="91"/>
+<junction x="-144.78" y="109.22"/>
+<pinref part="C_0.1UF_1" gate="G$1" pin="2"/>
+<wire x1="-144.78" y1="101.6" x2="-175.26" y2="101.6" width="0.1524" layer="91"/>
+<junction x="-144.78" y="101.6"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="CON"/>
+<pinref part="C_0.1UF_2" gate="G$1" pin="2"/>
+<wire x1="-119.38" y1="96.52" x2="-106.68" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="R_100K_2" gate="G$1" pin="2"/>
+<pinref part="IC1" gate="G$1" pin="TRI"/>
+<wire x1="-149.86" y1="93.98" x2="-144.78" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="MANUAL_CLOCK" gate="1" pin="S"/>
+<wire x1="-144.78" y1="93.98" x2="-139.7" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-144.78" y1="58.42" x2="-144.78" y2="93.98" width="0.1524" layer="91"/>
+<junction x="-144.78" y="93.98"/>
 </segment>
 </net>
 </nets>

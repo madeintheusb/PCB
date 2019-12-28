@@ -4168,11 +4168,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-48.26" y1="66.04" x2="-68.58" y2="66.04" width="0.1524" layer="91"/>
 <label x="-68.58" y="66.04" size="1.778" layer="95"/>
 </segment>
-<segment>
-<pinref part="4017BE" gate="A" pin="Q6"/>
-<wire x1="-60.96" y1="106.68" x2="-30.48" y2="106.68" width="0.1524" layer="91"/>
-<label x="-38.1" y="106.68" size="1.778" layer="95"/>
-</segment>
 </net>
 <net name="SEG_DP" class="0">
 <segment>
@@ -4183,14 +4178,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="RESET" class="0">
 <segment>
-<pinref part="4017BE" gate="A" pin="Q7"/>
-<wire x1="-60.96" y1="104.14" x2="-40.64" y2="104.14" width="0.1524" layer="91"/>
-<label x="-50.8" y="104.14" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="4017BE" gate="A" pin="RES"/>
 <wire x1="-81.28" y1="93.98" x2="-99.06" y2="93.98" width="0.1524" layer="91"/>
 <label x="-99.06" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="4017BE" gate="A" pin="Q6"/>
+<wire x1="-60.96" y1="106.68" x2="-30.48" y2="106.68" width="0.1524" layer="91"/>
+<label x="-38.1" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
