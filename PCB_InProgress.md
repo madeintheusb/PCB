@@ -14,6 +14,7 @@ New Batch for End Of December
 - USB Multiplicator make it 'big'
     C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Analog\USB Multiplicator\Gerbers\USB Multiplicator.v3.2019.12.zip
 - Clock Multiplicator, big and debounce button
+    C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Analog\Clock Multiplexer\Gerbers\Clock Multiplexer.v2.2019.12.zip
 
 UpTo11
 https://github.com/madeintheusb/PCB/tree/master/EXTENSIONS/Analog/UpTo11/MotherBoard
