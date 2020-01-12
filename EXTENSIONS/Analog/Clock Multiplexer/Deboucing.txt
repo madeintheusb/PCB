@@ -1,2 +1,6 @@
 
+
 http://abdulrahman-225-vp8.weebly.com/timer-blog/555-timer-switch-debouncing-circuit
+
+Ben Eater video - Debounce clock with 555
+https://www.youtube.com/watch?v=81BgFhm2vz8

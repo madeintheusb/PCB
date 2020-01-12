@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -6323,17 +6323,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="C_100UF" library="adafruit" deviceset="C-US" device="025-030X050"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="MANUAL_CLOCK" library="switch-omron" deviceset="10-XX" device=""/>
-<part name="DIODE_1N5817" library="diode" deviceset="1N821" device=""/>
+<part name="DIODE_1N5817_1" library="diode" deviceset="1N821" device=""/>
 <part name="AUTOMATED_CLOCK_ON_OFF" library="adafruit" deviceset="EG1218" device="S"/>
 <part name="TIMER_555" library="SparkFun-AnalogIC" deviceset="NE555" device="D"/>
-<part name="R_100K_1" library="adafruit" deviceset="R-US_" device="R1206"/>
-<part name="C_0.1UF_1" library="adafruit" deviceset="C-US" device="C1206"/>
+<part name="R_10K_1" library="adafruit" deviceset="R-US_" device="R1206"/>
+<part name="C_10UF_1" library="adafruit" deviceset="C-US" device="C1206"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="C_0.1UF_2" library="adafruit" deviceset="C-US" device="C1206"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="R_100K_2" library="adafruit" deviceset="R-US_" device="R1206"/>
+<part name="R_1K_2" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
+<part name="DIODE_1N5817_2" library="diode" deviceset="1N821" device=""/>
+<part name="R_TMR555_OUTPUT_2_PD_1K" library="adafruit" deviceset="R-US_" device="R1206"/>
+<part name="GND13" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6358,20 +6361,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="C_100UF" gate="G$1" x="-66.04" y="96.52" rot="R180"/>
 <instance part="GND8" gate="1" x="-66.04" y="81.28"/>
 <instance part="MANUAL_CLOCK" gate="1" x="-144.78" y="53.34"/>
-<instance part="DIODE_1N5817" gate="1" x="-25.4" y="129.54" rot="R180"/>
+<instance part="DIODE_1N5817_1" gate="1" x="-25.4" y="129.54" rot="R180"/>
 <instance part="AUTOMATED_CLOCK_ON_OFF" gate="1" x="-48.26" y="127" smashed="yes" rot="R90">
 <attribute name="NAME" x="-43.053" y="136.652" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-51.435" y="123.19" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="TIMER_555" gate="G$1" x="-129.54" y="101.6"/>
-<instance part="R_100K_1" gate="G$1" x="-152.4" y="109.22"/>
-<instance part="C_0.1UF_1" gate="G$1" x="-175.26" y="96.52" rot="R180"/>
+<instance part="R_10K_1" gate="G$1" x="-152.4" y="109.22"/>
+<instance part="C_10UF_1" gate="G$1" x="-175.26" y="96.52" rot="R180"/>
 <instance part="GND10" gate="1" x="-175.26" y="78.74"/>
 <instance part="GND11" gate="1" x="-114.3" y="93.98" rot="R90"/>
 <instance part="C_0.1UF_2" gate="G$1" x="-101.6" y="96.52" rot="R270"/>
 <instance part="GND12" gate="1" x="-91.44" y="96.52" rot="R90"/>
-<instance part="R_100K_2" gate="G$1" x="-154.94" y="93.98"/>
+<instance part="R_1K_2" gate="G$1" x="-154.94" y="93.98"/>
 <instance part="GND9" gate="1" x="-142.24" y="40.64"/>
+<instance part="DIODE_1N5817_2" gate="1" x="-114.3" y="127"/>
+<instance part="R_TMR555_OUTPUT_2_PD_1K" gate="G$1" x="-114.3" y="137.16"/>
+<instance part="GND13" gate="1" x="-91.44" y="137.16" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -6418,7 +6424,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-66.04" y1="93.98" x2="-66.04" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C_0.1UF_1" gate="G$1" pin="1"/>
+<pinref part="C_10UF_1" gate="G$1" pin="1"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="-175.26" y1="93.98" x2="-175.26" y2="81.28" width="0.1524" layer="91"/>
 </segment>
@@ -6436,6 +6442,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="MANUAL_CLOCK" gate="1" pin="P1"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 <wire x1="-142.24" y1="48.26" x2="-142.24" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R_TMR555_OUTPUT_2_PD_1K" gate="G$1" pin="2"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="-109.22" y1="137.16" x2="-93.98" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -6490,12 +6501,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="-111.76" y="109.22"/>
 </segment>
 <segment>
-<pinref part="R_100K_1" gate="G$1" pin="1"/>
+<pinref part="R_10K_1" gate="G$1" pin="1"/>
 <wire x1="-157.48" y1="109.22" x2="-167.64" y2="109.22" width="0.1524" layer="91"/>
 <label x="-165.1" y="109.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R_100K_2" gate="G$1" pin="1"/>
+<pinref part="R_1K_2" gate="G$1" pin="1"/>
 <wire x1="-160.02" y1="93.98" x2="-167.64" y2="93.98" width="0.1524" layer="91"/>
 <label x="-167.64" y="93.98" size="1.778" layer="95"/>
 </segment>
@@ -6507,7 +6518,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="33.02" y="127" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="DIODE_1N5817" gate="1" pin="A"/>
+<pinref part="DIODE_1N5817_1" gate="1" pin="A"/>
 <wire x1="-22.86" y1="129.54" x2="0" y2="129.54" width="0.1524" layer="91"/>
 <label x="3.81" y="128.778" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -6583,21 +6594,26 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <label x="-75.184" y="127.762" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="TIMER_555" gate="G$1" pin="OUT"/>
-<wire x1="-119.38" y1="101.6" x2="-99.06" y2="101.6" width="0.1524" layer="91"/>
-<label x="-109.22" y="101.6" size="1.778" layer="95"/>
+<pinref part="DIODE_1N5817_2" gate="1" pin="C"/>
+<wire x1="-111.76" y1="127" x2="-93.98" y2="127" width="0.1524" layer="91"/>
+<label x="-101.6" y="127" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R_TMR555_OUTPUT_2_PD_1K" gate="G$1" pin="1"/>
+<wire x1="-119.38" y1="137.16" x2="-142.24" y2="137.16" width="0.1524" layer="91"/>
+<label x="-139.7" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="DIODE_1N5817" gate="1" pin="C"/>
+<pinref part="DIODE_1N5817_1" gate="1" pin="C"/>
 <pinref part="AUTOMATED_CLOCK_ON_OFF" gate="1" pin="P"/>
 <wire x1="-27.94" y1="129.54" x2="-43.18" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="R_100K_1" gate="G$1" pin="2"/>
+<pinref part="R_10K_1" gate="G$1" pin="2"/>
 <pinref part="TIMER_555" gate="G$1" pin="TRE"/>
 <wire x1="-147.32" y1="109.22" x2="-144.78" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="TIMER_555" gate="G$1" pin="DIS"/>
@@ -6605,7 +6621,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-139.7" y1="101.6" x2="-144.78" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="-144.78" y1="101.6" x2="-144.78" y2="109.22" width="0.1524" layer="91"/>
 <junction x="-144.78" y="109.22"/>
-<pinref part="C_0.1UF_1" gate="G$1" pin="2"/>
+<pinref part="C_10UF_1" gate="G$1" pin="2"/>
 <wire x1="-144.78" y1="101.6" x2="-175.26" y2="101.6" width="0.1524" layer="91"/>
 <junction x="-144.78" y="101.6"/>
 </segment>
@@ -6619,13 +6635,25 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="R_100K_2" gate="G$1" pin="2"/>
+<pinref part="R_1K_2" gate="G$1" pin="2"/>
 <pinref part="TIMER_555" gate="G$1" pin="TRI"/>
 <wire x1="-149.86" y1="93.98" x2="-144.78" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="MANUAL_CLOCK" gate="1" pin="S"/>
 <wire x1="-144.78" y1="93.98" x2="-139.7" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="-144.78" y1="58.42" x2="-144.78" y2="93.98" width="0.1524" layer="91"/>
 <junction x="-144.78" y="93.98"/>
+</segment>
+</net>
+<net name="TIMER_OUTPUT" class="0">
+<segment>
+<pinref part="TIMER_555" gate="G$1" pin="OUT"/>
+<wire x1="-119.38" y1="101.6" x2="-99.06" y2="101.6" width="0.1524" layer="91"/>
+<label x="-109.22" y="101.6" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="DIODE_1N5817_2" gate="1" pin="A"/>
+<wire x1="-116.84" y1="127" x2="-142.24" y2="127" width="0.1524" layer="91"/>
+<label x="-137.16" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
