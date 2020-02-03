@@ -140,20 +140,18 @@
 </layers>
 <board>
 <plain>
-<wire x1="2" y1="12" x2="80" y2="12" width="0" layer="20"/>
-<wire x1="80" y1="12" x2="80" y2="80" width="0" layer="20"/>
-<wire x1="80" y1="80" x2="2" y2="80" width="0" layer="20"/>
-<wire x1="2" y1="80" x2="2" y2="12" width="0" layer="20"/>
-<text x="24.5" y="17.9" size="1.016" layer="25" rot="R90" align="center">GND</text>
-<text x="29.9" y="17.9" size="1.016" layer="25" rot="R90" align="center">OUT</text>
-<text x="27.3" y="17.9" size="1.016" layer="25" rot="R90" align="center">VCC</text>
-<text x="32.6" y="18.4" size="1.016" layer="25" rot="R90" align="center">OUT_R</text>
-<text x="77.5" y="49.4" size="1.27" layer="25" rot="R180" align="center">GND</text>
-<text x="28" y="24.5" size="2.1844" layer="26" rot="SMR0" align="center">MadeInTheUSB.net</text>
-<text x="29" y="20.5" size="1.27" layer="26" rot="MR0" align="center">PCBv3 - 2019.12 - Fixed</text>
-<text x="36" y="35.5" size="1.4224" layer="26" rot="SMR0" align="center">https://bit.ly/36Fu0YN</text>
-<text x="29" y="29.5" size="2.1844" layer="26" rot="SMR0" align="center">www.FredericTorres.com</text>
-<text x="47.5" y="20.4" size="1.27" layer="25" rot="R180" align="center">+</text>
+<wire x1="2" y1="12" x2="65" y2="12" width="0" layer="20"/>
+<wire x1="65" y1="12" x2="65" y2="72" width="0" layer="20"/>
+<wire x1="65" y1="72" x2="2" y2="72" width="0" layer="20"/>
+<wire x1="2" y1="72" x2="2" y2="12" width="0" layer="20"/>
+<text x="30" y="28.4" size="1.016" layer="25" rot="R90" align="center">GND</text>
+<text x="35.4" y="28.4" size="1.016" layer="25" rot="R90" align="center">OUT</text>
+<text x="32.8" y="28.4" size="1.016" layer="25" rot="R90" align="center">VCC</text>
+<text x="38.1" y="28.9" size="1.016" layer="25" rot="R90" align="center">OUT_R</text>
+<text x="62.5" y="31.4" size="1.27" layer="25" rot="R180" align="center">GND</text>
+<text x="16" y="15.5" size="1.27" layer="26" rot="MR0" align="center">PCBv1 - 2020.02</text>
+<text x="6.5" y="28.4" size="1.27" layer="25" rot="R180" align="center">+</text>
+<text x="35.5" y="68.4" size="3" layer="25" rot="R180" align="center">Cheetah Booster</text>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -688,93 +686,93 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="JP_CLOCK_IN" library="pinhead" package="1X04" value="" x="28.5" y="14" smashed="yes">
-<attribute name="VALUE" x="23.42" y="10.825" size="1.27" layer="27"/>
+<element name="JP_CLOCK_IN" library="pinhead" package="1X04" value="" x="34" y="33.5" smashed="yes">
+<attribute name="VALUE" x="28.92" y="30.325" size="1.27" layer="27"/>
 </element>
-<element name="4017BE" library="SparkFun-DigitalIC" package="DIL16" value="CD4017" x="11.5" y="61.5" smashed="yes" rot="R90">
-<attribute name="PROD_ID" value="IC-11929" x="11.5" y="61.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="18.421" y="60.959" size="1.27" layer="25" ratio="10" rot="R90" align="center"/>
-<attribute name="VALUE" x="12.135" y="54.007" size="1.27" layer="27" ratio="10" rot="R90"/>
+<element name="4017BE" library="SparkFun-DigitalIC" package="DIL16" value="CD4017" x="9.5" y="50.5" smashed="yes" rot="R90">
+<attribute name="PROD_ID" value="IC-11929" x="9.5" y="50.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="16.421" y="49.959" size="1.27" layer="25" ratio="10" rot="R90" align="center"/>
+<attribute name="VALUE" x="10.135" y="43.007" size="1.27" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="LED_START" library="adafruit" package="1206" value="" x="49" y="18" smashed="yes">
-<attribute name="NAME" x="41.23" y="17.77" size="1.016" layer="25" align="center"/>
-<attribute name="VALUE" x="47.73" y="15.46" size="1.27" layer="27"/>
+<element name="LED_START" library="adafruit" package="1206" value="" x="11" y="28" smashed="yes">
+<attribute name="NAME" x="11.23" y="30.77" size="1.016" layer="25" align="center"/>
+<attribute name="VALUE" x="9.73" y="25.46" size="1.27" layer="27"/>
 </element>
-<element name="R2_100_O" library="adafruit" package="R1206" value="" x="16" y="18" smashed="yes" rot="R180">
-<attribute name="NAME" x="8.397" y="18.357" size="1.016" layer="25" rot="R180" align="center"/>
-<attribute name="VALUE" x="17.397" y="20.413" size="1.27" layer="27" rot="R180"/>
+<element name="R2_100_O" library="adafruit" package="R1206" value="" x="11" y="25" smashed="yes" rot="R180">
+<attribute name="NAME" x="11.397" y="22.357" size="1.016" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="12.397" y="27.413" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="RN1" library="resistor-sip" package="SIP10" value="" x="77" y="65" rot="R90"/>
-<element name="JP_RES_GND" library="pinhead" package="1X08" value="" x="70" y="66" rot="R90"/>
-<element name="D1" library="diode" package="DO35Z10" value="1N821" x="27.5" y="77" rot="R180"/>
-<element name="D2" library="diode" package="DO35Z10" value="1N821" x="27.5" y="73" rot="R180"/>
-<element name="D3" library="diode" package="DO35Z10" value="1N821" x="27.5" y="69" rot="R180"/>
-<element name="D4" library="diode" package="DO35Z10" value="1N821" x="27.5" y="65" rot="R180"/>
-<element name="D5" library="diode" package="DO35Z10" value="1N821" x="27.5" y="61" rot="R180"/>
-<element name="D6" library="diode" package="DO35Z10" value="1N821" x="27.5" y="57" rot="R180"/>
-<element name="D7" library="diode" package="DO35Z10" value="1N821" x="27.5" y="53" rot="R180"/>
-<element name="D8" library="diode" package="DO35Z10" value="1N821" x="27.5" y="49" rot="R180"/>
-<element name="D9" library="diode" package="DO35Z10" value="1N821" x="27.5" y="45" rot="R180"/>
-<element name="JP_LED" library="pinhead" package="1X08" value="" x="54" y="66" rot="R90"/>
-<element name="SJ1" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="43" y="31.5">
-<attribute name="BOM" value="EXCLUDE" x="43" y="31.5" size="1.778" layer="27" display="off"/>
+<element name="RN1" library="resistor-sip" package="SIP10" value="" x="63" y="47" rot="R90"/>
+<element name="JP_RES_GND" library="pinhead" package="1X08" value="" x="58.2" y="49" rot="R90"/>
+<element name="D1" library="diode" package="DO35Z10" value="1N821" x="27" y="39" rot="R180"/>
+<element name="D2" library="diode" package="DO35Z10" value="1N821" x="27" y="42" rot="R180"/>
+<element name="D3" library="diode" package="DO35Z10" value="1N821" x="27" y="51" rot="R180"/>
+<element name="D4" library="diode" package="DO35Z10" value="1N821" x="27" y="60" rot="R180"/>
+<element name="D5" library="diode" package="DO35Z10" value="1N821" x="27" y="54" rot="R180"/>
+<element name="D6" library="diode" package="DO35Z10" value="1N821" x="27" y="48" rot="R180"/>
+<element name="D7" library="diode" package="DO35Z10" value="1N821" x="27" y="63" rot="R180"/>
+<element name="D8" library="diode" package="DO35Z10" value="1N821" x="27" y="57" rot="R180"/>
+<element name="D9" library="diode" package="DO35Z10" value="1N821" x="27" y="45" rot="R180"/>
+<element name="JP_LED" library="pinhead" package="1X08" value="" x="50.5" y="49" rot="R90"/>
+<element name="SJ1" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="51.5" y="20">
+<attribute name="BOM" value="EXCLUDE" x="51.5" y="20" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SJ2" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="43" y="28.5">
-<attribute name="BOM" value="EXCLUDE" x="43" y="28.5" size="1.778" layer="27" display="off"/>
+<element name="SJ2" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="51.5" y="17">
+<attribute name="BOM" value="EXCLUDE" x="51.5" y="17" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SJ3" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="43" y="25.5">
-<attribute name="BOM" value="EXCLUDE" x="43" y="25.5" size="1.778" layer="27" display="off"/>
+<element name="SJ3" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="51.5" y="14">
+<attribute name="BOM" value="EXCLUDE" x="51.5" y="14" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SJ4" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="43" y="38.5">
-<attribute name="BOM" value="EXCLUDE" x="43" y="38.5" size="1.778" layer="27" display="off"/>
+<element name="SJ4" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="51.5" y="27">
+<attribute name="BOM" value="EXCLUDE" x="51.5" y="27" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SJ5" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="43" y="35.5">
-<attribute name="BOM" value="EXCLUDE" x="43" y="35.5" size="1.778" layer="27" display="off"/>
+<element name="SJ5" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="51.5" y="24">
+<attribute name="BOM" value="EXCLUDE" x="51.5" y="24" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SJ6" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="43" y="42.5">
-<attribute name="BOM" value="EXCLUDE" x="43" y="42.5" size="1.778" layer="27" display="off"/>
+<element name="SJ6" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="51.5" y="31">
+<attribute name="BOM" value="EXCLUDE" x="51.5" y="31" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SJ7" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="43" y="45.5">
-<attribute name="BOM" value="EXCLUDE" x="43" y="45.5" size="1.778" layer="27" display="off"/>
+<element name="SJ7" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="51.5" y="34">
+<attribute name="BOM" value="EXCLUDE" x="51.5" y="34" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SJ8" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="42.5" y="49.5">
-<attribute name="BOM" value="EXCLUDE" x="42.5" y="49.5" size="1.778" layer="27" display="off"/>
+<element name="SJ8" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="43.5" y="41.5">
+<attribute name="BOM" value="EXCLUDE" x="43.5" y="41.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SJ9" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="42.5" y="53.5">
-<attribute name="BOM" value="EXCLUDE" x="42.5" y="53.5" size="1.778" layer="27" display="off"/>
+<element name="SJ9" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="43.5" y="44.5">
+<attribute name="BOM" value="EXCLUDE" x="43.5" y="44.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SJ10" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="42.5" y="57.5">
-<attribute name="BOM" value="EXCLUDE" x="42.5" y="57.5" size="1.778" layer="27" display="off"/>
+<element name="SJ10" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="43.5" y="48.5">
+<attribute name="BOM" value="EXCLUDE" x="43.5" y="48.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SJ11" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="42.5" y="61.5">
-<attribute name="BOM" value="EXCLUDE" x="42.5" y="61.5" size="1.778" layer="27" display="off"/>
+<element name="SJ11" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="43.5" y="51.5">
+<attribute name="BOM" value="EXCLUDE" x="43.5" y="51.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SJ12" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="42" y="69">
-<attribute name="BOM" value="EXCLUDE" x="42" y="69" size="1.778" layer="27" display="off"/>
+<element name="SJ12" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="37.5" y="51.5">
+<attribute name="BOM" value="EXCLUDE" x="37.5" y="51.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SJ13" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="42" y="65">
-<attribute name="BOM" value="EXCLUDE" x="42" y="65" size="1.778" layer="27" display="off"/>
+<element name="SJ13" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="37.5" y="48.5">
+<attribute name="BOM" value="EXCLUDE" x="37.5" y="48.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SJ14" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="5" y="9">
-<attribute name="BOM" value="EXCLUDE" x="5" y="9" size="1.778" layer="27" display="off"/>
+<element name="SJ14" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="37.5" y="61.5">
+<attribute name="BOM" value="EXCLUDE" x="37.5" y="61.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SJ15" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="5" y="5">
-<attribute name="BOM" value="EXCLUDE" x="5" y="5" size="1.778" layer="27" display="off"/>
+<element name="SJ15" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="37.5" y="58.5">
+<attribute name="BOM" value="EXCLUDE" x="37.5" y="58.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SJ16" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="5" y="1">
-<attribute name="BOM" value="EXCLUDE" x="5" y="1" size="1.778" layer="27" display="off"/>
+<element name="SJ16" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="37.5" y="55.5">
+<attribute name="BOM" value="EXCLUDE" x="37.5" y="55.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SJ17" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="5" y="-3">
-<attribute name="BOM" value="EXCLUDE" x="5" y="-3" size="1.778" layer="27" display="off"/>
+<element name="SJ17" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="58" y="34">
+<attribute name="BOM" value="EXCLUDE" x="58" y="34" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SJ18" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="5" y="-7">
-<attribute name="BOM" value="EXCLUDE" x="5" y="-7" size="1.778" layer="27" display="off"/>
+<element name="SJ18" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="58" y="31">
+<attribute name="BOM" value="EXCLUDE" x="58" y="31" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SJ19" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="5" y="-11">
-<attribute name="BOM" value="EXCLUDE" x="5" y="-11" size="1.778" layer="27" display="off"/>
+<element name="SJ19" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="58" y="28">
+<attribute name="BOM" value="EXCLUDE" x="58" y="28" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SJ20" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="5" y="-15">
-<attribute name="BOM" value="EXCLUDE" x="5" y="-15" size="1.778" layer="27" display="off"/>
+<element name="SJ20" library="microbuilder" package="SOLDERJUMPER_ARROW_NOPASTE" value="" x="58" y="25">
+<attribute name="BOM" value="EXCLUDE" x="58" y="25" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -784,81 +782,78 @@ design rules under a new name.</description>
 <contactref element="4017BE" pad="13"/>
 <contactref element="R2_100_O" pad="1"/>
 <contactref element="RN1" pad="1"/>
-<wire x1="15.31" y1="70.39" x2="77" y2="53.54" width="0" layer="19" extent="1-1"/>
-<wire x1="7.69" y1="60.23" x2="15.31" y2="70.39" width="0" layer="19" extent="1-1"/>
-<wire x1="17.422" y1="18" x2="7.69" y2="60.23" width="0" layer="19" extent="1-1"/>
-<wire x1="24.69" y1="14" x2="17.422" y2="18" width="0" layer="19" extent="1-1"/>
+<wire x1="30.19" y1="33.5" x2="63" y2="35.54" width="0" layer="19" extent="1-1"/>
+<wire x1="12.422" y1="25" x2="30.19" y2="33.5" width="0" layer="19" extent="1-1"/>
+<wire x1="5.69" y1="49.23" x2="30.19" y2="33.5" width="0" layer="19" extent="1-1"/>
+<wire x1="13.31" y1="59.39" x2="5.69" y2="49.23" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="JP_CLOCK_IN" pad="2"/>
 <contactref element="4017BE" pad="16"/>
-<wire x1="27.23" y1="14" x2="7.69" y2="52.61" width="0" layer="19" extent="1-1"/>
+<wire x1="5.69" y1="41.61" x2="32.73" y2="33.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TMR555_OUTPUT">
 <contactref element="JP_CLOCK_IN" pad="3"/>
 <contactref element="4017BE" pad="14"/>
-<wire x1="29.77" y1="14" x2="7.69" y2="57.69" width="0" layer="19" extent="1-1"/>
+<wire x1="5.69" y1="46.69" x2="35.27" y2="33.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TMR555_OUTPUT_REVERSE">
 <contactref element="JP_CLOCK_IN" pad="4"/>
 </signal>
-<signal name="SEG_A">
-<contactref element="LED_START" pad="A"/>
-</signal>
 <signal name="SEG_1">
 <contactref element="4017BE" pad="2"/>
 <contactref element="D2" pad="A"/>
-<wire x1="15.31" y1="55.15" x2="22.42" y2="73" width="0" layer="19" extent="1-1"/>
+<wire x1="13.31" y1="44.15" x2="21.92" y2="42" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_2">
 <contactref element="4017BE" pad="4"/>
 <contactref element="D3" pad="A"/>
-<wire x1="15.31" y1="60.23" x2="22.42" y2="69" width="0" layer="19" extent="1-1"/>
+<wire x1="13.31" y1="49.23" x2="21.92" y2="51" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_3">
 <contactref element="4017BE" pad="7"/>
 <contactref element="D4" pad="A"/>
-<wire x1="15.31" y1="67.85" x2="22.42" y2="65" width="0" layer="19" extent="1-1"/>
+<wire x1="13.31" y1="56.85" x2="21.92" y2="60" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_4">
 <contactref element="4017BE" pad="10"/>
 <contactref element="D5" pad="A"/>
-<wire x1="7.69" y1="67.85" x2="22.42" y2="61" width="0" layer="19" extent="1-1"/>
+<wire x1="5.69" y1="56.85" x2="21.92" y2="54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_5">
 <contactref element="4017BE" pad="1"/>
 <contactref element="D6" pad="A"/>
-<wire x1="15.31" y1="52.61" x2="22.42" y2="57" width="0" layer="19" extent="1-1"/>
+<wire x1="13.31" y1="41.61" x2="21.92" y2="48" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RESET">
 <contactref element="4017BE" pad="15"/>
 <contactref element="4017BE" pad="11"/>
-<wire x1="7.69" y1="55.15" x2="7.69" y2="65.31" width="0" layer="19" extent="1-1"/>
+<wire x1="5.69" y1="44.15" x2="5.69" y2="54.31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="R2_100_O" pad="2"/>
 <contactref element="LED_START" pad="C"/>
-<wire x1="14.578" y1="18" x2="50.422" y2="18" width="0" layer="19" extent="1-1"/>
+<wire x1="9.578" y1="25" x2="12.422" y2="28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_0">
 <contactref element="4017BE" pad="3"/>
 <contactref element="D1" pad="A"/>
-<wire x1="15.31" y1="57.69" x2="22.42" y2="77" width="0" layer="19" extent="1-1"/>
+<wire x1="13.31" y1="46.69" x2="21.92" y2="39" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_6">
 <contactref element="4017BE" pad="5"/>
 <contactref element="D7" pad="A"/>
-<wire x1="22.42" y1="53" x2="15.31" y2="62.77" width="0" layer="19" extent="1-1"/>
+<wire x1="13.31" y1="51.77" x2="21.92" y2="63" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_7">
 <contactref element="4017BE" pad="6"/>
 <contactref element="D8" pad="A"/>
-<wire x1="22.42" y1="49" x2="15.31" y2="65.31" width="0" layer="19" extent="1-1"/>
+<wire x1="13.31" y1="54.31" x2="21.92" y2="57" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_8">
 <contactref element="4017BE" pad="9"/>
 <contactref element="D9" pad="A"/>
-<wire x1="22.42" y1="45" x2="7.69" y2="70.39" width="0" layer="19" extent="1-1"/>
+<wire x1="5.69" y1="59.39" x2="21.92" y2="45" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DO_NOT_USE">
 <contactref element="RN1" pad="10"/>
@@ -866,157 +861,159 @@ design rules under a new name.</description>
 <signal name="R7">
 <contactref element="RN1" pad="9"/>
 <contactref element="JP_RES_GND" pad="8"/>
-<wire x1="70" y1="74.89" x2="77" y2="73.86" width="0" layer="19" extent="1-1"/>
+<wire x1="58.2" y1="57.89" x2="63" y2="55.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R6">
 <contactref element="RN1" pad="8"/>
 <contactref element="JP_RES_GND" pad="7"/>
-<wire x1="70" y1="72.35" x2="77" y2="71.32" width="0" layer="19" extent="1-1"/>
+<wire x1="58.2" y1="55.35" x2="63" y2="53.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R5">
 <contactref element="RN1" pad="7"/>
 <contactref element="JP_RES_GND" pad="6"/>
-<wire x1="70" y1="69.81" x2="77" y2="68.78" width="0" layer="19" extent="1-1"/>
+<wire x1="58.2" y1="52.81" x2="63" y2="50.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R4">
 <contactref element="RN1" pad="6"/>
 <contactref element="JP_RES_GND" pad="5"/>
-<wire x1="70" y1="67.27" x2="77" y2="66.24" width="0" layer="19" extent="1-1"/>
+<wire x1="58.2" y1="50.27" x2="63" y2="48.24" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R3">
 <contactref element="RN1" pad="5"/>
 <contactref element="JP_RES_GND" pad="4"/>
-<wire x1="70" y1="64.73" x2="77" y2="63.7" width="0" layer="19" extent="1-1"/>
+<wire x1="58.2" y1="47.73" x2="63" y2="45.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R2">
 <contactref element="RN1" pad="4"/>
 <contactref element="JP_RES_GND" pad="3"/>
-<wire x1="70" y1="62.19" x2="77" y2="61.16" width="0" layer="19" extent="1-1"/>
+<wire x1="58.2" y1="45.19" x2="63" y2="43.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R1">
 <contactref element="RN1" pad="3"/>
 <contactref element="JP_RES_GND" pad="2"/>
-<wire x1="70" y1="59.65" x2="77" y2="58.62" width="0" layer="19" extent="1-1"/>
+<wire x1="58.2" y1="42.65" x2="63" y2="40.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_0_0">
 <contactref element="D1" pad="C"/>
 <contactref element="SJ1" pad="1"/>
-<wire x1="41.984" y1="31.5" x2="32.58" y2="77" width="0" layer="19" extent="1-1"/>
+<contactref element="LED_START" pad="A"/>
+<wire x1="50.484" y1="20" x2="32.08" y2="39" width="0" layer="19" extent="1-1"/>
+<wire x1="9.578" y1="28" x2="32.08" y2="39" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_1_1">
 <contactref element="D2" pad="C"/>
 <contactref element="SJ2" pad="1"/>
 <contactref element="SJ4" pad="1"/>
-<wire x1="41.984" y1="38.5" x2="32.58" y2="73" width="0" layer="19" extent="1-1"/>
-<wire x1="41.984" y1="28.5" x2="41.984" y2="38.5" width="0" layer="19" extent="1-1"/>
+<wire x1="50.484" y1="27" x2="32.08" y2="42" width="0" layer="19" extent="1-1"/>
+<wire x1="50.484" y1="17" x2="50.484" y2="27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_2_2">
 <contactref element="D3" pad="C"/>
 <contactref element="SJ3" pad="1"/>
 <contactref element="SJ6" pad="1"/>
 <contactref element="SJ10" pad="1"/>
-<wire x1="41.484" y1="57.5" x2="32.58" y2="69" width="0" layer="19" extent="1-1"/>
-<wire x1="41.984" y1="42.5" x2="41.484" y2="57.5" width="0" layer="19" extent="1-1"/>
-<wire x1="41.984" y1="25.5" x2="41.984" y2="42.5" width="0" layer="19" extent="1-1"/>
+<wire x1="42.484" y1="48.5" x2="32.08" y2="51" width="0" layer="19" extent="1-1"/>
+<wire x1="50.484" y1="31" x2="42.484" y2="48.5" width="0" layer="19" extent="1-1"/>
+<wire x1="50.484" y1="14" x2="50.484" y2="31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_3_3">
 <contactref element="D4" pad="C"/>
 <contactref element="SJ5" pad="1"/>
 <contactref element="SJ8" pad="1"/>
 <contactref element="SJ12" pad="1"/>
-<wire x1="32.58" y1="65" x2="40.984" y2="69" width="0" layer="19" extent="1-1"/>
-<wire x1="41.484" y1="49.5" x2="32.58" y2="65" width="0" layer="19" extent="1-1"/>
-<wire x1="41.984" y1="35.5" x2="41.484" y2="49.5" width="0" layer="19" extent="1-1"/>
+<wire x1="36.484" y1="51.5" x2="32.08" y2="60" width="0" layer="19" extent="1-1"/>
+<wire x1="42.484" y1="41.5" x2="36.484" y2="51.5" width="0" layer="19" extent="1-1"/>
+<wire x1="50.484" y1="24" x2="42.484" y2="41.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_4_4">
 <contactref element="D5" pad="C"/>
 <contactref element="SJ7" pad="1"/>
 <contactref element="SJ11" pad="1"/>
 <contactref element="SJ14" pad="1"/>
-<wire x1="32.58" y1="61" x2="41.484" y2="61.5" width="0" layer="19" extent="1-1"/>
-<wire x1="41.984" y1="45.5" x2="41.484" y2="61.5" width="0" layer="19" extent="1-1"/>
-<wire x1="3.984" y1="9" x2="41.984" y2="45.5" width="0" layer="19" extent="1-1"/>
+<wire x1="32.08" y1="54" x2="36.484" y2="61.5" width="0" layer="19" extent="1-1"/>
+<wire x1="42.484" y1="51.5" x2="32.08" y2="54" width="0" layer="19" extent="1-1"/>
+<wire x1="50.484" y1="34" x2="42.484" y2="51.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_5_5">
 <contactref element="D6" pad="C"/>
 <contactref element="SJ9" pad="1"/>
 <contactref element="SJ13" pad="1"/>
 <contactref element="SJ17" pad="1"/>
-<wire x1="41.484" y1="53.5" x2="40.984" y2="65" width="0" layer="19" extent="1-1"/>
-<wire x1="32.58" y1="57" x2="41.484" y2="53.5" width="0" layer="19" extent="1-1"/>
-<wire x1="3.984" y1="-3" x2="32.58" y2="57" width="0" layer="19" extent="1-1"/>
+<wire x1="36.484" y1="48.5" x2="56.984" y2="34" width="0" layer="19" extent="1-1"/>
+<wire x1="32.08" y1="48" x2="36.484" y2="48.5" width="0" layer="19" extent="1-1"/>
+<wire x1="42.484" y1="44.5" x2="36.484" y2="48.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_6_6">
 <contactref element="D7" pad="C"/>
 <contactref element="SJ15" pad="1"/>
 <contactref element="SJ18" pad="1"/>
-<wire x1="3.984" y1="5" x2="32.58" y2="53" width="0" layer="19" extent="1-1"/>
-<wire x1="3.984" y1="-7" x2="3.984" y2="5" width="0" layer="19" extent="1-1"/>
+<wire x1="36.484" y1="58.5" x2="56.984" y2="31" width="0" layer="19" extent="1-1"/>
+<wire x1="32.08" y1="63" x2="36.484" y2="58.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_7_7">
 <contactref element="D8" pad="C"/>
 <contactref element="SJ16" pad="1"/>
 <contactref element="SJ19" pad="1"/>
-<wire x1="3.984" y1="1" x2="32.58" y2="49" width="0" layer="19" extent="1-1"/>
-<wire x1="3.984" y1="-11" x2="3.984" y2="1" width="0" layer="19" extent="1-1"/>
+<wire x1="36.484" y1="55.5" x2="56.984" y2="28" width="0" layer="19" extent="1-1"/>
+<wire x1="32.08" y1="57" x2="36.484" y2="55.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_8_8">
 <contactref element="D9" pad="C"/>
 <contactref element="SJ20" pad="1"/>
-<wire x1="3.984" y1="-15" x2="32.58" y2="45" width="0" layer="19" extent="1-1"/>
+<wire x1="32.08" y1="45" x2="56.984" y2="25" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED_0">
 <contactref element="JP_LED" pad="1"/>
 <contactref element="SJ3" pad="2"/>
 <contactref element="SJ1" pad="2"/>
 <contactref element="SJ2" pad="2"/>
-<wire x1="44.016" y1="31.5" x2="54" y2="57.11" width="0" layer="19" extent="1-1"/>
-<wire x1="44.016" y1="28.5" x2="44.016" y2="31.5" width="0" layer="19" extent="1-1"/>
-<wire x1="44.016" y1="25.5" x2="44.016" y2="28.5" width="0" layer="19" extent="1-1"/>
+<wire x1="52.516" y1="20" x2="50.5" y2="40.11" width="0" layer="19" extent="1-1"/>
+<wire x1="52.516" y1="17" x2="52.516" y2="20" width="0" layer="19" extent="1-1"/>
+<wire x1="52.516" y1="14" x2="52.516" y2="17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED_1">
 <contactref element="JP_LED" pad="2"/>
 <contactref element="SJ5" pad="2"/>
 <contactref element="SJ4" pad="2"/>
-<wire x1="44.016" y1="38.5" x2="54" y2="59.65" width="0" layer="19" extent="1-1"/>
-<wire x1="44.016" y1="35.5" x2="44.016" y2="38.5" width="0" layer="19" extent="1-1"/>
+<wire x1="52.516" y1="27" x2="50.5" y2="42.65" width="0" layer="19" extent="1-1"/>
+<wire x1="52.516" y1="24" x2="52.516" y2="27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED_2">
 <contactref element="JP_LED" pad="3"/>
 <contactref element="SJ7" pad="2"/>
 <contactref element="SJ6" pad="2"/>
-<wire x1="44.016" y1="45.5" x2="54" y2="62.19" width="0" layer="19" extent="1-1"/>
-<wire x1="44.016" y1="42.5" x2="44.016" y2="45.5" width="0" layer="19" extent="1-1"/>
+<wire x1="52.516" y1="31" x2="50.5" y2="45.19" width="0" layer="19" extent="1-1"/>
+<wire x1="52.516" y1="34" x2="52.516" y2="31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED_3">
 <contactref element="JP_LED" pad="4"/>
 <contactref element="SJ9" pad="2"/>
 <contactref element="SJ8" pad="2"/>
-<wire x1="43.516" y1="53.5" x2="54" y2="64.73" width="0" layer="19" extent="1-1"/>
-<wire x1="43.516" y1="49.5" x2="43.516" y2="53.5" width="0" layer="19" extent="1-1"/>
+<wire x1="44.516" y1="41.5" x2="44.516" y2="44.5" width="0" layer="19" extent="1-1"/>
+<wire x1="50.5" y1="47.73" x2="44.516" y2="41.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED_4">
 <contactref element="JP_LED" pad="5"/>
 <contactref element="SJ11" pad="2"/>
 <contactref element="SJ10" pad="2"/>
-<wire x1="43.516" y1="61.5" x2="54" y2="67.27" width="0" layer="19" extent="1-1"/>
-<wire x1="43.516" y1="57.5" x2="43.516" y2="61.5" width="0" layer="19" extent="1-1"/>
+<wire x1="44.516" y1="48.5" x2="44.516" y2="51.5" width="0" layer="19" extent="1-1"/>
+<wire x1="50.5" y1="50.27" x2="44.516" y2="48.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED_5">
 <contactref element="JP_LED" pad="6"/>
 <contactref element="SJ13" pad="2"/>
 <contactref element="SJ12" pad="2"/>
-<wire x1="43.016" y1="69" x2="54" y2="69.81" width="0" layer="19" extent="1-1"/>
-<wire x1="43.016" y1="65" x2="43.016" y2="69" width="0" layer="19" extent="1-1"/>
+<wire x1="38.516" y1="48.5" x2="38.516" y2="51.5" width="0" layer="19" extent="1-1"/>
+<wire x1="50.5" y1="52.81" x2="38.516" y2="48.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED_6">
 <contactref element="JP_LED" pad="7"/>
 <contactref element="SJ16" pad="2"/>
 <contactref element="SJ15" pad="2"/>
 <contactref element="SJ14" pad="2"/>
-<wire x1="6.016" y1="9" x2="54" y2="72.35" width="0" layer="19" extent="1-1"/>
-<wire x1="6.016" y1="5" x2="6.016" y2="9" width="0" layer="19" extent="1-1"/>
-<wire x1="6.016" y1="1" x2="6.016" y2="5" width="0" layer="19" extent="1-1"/>
+<wire x1="38.516" y1="58.5" x2="38.516" y2="61.5" width="0" layer="19" extent="1-1"/>
+<wire x1="38.516" y1="55.5" x2="38.516" y2="58.5" width="0" layer="19" extent="1-1"/>
+<wire x1="50.5" y1="55.35" x2="38.516" y2="55.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED_7">
 <contactref element="JP_LED" pad="8"/>
@@ -1024,15 +1021,15 @@ design rules under a new name.</description>
 <contactref element="SJ19" pad="2"/>
 <contactref element="SJ18" pad="2"/>
 <contactref element="SJ17" pad="2"/>
-<wire x1="6.016" y1="-3" x2="54" y2="74.89" width="0" layer="19" extent="1-1"/>
-<wire x1="6.016" y1="-7" x2="6.016" y2="-3" width="0" layer="19" extent="1-1"/>
-<wire x1="6.016" y1="-11" x2="6.016" y2="-7" width="0" layer="19" extent="1-1"/>
-<wire x1="6.016" y1="-15" x2="6.016" y2="-11" width="0" layer="19" extent="1-1"/>
+<wire x1="59.016" y1="31" x2="59.016" y2="34" width="0" layer="19" extent="1-1"/>
+<wire x1="59.016" y1="28" x2="59.016" y2="31" width="0" layer="19" extent="1-1"/>
+<wire x1="59.016" y1="25" x2="59.016" y2="28" width="0" layer="19" extent="1-1"/>
+<wire x1="50.5" y1="57.89" x2="59.016" y2="25" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R0">
 <contactref element="RN1" pad="2"/>
 <contactref element="JP_RES_GND" pad="1"/>
-<wire x1="70" y1="57.11" x2="77" y2="56.08" width="0" layer="19" extent="1-1"/>
+<wire x1="58.2" y1="40.11" x2="63" y2="38.08" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
