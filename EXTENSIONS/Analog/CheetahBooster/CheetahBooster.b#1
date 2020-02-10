@@ -140,10 +140,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="1.830684375" y1="12" x2="89.830684375" y2="12" width="0" layer="20"/>
-<wire x1="89.830684375" y1="12" x2="90" y2="90" width="0" layer="20"/>
+<wire x1="1.830684375" y1="42.9849" x2="89.830684375" y2="42.9849" width="0" layer="20"/>
+<wire x1="89.830684375" y1="42.9849" x2="90" y2="90" width="0" layer="20"/>
 <wire x1="90" y1="90" x2="2" y2="90" width="0" layer="20"/>
-<wire x1="2" y1="90" x2="1.830684375" y2="12" width="0" layer="20"/>
+<wire x1="2" y1="90" x2="1.830684375" y2="42.9849" width="0" layer="20"/>
 <text x="30" y="28.4" size="1.016" layer="25" rot="R90" align="center">GND</text>
 <text x="35.4" y="28.4" size="1.016" layer="25" rot="R90" align="center">OUT</text>
 <text x="32.8" y="28.4" size="1.016" layer="25" rot="R90" align="center">VCC</text>
