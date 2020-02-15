@@ -269,3 +269,11 @@ French USB -- C:\DVT\MadeInTheUSB.PCB\EXTENSIONS\Useless USB Gift Board\Gerbers
 - https://www.youtube.com/watch?v=LJzoy2TJXFk
 - https://www.google.com/search?q=odrive+board&rlz=1C1CHBD_enUS700US700&oq=odri&aqs=chrome.0.69i59j0l2j69i57j69i60l2.1718j0j9&sourceid=chrome&ie=UTF-8
 - https://www.google.com/search?q=emax+esc+30a&rlz=1C1CHBD_enUS700US700&source=lnms&sa=X&ved=0ahUKEwiwici4nYblAhVChuAKHSIKD58Q_AUIDSgA&biw=1164&bih=553&dpr=1.1
+
+## How to insert an image
+- Convert the image to 2 colors black and white
+- in the board , menu File -> Import -> Bitmap
+	* Select the bitmap
+	* Select the color style mostly choice number 2
+	* Select DPI, the greater the DPI the smaller the image will be
+	* Select the layer mostly 25, top text
