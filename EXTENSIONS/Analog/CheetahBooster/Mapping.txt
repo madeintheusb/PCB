@@ -1,1 +1,14 @@
 Cheetah Booster and Stabilizer
+
+9 cycles
+
+LED     CYCLE
+================
+LED 0	0,1,2,3
+LED 1	1,2,4
+LED 2	3,5
+LED 3	2,4
+LED 4	3,5,6
+LED 5	4
+LED 6	5,6,7
+LED 7	6,7,8

@@ -4536,14 +4536,15 @@ temperature compensated, 6,2 V</description>
 <part name="SJ10" library="microbuilder" deviceset="SOLDERJUMPER" device=""/>
 <part name="SJ11" library="microbuilder" deviceset="SOLDERJUMPER" device=""/>
 <part name="SJ12" library="microbuilder" deviceset="SOLDERJUMPER" device=""/>
-<part name="SJ13" library="microbuilder" deviceset="SOLDERJUMPER" device=""/>
 <part name="SJ14" library="microbuilder" deviceset="SOLDERJUMPER" device=""/>
 <part name="SJ15" library="microbuilder" deviceset="SOLDERJUMPER" device=""/>
 <part name="SJ16" library="microbuilder" deviceset="SOLDERJUMPER" device=""/>
-<part name="SJ17" library="microbuilder" deviceset="SOLDERJUMPER" device=""/>
 <part name="SJ18" library="microbuilder" deviceset="SOLDERJUMPER" device=""/>
 <part name="SJ19" library="microbuilder" deviceset="SOLDERJUMPER" device=""/>
 <part name="SJ20" library="microbuilder" deviceset="SOLDERJUMPER" device=""/>
+<part name="SJ21" library="microbuilder" deviceset="SOLDERJUMPER" device=""/>
+<part name="SJ22" library="microbuilder" deviceset="SOLDERJUMPER" device=""/>
+<part name="SJ23" library="microbuilder" deviceset="SOLDERJUMPER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4582,14 +4583,15 @@ temperature compensated, 6,2 V</description>
 <instance part="SJ10" gate="1" x="-81.28" y="17.78"/>
 <instance part="SJ11" gate="1" x="-81.28" y="12.7"/>
 <instance part="SJ12" gate="1" x="-81.28" y="7.62"/>
-<instance part="SJ13" gate="1" x="-81.28" y="2.54"/>
 <instance part="SJ14" gate="1" x="-81.28" y="-5.08"/>
 <instance part="SJ15" gate="1" x="-81.28" y="-10.16"/>
 <instance part="SJ16" gate="1" x="-81.28" y="-15.24"/>
-<instance part="SJ17" gate="1" x="-81.28" y="-22.86"/>
 <instance part="SJ18" gate="1" x="-81.28" y="-27.94"/>
 <instance part="SJ19" gate="1" x="-81.28" y="-33.02"/>
 <instance part="SJ20" gate="1" x="-81.28" y="-40.64"/>
+<instance part="SJ21" gate="1" x="-66.04" y="12.7"/>
+<instance part="SJ22" gate="1" x="-71.12" y="66.04"/>
+<instance part="SJ23" gate="1" x="-71.12" y="50.8"/>
 </instances>
 <busses>
 </busses>
@@ -4872,6 +4874,28 @@ temperature compensated, 6,2 V</description>
 <label x="-101.6" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
+<pinref part="SJ5" gate="1" pin="1"/>
+<wire x1="-86.36" y1="50.8" x2="-101.6" y2="50.8" width="0.1524" layer="91"/>
+<label x="-101.6" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SJ8" gate="1" pin="1"/>
+<wire x1="-86.36" y1="30.48" x2="-96.52" y2="30.48" width="0.1524" layer="91"/>
+<label x="-96.52" y="30.48" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SEG_3_3" class="0">
+<segment>
+<pinref part="D4" gate="1" pin="C"/>
+<wire x1="-5.08" y1="114.3" x2="2.54" y2="114.3" width="0.1524" layer="91"/>
+<label x="-2.54" y="114.3" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SJ22" gate="1" pin="2"/>
+<wire x1="-66.04" y1="66.04" x2="-53.34" y2="66.04" width="0.1524" layer="91"/>
+<label x="-60.96" y="66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="SJ6" gate="1" pin="1"/>
 <wire x1="-86.36" y1="43.18" x2="-99.06" y2="43.18" width="0.1524" layer="91"/>
 <label x="-99.06" y="43.18" size="1.778" layer="95"/>
@@ -4882,21 +4906,21 @@ temperature compensated, 6,2 V</description>
 <label x="-93.98" y="17.78" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SEG_3_3" class="0">
+<net name="SEG_4_4" class="0">
 <segment>
-<pinref part="D4" gate="1" pin="C"/>
-<wire x1="-5.08" y1="114.3" x2="2.54" y2="114.3" width="0.1524" layer="91"/>
-<label x="-2.54" y="114.3" size="1.778" layer="95"/>
+<pinref part="D5" gate="1" pin="C"/>
+<wire x1="-27.94" y1="111.76" x2="2.54" y2="111.76" width="0.1524" layer="91"/>
+<label x="-2.54" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SJ5" gate="1" pin="1"/>
-<wire x1="-86.36" y1="50.8" x2="-101.6" y2="50.8" width="0.1524" layer="91"/>
-<label x="-101.6" y="50.8" size="1.778" layer="95"/>
+<pinref part="SJ23" gate="1" pin="2"/>
+<wire x1="-66.04" y1="50.8" x2="-55.88" y2="50.8" width="0.1524" layer="91"/>
+<label x="-66.04" y="50.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SJ8" gate="1" pin="1"/>
-<wire x1="-86.36" y1="30.48" x2="-96.52" y2="30.48" width="0.1524" layer="91"/>
-<label x="-96.52" y="30.48" size="1.778" layer="95"/>
+<pinref part="SJ9" gate="1" pin="1"/>
+<wire x1="-86.36" y1="25.4" x2="-96.52" y2="25.4" width="0.1524" layer="91"/>
+<label x="-93.98" y="25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="SJ12" gate="1" pin="1"/>
@@ -4904,11 +4928,11 @@ temperature compensated, 6,2 V</description>
 <label x="-91.44" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SEG_4_4" class="0">
+<net name="SEG_5_5" class="0">
 <segment>
-<pinref part="D5" gate="1" pin="C"/>
-<wire x1="-27.94" y1="111.76" x2="2.54" y2="111.76" width="0.1524" layer="91"/>
-<label x="-2.54" y="111.76" size="1.778" layer="95"/>
+<pinref part="D6" gate="1" pin="C"/>
+<wire x1="-17.78" y1="109.22" x2="2.54" y2="109.22" width="0.1524" layer="91"/>
+<label x="-2.54" y="109.22" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="SJ7" gate="1" pin="1"/>
@@ -4926,28 +4950,6 @@ temperature compensated, 6,2 V</description>
 <label x="-93.98" y="-5.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SEG_5_5" class="0">
-<segment>
-<pinref part="D6" gate="1" pin="C"/>
-<wire x1="-17.78" y1="109.22" x2="2.54" y2="109.22" width="0.1524" layer="91"/>
-<label x="-2.54" y="109.22" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SJ9" gate="1" pin="1"/>
-<wire x1="-86.36" y1="25.4" x2="-96.52" y2="25.4" width="0.1524" layer="91"/>
-<label x="-93.98" y="25.4" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SJ13" gate="1" pin="1"/>
-<wire x1="-86.36" y1="2.54" x2="-93.98" y2="2.54" width="0.1524" layer="91"/>
-<label x="-91.44" y="2.54" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="SJ17" gate="1" pin="1"/>
-<wire x1="-86.36" y1="-22.86" x2="-109.22" y2="-22.86" width="0.1524" layer="91"/>
-<label x="-106.68" y="-22.86" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="SEG_6_6" class="0">
 <segment>
 <pinref part="D7" gate="1" pin="C"/>
@@ -4963,6 +4965,11 @@ temperature compensated, 6,2 V</description>
 <pinref part="SJ18" gate="1" pin="1"/>
 <wire x1="-86.36" y1="-27.94" x2="-106.68" y2="-27.94" width="0.1524" layer="91"/>
 <label x="-104.14" y="-27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SJ21" gate="1" pin="2"/>
+<wire x1="-60.96" y1="12.7" x2="-48.26" y2="12.7" width="0.1524" layer="91"/>
+<label x="-53.34" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SEG_7_7" class="0">
@@ -5010,6 +5017,8 @@ temperature compensated, 6,2 V</description>
 <label x="-71.12" y="76.2" size="1.778" layer="95"/>
 <pinref part="SJ2" gate="1" pin="2"/>
 <junction x="-76.2" y="71.12"/>
+<pinref part="SJ22" gate="1" pin="1"/>
+<junction x="-76.2" y="66.04"/>
 </segment>
 </net>
 <net name="LED_1" class="0">
@@ -5025,6 +5034,8 @@ temperature compensated, 6,2 V</description>
 <wire x1="-76.2" y1="55.88" x2="-68.58" y2="55.88" width="0.1524" layer="91"/>
 <junction x="-76.2" y="55.88"/>
 <label x="-71.12" y="55.88" size="1.778" layer="95"/>
+<pinref part="SJ23" gate="1" pin="1"/>
+<junction x="-76.2" y="50.8"/>
 </segment>
 </net>
 <net name="LED_2" class="0">
@@ -5070,6 +5081,9 @@ temperature compensated, 6,2 V</description>
 <wire x1="-76.2" y1="17.78" x2="-63.5" y2="17.78" width="0.1524" layer="91"/>
 <junction x="-76.2" y="17.78"/>
 <label x="-71.12" y="17.78" size="1.778" layer="95"/>
+<pinref part="SJ21" gate="1" pin="1"/>
+<wire x1="-71.12" y1="12.7" x2="-76.2" y2="12.7" width="0.1524" layer="91"/>
+<junction x="-76.2" y="12.7"/>
 </segment>
 </net>
 <net name="LED_5" class="0">
@@ -5079,11 +5093,8 @@ temperature compensated, 6,2 V</description>
 <label x="-45.72" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SJ13" gate="1" pin="2"/>
 <pinref part="SJ12" gate="1" pin="2"/>
-<wire x1="-76.2" y1="2.54" x2="-76.2" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-76.2" y1="7.62" x2="-68.58" y2="7.62" width="0.1524" layer="91"/>
-<junction x="-76.2" y="7.62"/>
 <label x="-68.58" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -5118,11 +5129,9 @@ temperature compensated, 6,2 V</description>
 <pinref part="SJ18" gate="1" pin="2"/>
 <wire x1="-76.2" y1="-33.02" x2="-76.2" y2="-27.94" width="0.1524" layer="91"/>
 <junction x="-76.2" y="-33.02"/>
-<pinref part="SJ17" gate="1" pin="2"/>
 <wire x1="-76.2" y1="-27.94" x2="-76.2" y2="-22.86" width="0.1524" layer="91"/>
 <junction x="-76.2" y="-27.94"/>
 <wire x1="-76.2" y1="-22.86" x2="-60.96" y2="-22.86" width="0.1524" layer="91"/>
-<junction x="-76.2" y="-22.86"/>
 <label x="-68.58" y="-22.86" size="1.778" layer="95"/>
 </segment>
 </net>
