@@ -171,7 +171,8 @@ SMD
 		I2C SCK:A5 SDA:A4
 
 	- diode
-		- Package SOD 123
+		- Package SOD 123		
+		- Package: SMADIODE
 		MBRX120TPMSCT-ND
 		http://www.mouser.com/Search/ProductDetail.aspx?R=MBRX120-TPvirtualkey54720000virtualkey833-MBRX120-TP
 
