@@ -163,16 +163,16 @@ SMD
 		
 		Device:2N3904 Library: Transistor Package TO92
 
-
 	- Nano Pin
 		PWM 3,5,6, 9,10,11
 		NO PWM 2,5,6,7,13
 		SPI CS:10, CLOCK:13, MOSI:11, MISO:12
 		I2C SCK:A5 SDA:A4
 
-	- diode
-		- Package SOD 123		
-		- Package: SMADIODE
+	- Diode
+		- Package SOD 123
+		- Package: SMADIODE, Device: DIODESMA (DIODE), Library: adafruit
+
 		MBRX120TPMSCT-ND
 		http://www.mouser.com/Search/ProductDetail.aspx?R=MBRX120-TPvirtualkey54720000virtualkey833-MBRX120-TP
 
