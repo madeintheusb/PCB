@@ -3960,7 +3960,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <part name="R_BUT1_PD_1K" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="BUTTON_2" library="pinhead" deviceset="PINHD-1X4" device=""/>
-<part name="R_BUT1_PD_1K1" library="adafruit" deviceset="R-US_" device="R1206"/>
+<part name="R_BUT2_PD_1K" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -3983,7 +3983,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <instance part="R_BUT1_PD_1K" gate="G$1" x="-38.1" y="114.3"/>
 <instance part="GND5" gate="1" x="-50.8" y="114.3" rot="R270"/>
 <instance part="BUTTON_2" gate="A" x="-10.16" y="101.6"/>
-<instance part="R_BUT1_PD_1K1" gate="G$1" x="-38.1" y="99.06"/>
+<instance part="R_BUT2_PD_1K" gate="G$1" x="-38.1" y="99.06"/>
 <instance part="GND6" gate="1" x="-50.8" y="99.06" rot="R270"/>
 </instances>
 <busses>
@@ -4017,7 +4017,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="-43.18" y1="114.3" x2="-48.26" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R_BUT1_PD_1K1" gate="G$1" pin="1"/>
+<pinref part="R_BUT2_PD_1K" gate="G$1" pin="1"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="-43.18" y1="99.06" x2="-48.26" y2="99.06" width="0.1524" layer="91"/>
 </segment>
@@ -4096,7 +4096,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 </segment>
 <segment>
 <pinref part="BUTTON_2" gate="A" pin="4"/>
-<pinref part="R_BUT1_PD_1K1" gate="G$1" pin="2"/>
+<pinref part="R_BUT2_PD_1K" gate="G$1" pin="2"/>
 <wire x1="-12.7" y1="99.06" x2="-33.02" y2="99.06" width="0.1524" layer="91"/>
 <label x="-27.94" y="99.06" size="1.778" layer="95"/>
 </segment>
