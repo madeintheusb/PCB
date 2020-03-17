@@ -22,7 +22,7 @@ Led _onBoardLed(LED_BUILTIN);
 
 #define WAIT 140
 
-int _currentAnimation = 4;
+int _currentAnimation = MIN_ANIMATION_INDEX;
 int _animationCounter = 0;
 #define ANIMATION_COUNTER_MAX 2 // After each 16 instance of an animation we move to the next one
 
@@ -262,7 +262,7 @@ void loop()
 	_animationCounter += 1;
 	if (_animationCounter > ANIMATION_COUNTER_MAX) {
 		_animationCounter = 0;
-		// NextAnimation();
+		NextAnimation();
 	}
 }
 
