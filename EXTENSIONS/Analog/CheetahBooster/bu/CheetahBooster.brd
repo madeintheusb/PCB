@@ -9411,7 +9411,6 @@
 <rectangle x1="70.65518125" y1="82.26641875" x2="71.83881875" y2="82.351" layer="25"/>
 <rectangle x1="9.10081875" y1="82.351" x2="10.033" y2="82.43558125" layer="25"/>
 <rectangle x1="57.95518125" y1="82.351" x2="58.97118125" y2="82.43558125" layer="25"/>
-<text x="0" y="-0.42418125" size="0.17018125" layer="25" font="vector">C:/DVT/MadeInTheUSB.PCB/EXTENSIONS/Analog/CheetahBooster/Title.bmp</text>
 <text x="66.941565625" y="68.957228125" size="1.778" layer="25" rot="R180" align="center">Available in 2020</text>
 <text x="82.571540625" y="49" size="1.6764" layer="25" rot="R270" align="center">Chris, Eric, Erion, Frederic, Jeff, Katherine, Min.</text>
 <text x="61.5115125" y="27.0490375" size="1.27" layer="25" rot="R180" align="center">+</text>
@@ -9927,27 +9926,30 @@ design rules under a new name.</description>
 <element name="RN1" library="resistor-sip" package="SIP10" value="" x="77.976153125" y="50.753978125" rot="R90"/>
 <element name="JP_RES_GND" library="pinhead" package="1X08" value="" x="70.7" y="51.5" rot="R90"/>
 <element name="JP_LED" library="pinhead" package="1X08" value="" x="63" y="51.5" rot="R90"/>
-<element name="D1" library="adafruit" package="SMADIODE" value="" x="23" y="63.5" rot="R180"/>
-<element name="D2" library="adafruit" package="SMADIODE" value="" x="23" y="59.5" rot="R180"/>
-<element name="D3" library="adafruit" package="SMADIODE" value="" x="23" y="67.5" rot="R180"/>
-<element name="D4" library="adafruit" package="SMADIODE" value="" x="23" y="71.5" rot="R180"/>
-<element name="D5" library="adafruit" package="SMADIODE" value="" x="31.5" y="63.5" rot="R180"/>
-<element name="D6" library="adafruit" package="SMADIODE" value="" x="31.5" y="67.5" rot="R180"/>
-<element name="D7" library="adafruit" package="SMADIODE" value="" x="31.5" y="71.5" rot="R180"/>
-<element name="D8" library="adafruit" package="SMADIODE" value="" x="40" y="71.5" rot="R180"/>
-<element name="D9" library="adafruit" package="SMADIODE" value="" x="40" y="59.5" rot="R180"/>
-<element name="D10" library="adafruit" package="SMADIODE" value="" x="48.5" y="67.5" rot="R180"/>
-<element name="D11" library="adafruit" package="SMADIODE" value="" x="48.5" y="71.5" rot="R180"/>
-<element name="D12" library="adafruit" package="SMADIODE" value="" x="23" y="54" rot="R180"/>
-<element name="D13" library="adafruit" package="SMADIODE" value="" x="23" y="50" rot="R180"/>
-<element name="D14" library="adafruit" package="SMADIODE" value="" x="23" y="46" rot="R180"/>
-<element name="D15" library="adafruit" package="SMADIODE" value="" x="31.5" y="54" rot="R180"/>
-<element name="D16" library="adafruit" package="SMADIODE" value="" x="40" y="54" rot="R180"/>
-<element name="D17" library="adafruit" package="SMADIODE" value="" x="40" y="50" rot="R180"/>
-<element name="D18" library="adafruit" package="SMADIODE" value="" x="40" y="46" rot="R180"/>
-<element name="D19" library="adafruit" package="SMADIODE" value="" x="48.5" y="54" rot="R180"/>
-<element name="D20" library="adafruit" package="SMADIODE" value="" x="48.5" y="50" rot="R180"/>
+<element name="D_0_0" library="adafruit" package="SMADIODE" value="" x="23" y="63.5" rot="R180"/>
+<element name="D_1_0" library="adafruit" package="SMADIODE" value="" x="23" y="59.5" rot="R180"/>
+<element name="D_2_0" library="adafruit" package="SMADIODE" value="" x="23" y="67.5" rot="R180"/>
+<element name="D_1_1" library="adafruit" package="SMADIODE" value="" x="31.5" y="63.5" rot="R180"/>
+<element name="D_2_1" library="adafruit" package="SMADIODE" value="" x="31.5" y="67.5" rot="R180"/>
+<element name="D_4_1" library="adafruit" package="SMADIODE" value="" x="31.5" y="71.5" rot="R180"/>
+<element name="D_3_2" library="adafruit" package="SMADIODE" value="" x="40" y="71.5" rot="R180"/>
+<element name="D_5_2" library="adafruit" package="SMADIODE" value="" x="40" y="67.5" rot="R180"/>
+<element name="D_2_3" library="adafruit" package="SMADIODE" value="" x="48.5" y="67.5" rot="R180"/>
+<element name="D_4_3" library="adafruit" package="SMADIODE" value="" x="48.5" y="71.5" rot="R180"/>
+<element name="D_3_4" library="adafruit" package="SMADIODE" value="" x="23" y="54" rot="R180"/>
+<element name="D_5_4" library="adafruit" package="SMADIODE" value="" x="23" y="50" rot="R180"/>
+<element name="D_7_4" library="adafruit" package="SMADIODE" value="" x="23" y="46" rot="R180"/>
+<element name="D_4_5" library="adafruit" package="SMADIODE" value="" x="31.5" y="54" rot="R180"/>
+<element name="D_5_6" library="adafruit" package="SMADIODE" value="" x="40" y="54" rot="R180"/>
+<element name="D_6_6" library="adafruit" package="SMADIODE" value="" x="40" y="50" rot="R180"/>
+<element name="D_7_6" library="adafruit" package="SMADIODE" value="" x="40" y="46" rot="R180"/>
+<element name="D_9_7" library="adafruit" package="SMADIODE" value="" x="48.5" y="54" rot="R180"/>
+<element name="D_7_7" library="adafruit" package="SMADIODE" value="" x="48.5" y="50" rot="R180"/>
 <element name="D21" library="adafruit" package="SMADIODE" value="" x="48.5" y="46" rot="R180"/>
+<element name="D_3_1" library="adafruit" package="SMADIODE" value="" x="31.5" y="59.5" rot="R180"/>
+<element name="D_6_3" library="adafruit" package="SMADIODE" value="" x="48.5" y="63.5" rot="R180"/>
+<element name="D_6_5" library="adafruit" package="SMADIODE" value="" x="31.5" y="49.5" rot="R180"/>
+<element name="D_8_6" library="adafruit" package="SMADIODE" value="" x="54" y="40" rot="R180"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -9976,51 +9978,49 @@ design rules under a new name.</description>
 </signal>
 <signal name="SEG_1">
 <contactref element="4017BE" pad="2"/>
-<contactref element="D2" pad="A"/>
-<contactref element="D5" pad="A"/>
+<contactref element="D_1_0" pad="A"/>
+<contactref element="D_1_1" pad="A"/>
 <wire x1="20.6505" y1="59.5" x2="29.1505" y2="63.5" width="0" layer="19" extent="1-1"/>
 <wire x1="13.658965625" y1="53.710809375" x2="20.6505" y2="59.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_2">
 <contactref element="4017BE" pad="4"/>
-<contactref element="D3" pad="A"/>
-<contactref element="D6" pad="A"/>
-<contactref element="D10" pad="A"/>
+<contactref element="D_2_0" pad="A"/>
+<contactref element="D_2_1" pad="A"/>
+<contactref element="D_2_3" pad="A"/>
+<wire x1="29.1505" y1="67.5" x2="46.1505" y2="67.5" width="0" layer="19" extent="1-1"/>
 <wire x1="20.6505" y1="67.5" x2="29.1505" y2="67.5" width="0" layer="19" extent="1-1"/>
 <wire x1="13.658965625" y1="58.790809375" x2="20.6505" y2="67.5" width="0" layer="19" extent="1-1"/>
-<wire x1="46.1505" y1="67.5" x2="13.658965625" y2="58.790809375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_3">
 <contactref element="4017BE" pad="7"/>
-<contactref element="D4" pad="A"/>
-<contactref element="D8" pad="A"/>
-<contactref element="D12" pad="A"/>
-<wire x1="20.6505" y1="71.5" x2="37.6505" y2="71.5" width="0" layer="19" extent="1-1"/>
-<wire x1="13.658965625" y1="66.410809375" x2="20.6505" y2="71.5" width="0" layer="19" extent="1-1"/>
-<wire x1="20.6505" y1="54" x2="20.6505" y2="71.5" width="0" layer="19" extent="1-1"/>
+<contactref element="D_3_2" pad="A"/>
+<contactref element="D_3_4" pad="A"/>
+<contactref element="D_3_1" pad="A"/>
+<wire x1="20.6505" y1="54" x2="37.6505" y2="71.5" width="0" layer="19" extent="1-1"/>
+<wire x1="13.658965625" y1="66.410809375" x2="20.6505" y2="54" width="0" layer="19" extent="1-1"/>
+<wire x1="29.1505" y1="59.5" x2="20.6505" y2="54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_4">
 <contactref element="4017BE" pad="10"/>
-<contactref element="D7" pad="A"/>
-<contactref element="D11" pad="A"/>
-<contactref element="D15" pad="A"/>
+<contactref element="D_4_1" pad="A"/>
+<contactref element="D_4_3" pad="A"/>
+<contactref element="D_4_5" pad="A"/>
 <wire x1="29.1505" y1="71.5" x2="46.1505" y2="71.5" width="0" layer="19" extent="1-1"/>
+<wire x1="29.1505" y1="54" x2="29.1505" y2="71.5" width="0" layer="19" extent="1-1"/>
 <wire x1="6.038965625" y1="66.410809375" x2="29.1505" y2="71.5" width="0" layer="19" extent="1-1"/>
-<wire x1="29.1505" y1="54" x2="6.038965625" y2="66.410809375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_5">
 <contactref element="4017BE" pad="1"/>
-<contactref element="D9" pad="A"/>
-<contactref element="D13" pad="A"/>
-<contactref element="D16" pad="A"/>
-<wire x1="20.6505" y1="50" x2="37.6505" y2="59.5" width="0" layer="19" extent="1-1"/>
+<contactref element="D_5_2" pad="A"/>
+<contactref element="D_5_4" pad="A"/>
+<contactref element="D_5_6" pad="A"/>
+<wire x1="37.6505" y1="54" x2="37.6505" y2="67.5" width="0" layer="19" extent="1-1"/>
+<wire x1="20.6505" y1="50" x2="37.6505" y2="54" width="0" layer="19" extent="1-1"/>
 <wire x1="13.658965625" y1="51.170809375" x2="20.6505" y2="50" width="0" layer="19" extent="1-1"/>
-<wire x1="37.6505" y1="54" x2="13.658965625" y2="51.170809375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RESET">
 <contactref element="4017BE" pad="15"/>
-<contactref element="4017BE" pad="11"/>
-<wire x1="6.038965625" y1="53.710809375" x2="6.038965625" y2="63.870809375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="R2_100_O" pad="2"/>
@@ -10029,29 +10029,33 @@ design rules under a new name.</description>
 </signal>
 <signal name="SEG_0">
 <contactref element="4017BE" pad="3"/>
-<contactref element="D1" pad="A"/>
+<contactref element="D_0_0" pad="A"/>
 <wire x1="13.658965625" y1="56.250809375" x2="20.6505" y2="63.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_6">
 <contactref element="4017BE" pad="5"/>
-<contactref element="D14" pad="A"/>
-<contactref element="D17" pad="A"/>
-<contactref element="D19" pad="A"/>
-<wire x1="20.6505" y1="46" x2="37.6505" y2="50" width="0" layer="19" extent="1-1"/>
-<wire x1="13.658965625" y1="61.330809375" x2="20.6505" y2="46" width="0" layer="19" extent="1-1"/>
-<wire x1="46.1505" y1="54" x2="20.6505" y2="46" width="0" layer="19" extent="1-1"/>
+<contactref element="D_6_6" pad="A"/>
+<contactref element="D_6_3" pad="A"/>
+<contactref element="D_6_5" pad="A"/>
+<wire x1="37.6505" y1="50" x2="46.1505" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="13.658965625" y1="61.330809375" x2="37.6505" y2="50" width="0" layer="19" extent="1-1"/>
+<wire x1="29.1505" y1="49.5" x2="37.6505" y2="50" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_7">
 <contactref element="4017BE" pad="6"/>
-<contactref element="D18" pad="A"/>
-<contactref element="D20" pad="A"/>
-<wire x1="13.658965625" y1="63.870809375" x2="37.6505" y2="46" width="0" layer="19" extent="1-1"/>
-<wire x1="46.1505" y1="50" x2="37.6505" y2="46" width="0" layer="19" extent="1-1"/>
+<contactref element="D_7_6" pad="A"/>
+<contactref element="D_7_7" pad="A"/>
+<contactref element="D_7_4" pad="A"/>
+<wire x1="37.6505" y1="46" x2="46.1505" y2="50" width="0" layer="19" extent="1-1"/>
+<wire x1="20.6505" y1="46" x2="37.6505" y2="46" width="0" layer="19" extent="1-1"/>
+<wire x1="13.658965625" y1="63.870809375" x2="20.6505" y2="46" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SEG_8">
 <contactref element="4017BE" pad="9"/>
 <contactref element="D21" pad="A"/>
-<wire x1="46.1505" y1="46" x2="6.038965625" y2="68.950809375" width="0" layer="19" extent="1-1"/>
+<contactref element="D_8_6" pad="A"/>
+<wire x1="6.038965625" y1="68.950809375" x2="46.1505" y2="46" width="0" layer="19" extent="1-1"/>
+<wire x1="51.6505" y1="40" x2="46.1505" y2="46" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DO_NOT_USE">
 <contactref element="RN1" pad="10"/>
@@ -10096,74 +10100,86 @@ design rules under a new name.</description>
 </signal>
 <signal name="LED_0">
 <contactref element="JP_LED" pad="1"/>
-<contactref element="D1" pad="C"/>
-<contactref element="D2" pad="C"/>
-<contactref element="D3" pad="C"/>
-<contactref element="D4" pad="C"/>
+<contactref element="D_0_0" pad="C"/>
+<contactref element="D_1_0" pad="C"/>
+<contactref element="D_2_0" pad="C"/>
 <wire x1="25.3495" y1="59.5" x2="63" y2="42.61" width="0" layer="19" extent="1-1"/>
 <wire x1="25.3495" y1="63.5" x2="25.3495" y2="59.5" width="0" layer="19" extent="1-1"/>
 <wire x1="25.3495" y1="67.5" x2="25.3495" y2="63.5" width="0" layer="19" extent="1-1"/>
-<wire x1="25.3495" y1="71.5" x2="25.3495" y2="67.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED_1">
 <contactref element="JP_LED" pad="2"/>
-<contactref element="D5" pad="C"/>
-<contactref element="D6" pad="C"/>
-<contactref element="D7" pad="C"/>
+<contactref element="D_1_1" pad="C"/>
+<contactref element="D_2_1" pad="C"/>
+<contactref element="D_4_1" pad="C"/>
+<contactref element="D_3_1" pad="C"/>
+<wire x1="33.8495" y1="59.5" x2="63" y2="45.15" width="0" layer="19" extent="1-1"/>
 <wire x1="33.8495" y1="63.5" x2="63" y2="45.15" width="0" layer="19" extent="1-1"/>
 <wire x1="33.8495" y1="67.5" x2="33.8495" y2="63.5" width="0" layer="19" extent="1-1"/>
 <wire x1="33.8495" y1="71.5" x2="33.8495" y2="67.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED_2">
 <contactref element="JP_LED" pad="3"/>
-<contactref element="D8" pad="C"/>
-<contactref element="D9" pad="C"/>
-<wire x1="42.3495" y1="71.5" x2="63" y2="47.69" width="0" layer="19" extent="1-1"/>
-<wire x1="42.3495" y1="59.5" x2="42.3495" y2="71.5" width="0" layer="19" extent="1-1"/>
+<contactref element="D_3_2" pad="C"/>
+<contactref element="D_5_2" pad="C"/>
+<wire x1="42.3495" y1="67.5" x2="42.3495" y2="71.5" width="0" layer="19" extent="1-1"/>
+<wire x1="63" y1="47.69" x2="42.3495" y2="67.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED_3">
 <contactref element="JP_LED" pad="4"/>
-<contactref element="D10" pad="C"/>
-<contactref element="D11" pad="C"/>
-<wire x1="50.8495" y1="67.5" x2="63" y2="50.23" width="0" layer="19" extent="1-1"/>
-<wire x1="50.8495" y1="71.5" x2="50.8495" y2="67.5" width="0" layer="19" extent="1-1"/>
+<contactref element="D_4_3" pad="C"/>
+<contactref element="D_6_3" pad="C"/>
+<contactref element="D_2_3" pad="C"/>
+<wire x1="50.8495" y1="67.5" x2="50.8495" y2="71.5" width="0" layer="19" extent="1-1"/>
+<wire x1="50.8495" y1="63.5" x2="50.8495" y2="67.5" width="0" layer="19" extent="1-1"/>
+<wire x1="63" y1="50.23" x2="50.8495" y2="63.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED_4">
 <contactref element="JP_LED" pad="5"/>
-<contactref element="D12" pad="C"/>
-<contactref element="D13" pad="C"/>
-<contactref element="D14" pad="C"/>
+<contactref element="D_3_4" pad="C"/>
+<contactref element="D_5_4" pad="C"/>
+<contactref element="D_7_4" pad="C"/>
 <wire x1="25.3495" y1="54" x2="63" y2="52.77" width="0" layer="19" extent="1-1"/>
 <wire x1="25.3495" y1="50" x2="25.3495" y2="54" width="0" layer="19" extent="1-1"/>
 <wire x1="25.3495" y1="46" x2="25.3495" y2="50" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED_5">
 <contactref element="JP_LED" pad="6"/>
-<contactref element="D15" pad="C"/>
+<contactref element="D_4_5" pad="C"/>
+<contactref element="D_6_5" pad="C"/>
 <wire x1="33.8495" y1="54" x2="63" y2="55.31" width="0" layer="19" extent="1-1"/>
+<wire x1="33.8495" y1="49.5" x2="33.8495" y2="54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED_6">
 <contactref element="JP_LED" pad="7"/>
-<contactref element="D16" pad="C"/>
-<contactref element="D17" pad="C"/>
-<contactref element="D18" pad="C"/>
+<contactref element="D_5_6" pad="C"/>
+<contactref element="D_6_6" pad="C"/>
+<contactref element="D_7_6" pad="C"/>
+<contactref element="D_8_6" pad="C"/>
 <wire x1="42.3495" y1="54" x2="63" y2="57.85" width="0" layer="19" extent="1-1"/>
 <wire x1="42.3495" y1="50" x2="42.3495" y2="54" width="0" layer="19" extent="1-1"/>
 <wire x1="42.3495" y1="46" x2="42.3495" y2="50" width="0" layer="19" extent="1-1"/>
+<wire x1="56.3495" y1="40" x2="42.3495" y2="46" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED_7">
 <contactref element="JP_LED" pad="8"/>
-<contactref element="D19" pad="C"/>
-<contactref element="D20" pad="C"/>
-<contactref element="D21" pad="C"/>
+<contactref element="D_9_7" pad="C"/>
+<contactref element="D_7_7" pad="C"/>
 <wire x1="50.8495" y1="54" x2="63" y2="60.39" width="0" layer="19" extent="1-1"/>
 <wire x1="50.8495" y1="50" x2="50.8495" y2="54" width="0" layer="19" extent="1-1"/>
-<wire x1="50.8495" y1="46" x2="50.8495" y2="50" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="R0">
 <contactref element="RN1" pad="2"/>
 <contactref element="JP_RES_GND" pad="1"/>
 <wire x1="70.7" y1="42.61" x2="77.976153125" y2="41.833978125" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SEG_9">
+<contactref element="4017BE" pad="11"/>
+<contactref element="D_9_7" pad="A"/>
+<wire x1="6.038965625" y1="63.870809375" x2="46.1505" y2="54" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="D_8_7">
+<contactref element="D21" pad="C"/>
 </signal>
 </signals>
 </board>
