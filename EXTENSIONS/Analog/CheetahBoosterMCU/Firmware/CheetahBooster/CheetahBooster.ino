@@ -18,11 +18,11 @@ Led _onBoardLed(LED_BUILTIN);
 #define ANIMATION_CHANGE_BUTTON_ANALOG_PIN 2 // Need a Pull down resitor
 
 #define MIN_ANIMATION_INDEX 0
-#define MAX_ANIMATION_INDEX 3
+#define MAX_ANIMATION_INDEX 4
 
 #define WAIT 140
 
-int _currentAnimation = 1; // MIN_ANIMATION_INDEX;
+int _currentAnimation = 4;
 int _animationCounter = 0;
 #define ANIMATION_COUNTER_MAX 2 // After each 16 instance of an animation we move to the next one
 
@@ -148,7 +148,25 @@ void Amimation1(bool clearLastStep)
 		sequence(-1);
 }
 
-void Amimation2()
+void Amimation2(bool clearLastStep)
+{
+	if (CheckForUserAction()) return;
+	if (clearLastStep)
+		sequence(-1);
+	sequence(7);
+	sequence(6, 7);
+	sequence(4, 6, 7);
+	sequence(3, 5, 6);
+	sequence(2, 4, 6);
+	if (CheckForUserAction()) return;
+	sequence(1, 3, 5);
+	sequence(1, 2, 4);
+	sequence(0, 1, 3);
+	sequence(0, 1);
+	sequence(0);
+}
+
+void Amimation3()
 {
 	Amimation1(false);
 	if (CheckForUserAction()) return;
@@ -165,7 +183,7 @@ void Amimation2()
 	sequence(0);
 }
 
-void Amimation3()
+void Amimation4()
 {
 	sequence(0);
 	sequence(0, 2);
@@ -197,31 +215,19 @@ void Amimation3()
 	sequence(-1);
 }
 
-void Amimation4()
+void Amimation5()
 {
-	int maxSeq = 3;
-	for (int i = 0; i < maxSeq; i++) {
-		sequence(0, 2, 4, 6);
-		delay(WAIT * 1);
-		sequence(1, 3, 5, 7);
-		delay(WAIT * 1);
-		if (CheckForUserAction()) return;
-	}
+	for (int z = 0; z < 10; z++) {
 
-	for (int i = 0; i < maxSeq; i++) {
-		sequence(2, 4);
-		delay(WAIT * 1);
-		sequence(3, 5);
-		delay(WAIT * 1);
-		if (CheckForUserAction()) return;
-	}
+		int maxSeq = 2;
+		for (int i = 0; i < maxSeq; i++) {
 
-	for (int i = 0; i < maxSeq; i++) {
-		sequence(3);
-		delay(WAIT * 1);
-		sequence(4);
-		delay(WAIT * 1);
-		if (CheckForUserAction()) return;
+			sequence(0, 2, 4, 6);
+			delay(WAIT / (1+z));
+			sequence(1, 3, 5, 7);
+			delay(WAIT / (1 + z));
+			if (CheckForUserAction()) return;
+		}
 	}
 }
 
@@ -242,7 +248,7 @@ void loop()
 		Amimation1(true);
 
 	if (_currentAnimation == 1)
-		Amimation2();
+		Amimation2(true);
 
 	if (_currentAnimation == 2)
 		Amimation3();
@@ -250,10 +256,13 @@ void loop()
 	if (_currentAnimation == 3)
 		Amimation4();
 
+	if (_currentAnimation == 4)
+		Amimation5();
+
 	_animationCounter += 1;
 	if (_animationCounter > ANIMATION_COUNTER_MAX) {
 		_animationCounter = 0;
-		NextAnimation();
+		// NextAnimation();
 	}
 }
 
