@@ -3956,12 +3956,9 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <part name="JP3" library="pinhead" deviceset="PINHD-1X8" device=""/>
 <part name="RN1" library="resistor-sip" deviceset="4610X" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
-<part name="BUTTON_1" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="NEXT_SEQUENCE" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="R_BUT1_PD_1K" library="adafruit" deviceset="R-US_" device="R1206"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="BUTTON_2" library="pinhead" deviceset="PINHD-1X4" device=""/>
-<part name="R_BUT2_PD_1K" library="adafruit" deviceset="R-US_" device="R1206"/>
-<part name="GND6" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3979,12 +3976,9 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <instance part="JP3" gate="A" x="45.72" y="45.72"/>
 <instance part="RN1" gate="G$1" x="-30.48" y="48.26" rot="R90"/>
 <instance part="GND4" gate="1" x="-12.7" y="35.56" rot="R90"/>
-<instance part="BUTTON_1" gate="A" x="-10.16" y="116.84"/>
+<instance part="NEXT_SEQUENCE" gate="A" x="-10.16" y="116.84"/>
 <instance part="R_BUT1_PD_1K" gate="G$1" x="-38.1" y="114.3"/>
 <instance part="GND5" gate="1" x="-50.8" y="114.3" rot="R270"/>
-<instance part="BUTTON_2" gate="A" x="-10.16" y="101.6"/>
-<instance part="R_BUT2_PD_1K" gate="G$1" x="-38.1" y="99.06"/>
-<instance part="GND6" gate="1" x="-50.8" y="99.06" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -4016,11 +4010,6 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="-43.18" y1="114.3" x2="-48.26" y2="114.3" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="R_BUT2_PD_1K" gate="G$1" pin="1"/>
-<pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="-43.18" y1="99.06" x2="-48.26" y2="99.06" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -4039,14 +4028,9 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="111.76" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BUTTON_1" gate="A" pin="1"/>
+<pinref part="NEXT_SEQUENCE" gate="A" pin="1"/>
 <wire x1="-12.7" y1="121.92" x2="-25.4" y2="121.92" width="0.1524" layer="91"/>
 <label x="-25.4" y="121.92" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="BUTTON_2" gate="A" pin="1"/>
-<wire x1="-12.7" y1="106.68" x2="-33.02" y2="106.68" width="0.1524" layer="91"/>
-<label x="-27.94" y="106.68" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RAW" class="0">
@@ -4082,7 +4066,7 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="48.26" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="BUTTON_1" gate="A" pin="4"/>
+<pinref part="NEXT_SEQUENCE" gate="A" pin="4"/>
 <wire x1="-12.7" y1="114.3" x2="-33.02" y2="114.3" width="0.1524" layer="91"/>
 <label x="-25.4" y="114.3" size="1.778" layer="95"/>
 <pinref part="R_BUT1_PD_1K" gate="G$1" pin="2"/>
@@ -4093,12 +4077,6 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <pinref part="ARDUINO_PRO_MINI_LEFT" gate="G$1" pin="6"/>
 <wire x1="60.96" y1="83.82" x2="35.56" y2="83.82" width="0.1524" layer="91"/>
 <label x="35.56" y="83.82" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="BUTTON_2" gate="A" pin="4"/>
-<pinref part="R_BUT2_PD_1K" gate="G$1" pin="2"/>
-<wire x1="-12.7" y1="99.06" x2="-33.02" y2="99.06" width="0.1524" layer="91"/>
-<label x="-27.94" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="A0" class="0">
