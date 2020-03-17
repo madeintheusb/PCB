@@ -1,6 +1,8 @@
 #include <fArduino.h>
+#include "CheetahBooster.h"
 
 #define DEBUG_ANIMATION 0
+Led _onBoardLed(LED_BUILTIN);
 
 #define LED_0 2
 #define LED_1 3
@@ -13,19 +15,21 @@
 #define LED_MIN LED_0
 #define LED_MAX LED_7
 
-#define ANIMATION_CHANGE_BUTTON_ANALOG 2 // Need a Pull down resitor
+#define ANIMATION_CHANGE_BUTTON_ANALOG_PIN 2 // Need a Pull down resitor
 
 #define MIN_ANIMATION_INDEX 0
 #define MAX_ANIMATION_INDEX 3
 
 #define WAIT 140
 
-int _currentAnimation = MIN_ANIMATION_INDEX;
+int _currentAnimation = 1; // MIN_ANIMATION_INDEX;
 int _animationCounter = 0;
 #define ANIMATION_COUNTER_MAX 2 // After each 16 instance of an animation we move to the next one
 
 bool IsAnimationChangeButtonPressed() {
-	return analogRead(ANIMATION_CHANGE_BUTTON_ANALOG) > 512;
+	int v = analogRead(ANIMATION_CHANGE_BUTTON_ANALOG_PIN);
+	// Board.Trace(StringFormat.Format("analogRead %d", v));
+	return v > 512;
 }
 
 void NextAnimation() {
@@ -36,11 +40,17 @@ void NextAnimation() {
 
 bool CheckForUserAction() {
 
+	// Board.Trace("CheckForUserAction");
+	_onBoardLed.Blink();
+
 	if (IsAnimationChangeButtonPressed()) {
+		// Board.Trace("IsAnimationChangeButtonPressed");
+		AllOn();
 		NextAnimation();
 		while (IsAnimationChangeButtonPressed()) {
 			delay(200);
 		}
+		AllOff();
 		return true;
 	}
 	return false;
@@ -50,16 +60,17 @@ void InitPins()
 {
 	for (int p = LED_MIN; p <= LED_7; p++) // all off
 		pinMode(p, OUTPUT);
+
+	pinMode(LED_BUILTIN, OUTPUT);
 }
 
-void sequence(int count, int pins[]) 
+void sequence(int count, int pins[])
 {
-	for (int p = LED_MIN; p <= LED_7; p++) // all off
-		digitalWrite(p, LOW);
+	AllOff();
 
 	for (int p = 0; p < count; p++) {
-  
-		int pin = pins[p]+LED_MIN;
+
+		int pin = pins[p] + LED_MIN;
 		digitalWrite(pin, HIGH);
 	}
 
@@ -70,25 +81,38 @@ void sequence(int count, int pins[])
 }
 
 
-void sequence(int pin0) 
-{ 
-  if(pin0 == -1) {
-    int arr[] = { pin0 };
-    sequence(0, arr);
-  }
-  else {
-    int arr[] = { pin0 };
-    sequence(1, arr);  
-  }	
+void AllOff()
+{
+	for (int p = LED_MIN; p <= LED_7; p++)
+		digitalWrite(p, LOW);
 }
 
-void sequence(int pin0, int pin1) 
+void AllOn()
+{
+	for (int p = LED_MIN; p <= LED_7; p++)
+		digitalWrite(p, HIGH);
+}
+
+
+void sequence(int pin0)
+{
+	if (pin0 == -1) {
+		int arr[] = { pin0 };
+		sequence(0, arr);
+	}
+	else {
+		int arr[] = { pin0 };
+		sequence(1, arr);
+	}
+}
+
+void sequence(int pin0, int pin1)
 {
 	int arr[] = { pin0, pin1 };
 	sequence(2, arr);
 }
 
-void sequence(int pin0, int pin1, int pin2) 
+void sequence(int pin0, int pin1, int pin2)
 {
 	int arr[] = { pin0, pin1, pin2 };
 	sequence(3, arr);
@@ -106,21 +130,22 @@ void sequence(int pin0, int pin1, int pin2, int pin3, int pin4)
 	sequence(5, arr);
 }
 
-void Amimation1(bool playLastSequence)
+void Amimation1(bool clearLastStep)
 {
+	if (CheckForUserAction()) return;
 	sequence(0);
 	sequence(0, 1);
 	sequence(0, 1, 3);
 	sequence(1, 2, 4);
 	sequence(1, 3, 5);
 	sequence(2, 4, 6);
+	if (CheckForUserAction()) return;
 	sequence(3, 5, 6);
 	sequence(4, 6, 7);
 	sequence(6, 7);
 	sequence(7);
-	if(playLastSequence)
-		sequence(0, 7);
-	// sequence(-1);
+	if (clearLastStep)
+		sequence(-1);
 }
 
 void Amimation2()
@@ -133,11 +158,11 @@ void Amimation2()
 	sequence(3, 5, 6);
 	sequence(2, 4, 6);
 	sequence(1, 3, 5);
+	if (CheckForUserAction()) return;
 	sequence(1, 2, 4);
 	sequence(0, 1, 3);
 	sequence(0, 1);
 	sequence(0);
-	
 }
 
 void Amimation3()
@@ -150,17 +175,20 @@ void Amimation3()
 	sequence(2, 4, 6, 7);
 	sequence(5, 6, 7);
 	sequence(6, 7);
+	if (CheckForUserAction()) return;
 
 	sequence(7);
-	sequence(-1);	
-	if (CheckForUserAction()) return;
+	sequence(-1);
 	sequence(-1);
 	sequence(7);
-	
+
 	sequence(6, 7);
 	sequence(5, 6, 7);
 	sequence(2, 4, 6, 7);
 	sequence(1, 3, 5, 7);
+
+	if (CheckForUserAction()) return;
+
 	sequence(0, 2, 4, 6);
 	sequence(0, 2, 4);
 	sequence(0, 2);
@@ -197,18 +225,20 @@ void Amimation4()
 	}
 }
 
-void setup() {
-  Board.InitializeComputerCommunication(9600, "Starting");
+void setup() 
+{
+	Board.InitializeComputerCommunication(9600, "Starting");
 	InitPins();
 	sequence(0);
+	_onBoardLed.SetBlinkMode(500); // Blink every second
 }
 
 // Add the main program code into the continuous loop() function
 void loop()
-{    
-	digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)	
+{
+	CheckForUserAction();
 
-	if(_currentAnimation == 0)
+	if (_currentAnimation == 0)
 		Amimation1(true);
 
 	if (_currentAnimation == 1)
@@ -225,8 +255,5 @@ void loop()
 		_animationCounter = 0;
 		NextAnimation();
 	}
-	
-	digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW 	
-	CheckForUserAction();
 }
 
