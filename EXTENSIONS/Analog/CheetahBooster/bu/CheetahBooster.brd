@@ -9934,7 +9934,7 @@ design rules under a new name.</description>
 <element name="D_4_1" library="adafruit" package="SMADIODE" value="" x="31.5" y="71.5" rot="R180"/>
 <element name="D_3_2" library="adafruit" package="SMADIODE" value="" x="40" y="71.5" rot="R180"/>
 <element name="D_5_2" library="adafruit" package="SMADIODE" value="" x="40" y="67.5" rot="R180"/>
-<element name="D_2_3" library="adafruit" package="SMADIODE" value="" x="48.5" y="67.5" rot="R180"/>
+<element name="D_2_3" library="adafruit" package="SMADIODE" value="" x="52.5" y="67.5" rot="R180"/>
 <element name="D_4_3" library="adafruit" package="SMADIODE" value="" x="48.5" y="71.5" rot="R180"/>
 <element name="D_3_4" library="adafruit" package="SMADIODE" value="" x="23" y="54" rot="R180"/>
 <element name="D_5_4" library="adafruit" package="SMADIODE" value="" x="23" y="50" rot="R180"/>
@@ -9988,7 +9988,7 @@ design rules under a new name.</description>
 <contactref element="D_2_0" pad="A"/>
 <contactref element="D_2_1" pad="A"/>
 <contactref element="D_2_3" pad="A"/>
-<wire x1="29.1505" y1="67.5" x2="46.1505" y2="67.5" width="0" layer="19" extent="1-1"/>
+<wire x1="29.1505" y1="67.5" x2="50.1505" y2="67.5" width="0" layer="19" extent="1-1"/>
 <wire x1="20.6505" y1="67.5" x2="29.1505" y2="67.5" width="0" layer="19" extent="1-1"/>
 <wire x1="13.658965625" y1="58.790809375" x2="20.6505" y2="67.5" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -10130,8 +10130,8 @@ design rules under a new name.</description>
 <contactref element="D_4_3" pad="C"/>
 <contactref element="D_6_3" pad="C"/>
 <contactref element="D_2_3" pad="C"/>
-<wire x1="50.8495" y1="67.5" x2="50.8495" y2="71.5" width="0" layer="19" extent="1-1"/>
-<wire x1="50.8495" y1="63.5" x2="50.8495" y2="67.5" width="0" layer="19" extent="1-1"/>
+<wire x1="54.8495" y1="67.5" x2="50.8495" y2="71.5" width="0" layer="19" extent="1-1"/>
+<wire x1="50.8495" y1="63.5" x2="54.8495" y2="67.5" width="0" layer="19" extent="1-1"/>
 <wire x1="63" y1="50.23" x2="50.8495" y2="63.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LED_4">
