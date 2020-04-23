@@ -21,5 +21,8 @@
     <ClInclude Include="__vm\.CheetahBooster.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CheetahBooster.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

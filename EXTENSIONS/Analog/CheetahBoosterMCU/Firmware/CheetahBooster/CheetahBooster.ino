@@ -24,12 +24,27 @@ Led _onBoardLed(LED_BUILTIN);
 
 int _currentAnimation = MIN_ANIMATION_INDEX;
 int _animationCounter = 0;
+bool _moveToNextAnumation = true;
 #define ANIMATION_COUNTER_MAX 2 // After each 16 instance of an animation we move to the next one
 
-bool IsAnimationChangeButtonPressed() {
+bool IsAnimationChangeButtonPressed() 
+{
 	int v = analogRead(ANIMATION_CHANGE_BUTTON_ANALOG_PIN);
 	// Board.Trace(StringFormat.Format("analogRead %d", v));
-	return v > 512;
+
+	bool pressed = v > 512;
+
+	if (pressed) { // Wait for button to be released
+		Board.Trace("IsAnimationChangeButtonPressed");
+		AllOn();
+		while (IsAnimationChangeButtonPressed()) 
+		{
+			delay(200);
+		}
+		AllOff();
+	}
+
+	return pressed;
 }
 
 void NextAnimation() {
@@ -40,18 +55,12 @@ void NextAnimation() {
 
 bool CheckForUserAction() {
 
-	// Board.Trace("CheckForUserAction");
 	_onBoardLed.Blink();
 
-	if (IsAnimationChangeButtonPressed()) {
-		// Board.Trace("IsAnimationChangeButtonPressed");
-		AllOn();
-		NextAnimation();
-		while (IsAnimationChangeButtonPressed()) {
-			delay(200);
-		}
-		AllOff();
-		return true;
+	if (IsAnimationChangeButtonPressed()) 
+	{
+		_moveToNextAnumation = !_moveToNextAnumation;
+		return true; // Notify change of state
 	}
 	return false;
 }
@@ -68,18 +77,16 @@ void sequence(int count, int pins[])
 {
 	AllOff();
 
-	for (int p = 0; p < count; p++) {
-
+	for (int p = 0; p < count; p++)
+	{
 		int pin = pins[p] + LED_MIN;
 		digitalWrite(pin, HIGH);
 	}
-
 
 	int wait = WAIT;
 	if (DEBUG_ANIMATION) wait *= 3;
 	delay(wait - (count * 15));
 }
-
 
 void AllOff()
 {
@@ -100,7 +107,8 @@ void sequence(int pin0)
 		int arr[] = { pin0 };
 		sequence(0, arr);
 	}
-	else {
+	else
+	{
 		int arr[] = { pin0 };
 		sequence(1, arr);
 	}
@@ -130,7 +138,7 @@ void sequence(int pin0, int pin1, int pin2, int pin3, int pin4)
 	sequence(5, arr);
 }
 
-void Amimation1(bool clearLastStep)
+void Animation1(bool clearLastStep)
 {
 	if (CheckForUserAction()) return;
 	sequence(0);
@@ -148,7 +156,7 @@ void Amimation1(bool clearLastStep)
 		sequence(-1);
 }
 
-void Amimation2(bool clearLastStep)
+void Animation2(bool clearLastStep)
 {
 	if (CheckForUserAction()) return;
 	if (clearLastStep)
@@ -166,9 +174,9 @@ void Amimation2(bool clearLastStep)
 	sequence(0);
 }
 
-void Amimation3()
+void Animation3()
 {
-	Amimation1(false);
+	Animation1(false);
 	if (CheckForUserAction()) return;
 	sequence(7);
 	sequence(6, 7);
@@ -183,7 +191,7 @@ void Amimation3()
 	sequence(0);
 }
 
-void Amimation4()
+void Animation4()
 {
 	sequence(0);
 	sequence(0, 2);
@@ -211,7 +219,7 @@ void Amimation4()
 	sequence(-1);
 }
 
-void Amimation5()
+void Animation5()
 {
 	for (int z = 0; z < 10; z++) {
 
@@ -219,7 +227,7 @@ void Amimation5()
 		for (int i = 0; i < maxSeq; i++) {
 
 			sequence(0, 2, 4, 6);
-			delay(WAIT / (1+z));
+			delay(WAIT / (1 + z));
 			sequence(1, 3, 5, 7);
 			delay(WAIT / (1 + z));
 			if (CheckForUserAction()) return;
@@ -227,7 +235,7 @@ void Amimation5()
 	}
 }
 
-void setup() 
+void setup()
 {
 	Board.InitializeComputerCommunication(9600, "Starting");
 	InitPins();
@@ -241,22 +249,27 @@ void loop()
 	CheckForUserAction();
 
 	if (_currentAnimation == 0)
-		Amimation1(true);
+		Animation1(true);
 
 	if (_currentAnimation == 1)
-		Amimation2(true);
+		Animation2(true);
 
 	if (_currentAnimation == 2)
-		Amimation3();
+		Animation3();
 
 	if (_currentAnimation == 3)
-		Amimation4();
+		Animation4();
 
-	if (_currentAnimation == 4)
-		Amimation5();
+	//if (_currentAnimation == 4)
+	//	Animation5();
 
-	_animationCounter += 1;
-	if (_animationCounter > ANIMATION_COUNTER_MAX) {
+	if (_moveToNextAnumation) 
+	{
+		_animationCounter += 1;
+	}
+
+	if (_animationCounter > ANIMATION_COUNTER_MAX) 
+	{
 		_animationCounter = 0;
 		NextAnimation();
 	}
