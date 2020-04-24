@@ -2,24 +2,24 @@ EAGLE AutoRouter Statistics:
 
 Job           : C:/DVT/MadeInTheUSB.PCB/EXTENSIONS/Analog/CheetahBooster/CheetahBooster.brd
 
-Start at      : 19:03:14 (3/1/2020)
-End at        : 19:03:19 (3/1/2020)
-Elapsed time  : 00:00:01
+Start at      : 21:24:30 (3/24/2020)
+End at        : 21:25:05 (3/24/2020)
+Elapsed time  : 00:00:33
 
-Signals       :    33   RoutingGrid: 19.685 mil  Layers: 2
-Connections   :    52   predefined:  0 ( 0 Vias )
+Signals       :    33   RoutingGrid: 9 mil  Layers: 2
+Connections   :    64   predefined:  0 ( 0 Vias )
 
-Router memory :   114872
+Router memory :   620672
 
-Passname          :     Route Optimize1 Optimize2 Optimize3 Optimize4
+Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4 Optimize5 Optimize6 Optimize7 Optimize8
 
-Time per pass     :  00:00:00  00:00:01  00:00:00  00:00:00  00:00:00
-Number of Ripups  :         0         0         0         0         0
-max. Level        :         0         0         0         0         0
-max. Total        :         0         0         0         0         0
+Time per pass     :  00:00:14  00:00:01  00:00:03  00:00:02  00:00:02  00:00:02  00:00:03  00:00:02  00:00:02  00:00:02
+Number of Ripups  :         0         0         0         0         0         0         0         0         0         0
+max. Level        :         0         0         0         0         0         0         0         0         0         0
+max. Total        :         0         0         0         0         0         0         0         0         0         0
 
-Routed            :        52        52        52        52        52
-Vias              :        17         6         6         6         6
-Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :        47        64        64        64        64        64        64        64        64        64
+Vias              :         0        13        21        18        17        17        18        13        14        14
+Resolution        :    73.4 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
 Final             : 100.0% finished

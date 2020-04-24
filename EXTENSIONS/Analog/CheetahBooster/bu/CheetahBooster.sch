@@ -4498,27 +4498,30 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="JP_RES_GND" library="pinhead" deviceset="PINHD-1X8" device=""/>
 <part name="JP_LED" library="pinhead" deviceset="PINHD-1X8" device=""/>
-<part name="D1" library="adafruit" deviceset="DIODE" device="SMA"/>
-<part name="D2" library="adafruit" deviceset="DIODE" device="SMA"/>
-<part name="D3" library="adafruit" deviceset="DIODE" device="SMA"/>
-<part name="D4" library="adafruit" deviceset="DIODE" device="SMA"/>
-<part name="D5" library="adafruit" deviceset="DIODE" device="SMA"/>
-<part name="D6" library="adafruit" deviceset="DIODE" device="SMA"/>
-<part name="D7" library="adafruit" deviceset="DIODE" device="SMA"/>
-<part name="D8" library="adafruit" deviceset="DIODE" device="SMA"/>
-<part name="D9" library="adafruit" deviceset="DIODE" device="SMA"/>
-<part name="D10" library="adafruit" deviceset="DIODE" device="SMA"/>
-<part name="D11" library="adafruit" deviceset="DIODE" device="SMA"/>
-<part name="D12" library="adafruit" deviceset="DIODE" device="SMA"/>
-<part name="D13" library="adafruit" deviceset="DIODE" device="SMA"/>
-<part name="D14" library="adafruit" deviceset="DIODE" device="SMA"/>
-<part name="D15" library="adafruit" deviceset="DIODE" device="SMA"/>
-<part name="D16" library="adafruit" deviceset="DIODE" device="SMA"/>
-<part name="D17" library="adafruit" deviceset="DIODE" device="SMA"/>
-<part name="D18" library="adafruit" deviceset="DIODE" device="SMA"/>
-<part name="D19" library="adafruit" deviceset="DIODE" device="SMA"/>
-<part name="D20" library="adafruit" deviceset="DIODE" device="SMA"/>
-<part name="D21" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_0_0" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_1_0" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_2_0" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_1_1" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_2_1" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_4_1" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_3_2" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_5_2" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_2_3" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_4_3" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_3_4" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_5_4" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_7_4" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_4_5" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_5_6" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_6_6" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_7_6" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_9_7" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_7_7" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_8_7" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_3_1" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_6_3" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_6_5" library="adafruit" deviceset="DIODE" device="SMA"/>
+<part name="D_8_6" library="adafruit" deviceset="DIODE" device="SMA"/>
 </parts>
 <sheets>
 <sheet>
@@ -4536,27 +4539,30 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <instance part="GND2" gate="1" x="30.48" y="81.28"/>
 <instance part="JP_RES_GND" gate="A" x="55.88" y="55.88"/>
 <instance part="JP_LED" gate="A" x="-25.4" y="60.96"/>
-<instance part="D1" gate="G$1" x="-76.2" y="71.12"/>
-<instance part="D2" gate="G$1" x="-76.2" y="66.04"/>
-<instance part="D3" gate="G$1" x="-76.2" y="60.96"/>
-<instance part="D4" gate="G$1" x="-76.2" y="55.88"/>
-<instance part="D5" gate="G$1" x="-76.2" y="48.26"/>
-<instance part="D6" gate="G$1" x="-76.2" y="43.18"/>
-<instance part="D7" gate="G$1" x="-76.2" y="38.1"/>
-<instance part="D8" gate="G$1" x="-129.54" y="73.66"/>
-<instance part="D9" gate="G$1" x="-129.54" y="68.58"/>
-<instance part="D10" gate="G$1" x="-129.54" y="60.96"/>
-<instance part="D11" gate="G$1" x="-129.54" y="53.34"/>
-<instance part="D12" gate="G$1" x="-129.54" y="45.72"/>
-<instance part="D13" gate="G$1" x="-129.54" y="40.64"/>
-<instance part="D14" gate="G$1" x="-129.54" y="35.56"/>
-<instance part="D15" gate="G$1" x="-129.54" y="27.94"/>
-<instance part="D16" gate="G$1" x="-76.2" y="30.48"/>
-<instance part="D17" gate="G$1" x="-76.2" y="25.4"/>
-<instance part="D18" gate="G$1" x="-76.2" y="20.32"/>
-<instance part="D19" gate="G$1" x="-76.2" y="12.7"/>
-<instance part="D20" gate="G$1" x="-76.2" y="7.62"/>
-<instance part="D21" gate="G$1" x="-76.2" y="2.54"/>
+<instance part="D_0_0" gate="G$1" x="-76.2" y="71.12"/>
+<instance part="D_1_0" gate="G$1" x="-76.2" y="66.04"/>
+<instance part="D_2_0" gate="G$1" x="-76.2" y="60.96"/>
+<instance part="D_1_1" gate="G$1" x="-76.2" y="48.26"/>
+<instance part="D_2_1" gate="G$1" x="-76.2" y="43.18"/>
+<instance part="D_4_1" gate="G$1" x="-76.2" y="38.1"/>
+<instance part="D_3_2" gate="G$1" x="-129.54" y="73.66"/>
+<instance part="D_5_2" gate="G$1" x="-129.54" y="68.58"/>
+<instance part="D_2_3" gate="G$1" x="-129.54" y="60.96"/>
+<instance part="D_4_3" gate="G$1" x="-129.54" y="53.34"/>
+<instance part="D_3_4" gate="G$1" x="-129.54" y="45.72"/>
+<instance part="D_5_4" gate="G$1" x="-129.54" y="40.64"/>
+<instance part="D_7_4" gate="G$1" x="-129.54" y="35.56"/>
+<instance part="D_4_5" gate="G$1" x="-129.54" y="27.94"/>
+<instance part="D_5_6" gate="G$1" x="-76.2" y="30.48"/>
+<instance part="D_6_6" gate="G$1" x="-76.2" y="25.4"/>
+<instance part="D_7_6" gate="G$1" x="-76.2" y="20.32"/>
+<instance part="D_9_7" gate="G$1" x="-76.2" y="12.7"/>
+<instance part="D_7_7" gate="G$1" x="-76.2" y="7.62"/>
+<instance part="D_8_7" gate="G$1" x="-76.2" y="2.54"/>
+<instance part="D_3_1" gate="G$1" x="-38.1" y="38.1"/>
+<instance part="D_6_3" gate="G$1" x="-109.22" y="55.88"/>
+<instance part="D_6_5" gate="G$1" x="-129.54" y="20.32"/>
+<instance part="D_8_6" gate="G$1" x="-40.64" y="25.4"/>
 </instances>
 <busses>
 </busses>
@@ -4616,12 +4622,12 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="-25.4" y1="119.38" x2="-60.96" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D2" gate="G$1" pin="A"/>
+<pinref part="D_1_0" gate="G$1" pin="A"/>
 <wire x1="-78.74" y1="66.04" x2="-101.6" y2="66.04" width="0.1524" layer="91"/>
 <label x="-96.52" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D5" gate="G$1" pin="A"/>
+<pinref part="D_1_1" gate="G$1" pin="A"/>
 <wire x1="-78.74" y1="48.26" x2="-96.52" y2="48.26" width="0.1524" layer="91"/>
 <label x="-93.98" y="48.26" size="1.778" layer="95"/>
 </segment>
@@ -4633,17 +4639,17 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="-17.78" y1="116.84" x2="-60.96" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D3" gate="G$1" pin="A"/>
+<pinref part="D_2_0" gate="G$1" pin="A"/>
 <wire x1="-78.74" y1="60.96" x2="-96.52" y2="60.96" width="0.1524" layer="91"/>
 <label x="-93.98" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D6" gate="G$1" pin="A"/>
+<pinref part="D_2_1" gate="G$1" pin="A"/>
 <wire x1="-78.74" y1="43.18" x2="-96.52" y2="43.18" width="0.1524" layer="91"/>
 <label x="-93.98" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D10" gate="G$1" pin="A"/>
+<pinref part="D_2_3" gate="G$1" pin="A"/>
 <wire x1="-132.08" y1="60.96" x2="-142.24" y2="60.96" width="0.1524" layer="91"/>
 <label x="-139.7" y="60.96" size="1.778" layer="95"/>
 </segment>
@@ -4655,19 +4661,19 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="-10.16" y1="114.3" x2="-60.96" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D4" gate="G$1" pin="A"/>
-<wire x1="-78.74" y1="55.88" x2="-96.52" y2="55.88" width="0.1524" layer="91"/>
-<label x="-93.98" y="55.88" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="D8" gate="G$1" pin="A"/>
+<pinref part="D_3_2" gate="G$1" pin="A"/>
 <wire x1="-132.08" y1="73.66" x2="-139.7" y2="73.66" width="0.1524" layer="91"/>
 <label x="-137.16" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D12" gate="G$1" pin="A"/>
+<pinref part="D_3_4" gate="G$1" pin="A"/>
 <wire x1="-132.08" y1="45.72" x2="-137.16" y2="45.72" width="0.1524" layer="91"/>
 <label x="-137.16" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D_3_1" gate="G$1" pin="A"/>
+<wire x1="-40.64" y1="38.1" x2="-48.26" y2="38.1" width="0.1524" layer="91"/>
+<label x="-45.72" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SEG_4" class="0">
@@ -4677,17 +4683,17 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="-45.72" y="111.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D7" gate="G$1" pin="A"/>
+<pinref part="D_4_1" gate="G$1" pin="A"/>
 <wire x1="-78.74" y1="38.1" x2="-96.52" y2="38.1" width="0.1524" layer="91"/>
 <label x="-91.44" y="38.1" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D11" gate="G$1" pin="A"/>
+<pinref part="D_4_3" gate="G$1" pin="A"/>
 <wire x1="-132.08" y1="53.34" x2="-142.24" y2="53.34" width="0.1524" layer="91"/>
 <label x="-139.7" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D15" gate="G$1" pin="A"/>
+<pinref part="D_4_5" gate="G$1" pin="A"/>
 <wire x1="-132.08" y1="27.94" x2="-142.24" y2="27.94" width="0.1524" layer="91"/>
 <label x="-142.24" y="27.94" size="1.778" layer="95"/>
 </segment>
@@ -4699,17 +4705,17 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="-22.86" y1="109.22" x2="-60.96" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D9" gate="G$1" pin="A"/>
+<pinref part="D_5_2" gate="G$1" pin="A"/>
 <wire x1="-132.08" y1="68.58" x2="-139.7" y2="68.58" width="0.1524" layer="91"/>
 <label x="-137.16" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D13" gate="G$1" pin="A"/>
+<pinref part="D_5_4" gate="G$1" pin="A"/>
 <wire x1="-132.08" y1="40.64" x2="-137.16" y2="40.64" width="0.1524" layer="91"/>
 <label x="-137.16" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D16" gate="G$1" pin="A"/>
+<pinref part="D_5_6" gate="G$1" pin="A"/>
 <wire x1="-78.74" y1="30.48" x2="-88.9" y2="30.48" width="0.1524" layer="91"/>
 <label x="-88.9" y="30.48" size="1.778" layer="95"/>
 </segment>
@@ -4719,11 +4725,6 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <pinref part="4017BE" gate="A" pin="RES"/>
 <wire x1="-81.28" y1="93.98" x2="-99.06" y2="93.98" width="0.1524" layer="91"/>
 <label x="-99.06" y="93.98" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="4017BE" gate="A" pin="Q9"/>
-<wire x1="-60.96" y1="99.06" x2="-35.56" y2="99.06" width="0.1524" layer="91"/>
-<label x="-45.72" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -4740,9 +4741,14 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="-45.72" y="124.46" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="A"/>
+<pinref part="D_0_0" gate="G$1" pin="A"/>
 <wire x1="-78.74" y1="71.12" x2="-101.6" y2="71.12" width="0.1524" layer="91"/>
 <label x="-99.06" y="71.12" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LED_START" gate="G$1" pin="A"/>
+<wire x1="5.08" y1="78.74" x2="5.08" y2="88.9" width="0.1524" layer="91"/>
+<label x="5.08" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SEG_6" class="0">
@@ -4752,19 +4758,19 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="-38.1" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D14" gate="G$1" pin="A"/>
-<wire x1="-132.08" y1="35.56" x2="-137.16" y2="35.56" width="0.1524" layer="91"/>
-<label x="-137.16" y="35.56" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="D17" gate="G$1" pin="A"/>
+<pinref part="D_6_6" gate="G$1" pin="A"/>
 <wire x1="-78.74" y1="25.4" x2="-88.9" y2="25.4" width="0.1524" layer="91"/>
 <label x="-88.9" y="25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D19" gate="G$1" pin="A"/>
-<wire x1="-78.74" y1="12.7" x2="-91.44" y2="12.7" width="0.1524" layer="91"/>
-<label x="-91.44" y="12.7" size="1.778" layer="95"/>
+<pinref part="D_6_3" gate="G$1" pin="A"/>
+<wire x1="-111.76" y1="55.88" x2="-119.38" y2="55.88" width="0.1524" layer="91"/>
+<label x="-116.84" y="55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D_6_5" gate="G$1" pin="A"/>
+<wire x1="-132.08" y1="20.32" x2="-142.24" y2="20.32" width="0.1524" layer="91"/>
+<label x="-139.7" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SEG_7" class="0">
@@ -4774,14 +4780,19 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <wire x1="-10.16" y1="104.14" x2="-60.96" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D18" gate="G$1" pin="A"/>
+<pinref part="D_7_6" gate="G$1" pin="A"/>
 <wire x1="-78.74" y1="20.32" x2="-88.9" y2="20.32" width="0.1524" layer="91"/>
 <label x="-88.9" y="20.32" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D20" gate="G$1" pin="A"/>
+<pinref part="D_7_7" gate="G$1" pin="A"/>
 <wire x1="-78.74" y1="7.62" x2="-93.98" y2="7.62" width="0.1524" layer="91"/>
 <label x="-93.98" y="7.62" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D_7_4" gate="G$1" pin="A"/>
+<wire x1="-132.08" y1="35.56" x2="-137.16" y2="35.56" width="0.1524" layer="91"/>
+<label x="-137.16" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SEG_8" class="0">
@@ -4791,9 +4802,14 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="-45.72" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D21" gate="G$1" pin="A"/>
+<pinref part="D_8_7" gate="G$1" pin="A"/>
 <wire x1="-78.74" y1="2.54" x2="-91.44" y2="2.54" width="0.1524" layer="91"/>
 <label x="-91.44" y="2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D_8_6" gate="G$1" pin="A"/>
+<wire x1="-43.18" y1="25.4" x2="-53.34" y2="25.4" width="0.1524" layer="91"/>
+<label x="-48.26" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DO_NOT_USE" class="0">
@@ -4887,13 +4903,6 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="33.02" y="63.5" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="SEG_0_0" class="0">
-<segment>
-<pinref part="LED_START" gate="G$1" pin="A"/>
-<wire x1="5.08" y1="78.74" x2="5.08" y2="88.9" width="0.1524" layer="91"/>
-<label x="5.08" y="86.36" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="LED_0" class="0">
 <segment>
 <pinref part="JP_LED" gate="A" pin="1"/>
@@ -4901,24 +4910,19 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="-45.72" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="C"/>
+<pinref part="D_0_0" gate="G$1" pin="C"/>
 <wire x1="-73.66" y1="71.12" x2="-58.42" y2="71.12" width="0.1524" layer="91"/>
 <label x="-66.04" y="71.12" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D2" gate="G$1" pin="C"/>
+<pinref part="D_1_0" gate="G$1" pin="C"/>
 <wire x1="-73.66" y1="66.04" x2="-58.42" y2="66.04" width="0.1524" layer="91"/>
 <label x="-63.5" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D3" gate="G$1" pin="C"/>
+<pinref part="D_2_0" gate="G$1" pin="C"/>
 <wire x1="-73.66" y1="60.96" x2="-60.96" y2="60.96" width="0.1524" layer="91"/>
 <label x="-68.58" y="60.96" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="D4" gate="G$1" pin="C"/>
-<wire x1="-73.66" y1="55.88" x2="-58.42" y2="55.88" width="0.1524" layer="91"/>
-<label x="-66.04" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED_1" class="0">
@@ -4928,19 +4932,24 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="-45.72" y="68.58" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D5" gate="G$1" pin="C"/>
+<pinref part="D_1_1" gate="G$1" pin="C"/>
 <wire x1="-73.66" y1="48.26" x2="-55.88" y2="48.26" width="0.1524" layer="91"/>
 <label x="-66.04" y="48.26" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D6" gate="G$1" pin="C"/>
+<pinref part="D_2_1" gate="G$1" pin="C"/>
 <wire x1="-73.66" y1="43.18" x2="-55.88" y2="43.18" width="0.1524" layer="91"/>
 <label x="-66.04" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D7" gate="G$1" pin="C"/>
+<pinref part="D_4_1" gate="G$1" pin="C"/>
 <wire x1="-73.66" y1="38.1" x2="-53.34" y2="38.1" width="0.1524" layer="91"/>
 <label x="-66.04" y="38.1" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D_3_1" gate="G$1" pin="C"/>
+<wire x1="-35.56" y1="38.1" x2="-22.86" y2="38.1" width="0.1524" layer="91"/>
+<label x="-30.48" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED_2" class="0">
@@ -4950,12 +4959,12 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="-45.72" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D8" gate="G$1" pin="C"/>
+<pinref part="D_3_2" gate="G$1" pin="C"/>
 <wire x1="-127" y1="73.66" x2="-111.76" y2="73.66" width="0.1524" layer="91"/>
 <label x="-119.38" y="73.66" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D9" gate="G$1" pin="C"/>
+<pinref part="D_5_2" gate="G$1" pin="C"/>
 <wire x1="-127" y1="68.58" x2="-114.3" y2="68.58" width="0.1524" layer="91"/>
 <label x="-119.38" y="66.04" size="1.778" layer="95"/>
 </segment>
@@ -4967,14 +4976,19 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="-45.72" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D10" gate="G$1" pin="C"/>
-<wire x1="-127" y1="60.96" x2="-114.3" y2="60.96" width="0.1524" layer="91"/>
-<label x="-119.38" y="60.96" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="D11" gate="G$1" pin="C"/>
+<pinref part="D_4_3" gate="G$1" pin="C"/>
 <wire x1="-127" y1="53.34" x2="-114.3" y2="53.34" width="0.1524" layer="91"/>
 <label x="-119.38" y="50.8" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D_6_3" gate="G$1" pin="C"/>
+<wire x1="-106.68" y1="55.88" x2="-99.06" y2="55.88" width="0.1524" layer="91"/>
+<label x="-101.6" y="55.88" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D_2_3" gate="G$1" pin="C"/>
+<wire x1="-127" y1="60.96" x2="-114.3" y2="60.96" width="0.1524" layer="91"/>
+<label x="-119.38" y="60.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED_4" class="0">
@@ -4984,17 +4998,17 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="-45.72" y="60.96" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D12" gate="G$1" pin="C"/>
+<pinref part="D_3_4" gate="G$1" pin="C"/>
 <wire x1="-127" y1="45.72" x2="-114.3" y2="45.72" width="0.1524" layer="91"/>
 <label x="-121.92" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D13" gate="G$1" pin="C"/>
+<pinref part="D_5_4" gate="G$1" pin="C"/>
 <wire x1="-127" y1="40.64" x2="-114.3" y2="40.64" width="0.1524" layer="91"/>
 <label x="-121.92" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D14" gate="G$1" pin="C"/>
+<pinref part="D_7_4" gate="G$1" pin="C"/>
 <wire x1="-127" y1="35.56" x2="-114.3" y2="35.56" width="0.1524" layer="91"/>
 <label x="-121.92" y="35.56" size="1.778" layer="95"/>
 </segment>
@@ -5006,9 +5020,14 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="-45.72" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D15" gate="G$1" pin="C"/>
+<pinref part="D_4_5" gate="G$1" pin="C"/>
 <wire x1="-127" y1="27.94" x2="-111.76" y2="27.94" width="0.1524" layer="91"/>
 <label x="-121.92" y="27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D_6_5" gate="G$1" pin="C"/>
+<wire x1="-127" y1="20.32" x2="-111.76" y2="20.32" width="0.1524" layer="91"/>
+<label x="-121.92" y="20.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED_6" class="0">
@@ -5018,19 +5037,24 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="-45.72" y="55.88" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D16" gate="G$1" pin="C"/>
+<pinref part="D_5_6" gate="G$1" pin="C"/>
 <wire x1="-73.66" y1="30.48" x2="-58.42" y2="30.48" width="0.1524" layer="91"/>
 <label x="-66.04" y="30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D17" gate="G$1" pin="C"/>
+<pinref part="D_6_6" gate="G$1" pin="C"/>
 <wire x1="-73.66" y1="25.4" x2="-55.88" y2="25.4" width="0.1524" layer="91"/>
 <label x="-66.04" y="25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D18" gate="G$1" pin="C"/>
+<pinref part="D_7_6" gate="G$1" pin="C"/>
 <wire x1="-73.66" y1="20.32" x2="-60.96" y2="20.32" width="0.1524" layer="91"/>
 <label x="-66.04" y="20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D_8_6" gate="G$1" pin="C"/>
+<wire x1="-38.1" y1="25.4" x2="-20.32" y2="25.4" width="0.1524" layer="91"/>
+<label x="-27.94" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED_7" class="0">
@@ -5040,17 +5064,17 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <label x="-45.72" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D19" gate="G$1" pin="C"/>
+<pinref part="D_9_7" gate="G$1" pin="C"/>
 <wire x1="-73.66" y1="12.7" x2="-58.42" y2="12.7" width="0.1524" layer="91"/>
 <label x="-63.5" y="12.7" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D20" gate="G$1" pin="C"/>
+<pinref part="D_7_7" gate="G$1" pin="C"/>
 <wire x1="-73.66" y1="7.62" x2="-58.42" y2="7.62" width="0.1524" layer="91"/>
 <label x="-63.5" y="7.62" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="D21" gate="G$1" pin="C"/>
+<pinref part="D_8_7" gate="G$1" pin="C"/>
 <wire x1="-73.66" y1="2.54" x2="-55.88" y2="2.54" width="0.1524" layer="91"/>
 <label x="-66.04" y="2.54" size="1.778" layer="95"/>
 </segment>
@@ -5065,6 +5089,18 @@ PDF: http://www.bourns.com/data/global/pdfs/4600X.pdf</description>
 <pinref part="JP_RES_GND" gate="A" pin="1"/>
 <wire x1="53.34" y1="66.04" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
 <label x="33.02" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SEG_9" class="0">
+<segment>
+<pinref part="4017BE" gate="A" pin="Q9"/>
+<wire x1="-60.96" y1="99.06" x2="-35.56" y2="99.06" width="0.1524" layer="91"/>
+<label x="-45.72" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="D_9_7" gate="G$1" pin="A"/>
+<wire x1="-78.74" y1="12.7" x2="-91.44" y2="12.7" width="0.1524" layer="91"/>
+<label x="-91.44" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
