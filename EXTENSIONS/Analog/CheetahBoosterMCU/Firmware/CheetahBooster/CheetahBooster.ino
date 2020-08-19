@@ -18,36 +18,37 @@ Led _onBoardLed(LED_BUILTIN);
 #define ANIMATION_CHANGE_BUTTON_ANALOG_PIN 2 // Need a Pull down resitor
 
 #define MIN_ANIMATION_INDEX 0
-#define MAX_ANIMATION_INDEX 4
+#define MAX_ANIMATION_INDEX (4-1)
 
-#define WAIT 140
+#define WAIT 150
 
-int _currentAnimation = MIN_ANIMATION_INDEX;
-int _animationCounter = 0;
-bool _moveToNextAnumation = true;
-#define ANIMATION_COUNTER_MAX 2 // After each 16 instance of an animation we move to the next one
+int _currentAnimation = MIN_ANIMATION_INDEX; // We have 4 different types of animation which repeat
+int _animationRepeatCounter = 0; // Count the repeat of the current animation
+bool _repeatAnimation = true; // When false we stay on the current animation, can be changed with the button
+#define ANIMATION_COUNTER_MAX 4 // After each 16 instance of an animation we move to the next one
 
-bool IsAnimationChangeButtonPressed() 
+bool AnalogButtonPressed()
 {
-	int v = analogRead(ANIMATION_CHANGE_BUTTON_ANALOG_PIN);
-	// Board.Trace(StringFormat.Format("analogRead %d", v));
+	return analogRead(ANIMATION_CHANGE_BUTTON_ANALOG_PIN) > 512;
+}
 
-	bool pressed = v > 512;
-
+bool IsAnimationChangeButtonPressed()
+{
+	bool pressed = AnalogButtonPressed();
 	if (pressed) { // Wait for button to be released
 		Board.Trace("IsAnimationChangeButtonPressed");
 		AllOn();
-		while (IsAnimationChangeButtonPressed()) 
+		while (AnalogButtonPressed())
 		{
 			delay(200);
 		}
 		AllOff();
 	}
-
 	return pressed;
 }
 
 void NextAnimation() {
+
 	_currentAnimation += 1;
 	if (_currentAnimation > MAX_ANIMATION_INDEX)
 		_currentAnimation = MIN_ANIMATION_INDEX;
@@ -55,11 +56,11 @@ void NextAnimation() {
 
 bool CheckForUserAction() {
 
-	_onBoardLed.Blink();
+	_onBoardLed.Blink(); // Takes care of animation the on board led on/off animation
 
-	if (IsAnimationChangeButtonPressed()) 
-	{
-		_moveToNextAnumation = !_moveToNextAnumation;
+	if (IsAnimationChangeButtonPressed())
+	{		
+		_repeatAnimation = !_repeatAnimation;
 		return true; // Notify change of state
 	}
 	return false;
@@ -73,7 +74,7 @@ void InitPins()
 	pinMode(LED_BUILTIN, OUTPUT);
 }
 
-void sequence(int count, int pins[])
+void Sequence(int count, int pins[])
 {
 	AllOff();
 
@@ -100,123 +101,124 @@ void AllOn()
 		digitalWrite(p, HIGH);
 }
 
-
-void sequence(int pin0)
+void Sequence(int pin0)
 {
 	if (pin0 == -1) {
 		int arr[] = { pin0 };
-		sequence(0, arr);
+		Sequence(0, arr); // Only clear all
 	}
 	else
 	{
 		int arr[] = { pin0 };
-		sequence(1, arr);
+		Sequence(1, arr);
 	}
 }
 
-void sequence(int pin0, int pin1)
+void Sequence(int pin0, int pin1)
 {
 	int arr[] = { pin0, pin1 };
-	sequence(2, arr);
+	Sequence(2, arr);
 }
 
-void sequence(int pin0, int pin1, int pin2)
+void Sequence(int pin0, int pin1, int pin2)
 {
 	int arr[] = { pin0, pin1, pin2 };
-	sequence(3, arr);
+	Sequence(3, arr);
 }
 
-void sequence(int pin0, int pin1, int pin2, int pin3)
+void Sequence(int pin0, int pin1, int pin2, int pin3)
 {
 	int arr[] = { pin0, pin1, pin2, pin3 };
-	sequence(4, arr);
+	Sequence(4, arr);
 }
 
-void sequence(int pin0, int pin1, int pin2, int pin3, int pin4)
+void Sequence(int pin0, int pin1, int pin2, int pin3, int pin4)
 {
 	int arr[] = { pin0, pin1, pin2, pin3, pin4 };
-	sequence(5, arr);
+	Sequence(5, arr);
 }
 
 void Animation1(bool clearLastStep)
 {
 	if (CheckForUserAction()) return;
-	sequence(0);
-	sequence(0, 1);
-	sequence(0, 1, 3);
-	sequence(1, 2, 4);
-	sequence(1, 3, 5);
-	sequence(2, 4, 6);
+	Sequence(0);
+	Sequence(0, 1);
+	Sequence(0, 1, 3);
+	Sequence(1, 2, 4);
+	Sequence(1, 3, 5);
+	Sequence(2, 4, 6);
 	if (CheckForUserAction()) return;
-	sequence(3, 5, 6);
-	sequence(4, 6, 7);
-	sequence(6, 7);
-	sequence(7);
+	Sequence(3, 5, 6);
+	Sequence(4, 6, 7);
+	Sequence(6, 7);
+	Sequence(7);
 	if (clearLastStep)
-		sequence(-1);
+		Sequence(-1);
 }
 
 void Animation2(bool clearLastStep)
 {
 	if (CheckForUserAction()) return;
-	if (clearLastStep)
-		sequence(-1);
-	sequence(7);
-	sequence(6, 7);
-	sequence(4, 6, 7);
-	sequence(3, 5, 6);
-	sequence(2, 4, 6);
+
+	Sequence(7);
+	Sequence(6, 7);
+	Sequence(4, 6, 7);
+	Sequence(3, 5, 6);
+	Sequence(2, 4, 6);
 	if (CheckForUserAction()) return;
-	sequence(1, 3, 5);
-	sequence(1, 2, 4);
-	sequence(0, 1, 3);
-	sequence(0, 1);
-	sequence(0);
+	Sequence(1, 3, 5);
+	Sequence(1, 2, 4);
+	Sequence(0, 1, 3);
+	Sequence(0, 1);
+	Sequence(0);
+
+	if (clearLastStep)
+		Sequence(-1);
 }
 
 void Animation3()
 {
 	Animation1(false);
 	if (CheckForUserAction()) return;
-	sequence(7);
-	sequence(6, 7);
-	sequence(4, 6, 7);
-	sequence(3, 5, 6);
-	sequence(2, 4, 6);
-	sequence(1, 3, 5);
+	Sequence(7);
+	Sequence(6, 7);
+	Sequence(4, 6, 7);
+	Sequence(3, 5, 6);
+	Sequence(2, 4, 6);
+	Sequence(1, 3, 5);
 	if (CheckForUserAction()) return;
-	sequence(1, 2, 4);
-	sequence(0, 1, 3);
-	sequence(0, 1);
-	sequence(0);
+	Sequence(1, 2, 4);
+	Sequence(0, 1, 3);
+	Sequence(0, 1);
+	Sequence(0);
 }
 
 void Animation4()
 {
-	sequence(0);
-	sequence(0, 2);
-	sequence(0, 2, 4);
-	sequence(0, 2, 4, 6);
-	sequence(1, 3, 5, 7);
-	sequence(2, 4, 6, 7);
-	sequence(5, 6, 7);
-	sequence(6, 7);
-	sequence(7);
-	sequence(-1);
-	sequence(-1);
-	sequence(7);
-
-	sequence(6, 7);
-	sequence(5, 6, 7);
-	sequence(2, 4, 6, 7);
-	sequence(1, 3, 5, 7);
-	sequence(0, 2, 4, 6);
-	sequence(0, 2, 4);
-	sequence(0, 1, 2);
-	sequence(0, 1);
-	sequence(0);
-	sequence(-1);
-	sequence(-1);
+	Sequence(0);
+	Sequence(0, 2);
+	Sequence(0, 2, 4);
+	Sequence(0, 2, 4, 6);
+	Sequence(1, 3, 5, 7);
+	Sequence(2, 4, 6, 7);
+	Sequence(5, 6, 7);
+	Sequence(6, 7);
+	Sequence(7);
+	Sequence(-1);
+	Sequence(-1);
+	Sequence(7);
+	if (CheckForUserAction()) return;
+	Sequence(6, 7);
+	Sequence(5, 6, 7);
+	Sequence(2, 4, 6, 7);
+	Sequence(1, 3, 5, 7);
+	Sequence(0, 2, 4, 6);
+	Sequence(0, 2, 4);
+	Sequence(0, 1, 2);
+	Sequence(0, 1);
+	Sequence(0);
+	Sequence(-1);
+	Sequence(-1);
 }
 
 void Animation5()
@@ -226,9 +228,9 @@ void Animation5()
 		int maxSeq = 2;
 		for (int i = 0; i < maxSeq; i++) {
 
-			sequence(0, 2, 4, 6);
+			Sequence(0, 2, 4, 6);
 			delay(WAIT / (1 + z));
-			sequence(1, 3, 5, 7);
+			Sequence(1, 3, 5, 7);
 			delay(WAIT / (1 + z));
 			if (CheckForUserAction()) return;
 		}
@@ -239,8 +241,15 @@ void setup()
 {
 	Board.InitializeComputerCommunication(9600, "Starting");
 	InitPins();
-	sequence(0);
-	_onBoardLed.SetBlinkMode(500); // Blink every second
+	for (int i = 0; i < 10; i++) {
+		AllOn();
+		delay(150 - (i * 10));
+		AllOff();
+		delay(150 - (i * 10));
+	}	
+	Sequence(0);
+	_onBoardLed.SetBlinkMode(500); // Blink every 1/2 second
+	delay(1000);
 }
 
 // Add the main program code into the continuous loop() function
@@ -250,28 +259,21 @@ void loop()
 
 	if (_currentAnimation == 0)
 		Animation1(true);
-
-	if (_currentAnimation == 1)
+	else if (_currentAnimation == 1)
 		Animation2(true);
-
-	if (_currentAnimation == 2)
+	else if (_currentAnimation == 2)
 		Animation3();
-
-	if (_currentAnimation == 3)
+	else if (_currentAnimation == 3)
 		Animation4();
+	
+	// If we are in repeat animation mode, we increase the repeat
+	if (_repeatAnimation) 
+		_animationRepeatCounter += 1;
 
-	//if (_currentAnimation == 4)
-	//	Animation5();
-
-	if (_moveToNextAnumation) 
+	// Once we reach the max number of repeat for one animation, we move to the next one
+	if (_animationRepeatCounter > ANIMATION_COUNTER_MAX)
 	{
-		_animationCounter += 1;
-	}
-
-	if (_animationCounter > ANIMATION_COUNTER_MAX) 
-	{
-		_animationCounter = 0;
+		_animationRepeatCounter = 0;
 		NextAnimation();
-	}
+	}		
 }
-
